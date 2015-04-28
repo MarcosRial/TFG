@@ -1,0 +1,16 @@
+{
+    "contents" : "## Índice de acuerdo espectral\n## Siendo i y j las tablas con los datos\nIAE <- function(i, j) {\n  \n  mediai = mean(i$V5)\n  CBi = sapply(i$V5, FUN=function(x) {if(x>=mediai) {1} else {0}})\n  \n  mediaj = mean(j$V5)\n  CBj = sapply(j$V5, FUN=function(x) {if(x>=mediaj) {1} else {0}})\n  \n  Indice = sum((CBi-CBj)^2)/length(CBi)\n  \n  plot (CBi~i$V4,\n        type = \"h\", col = \"grey\",          ## tipo de línea y color\n        ##main = \"Índice de Acuerdo Espectral\",                      ## título\n        sub = NULL,                                  ## subtítulo\n        lty = 1, lwd = 1,                            ## tipo y grosor de línea\n        xlab = expression (paste (lambda, \" (nm)\")), ## etiquetado de los ejes\n        ylab = \"CB\",\n        xlim = c(420,900), ylim = c(0,1)            ## límites de los ejes\n  )\n  return(Indice)\n}\n\n\n## Ángulo espectral\n\nAE <- function(i,j) {\n  \n  Ri = i$V5\n  Rj = j$V5\n\n  Angulo = acos (sum(Ri*Rj)/(sqrt(sum(Ri^2))*sqrt(sum(Rj^2))))\n  return(Angulo)\n}\n\n\n## Continuum removal\n\n#Función con matriz de datos\nmatriz <- matrix(c(mangle1corte$V5,mangle2corte$V5,mangle3corte$V5),\n                 byrow=TRUE,\n                 nrow=3,\n                 ncol=481)\nbandas <- mangle1corte$V4\ncr2 <- continuumRemoval(matriz, bandas)\nmatplot(bandas, t(matriz), type=\"l\", ylim=c(0,1))\nmatlines(bandas, t(cr2))\n\n\n#Función original\nrequire(prospectr) ## library(prospectr) é un comando parecido\n\ncr <- continuumRemoval(data1$V5, data1$V4, type=\"R\", interpol=\"linear\")\ngrafica(data1)\nlines(data1$V4,cr)\n\n#Función con máximo manual\nrequire(prospectr)\n\ncr1 <- continuumRemoval(data1$V5[1:134], data1$V4[1:134], type=\"R\")\ncr2 <- continuumRemoval(data1$V5[135:481], data1$V4[135:481],type=\"R\")",
+    "created" : 1424360978616.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1842969575",
+    "id" : "14671B72",
+    "lastKnownWriteTime" : 1429805752,
+    "path" : "~/TrabajoFinGrado/R/Scripts/Script_funciones.R",
+    "project_path" : "Scripts/Script_funciones.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

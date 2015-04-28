@@ -1,0 +1,17 @@
+{
+    "contents" : "#Gráfica para hacer los CR conjuntos\n\ngraficaCR <- function(x) {\n  plot (x$V5~x$V4,                                   ## selección de x e y \n        type = \"n\", col = \"red\",                     ## no se imprimirá ningun dato\n        main = \"Continuum Removal\",                  ## título\n        sub = NULL,                                  ## subtítulo\n        lty = 1, lwd = 1,                            ## tipo y grosor de línea\n        xlab = expression (paste (lambda, \" (nm)\")), ## etiquetado de los ejes\n        ylab = \"y\",\n        xlim = c(400,920), ylim = c(0,1.05)         ## límites de los ejes\n  )\n  abline (h = seq(0,1,0.2),\n          v = seq(400,920,100),   ## colocación de líneas de guía en los límites de bandas Landsat\n          lty=1, col=\"grey\")\n  legend (x = 750, y = 0.8,\n          legend=c(\"Rhizophora\", \"Laguncularia\", \"Avicennia\"), lty=c(1),\n          col=c(\"red\",\"green\",\"blue\"), bty=\"n\")\n}\n\ngraficaCR(Rhizophora)\n\nlines(mangle1corte$V4[1:134],crRM1, col = \"red\")\nlines(mangle1corte$V4[135:481],crRM2, col = \"red\")\n\nlines(mangle2corte$V4[1:131],crLR1, col = \"green\")\nlines(mangle2corte$V4[132:481],crLR2, col = \"green\")\n\nlines(mangle3corte$V4[1:131],crAG1, col = \"blue\")\nlines(mangle3corte$V4[132:481],crAG2, col = \"blue\")",
+    "created" : 1427901662267.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4039677281",
+    "id" : "C7160706",
+    "lastKnownWriteTime" : 1427903012,
+    "path" : "~/TrabajoFinGrado/R/Scripts/GraficaCR.R",
+    "project_path" : "Scripts/GraficaCR.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,43 @@
+\BOOKMARK [0][-]{chapter*.2}{Resumen}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{\315ndice de Figuras}{}% 2
+\BOOKMARK [0][-]{chapter*.5}{\315ndice de Tablas}{}% 3
+\BOOKMARK [0][-]{chapter*.6}{Lista de Acr\363nimos}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Marco Global}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{Objetivo general}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{Objetivos espec\355ficos}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{Zona de estudio}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{Bases te\363ricas de teledetecci\363n}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.4.1}{Fundamentos}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.2}{Espectro Electro-magn\351tico}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.3}{T\351rminos y Unidades}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.4}{Firmas espectrales}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.5}{Sensores}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.6}{Resoluciones}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.7}{Correcciones}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.8}{Clasificaci\363n de im\341genes}{section.1.4}% 19
+\BOOKMARK [0][-]{chapter.2}{Material y m\351todos}{}% 20
+\BOOKMARK [1][-]{section.2.1}{Especies}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.2}{Datos}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.3}{Software}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.3.1}{R}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.2}{GRASS GIS}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.3}{LaTeX}{section.2.3}% 26
+\BOOKMARK [1][-]{section.2.4}{T\351cnicas de an\341lisis espectral}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.4.1}{\315ndice de acuerdo espectral}{section.2.4}% 28
+\BOOKMARK [2][-]{subsection.2.4.2}{Continuum removal}{section.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.4.3}{Clasificaci\363n angular}{section.2.4}% 30
+\BOOKMARK [1][-]{section.2.5}{Im\341genes de sat\351lite}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.5.1}{Landsat 8}{section.2.5}% 32
+\BOOKMARK [2][-]{subsection.2.5.2}{Obtenci\363n de las im\341genes}{section.2.5}% 33
+\BOOKMARK [2][-]{subsection.2.5.3}{Tratamientos previos}{section.2.5}% 34
+\BOOKMARK [1][-]{section.2.6}{Estudio radiom\351trico}{chapter.2}% 35
+\BOOKMARK [0][-]{chapter.3}{Resultados}{}% 36
+\BOOKMARK [1][-]{section.3.1}{Comprobaci\363n}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.2}{Primeras conclusiones}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.3}{Aplicaci\363n de los an\341lisis}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.1}{\315ndice de Acuerdo Espectral}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.2}{Continuum Removal}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.3}{Clasificaci\363n angular}{section.3.3}% 42
+\BOOKMARK [0][-]{chapter*.87}{Bibliograf\355a}{}% 43

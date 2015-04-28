@@ -1,0 +1,17 @@
+{
+    "contents" : "#Script para graficar datos en color rojo\n#Esta gráfica será guardada en un archivo tipo .png\n\ngraficaRM <- function(x) {\n  plot (x$V5~x$V4,                                   ## selección de x e y \n        type = \"l\", col = \"red\",                     ## tipo de línea y color\n        main = \"Reflectividad\",                      ## título\n        sub = \"Rhizophora Mangle\",                   ## subtítulo\n        lty = 1, lwd = 1,                            ## tipo y grosor de línea\n        xlab = expression (paste (lambda, \" (nm)\")), ## etiquetado de los ejes\n        ylab = expression (rho),\n        xlim = c(400,950), ylim = c(0,1.05)         ## límites de los ejes\n  )\n  abline (h = seq(0,1,0.2), \n    v = c(\"430\",\"450\",\"510\",\"530\",\"590\",\"640\",\"670\",\"850\",\"880\"),   ## colocación de líneas de guía en los límites de bandas Landsat\n    lty=1, col=\"grey\")\n  text(440,0.9, \"C\",\n       cex = 0.8)\n  text(480,0.9, \"B\",\n       cex = 0.8)\n  text(560,0.9, \"G\",\n       cex = 0.8)\n  text(655,0.9, \"R\",\n       cex = 0.8)\n  text(865,0.9, \"IRC\",\n       cex = 0.8)\n}\n\npng (filename = \"./Graficos/RMcorte.png\",\n     width = 15, height = 9, units = \"cm\", res = 300,)\ngraficaRM(RhizophoraCorte)\ndev.off()\n",
+    "created" : 1424425492921.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "464741601",
+    "id" : "DC7637C1",
+    "lastKnownWriteTime" : 1429798847,
+    "path" : "~/TrabajoFinGrado/R/Scripts/GraficaRM.R",
+    "project_path" : "Scripts/GraficaRM.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

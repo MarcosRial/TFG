@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: TFG.aux
+The style file: authordate1.bst
+Database file #1: bibliografia.bib
+You've used 35 entries,
+            2441 wiz_defined-function locations,
+            774 strings with 10978 characters,
+and the built_in function-call counts, 13111 in all, are:
+= -- 1308
+> -- 460
+< -- 118
++ -- 135
+- -- 130
+* -- 997
+:= -- 2194
+add.period$ -- 145
+call.type$ -- 35
+change.case$ -- 219
+chr.to.int$ -- 34
+cite$ -- 35
+duplicate$ -- 525
+empty$ -- 941
+format.name$ -- 168
+if$ -- 2705
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 35
+newline$ -- 179
+num.names$ -- 105
+pop$ -- 206
+preamble$ -- 1
+purify$ -- 251
+quote$ -- 0
+skip$ -- 553
+stack$ -- 0
+substring$ -- 683
+swap$ -- 137
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 262
+warning$ -- 0
+while$ -- 99
+width$ -- 0
+write$ -- 442

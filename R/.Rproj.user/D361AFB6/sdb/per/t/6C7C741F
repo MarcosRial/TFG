@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1430127579316.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6C7C741F",
+    "lastKnownWriteTime" : 75742576,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "Rhizophora",
+        "contentUrl" : "content?title=Rhizophora&file=d283bdb614bb43129f869f28efee6a95.htm",
+        "displayedObservations" : 751,
+        "displayedVariables" : 5,
+        "totalObservations" : 751,
+        "variables" : 5
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

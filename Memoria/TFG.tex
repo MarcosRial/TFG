@@ -1,0 +1,91 @@
+%MARCOS RIAL DOCAMPO
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENTO MAESTRO %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[11pt,a4paper,openright,spanish]{book}
+
+\input{configuracion.tex} %Archivo de configuración
+
+%---------------%
+%- INFORMACIÓN -%
+%---------------%
+
+\title{Análisis de separabilidad espectral de especies de manglar en el Golfo de Fonseca\\Aplicación a la clasificación de imágenes Landsat}
+\author{Marcos Rial Docampo}
+\date{\today}
+\newcommand{\institucion}{Universidad de Santiago de Compostela\xspace}
+\newcommand{\facultad}{Escuela Politécnica Superior de Lugo\xspace}
+
+
+%-----------%
+%- PORTADA -%
+%-----------%
+\setlength{\headheight}{15pt}
+\thispagestyle{empty}
+
+
+%----------------------------------%
+%- INICIO DOCUMENTO DE LA MEMORIA -%
+%----------------------------------%
+\pagestyle{fancy}
+\begin{document}
+
+\input{portada.tex}
+
+\frontmatter
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\thispagestyle{empty}
+
+\newpage
+%LICENCIA
+\input{licencia.tex}
+
+\newpage
+%AGRADECIMIENTOS
+\input{agradecimientos.tex}
+
+%RESUMEN
+\input{resumen.tex}
+\addcontentsline{toc}{chapter}{Resumen}
+
+%----------%
+%- ÍNDICE -%
+%----------%
+
+%\dominitoc
+\tableofcontents 
+\listoffigures 
+\addcontentsline{toc}{chapter}{Índice de Figuras}
+
+\listoftables
+\addcontentsline{toc}{chapter}{Índice de Tablas}
+\newpage
+
+%Lista de acrónimos
+\input{acronimos.tex}
+\addcontentsline{toc}{chapter}{Lista de Acrónimos}
+
+\mainmatter
+%CAPÍTULO 1. INTRODUCCIÓN
+\input{introduccion.tex}
+
+%CAPÍTULO 2. MATERIAL Y MÉTODOS
+\input{materialymetodos.tex}
+
+%CAPÍTULO 3. RESULTADOS
+\input{resultados.tex}
+
+%CAPÍTULO 4. CONCLUSIONES
+%\input{conclusiones.tex}
+
+\backmatter
+
+\bibliographystyle{authordate1}
+\bibliography{bibliografia}
+\addcontentsline{toc}{chapter}{Bibliografía}
+\end{document}

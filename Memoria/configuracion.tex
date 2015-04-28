@@ -1,0 +1,81 @@
+%MARCOS RIAL DOCAMPO
+%Parte del documento principal TFG
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ARCHIVO DE CONFIGURACIÓN DEL DOCUMENTO PRINCIPAL %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs} %Paquetes de matemáticas
+\usepackage{graphicx} %Permite añadir imágenes
+\usepackage{subfig} %Permite añadir varias imágenes en una misma figura
+\usepackage{anysize} %Permite modificar los márgenes
+\usepackage[utf8]{inputenc} %Codificación
+\usepackage[spanish]{babel} %Idioma español
+\usepackage[T1]{fontenc}
+\usepackage{times} %Fuente
+\usepackage{multirow} %Para poder centrar verticalmente el contenido de las celdas de una tabla
+\usepackage{fancyhdr}
+\usepackage{url} %Para introducir URLs
+\usepackage{latexsym} %Para introducir el símbolo de LaTeX
+\usepackage[colorlinks,linktocpage=true,citecolor=blue,linkcolor=blue]{hyperref} %Vínculos
+\usepackage{emptypage}
+\usepackage{acronym}
+%\usepackage{tocbibind}
+\usepackage{natbib} %Bibliografía
+\usepackage{caption} %Para los pies de foto
+\usepackage{verbatim} %Texto sin formato
+\usepackage{moreverb}
+%\usepackage{csvsimple} %Cargar csv en forma de tabla de latex
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Función}
+
+%Define el formato de los encabezados y pies de página del índice y la lista de acrónimos
+\lhead[{\small \rightmark}]{{\small %CAPÍTULO \thechapter.
+ \leftmark}}
+\chead[]{}
+\rhead[{\small %CAPÍTULO \thechapter. 
+\leftmark}]{{\small \rightmark}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% aqui definimos el pie de pagina de las paginas pares e impares.
+\lfoot[]{}
+\cfoot[{\small \thepage}]{{\small \thepage}}
+\rfoot[]{}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% aqui definimos el encabezado y pie de pagina de la pagina inicial de un capitulo.
+\fancypagestyle{plain}{
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[L]{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.5pt}
+}
+
+
+
+%\marginsize{2.5cm}{2.5cm}{2cm}{2cm} %márgenes izquierdo, derecho, superior e inferior
+
+\linespread{1.5} %interlineado
+
+%\parindent=3mm
+%\parskip=3mm
+
+%\usepackage[spanish]{minitoc}
+
+%\setcounter{minitocdepth}{3} 
+%\setlength{\mtcindent}{0pt} 
+%\renewcommand{\mtcfont}{\small\bf} 
+%\renewcommand{\mtcSfont}{\small\bf}
+
+%\hyphenation{}
+
+\newcommand{\Sep}{\vspace{1.5em}}
+\newcommand{\SmallSep}{\vspace{0.5em}}
+
+\renewcommand{\labelitemi}{-}

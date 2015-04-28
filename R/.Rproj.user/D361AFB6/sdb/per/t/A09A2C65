@@ -1,0 +1,16 @@
+{
+    "contents" : "## Se lee el fichero de datos contenido en la carpeta Datos\ndata1 <- read.table(\"./Datos/11_04.dat\")\n\n## Simulamos una nueva curva\ndata2 <- data.frame(data1[,-5],\n                    V5=data1$V5*abs(rnorm(751, mean=0, sd=.2)))\n\n##creación de máximos relativos\ncr1 <- continuumRemoval(data1$V5[1:134], data1$V4[1:134], type=\"R\")\ncr2 <- continuumRemoval(data1$V5[135:481], data1$V4[135:481], type=\"R\")\ncr1[232:751] <- continuumRemoval(data1$V5[232:751], data1$V4[232:751], type=\"R\")\n\n##Creación de máximos relativos\n\nMAX<-sapply(data1$V5, FUN = function(x) {if (x-1<x>x+1) {max} else {0}}\n\nmax(seq(from=data1$V5[1],to=data1$V5[700], by=100))\n            \n##Medias para pasar los datos a valores Landsat\n\ndataTM1<-data.frame(Rango=data1$V4[126:191],data1=data1$V5[126:191],data3=data3$V5[126:191],data4=data4$V5[126:191],data5=data5$V5[126:191])\ndataTM2<-data.frame(Rango=data1$V4[201:281],data1=data1$V5[201:281],data3=data3$V5[201:281],data4=data4$V5[201:281],data5=data5$V5[201:281])\ndataTM3<-data.frame(Rango=data1$V4[306:366],data1=data1$V5[306:366],data3=data3$V5[306:366],data4=data4$V5[306:366],data5=data5$V5[306:366])\ndataTM4<-data.frame(Rango=data1$V4[456:576],data1=data1$V5[456:576],data3=data3$V5[456:576],data4=data4$V5[456:576],data5=data5$V5[456:576])\n\nmediaTM1<-data.frame(Media=sapply(dataTM1,FUN=mean))\nmediaTM2<-data.frame(Media=sapply(dataTM2,FUN=mean))\nmediaTM3<-data.frame(Media=sapply(dataTM3,FUN=mean))\nmediaTM4<-data.frame(Media=sapply(dataTM4,FUN=mean))\n\n#############################################################################################\nLandsat <- function (a,b,c,d) {  #función del anterior, pero no guarda las variables\n  dataTM1<-data.frame(rango=a$V4[126:191],data1=a$V5[126:191],data3=b$V5[126:191],data4=c$V5[126:191],data5=d$V5[126:191])\n  dataTM2<-data.frame(rango=a$V4[201:281],data1=a$V5[201:281],data3=b$V5[201:281],data4=c$V5[201:281],data5=d$V5[201:281])\n  dataTM3<-data.frame(rango=a$V4[306:366],data1=a$V5[306:366],data3=b$V5[306:366],data4=c$V5[306:366],data5=d$V5[306:366])\n  dataTM4<-data.frame(rango=a$V4[456:576],data1=a$V5[456:576],data3=b$V5[456:576],data4=c$V5[456:576],data5=d$V5[456:576])\n  \n  mediaTM1<-data.frame(media=sapply(dataTM1,FUN=mean))\n  mediaTM2<-data.frame(media=sapply(dataTM2,FUN=mean))\n  mediaTM3<-data.frame(media=sapply(dataTM3,FUN=mean))\n  mediaTM4<-data.frame(media=sapply(dataTM4,FUN=mean))\n}\n#############################################################################################\n\nLandsat2 <- function (a) {  #función del anterior, pero no guarda las variables\n  TM1<-mean(a$V5[a$V4>=450 & a$V4<=515])\n  TM2<-mean(a$V5[a$V4>=525 & a$V4<=605])\n  TM3<-mean(a$V5[a$V4>=630 & a$V4<=690])\n  TM4<-mean(a$V5[a$V4>=780 & a$V4<=900])\n\n  return(c(TM1,TM2,TM3,TM4))\n}\n#############################################################################################",
+    "created" : 1424360977239.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3440948844",
+    "id" : "A09A2C65",
+    "lastKnownWriteTime" : 1427883679,
+    "path" : "~/TrabajoFinGrado/R/Scripts/Script1.R",
+    "project_path" : "Scripts/Script1.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
