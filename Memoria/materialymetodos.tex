@@ -49,26 +49,28 @@ El uso de software libre es un recurso importante para realizar trabajos sobre r
 	\item Se centra en proporcionar un servicio y no un producto.
 \end{enumerate}
 
-Este \ac{TFG} se ha hecho íntegramente sobre software libre, utilizando los programas seguidamente mencionados sobre un sistema operativo GNU/Linux, en concreto sobre la distribución Ubuntu 14.04.\Sep
+Este \ac{TFG} se ha hecho íntegramente con software libre, utilizando los programas seguidamente mencionados sobre un sistema operativo GNU/Linux, en concreto sobre la distribución Ubuntu 14.04.\Sep
 
-Adicionalmente se ha hecho un control de versiones localmente con el software \ac{SVN}, que mediante repositorios, permite gestionar un historial de ficheros y carpetas, recordando y organizando el contenido en cada momento, documentando los cambios que ha sufrido y quién y por qué los ha realizado. Permite, por tanto, recuperar el documento a versiones anteriores o revisar el proceso de desarrollo del mismo \citep{Latex2011}. La interfaz gráfica utilizada ha sido RapidSVN.
+Adicionalmente se ha hecho un control de versiones remoto con el software Git, que mediante repositorios, permite gestionar un historial de ficheros y carpetas, recordando y organizando el contenido en cada momento, documentando los cambios que ha sufrido y quién y por qué los ha realizado. Permite, por tanto, recuperar el documento a versiones anteriores o revisar el proceso de desarrollo del mismo \citep{Latex2011}. De esta forma se permite el acceso a los archivos por la plataforma web GitHub de forma pública. La interfaz gráfica utilizada ha sido SmartGit donde se pueden hacer cómodamente la mayoría de las operaciones de control de cambios.\Sep
+
+Otra opción en lo que a control de versiones se refiere sería la del software \ac{SVN} pero este hace un control local de los cambios.
 
 \subsection{R}
-Para el tratamiento de los datos se ha utilizado el software estadístico de uso libre CRAN, más conocido como R \citep{R2013}. R puede definirse como un software de análisis estadísticos, como un generador de gráficos o como un lenguaje de programación. Si bien es un software pensado para su uso sobre interfaces de código, para la realización de este \ac{TFG} se ha utilizado la interfaz gráfica RStudio con el fin de hacer que su uso resulte más amigable.\Sep
+Para el tratamiento de los datos se ha utilizado el software estadístico de uso libre CRAN, más conocido como R \citep{R2013}. R se distribuye bajo licencia GNU GPL y puede definirse como un software de análisis estadísticos, como un generador de gráficos o como un lenguaje de programación. Si bien es un software pensado para su uso sobre interfaces de código, para la realización de este \ac{TFG} se ha utilizado la interfaz gráfica del software libre RStudio, bajo licencia AGPL, con el fin de hacer que su uso resulte más amigable.\Sep
 
 R, como la mayoría de software que funciona sobre sistema operativo GNU/Linux, se compone de módulos o paquetes que se incorporan a una base del programa para extender sus posibilidades y funciones. El paquete base de R ya incluye las operaciones estadísticas básicas necesarias para la elaboración de la clasificación angular y el \ac{IAE} con la única excepción de que para poder aplicar el analizador \ac{CR} se debe descargar un paquete adicional llamado prospectr \citep{stevens2014introduction}.\Sep
 
 R es uno de los lenguajes más utilizados en estadística. Adicionalmente abarca otros muchos campos debido a la cantidad de librerías disponibles como tratamiento de imágenes satélite o clasificación supervisada.
 
 \subsection{GRASS GIS}
-Para el tratado de imágenes Landsat y su posterior clasificación se utiliza el programa de \ac{SIG} gratuito y de código abierto \ac{GRASS} \citep{GRASS_GIS_software}. Este es un potente software en lo que a utilización de manejo y análisis de información geoespacial se refiere. Su funcionalidad es similar a otros programas \ac{SIG} como QGIS, en los cuales, mediante extensiones aplicadas al corazón del programa podemos ampliar sus funciones y adaptarlas a nuestras necesidades \citep{neteler2002open}. Como R, \ac{GRASS} se puede utilizar mediante una interface de código pero se optó por la aplicación de una interface gráfica de usuario que facilita y agiliza mucho el trabajo.\Sep
+Para el tratado de imágenes Landsat y su posterior clasificación se utiliza el programa de \ac{SIG} gratuito y de código abierto \ac{GRASS}, distribuido bajo licencia GPL \citep{GRASS_GIS_software}. Este es un potente software en lo que a utilización de manejo y análisis de información geoespacial se refiere. Su funcionalidad es similar a otros programas \ac{SIG} como QGIS, en los cuales, mediante extensiones aplicadas al corazón del programa podemos ampliar sus funciones y adaptarlas a nuestras necesidades \citep{neteler2002open}. Como R, \ac{GRASS} se puede utilizar mediante una interface de código pero se optó por la aplicación de una interface gráfica de usuario que facilita y agiliza mucho el trabajo.\Sep
 
 \subsection{\LaTeX}
-En la redacción de este documento de memoria se empleó \LaTeX, el intérprete de \TeX, lenguaje y motor de composición de textos de bajo nivel potente y versátil especialmente indicado para elaborar documentos de texto de alta calidad tipográfica. \LaTeX es un conjunto de macros escritas en lenguaje \TeX para la realización de múltiples tareas en lo que a la redacción de un documento de texto se refiere \citep{Latex2011} \citep{galindo2001} \citep{lamport1994}.\Sep
+En la redacción de este documento de memoria se empleó \LaTeX, el intérprete de \TeX, lenguaje y motor de composición de textos de bajo nivel potente y versátil especialmente indicado para elaborar documentos de texto de alta calidad tipográfica. \LaTeX, software libre bajo licencia LPPL, es un conjunto de macros escritas en lenguaje \TeX para la realización de múltiples tareas en lo que a la redacción de un documento de texto se refiere \citep{Latex2011} \citep{galindo2001} \citep{lamport1994}.\Sep
 
-Como editor se utilizó TeX Maker \citep{Brachet2003} un entorno integrado de edición que facilita la redacción, edición, compilación y revisión del documento.\Sep
+Como editor se utilizó TeXMaker \citep{Brachet2003} un entorno integrado de edición libre (GPL) que facilita la redacción, edición, compilación y revisión del documento.\Sep
 
-Para la gestión de la bibliografía, las referencias cruzadas y que fuera correctamente incluida en este documento se ha utilizado el programa JabRef. Este software compila la  bibliografía mediante BibTeX.
+Para la gestión de la bibliografía, las referencias cruzadas y que fuera correctamente incluida en este documento se ha utilizado el software libre JabRef (licencia GPL). Este software compila la bibliografía mediante BibTeX, el formato estándar de bibliografía de \LaTeX.
 
 \section{Técnicas de análisis espectral}
 \label{sec:tecnicas}
