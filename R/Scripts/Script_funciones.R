@@ -44,9 +44,18 @@ matriz <- matrix(c(mangle1corte$V5,mangle2corte$V5,mangle3corte$V5),
                  ncol=481)
 bandas <- mangle1corte$V4
 cr2 <- continuumRemoval(matriz, bandas)
-matplot(bandas, t(matriz), type="l", ylim=c(0,1))
-matlines(bandas, t(cr2))
+matplot(bandas, t(matriz),
+        col=c("grey","grey","grey"),
+        type="l",
+        xlab = expression (paste (lambda, " (nm)")),
+        ylab = " ",
+        ylim=c(0,1))
+matlines(bandas, t(cr2),
+         col=c("red","green","blue"))
 
+legend (x = 750, y = 0.5,
+        legend=c("Rhizophora", "Laguncularia", "Avicennia"), lty=c(1,2,3),
+        col=c("red","green","blue"), bty="n")
 
 #Función original
 require(prospectr) ## library(prospectr) é un comando parecido
