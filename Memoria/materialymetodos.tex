@@ -51,14 +51,14 @@ El uso de software libre es un recurso importante para realizar trabajos sobre r
 
 Este \ac{TFG} se ha hecho íntegramente con software libre, utilizando los programas seguidamente mencionados sobre un sistema operativo GNU/Linux, en concreto sobre la distribución Ubuntu 14.04.\Sep
 
-Adicionalmente se ha hecho un control de versiones remoto con el software Git, que mediante repositorios, permite gestionar un historial de ficheros y carpetas, recordando y organizando el contenido en cada momento, documentando los cambios que ha sufrido y quién y por qué los ha realizado. Permite, por tanto, recuperar el documento a versiones anteriores o revisar el proceso de desarrollo del mismo \citep{Latex2011}. De esta forma se permite el acceso a los archivos por la plataforma web GitHub de forma pública. La interfaz gráfica utilizada ha sido SmartGit donde se pueden hacer cómodamente la mayoría de las operaciones de control de cambios.\Sep
+Adicionalmente se ha hecho un control de versiones remoto con el software Git (libre bajo licencia GNU GPL) que mediante repositorios, permite gestionar un historial de ficheros y carpetas, recordando y organizando el contenido en cada momento documentando los cambios que ha sufrido y quién y por qué los ha realizado. Permite, por tanto, recuperar el documento a versiones anteriores o revisar el proceso de desarrollo del mismo funcionando como respaldo. De esta forma se permite el acceso a los archivos por la plataforma web GitHub de forma pública. La interfaz gráfica utilizada ha sido SmartGit \citep{GmbH2015} de uso gratuito para fines no comerciales y donde se pueden hacer cómodamente la mayoría de las operaciones de control de cambios.\Sep
 
-Otra opción en lo que a control de versiones se refiere sería la del software \ac{SVN} pero este hace un control local de los cambios.
+Otra opción en lo que a control de versiones se refiere sería la del software \ac{SVN} \citep{Latex2011} pero este solamente permite hacer un control local de los cambios.
 
 \subsection{R}
 Para el tratamiento de los datos se ha utilizado el software estadístico de uso libre CRAN, más conocido como R \citep{R2013}. R se distribuye bajo licencia GNU GPL y puede definirse como un software de análisis estadísticos, como un generador de gráficos o como un lenguaje de programación. Si bien es un software pensado para su uso sobre interfaces de código, para la realización de este \ac{TFG} se ha utilizado la interfaz gráfica del software libre RStudio, bajo licencia AGPL, con el fin de hacer que su uso resulte más amigable.\Sep
 
-R, como la mayoría de software que funciona sobre sistema operativo GNU/Linux, se compone de módulos o paquetes que se incorporan a una base del programa para extender sus posibilidades y funciones. El paquete base de R ya incluye las operaciones estadísticas básicas necesarias para la elaboración de la clasificación angular y el \ac{IAE} con la única excepción de que para poder aplicar el analizador \ac{CR} se debe descargar un paquete adicional llamado prospectr \citep{stevens2014introduction}.\Sep
+R, como la mayoría de software que funciona sobre sistema operativo GNU/Linux, se compone de módulos o paquetes que se incorporan a una base del programa para extender sus posibilidades y funciones. El paquete base de R ya incluye las operaciones estadísticas básicas necesarias para la elaboración de la clasificación angular y el \ac{IAE} con la única excepción de que para poder aplicar el analizador \ac{CR} se debe descargar el paquete adicional prospectr \citep{stevens2014introduction}.\Sep
 
 R es uno de los lenguajes más utilizados en estadística. Adicionalmente abarca otros muchos campos debido a la cantidad de librerías disponibles como tratamiento de imágenes satélite o clasificación supervisada.
 
@@ -216,7 +216,7 @@ Se trata de un producto de \ac{L1T} con correcciones geométricas sistemáticas 
 
 Para abarcar la zona de estudio se necesitaron descargar dos imágenes que tienen las siguientes características:
 
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
 	\caption[Caracerísticas de las imágenes Landsat]{Características de las imágenes Landsat tomadas (figura \ref{fig:imagenesLandsat}).}
 	\begin{tabular}{|c|c|c|c|c|}
@@ -309,13 +309,13 @@ Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a
 \end{boxedverbatim}
 \end{center}
 
-donde ``input\_ prefix'' es el prefijo del nombre de las imágenes para cada banda, ``output\_ prefix'' es el prefijo que le queremos dar a las nuevas imágenes corregidas, ``metfile'' es el archivo de metadatos asociado, ``sensor'' el tipo de sensor, ``date'' y ``product\_ date'' son las fechas de adquisición y creación y ``sun\_ elevation'' la elevación en grados del Sol.
+donde ``input\_prefix'' es el prefijo del nombre de las imágenes para cada banda, ``output\_prefix'' es el prefijo que le queremos dar a las nuevas imágenes corregidas, ``metfile'' es el archivo de metadatos asociado, ``sensor'' el tipo de sensor, ``date'' y ``product\_date'' son las fechas de adquisición y creación y ``sun\_elevation'' la elevación en grados del Sol.
 
 \subsubsection{Mosaico de imágenes}
-El mosaico de imágenes se realizó utilizando la herramienta de la librería \ac{GDAL} gdal\_ merge.py con las siguientes consideraciones:
+Para realizar el mosaico de las dos imágenes de las que disponemos tenemos dos opciones: utilizando la herramienta gdal\_merge.py y hacerlo en GRASS. Para utilizar la herramienta de la librería \ac{GDAL} gdal\_merge.py debemos tener las siguientes consideraciones:
 
 \begin{itemize}
-	\item Es un método que se ejecuta en la terminal de Linux. Para un método guiado se utilizaría, por ejemplo, la herramienta raster/combinar en QGIS.
+	\item Es un método que se ejecuta en la terminal de Linux. Para un método guiado se utilizaría, por ejemplo, la herramienta raster/combinar en QGIS o el método de GRASS que se expondrá más adelante.
 	\item Las dos imágenes deben estar en el mismo sistema de coordenadas.
 	\item Utiliza como método de remuestreo el de vecino más próximo.
 	\item La última imagen de la lista será copiada sobre la precedente en el caso de haber solape.

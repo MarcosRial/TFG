@@ -181,6 +181,7 @@ El script de la funcion en R previamente presentado en \ref{subsec:Continuum_rem
 \begin{figure}[ht]
 	\centering
 	\begin{lstlisting}[language = R, frame = single]
+require(prospectr)
 matriz <- matrix(c(RhizophoraCorte$V5,LagunculariaCorte$V5,
                    AvicenniaCorte$V5),
                  byrow=TRUE,
@@ -196,13 +197,13 @@ matlines(bandas, t(cr2))
 	\label{fig:CRmodificado}
 \end{figure}	
 
-Donde ``manglencorte'' es el archivo de datos con el corte realizado para cada especie como se explicó anteriormente. Se crea un objeto llamado ``bandas'' tomando los valores de la fila V4 de cualquiera de los archivos de datos. Se crea la gráfica con el comandos ``matplot'' y con ``matlines'' se superpone la gráfica propia del método \ac{CR}.\Sep
+Donde ``manglencorte'' es el archivo de datos con el corte realizado para cada especie como se explicó anteriormente. Se crea un objeto llamado ``bandas'' tomando los valores de la fila V4 de cualquiera de los archivos de datos. Se crea la gráfica con el comandos ``matplot'' y con ``matlines'' se superpone la gráfica propia del método \ac{CR}. Con el comando inicial ``require(prospectr)'' nos aseguramos que está correctamente cargado el paquete necesario para realizar las operaciones que siguen en el script \citep{stevens2014introduction}. \Sep
 
 En la gráfica de la figura \ref{fig:GraficaCR} se pueden observar las diferencias entre las tres especies que nos indica este tipo de análisis. Son tres los aspectos de esta gráfica a analizar: la profundidad y anchura de las partes convexas y la posición de los puntos mínimos.\Sep
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/ContinuumR.eps}
+	\includegraphics[width=0.8\linewidth]{./Imagenes/ContinuumR2.eps}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Gráfica de Continuum Removal]{Gráfica de continuum removal para las tres especies de mangle. Fuente: Elaboración propia.}
 	\label{fig:GraficaCR}

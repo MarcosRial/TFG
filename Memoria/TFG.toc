@@ -31,22 +31,22 @@
 \contentsline {section}{\numberline {2.1}Especies}{25}{section.2.1}
 \contentsline {section}{\numberline {2.2}Datos}{25}{section.2.2}
 \contentsline {section}{\numberline {2.3}Software}{26}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}R}{26}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}R}{27}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}GRASS GIS}{27}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}\textlatin {\LaTeX }}{27}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}T\IeC {\'e}cnicas de an\IeC {\'a}lisis espectral}{28}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}\IeC {\'I}ndice de acuerdo espectral}{28}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Continuum removal}{28}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Continuum removal}{29}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Clasificaci\IeC {\'o}n angular}{31}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Im\IeC {\'a}genes de sat\IeC {\'e}lite}{32}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Landsat 8}{32}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Obtenci\IeC {\'o}n de las im\IeC {\'a}genes}{32}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Obtenci\IeC {\'o}n de las im\IeC {\'a}genes}{33}{subsection.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}Tratamientos previos}{35}{subsection.2.5.3}
 \contentsline {subsubsection}{Valores nulos}{35}{section*.68}
-\contentsline {subsubsection}{Transformaci\IeC {\'o}n a reflectancias}{35}{section*.69}
+\contentsline {subsubsection}{Transformaci\IeC {\'o}n a reflectancias}{36}{section*.69}
 \contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{36}{section*.70}
 \contentsline {subsubsection}{Recorte de la imagen}{37}{section*.74}
-\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{37}{section.2.6}
+\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{38}{section.2.6}
 \contentsline {chapter}{\numberline {3}Resultados}{39}{chapter.3}
 \contentsline {section}{\numberline {3.1}Comprobaci\IeC {\'o}n}{39}{section.3.1}
 \contentsline {section}{\numberline {3.2}Primeras conclusiones}{40}{section.3.2}
