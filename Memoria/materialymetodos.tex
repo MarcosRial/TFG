@@ -342,7 +342,7 @@ En la figura \ref{fig:dialogomosaico} se observa el diálogo resultante de la op
 	\label{fig:dialogomosaico}
 \end{figure}
 
-De hacerlo en GRASS, el comando sería r.patch, con la salvedad de que las dos imágenes deben estar en la misma región establecida (cuadro \ref{tab:region}), quedando la siguiente línea de orden:
+De hacerlo en GRASS, el comando sería r.patch, con la salvedad de que las dos imágenes deben estar en la misma región de cálculo, la cual se puede ver en el cuadro \ref{tab:region}), quedando la siguiente línea de orden:\SmallSep
 
 \begin{center}
 \begin{boxedverbatim}
@@ -351,50 +351,54 @@ De hacerlo en GRASS, el comando sería r.patch, con la salvedad de que las dos i
 \end{boxedverbatim}
 \end{center}
 
-\begin{table}
+\subsubsection{Recorte de la imagen}
+Para trabajar solamente con la zona de estudio es necesario recortar la imagen. Para ello empleamos las opciones de visualización de GRASS con una extensión de coordenadas superior derecha de (516000 , 1501230) e inferior izquierda de (377940 , 1412100) como se muestra en el cuadro \ref{tab:region}. Una vez fijada se selecciona la opción de zoom ``set computational region from display extent'' que simplemente reduce la región de cálculo previamente establecida a la extensión de la visualización actual y nos permite realizar operaciones en esta.\Sep
+
+\begin{table}[ht]
 	\centering
-	\caption[Datos de la región establecida en GRASS]{Datos de la región establecida.}
-	\begin{tabular}{|r|l|}
+	\caption[Datos de las regiónes de trabajo]{Datos de las regiónes de trabajo establecidas en GRASS.}
+	\begin{tabular}{|r|c|c|}
 	\hline
-	Proyección & 1 (UTM) \\
+	& Extensión imágenes & Extensión reducida\\
 	\hline
-	Zona & 16 \\
+	Proyección & 1 (UTM) & 1 (UTM) \\
 	\hline
-	Datum & WGS84 \\
+	Zona & 16 & 16 \\
 	\hline
-	Elipsoide & WGS84 \\
+	Datum & WGS84 & WGS84 \\
 	\hline
-	Norte & 1555215 \\
+	Elipsoide & WGS84 & WGS84 \\
 	\hline
-	Sur & 1321485 \\
+	Norte & 1555215 &1501230 \\
 	\hline
-	Oeste & 272685 \\
+	Sur & 1321485 & 1412100 \\
 	\hline
-	Este & 667815 \\
+	Oeste & 272685 & 377940 \\
 	\hline
-	Res. esp. vertical (m) & 30 \\
+	Este & 667815 & 516000 \\
 	\hline
-	Res. esp. horizontal (m) & 30 \\
+	Res. esp. vertical (m) & 30 & 30 \\
 	\hline
-	Filas & 7791 \\
+	Res. esp. horizontal (m) & 30 & 30\\
 	\hline
-	Columnas & 13171 \\
+	Filas & 7791 & 2971 \\
 	\hline
-	Celdas & 102615261 \\
+	Columnas & 13171 & 4602 \\
+	\hline
+	Celdas & 102615261 & 13672542 \\
 	\hline
 	\end{tabular}
 	\label{tab:region}
 \end{table}
 
-\subsubsection{Recorte de la imagen}
-Para trabajar solamente con la zona de estudio es necesario recortar la imagen. Para ello empleamos las opciones de visualización de GRASS con una extensión de coordenadas superior derecha de (523526.53 , 1500863.43) e inferior izquierda de (371353.76 , 1402136.71). Una vez fijada se selecciona la opción de zoom ``set computational region from display extent'' que simplemente reduce la región establecida a la extensión de la visualización actual y nos permite realizar operaciones de esta.\Sep
-
-Conel comando r.resample se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda. El comando se emplea de la siguiente forma:
+Con el comando r.resample se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda. El comando se emplea de la siguiente forma para cada banda:
 
 \begin{center}
 \begin{boxedverbatim}
-	r.resample input=MosaicoB2@PERMANENT output=L8GF_B2
+	r.resample input=MosaicoB1@TFG output=L8GF_SRB1
 \end{boxedverbatim}
 \end{center}
+
+\subsubsection{Filtro de media}
 
 \section{Estudio radiométrico}

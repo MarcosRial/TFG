@@ -75,7 +75,7 @@ Los gráficos de barras extraídos de la base de datos de la capa PuntosControl2
 	\label{tab:tabla_puntos}
 \end{table}
 
-\section{Primeras conclusiones}
+\section{Primeros resultados}
 Una vez introducidos los datos en R se obtienen las gráficas mostradas en la figura \ref{fig:firmas_espectrales} y el conjunto de ellas en la figura \ref{fig:ral}, de donde se pueden sacar las primeras conclusiones.\Sep
 
 \begin{figure}
@@ -122,7 +122,7 @@ Por lo tanto el primer vistazo a las gráficas es el esperado, siendo lo más pr
 
 \section{Aplicación de los análisis}
 \subsection{Índice de Acuerdo Espectral}
-Una vez aplicando el script con la función de \ac{IAE} creado en R ya se aprecia que el resultado no es muy bueno, aunque esperado, siendo las diferencias casi inapreciables como se ve en la tabla \ref{tab:Valores_IAE} y en los gráficos de la figura \ref{fig:CB}, donde se aprecia mejor la poca diferencia espectral existente.\Sep
+Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref{fig:IAE}) ya se aprecia que el resultado no es muy bueno, aunque esperado, siendo las diferencias casi inapreciables como se ve en la tabla \ref{tab:Valores_IAE} y en los gráficos de la figura \ref{fig:CB}, donde se aprecia mejor la poca diferencia espectral existente.\Sep
 
 \begin{table}[ht]
 	\centering
@@ -174,9 +174,9 @@ El corte en $\lambda$ que se menciona en la tabla \ref{tab:mediaIAE} se refiere 
 
 \subsection{Continuum Removal}
 
-Para el correcto funcionamiento del análisis se procedió a crear una matriz de 3x481 donde las filas corresponden a las tres especies analizadas y las columnas al valor de longitud de onda. El fin es el de presentar de mejor forma los datos en la función de \ac{CR} de R y aunque el resultado es el mismo (que haciéndolo una por una) nos permite obtener este de forma más rápida y con menos pasos.\Sep
+Para el correcto funcionamiento del análisis se procedió a crear una matriz de 3x481 donde las filas corresponden a las tres especies analizadas y las columnas al valor de longitud de onda. El fin es el de presentar de mejor forma los datos en la función de \ac{CR} de R y aunque el resultado es el mismo, que haciéndolo una por una, nos permite obtener este de forma más rápida y con menos pasos.\Sep
 
-El script de la funcion en R previamente presentado en \ref{subsec:Continuum_removal} sufre cambios, quedando de la siguiente manera:\SmallSep
+El script de la funcion en R previamente presentado en la figura \ref{fig:CR} sufre cambios, quedando de la siguiente manera:\SmallSep
 
 \begin{figure}[ht]
 	\centering
@@ -214,7 +214,7 @@ En cuanto a la profundidad se observa una clara absorción en torno a los 490 nm
 En cuanto a la anchura lo más llamativo es la amplitud de los valores de la Rhizophora en torno a los valores centrales de la observación.
 
 \subsection{Clasificación angular}
-Una vez aplicado el script de R de la función los valores son los de la siguiente tabla:
+Una vez aplicado el script de R de la función de clasificación angular (figura \ref{fig:AE}), los valores son los de la siguiente tabla:
 
 \begin{table}[ht]
 	\centering
