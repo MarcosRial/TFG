@@ -144,7 +144,7 @@ En la figura \ref{fig:CR} se muestra el script de la función en R a la que se l
 require(prospectr)
 
 cr <- continuumRemoval(data1$V5, data1$V4, type="R",
-						interpol="linear")
+			interpol="linear")
 grafica(data1)
 lines(data1$V4,cr)
 \end{lstlisting}
@@ -391,13 +391,21 @@ Para trabajar solamente con la zona de estudio es necesario recortar la imagen. 
 	\label{tab:region}
 \end{table}
 
-Con el comando r.resample se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda. El comando se emplea de la siguiente forma para cada banda:
+Con el comando r.resample se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda (figura \ref{fig:recorte}). El comando se emplea de la siguiente forma para cada banda:
 
 \begin{center}
 \begin{boxedverbatim}
 	r.resample input=MosaicoB1@TFG output=L8GF_SRB1
 \end{boxedverbatim}
 \end{center}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Recorte.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Recorte de imagen Landsat]{Resultado del recorte de la imagen. Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\label{fig:recorte}
+\end{figure}
 
 \subsubsection{Filtro de media}
 

@@ -1,6 +1,6 @@
 \select@language {spanish}
 \contentsline {chapter}{Resumen}{\es@scroman {v}}{chapter*.2}
-\contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {ix}}{chapter*.4}
+\contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {x}}{chapter*.4}
 \contentsline {chapter}{\IeC {\'I}ndice de Tablas}{\es@scroman {xi}}{chapter*.5}
 \contentsline {chapter}{Lista de Acr\IeC {\'o}nimos}{\es@scroman {xiv}}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
@@ -46,13 +46,13 @@
 \contentsline {subsubsection}{Transformaci\IeC {\'o}n a reflectancias}{36}{section*.69}
 \contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{36}{section*.70}
 \contentsline {subsubsection}{Recorte de la imagen}{38}{section*.73}
-\contentsline {subsubsection}{Filtro de media}{38}{section*.75}
-\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{38}{section.2.6}
-\contentsline {chapter}{\numberline {3}Resultados}{39}{chapter.3}
-\contentsline {section}{\numberline {3.1}Comprobaci\IeC {\'o}n}{39}{section.3.1}
-\contentsline {section}{\numberline {3.2}Primeros resultados}{40}{section.3.2}
-\contentsline {section}{\numberline {3.3}Aplicaci\IeC {\'o}n de los an\IeC {\'a}lisis}{42}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}\IeC {\'I}ndice de Acuerdo Espectral}{42}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Continuum Removal}{46}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Clasificaci\IeC {\'o}n angular}{47}{subsection.3.3.3}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{52}{chapter*.88}
+\contentsline {subsubsection}{Filtro de media}{39}{section*.76}
+\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{39}{section.2.6}
+\contentsline {chapter}{\numberline {3}Resultados}{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}Comprobaci\IeC {\'o}n}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Primeros resultados}{42}{section.3.2}
+\contentsline {section}{\numberline {3.3}Aplicaci\IeC {\'o}n de los an\IeC {\'a}lisis}{44}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\IeC {\'I}ndice de Acuerdo Espectral}{44}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Continuum Removal}{48}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Clasificaci\IeC {\'o}n angular}{49}{subsection.3.3.3}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{54}{chapter*.89}
