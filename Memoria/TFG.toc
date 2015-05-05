@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {1.4.3}T\IeC {\'e}rminos y Unidades}{10}{subsection.1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}Firmas espectrales}{12}{subsection.1.4.4}
 \contentsline {subsection}{\numberline {1.4.5}Sensores}{14}{subsection.1.4.5}
-\contentsline {subsubsection}{Sensores pasivos}{14}{section*.32}
+\contentsline {subsubsection}{Sensores pasivos}{14}{section*.31}
 \contentsline {subsection}{\numberline {1.4.6}Resoluciones}{16}{subsection.1.4.6}
 \contentsline {subsubsection}{Resoluci\IeC {\'o}n espacial}{17}{section*.39}
 \contentsline {subsubsection}{Resoluci\IeC {\'o}n espectral}{17}{section*.41}
@@ -31,7 +31,7 @@
 \contentsline {section}{\numberline {2.1}Especies}{25}{section.2.1}
 \contentsline {section}{\numberline {2.2}Datos}{25}{section.2.2}
 \contentsline {section}{\numberline {2.3}Software}{26}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}R}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}R}{26}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}GRASS GIS}{27}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}\textlatin {\LaTeX }}{27}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}T\IeC {\'e}cnicas de an\IeC {\'a}lisis espectral}{28}{section.2.4}
@@ -42,12 +42,12 @@
 \contentsline {subsection}{\numberline {2.5.1}Landsat 8}{32}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Obtenci\IeC {\'o}n de las im\IeC {\'a}genes}{33}{subsection.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}Tratamientos previos}{35}{subsection.2.5.3}
-\contentsline {subsubsection}{Valores nulos}{35}{section*.68}
-\contentsline {subsubsection}{Transformaci\IeC {\'o}n a reflectancias}{36}{section*.69}
-\contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{36}{section*.70}
-\contentsline {subsubsection}{Recorte de la imagen}{38}{section*.73}
-\contentsline {subsubsection}{Filtro de media}{39}{section*.76}
-\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{39}{section.2.6}
+\contentsline {subsubsection}{Valores nulos}{36}{section*.70}
+\contentsline {subsubsection}{Transformaci\IeC {\'o}n a reflectancias}{36}{section*.71}
+\contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{37}{section*.72}
+\contentsline {subsubsection}{Recorte de la imagen}{38}{section*.75}
+\contentsline {subsubsection}{Filtro de media}{38}{section*.78}
+\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{38}{section.2.6}
 \contentsline {chapter}{\numberline {3}Resultados}{41}{chapter.3}
 \contentsline {section}{\numberline {3.1}Comprobaci\IeC {\'o}n}{41}{section.3.1}
 \contentsline {section}{\numberline {3.2}Primeros resultados}{42}{section.3.2}
@@ -55,4 +55,4 @@
 \contentsline {subsection}{\numberline {3.3.1}\IeC {\'I}ndice de Acuerdo Espectral}{44}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Continuum Removal}{48}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Clasificaci\IeC {\'o}n angular}{49}{subsection.3.3.3}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{54}{chapter*.89}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{54}{chapter*.91}

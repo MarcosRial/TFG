@@ -1,11 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citename{Andino, }2011]{andino2011}
-Andino, Rafael Enrique~Corrales. 2011.
-\newblock Catalogo de firmas espectrales de especies florales, en la Ciudad
-  Universitaria, Tegucigalpa, Fase 1.
-\newblock {\em Ciencias Espaciales}, {\bf 1}(1).
-
 \bibitem[\protect\citename{Ariza, }2013]{Ariza2013}
 Ariza, Alexander. 2013.
 \newblock {\em Descripción y Corrección de Productos de Landsat 8 LDCM
@@ -61,6 +55,12 @@ CIPF. 2014.
 \newblock Instituto Nacional de Conservación y Desarrollo Forestal, Áreas
   Protegidas y Vida Silvestre (ICF).
 
+\bibitem[\protect\citename{Corrales~Andino, }2011]{andino2011}
+Corrales~Andino, Rafael~Enrique. 2011.
+\newblock Catalogo de firmas espectrales de especies florales, en la Ciudad
+  Universitaria, Tegucigalpa, Fase 1.
+\newblock {\em Ciencias Espaciales}, {\bf 1}(1).
+
 \bibitem[\protect\citename{Curran, }1989]{Curran1991Longman}
 Curran, P. 1989.
 \newblock {\em Principles of remote sensing}.
@@ -93,6 +93,11 @@ Girouard, G, Bannari, A, El~Harti, A, \& Desrochers, A. 2004.
 {Global Administrative Areas}. 2012 (January).
 \newblock {\em Web GADM}.
 \newblock GADM.
+
+\bibitem[\protect\citename{GmbH, }2015]{GmbH2015}
+GmbH, Syntevo. 2015.
+\newblock {\em SmartGit, a graphical Git and Mercurial client}.
+\newblock Salzburger Str. 17 83404 Ainring Germany.
 
 \bibitem[\protect\citename{{GRASS Development Team}, }2012]{GRASS_GIS_software}
 {GRASS Development Team}. 2012.
@@ -213,16 +218,17 @@ Schowengerdt, Robert~A. 2006.
 Stevens, Antoine, \& Ramirez-Lopez, Leonardo. 2014.
 \newblock {\em An introduction to the prospectr package}.
 
-\bibitem[\protect\citename{syntevo GmbH, }2015]{GmbH2015}
-syntevo GmbH. 2015.
-\newblock {\em SmartGit, a graphical Git and Mercurial client}.
-\newblock Salzburger Str. 17 83404 Ainring Germany.
-
 \bibitem[\protect\citename{Underwood {\em et~al.\ }\relax,
   }2003]{underwood2003mapping}
 Underwood, Emma, Ustin, Susan, \& DiPietro, Deanne. 2003.
 \newblock Mapping nonnative plants using hyperspectral imagery.
 \newblock {\em Remote Sensing of Environment}, {\bf 86}(2), 150--161.
+
+\bibitem[\protect\citename{USGS, }2015]{USGS2015}
+USGS. 2015 (March).
+\newblock {\em Product Guide. Provisional Landsat 8 Surface Reflectance
+  Product}. 1.2 edn.
+\newblock Department of the Interior U.S. Geological Survey.
 
 \bibitem[\protect\citename{Y{\'a}nez-Arancibia \& Lara-Dom{\'\i}nguez,
   }1994]{yanez1994}

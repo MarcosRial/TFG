@@ -96,7 +96,7 @@ Una vez introducidos los datos en R se obtienen las gráficas mostradas en la fi
 	\label{fig:ral}
 \end{figure}
 
-Como se aprecia en las figuras los datos presentan unas alteraciones al inicio y al final que son propias del radiómetro. Se procedió a deshechar estos datos haciendo un corte de colas entre los valores 420 nm y 900 nm de longitus de onda para preservar lo máximo posible la integridad de los datos y que no afectaran a los análisis de separabilidad. El número de observaciones se reduciría a 481 por las 751 originales. Las gráficas resultantes son las mostradas en las figuras \ref{fig:firmas_espectrales_corte} y \ref{fig:ral_corte}.
+Como se aprecia en las figuras los datos presentan unas alteraciones al inicio y al final que son propias del radiómetro. Se procedió a desechar estos datos haciendo un corte de colas entre los valores 420 nm y 900 nm de longitud de onda para preservar lo máximo posible la integridad de los datos y que no afectaran a los análisis de separabilidad. El número de observaciones se reduciría a 481 por las 751 originales. Las gráficas resultantes son las mostradas en las figuras \ref{fig:firmas_espectrales_corte} y \ref{fig:ral_corte}.\Sep
 
 \begin{figure}
 	\centering
@@ -116,7 +116,7 @@ Como se aprecia en las figuras los datos presentan unas alteraciones al inicio y
 	\label{fig:ral_corte}
 \end{figure}
 
-Las tres especies tienen un máximo local en la banda correspondiente al verde (G), típica de las especies vegetales, así como otro máximo, este de mayor valor, correspondientes al intervalo de longitud de onda ($\lambda$) en el que está incluida la banda del \ac{IRC}. Este último máximo es característico de la vegetación e indicaría su grado de salud. Se desechan los valores extremos de la gráfica que no aportan ningún valor significativo.\Sep
+Las tres especies tienen un máximo local en la banda correspondiente al verde (G), típica de las especies vegetales, así como otro máximo de mayor valor, correspondientes al intervalo de longitud de onda ($\lambda$) en el que está incluida la banda del \ac{IRC}. Este último máximo también es característico de la vegetación e indicaría su grado de salud.\Sep
 
 Por lo tanto el primer vistazo a las gráficas es el esperado, siendo lo más preocupante el aparente parecido entre las especies Rhizophora y Avicennia, que solo se diferencian en el valor del \ac{IRC}.
 
@@ -160,7 +160,7 @@ Las diferencias en este método son bajas debido a que se trata de tres especies
 	\label{tab:mediaIAE}
 \end{table}
 
-El corte en $\lambda$ que se menciona en la tabla \ref{tab:mediaIAE} se refiere al valor de longitud de onda a partir del cual la reflectancia es mayor a la media y por tanto se provoca una cambio en el valor binario de 0 a 1 donde, de tener un mayor rango de longitud de onda observada habría más de un cambio. Se observan unos valores similares de $\lambda$ para las tres especies, pero donde sí se notan diferencias son en el valor medio de la reflectancia, siendo el de la Laguncularia notablemente superior al de las otras dos especies.
+El corte en $\lambda$ que se menciona en el cuadro \ref{tab:mediaIAE} se refiere al valor de longitud de onda a partir del cual la reflectancia es mayor a la media y por tanto se provoca una cambio en el valor binario de 0 a 1 donde, de tener un mayor rango de longitud de onda observada habría más de un cambio. Se observan unos valores similares de $\lambda$ para las tres especies, pero donde sí se notan diferencias son en el valor medio de la reflectancia, siendo el de la Laguncularia notablemente superior al de las otras dos especies.
 
 \begin{figure}
 	\centering
@@ -199,7 +199,7 @@ matlines(bandas, t(cr2))
 
 Donde ``manglencorte'' es el archivo de datos con el corte realizado para cada especie como se explicó anteriormente. Se crea un objeto llamado ``bandas'' tomando los valores de la fila V4 de cualquiera de los archivos de datos. Se crea la gráfica con el comandos ``matplot'' y con ``matlines'' se superpone la gráfica propia del método \ac{CR}. Con el comando inicial ``require(prospectr)'' nos aseguramos que está correctamente cargado el paquete necesario para realizar las operaciones que siguen en el script \citep{stevens2014introduction}. \Sep
 
-En la gráfica de la figura \ref{fig:GraficaCR} se pueden observar las diferencias entre las tres especies que nos indica este tipo de análisis. Son tres los aspectos de esta gráfica a analizar: la profundidad y anchura de las partes convexas y la posición de los puntos mínimos.\Sep
+En la gráfica de la figura \ref{fig:GraficaCR} se pueden observar las diferencias entre las tres especies que nos indica este tipo de análisis. Son tres los aspectos de esta gráfica a analizar: la profundidad y anchura de las partes convexas y la posición de los puntos mínimos. En gris la gráfica de reflectividad de cada especie.\Sep
 
 \begin{figure}
 	\centering
@@ -209,7 +209,7 @@ En la gráfica de la figura \ref{fig:GraficaCR} se pueden observar las diferenci
 	\label{fig:GraficaCR}
 \end{figure}
 
-En cuanto a la profundidad se observa una clara absorción en torno a los 490 nm y los 670 nm de las tres especies. En el caso de la Avicennia esta absorción es más acusada en ambos puntos. Rhizophora y Laguncularia muestran un comportamiento similar en la primera zona mientras que en la segunda la Laguncularia no muestra la absorción de la Rhizophora.\Sep
+En cuanto a la profundidad se observa una clara absorción en torno a los 490 nm y los 680 nm de las tres especies. En el caso de la Avicennia esta absorción es más acusada en ambos puntos. Rhizophora y Laguncularia muestran un comportamiento similar en la primera zona mientras que en la segunda la Laguncularia no muestra la absorción de la Rhizophora.\Sep
 
 En cuanto a la anchura lo más llamativo es la amplitud de los valores de la Rhizophora en torno a los valores centrales de la observación.
 
