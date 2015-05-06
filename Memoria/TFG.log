@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.15)  5 MAY 2015 17:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.15)  6 MAY 2015 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2700,7 +2700,7 @@ ed-to.pdf ./Imagenes/CR1.eps>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/CR1-eps-converted-to.pdf, id=740, 615.29875pt x 458.71375pt>
+<./Imagenes/CR1-eps-converted-to.pdf, id=742, 615.29875pt x 458.71375pt>
 File: ./Imagenes/CR1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/CR1-eps-converted-to.pdf>
@@ -2718,7 +2718,7 @@ ed-to.pdf ./Imagenes/CR2.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/CR2-eps-converted-to.pdf, id=741, 643.40375pt x 476.78125pt>
+<./Imagenes/CR2-eps-converted-to.pdf, id=743, 643.40375pt x 476.78125pt>
 File: ./Imagenes/CR2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/CR2-eps-converted-to.pdf>
@@ -2961,7 +2961,7 @@ onverted-to.pdf ./Imagenes/Landsat18.eps>
 (epstopdf)             \includegraphics on input line 246.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Landsat18-eps-converted-to.pdf, id=835, 753.81625pt x 770.88pt>
+<./Imagenes/Landsat18-eps-converted-to.pdf, id=838, 753.81625pt x 770.88pt>
 File: ./Imagenes/Landsat18-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Landsat18-eps-converted-to.pdf>
@@ -2980,7 +2980,7 @@ onverted-to.pdf ./Imagenes/Landsat17.eps>
 (epstopdf)             \includegraphics on input line 248.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Landsat17-eps-converted-to.pdf, id=836, 285.065pt x 292.09125pt>
+<./Imagenes/Landsat17-eps-converted-to.pdf, id=839, 285.065pt x 292.09125pt>
 File: ./Imagenes/Landsat17-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Landsat17-eps-converted-to.pdf>
@@ -2999,7 +2999,7 @@ converted-to.pdf ./Imagenes/LandsatQ18.eps>
 (epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/LandsatQ18-eps-converted-to.pdf, id=837, 753.81625pt x 770.88pt>
+<./Imagenes/LandsatQ18-eps-converted-to.pdf, id=840, 753.81625pt x 770.88pt>
 File: ./Imagenes/LandsatQ18-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/LandsatQ18-eps-converted-to.pdf>
@@ -3018,7 +3018,7 @@ converted-to.pdf ./Imagenes/LandsatQ17.eps>
 (epstopdf)             \includegraphics on input line 259.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/LandsatQ17-eps-converted-to.pdf, id=838, 753.81625pt x 771.88374pt>
+<./Imagenes/LandsatQ17-eps-converted-to.pdf, id=841, 753.81625pt x 771.88374pt>
 File: ./Imagenes/LandsatQ17-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Imagenes/LandsatQ17-eps-converted-to.pdf>
 Package pdftex.def Info: ./Imagenes/LandsatQ17-eps-converted-to.pdf used on inp
@@ -3141,7 +3141,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 344.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Dialogo_mosaico-eps-converted-to.pdf, id=876, 631.35875pt x 310.158
+<./Imagenes/Dialogo_mosaico-eps-converted-to.pdf, id=879, 631.35875pt x 310.158
 75pt>
 File: ./Imagenes/Dialogo_mosaico-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/Dialogo_mosaico-eps-converted-to.pdf>
@@ -3188,7 +3188,7 @@ verted-to.pdf ./Imagenes/Recorte.eps>
 (epstopdf)             \includegraphics on input line 409.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Recorte-eps-converted-to.pdf, id=886, 570.13pt x 368.37625pt>
+<./Imagenes/Recorte-eps-converted-to.pdf, id=889, 570.13pt x 368.37625pt>
 File: ./Imagenes/Recorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Recorte-eps-converted-to.pdf>
@@ -3365,7 +3365,7 @@ Package epstopdf Info: Source file: <./Imagenes/RM.eps>
 d-to.pdf ./Imagenes/RM.eps>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
- <./Imagenes/RM-eps-converted-to.pdf, id=917, 427.5975pt x 285.065pt>
+ <./Imagenes/RM-eps-converted-to.pdf, id=920, 427.5975pt x 285.065pt>
 File: ./Imagenes/RM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/RM-eps-converted-to.pdf>
@@ -3383,7 +3383,7 @@ d-to.pdf ./Imagenes/LR.eps>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/LR-eps-converted-to.pdf, id=918, 427.5975pt x 234.8775pt>
+<./Imagenes/LR-eps-converted-to.pdf, id=921, 427.5975pt x 234.8775pt>
 File: ./Imagenes/LR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/LR-eps-converted-to.pdf>
@@ -3401,7 +3401,7 @@ d-to.pdf ./Imagenes/AG.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/AG-eps-converted-to.pdf, id=919, 427.5975pt x 234.8775pt>
+<./Imagenes/AG-eps-converted-to.pdf, id=922, 427.5975pt x 234.8775pt>
 File: ./Imagenes/AG-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/AG-eps-converted-to.pdf>
@@ -3419,7 +3419,7 @@ ed-to.pdf ./Imagenes/ral.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/ral-eps-converted-to.pdf, id=920, 427.5975pt x 285.065pt>
+<./Imagenes/ral-eps-converted-to.pdf, id=923, 427.5975pt x 285.065pt>
 File: ./Imagenes/ral-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ral-eps-converted-to.pdf>
@@ -3437,7 +3437,7 @@ verted-to.pdf ./Imagenes/RMcorte.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/RMcorte-eps-converted-to.pdf, id=923, 1778.645pt x 996.72375pt>
+<./Imagenes/RMcorte-eps-converted-to.pdf, id=926, 1778.645pt x 996.72375pt>
 File: ./Imagenes/RMcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/RMcorte-eps-converted-to.pdf>
@@ -3455,7 +3455,7 @@ verted-to.pdf ./Imagenes/LRcorte.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/LRcorte-eps-converted-to.pdf, id=924, 1778.645pt x 854.19125pt>
+<./Imagenes/LRcorte-eps-converted-to.pdf, id=927, 1778.645pt x 854.19125pt>
 File: ./Imagenes/LRcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/LRcorte-eps-converted-to.pdf>
@@ -3473,7 +3473,7 @@ verted-to.pdf ./Imagenes/AGcorte.eps>
 (epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/AGcorte-eps-converted-to.pdf, id=925, 427.5975pt x 205.76875pt>
+<./Imagenes/AGcorte-eps-converted-to.pdf, id=928, 427.5975pt x 205.76875pt>
 File: ./Imagenes/AGcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/AGcorte-eps-converted-to.pdf>
@@ -3550,7 +3550,7 @@ nverted-to.pdf ./Imagenes/ralcorte.eps>
 (epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/ralcorte-eps-converted-to.pdf, id=943, 1778.645pt x 854.19125pt>
+<./Imagenes/ralcorte-eps-converted-to.pdf, id=947, 1778.645pt x 854.19125pt>
 File: ./Imagenes/ralcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ralcorte-eps-converted-to.pdf>
@@ -3651,7 +3651,7 @@ erted-to.pdf ./Imagenes/IAE_RM.eps>
 (epstopdf)             \includegraphics on input line 167.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/IAE_RM-eps-converted-to.pdf, id=970, 427.5975pt x 164.615pt>
+<./Imagenes/IAE_RM-eps-converted-to.pdf, id=973, 427.5975pt x 164.615pt>
 File: ./Imagenes/IAE_RM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/IAE_RM-eps-converted-to.pdf>
@@ -3669,7 +3669,7 @@ erted-to.pdf ./Imagenes/IAE_LR.eps>
 (epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/IAE_LR-eps-converted-to.pdf, id=971, 427.5975pt x 164.615pt>
+<./Imagenes/IAE_LR-eps-converted-to.pdf, id=974, 427.5975pt x 164.615pt>
 File: ./Imagenes/IAE_LR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/IAE_LR-eps-converted-to.pdf>
@@ -3687,7 +3687,7 @@ erted-to.pdf ./Imagenes/IAE_AG.eps>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/IAE_AG-eps-converted-to.pdf, id=972, 427.5975pt x 192.72pt>
+<./Imagenes/IAE_AG-eps-converted-to.pdf, id=975, 427.5975pt x 192.72pt>
 File: ./Imagenes/IAE_AG-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/IAE_AG-eps-converted-to.pdf>
@@ -3780,7 +3780,7 @@ f>
 (epstopdf)             \includegraphics on input line 206.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/ContinuumR2-eps-converted-to.pdf, id=997, 427.5975pt x 220.825pt>
+<./Imagenes/ContinuumR2-eps-converted-to.pdf, id=1000, 427.5975pt x 220.825pt>
 File: ./Imagenes/ContinuumR2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ContinuumR2-eps-converted-to.pdf>
@@ -3946,34 +3946,34 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 146.
  [52]
-LaTeX Info: Redefining \. on input line 222.
-LaTeX Info: Redefining \% on input line 222.
-LaTeX Info: Redefining \. on input line 222.
-LaTeX Info: Redefining \% on input line 222.
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
  [53])
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 90.
@@ -4033,10 +4033,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 12782 strings out of 494966
- 182545 string characters out of 6179558
- 297269 words of memory out of 5000000
- 15409 multiletter control sequences out of 15000+600000
+ 12788 strings out of 494966
+ 182696 string characters out of 6179558
+ 297303 words of memory out of 5000000
+ 15414 multiletter control sequences out of 15000+600000
  74607 words of font info for 88 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  46i,12n,47p,890b,1930s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4051,10 +4051,10 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TFG.pdf (70 pages, 5445328 bytes).
+Output written on TFG.pdf (70 pages, 5445670 bytes).
 PDF statistics:
- 1150 PDF objects out of 1200 (max. 8388607)
- 982 compressed objects within 10 object streams
- 307 named destinations out of 1000 (max. 500000)
+ 1153 PDF objects out of 1200 (max. 8388607)
+ 985 compressed objects within 10 object streams
+ 308 named destinations out of 1000 (max. 500000)
  505 words of extra memory for PDF output out of 10000 (max. 10000000)
 
