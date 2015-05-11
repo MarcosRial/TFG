@@ -1,4 +1,12 @@
 # TFG
-Trabajo Fin de Grado
+Universidade de Santiago de Compostela.
+-----
+Escuela Politécnica Superior de Lugo.
+Grado en Ingeniería en Geomática y Topografía.
 
-Archivos de LaTeX y funciones de R correspondientes al TFG.
+ANÁLISIS DE SEPARABILIDAD ESPECTRAL DE ESPECIES DE MANGLE EN EL GOLFO DE FONSECA. APLICACIÓN A LA CLASIFICACIÓN DE IMÁGENES LANDSAT.
+Trabajo Fin de Grado. MARCOS RIAL DOCAMPO.
+
+Tutorizado por: Eduardo Corbelle Rico y Rafael Enrique Corrales Andino.
+
+Repositorio que contiene los archivos de LaTeX y funciones de R correspondientes al TFG.
