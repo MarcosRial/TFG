@@ -353,8 +353,9 @@ De hacerlo en GRASS, el comando sería \textit{r.patch}, con la salvedad de que 
 
 \begin{center}
 \begin{boxedverbatim}
-	r.patch image1=LC80180512014279LGN00_TOAR_B1@PERMANENT
-	image2=LC80170512014320LGN00_TOAR_B1@PERMANENT
+	r.patch input=LC80180512014327LGN00_sr_band1@TFG,
+	              LC80170512014352LGN00_sr_band1@TFG 
+	output=Mosaico_B1
 \end{boxedverbatim}
 \end{center}
 
@@ -414,6 +415,9 @@ Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más pr
 	\label{fig:recorte}
 \end{figure}
 
+El siguiente paso es exportar estas imágenes recortadas a GeoTIFF mediante el comando \textit{r.out.gdal}.
+
 \subsubsection{Filtro de media}
+
 
 \section{Estudio radiométrico}
