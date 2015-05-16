@@ -46,8 +46,8 @@
 \contentsline {subsubsection}{Transformaci\IeC {\'o}n a reflectancias}{36}{section*.73}
 \contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{36}{section*.74}
 \contentsline {subsubsection}{Recorte de la imagen}{38}{section*.77}
-\contentsline {subsubsection}{Filtro de media}{39}{section*.80}
-\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{39}{section.2.6}
+\contentsline {subsubsection}{Filtro de paso bajo}{39}{section*.80}
+\contentsline {section}{\numberline {2.6}Estudio radiom\IeC {\'e}trico}{40}{section.2.6}
 \contentsline {chapter}{\numberline {3}Resultados}{41}{chapter.3}
 \contentsline {section}{\numberline {3.1}Comprobaci\IeC {\'o}n}{41}{section.3.1}
 \contentsline {section}{\numberline {3.2}Primeros resultados}{42}{section.3.2}

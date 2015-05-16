@@ -287,10 +287,10 @@ donde:
 \subsection{Tratamientos previos}
 Como se decía en el apartado anterior, la geometría de las imágenes ya está corregida. Pero es necesario realizar algunos procedimientos antes de unirlas y recortarlas finalmente para que se adapten a la zona de estudio y sea más cómodo trabajar con ellas. Estos procedimientos son el tratamiento de los valores nulos y la transformación de los \ac{ND} en reflectancias.\Sep
 
-Lo primero que se debe hacer en GRASS es crear la localización de nuestro proyecto y añadir las imágenes al directorio de mapas. Los datos de la localización se establecen gracias a la lectura por parte de GRASS de la configuración de proyección y datum de un archivo de datos georreferenciado, es decir, de cualquier imagen de Landsat del trabajo.
+Lo primero que se debe hacer en GRASS es crear la localización \textit{(location)} de nuestro proyecto y añadir las imágenes al directorio de mapas \textit{(mapset)}. Los datos de la localización se establecen gracias a la lectura por parte de GRASS de la configuración de proyección y datum de un archivo de datos georreferenciado, es decir, de cualquier imagen de Landsat del trabajo. Las imágenes se añadirán al \textit{mapset} con el comando \textit{``r.in.gdal''}.
 
 \subsubsection{Valores nulos}
-El tratamiento de los valores nulos se lleva a cabo mediante el comando ``r.null'' como sigue:
+El tratamiento de los valores nulos se lleva a cabo mediante el comando \textit{``r.null''} como sigue:
 
 \begin{center}
 \begin{boxedverbatim}
@@ -298,10 +298,12 @@ El tratamiento de los valores nulos se lleva a cabo mediante el comando ``r.null
 \end{boxedverbatim}
 \end{center}
 
-donde \textit{``map''} corresponde a la banda a tratar seguido por el \textit{mapset}, \textit{``setnull''} indica el valor de los elementos nulos y \textit{``null''} indica el nuevo valor de estos elementos. Se elige un valor de -9999 para evitar posibles errores de realizarse, por ejemplo un \ac{NDVI} que trabaja con valores de píxel de [-1,1].
+donde \textit{``map''} corresponde a la banda a tratar seguido por el \textit{mapset}, \textit{``setnull''} indica el valor de los elementos nulos y \textit{``null''} indica el nuevo valor de estos elementos. Se elige un valor de -9999 para evitar posibles errores de realizarse, por ejemplo un \ac{NDVI} que trabaja con valores de píxel de [-1,1].\Sep
+
+Este no es un procedimiento obligatorio aunque recomendable ya que los geoprocesos aplicados siguientes, como el mosaico de imágenes, ya implican un tratamiento de valores nulos.
 
 \subsubsection{Transformación a reflectancias}
-Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a los coeficientes radiométricos provistos en el archivo .txt que acompaña a las imágenes. Esta transformación se hará con el comando i.landsat.toar como sigue:
+Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a los coeficientes radiométricos provistos en el archivo .txt que acompaña a las imágenes. Esta transformación se hará con el comando \textit{``i.landsat.toar''} como sigue:
 \begin{center}
 \begin{boxedverbatim}
 	i.landsat.toar
@@ -415,9 +417,29 @@ Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más pr
 	\label{fig:recorte}
 \end{figure}
 
-El siguiente paso es exportar estas imágenes recortadas a GeoTIFF mediante el comando \textit{r.out.gdal}.
+El siguiente paso es exportar estas imágenes recortadas a formato GeoTIFF mediante el comando \textit{r.out.gdal}.
 
-\subsubsection{Filtro de media}
+\subsubsection{Filtro de paso bajo}
+La aplicación de un filtro de medio a la imagen Landsat de la zona de estudio permite eliminar ruido y disminuir contrastes \citep{aldalur2002}. Antes de aplicar el filtro conviene realizar una copia de seguridad de la imagen debido a que se van a modificar los valores de reflectividad originales.\Sep
 
+Se aplica a la imagen la siguiente función en cada píxel:
+
+\begin{equation}
+	g(x,y)=\frac{1}{9} \cdot \left(\begin{array}{ccc}
+								   	1&1&1\\
+								   	1&1&1\\
+							 	   	1&1&1
+								   \end{array}
+							 \right)
+\end{equation}
+donde $g(x,y)$ es el nuevo valor del píxel localizado en las coordenadas \textit{x} e \textit{y} de la imagen y la matriz refleja la dimensión 3x3 del filtro, afectando así a $g(x,y)$ solamente los valores de los píxeles vecinos.\Sep
+
+La operación es realizada en GRASS mediante el comando siguiente:
+
+\begin{center}
+\begin{boxedverbatim}
+	r.neighbors input=L8GF_SRB1@TFG output=L8GF_SRFB1 size=3
+\end{boxedverbatim}
+\end{center}
 
 \section{Estudio radiométrico}
