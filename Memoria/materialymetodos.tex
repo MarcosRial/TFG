@@ -19,6 +19,27 @@ De todas las especies de mangle existentes en el Golfo de Fonseca se ha decidido
 	\item Mangle Prieto. Nombre científico \textit{Avicennia germinans} \citep{JimenezAvicennia}.
 \end{itemize}
 
+\section{Estudio radiométrico}
+En este caso, obtendremos del estudio radiométrico firmas espectrales del tipo monobanda. Estas se caracterizan porque la respuesta de los objetos analizados es contenida en un solo canal continuo de datos \citep{andinofase1}.\Sep
+
+El material vegetal utilizado en el estudio fueron muestras recientes de hojas tomadas de árboles de cada especie como se describe en la metodología de obtención de firmas espectrales de \cite{andinofase2} y como se puede apreciar en las figuras \ref{fig:mangle_recolectado} y \ref{fig:curva_espectral}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Mangle_recolectado.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Mangle recolectado]{Hojas de las especies de mangle a analizar. Fotografía de Rafael Corrales.}
+	\label{fig:mangle_recolectado}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Curva_espectral.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Obtención de firmas]{Momento de la obtención de las firmas espectrales de una especie. Fotografía de Rafael Corrales.}
+	\label{fig:curva_espectral}
+\end{figure}
+
 \section{Datos}
 \label{sec:datos}
 %\markboth{MATERIAL Y MÉTODOS}{DATOS}
@@ -89,7 +110,7 @@ Se utilizarán para ello diversas funciones creadas en el lenguaje de programaci
 Con el fin de cuantificar de alguna forma la similitud entre los espectros de dos cubiertas a priori diferentes, podemos aplicar lo que se llama \ac{IAE} \citep{chuvieco2002teledeteccion}, que viene dado por la siguiente expresión:
 
 \begin{equation} \label{eq:IAE}
-	IAE = \frac{\sum_{k=1,m}(CB_{i,k} - CB_{j,k})^{2}}{m}
+	IAE = \frac{\displaystyle\sum_{k=1}^m(CB_{i,k} - CB_{j,k})^{2}}{m}
 \end{equation}\Sep
 
 Siendo $CB_{i,k}$ la codificación binaria del espectro \textit{i} para cada banda \textit{k}, $CB_{j,k}$ la codificación binaria del espectro \textit{j} para cada banda \textit{k} y \textit{m} el número de bandas.\Sep
@@ -226,14 +247,13 @@ Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen 
 \begin{table}[ht]
 	\centering
 	\caption[Caracerísticas de las imágenes Landsat]{Características de las imágenes Landsat obtenidas (figura \ref{fig:imagenesLandsat}).}
-	\begin{tabular}{|c|c|c|c|c|c|c|c|}
-	\hline
-	IMAGEN & PATH & ROW & FECHA & WEST & EAST & NORTH & SOUTH \\
-	\hline
+	\begin{tabular}{@{}cccccccc@{}}
+	\toprule[0.4mm]
+	Imagen & Path & Row & Fecha & West & East & North & South \\
+	\midrule
 	1 (a) & 18 & 51 & 23/11/2014 & -89.105062 & -86.987819 & 14.067713 & 11.946409 \\
-	\hline
 	2 (b) & 17 & 51 & 19/12/2014 & -87.549399 & -85.443030 & 14.062287 & 11.952632 \\
-	\hline
+	\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:imagenes}
 \end{table}
@@ -417,10 +437,8 @@ Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más pr
 	\label{fig:recorte}
 \end{figure}
 
-El siguiente paso es exportar estas imágenes recortadas a formato GeoTIFF mediante el comando \textit{r.out.gdal}.
-
 \subsubsection{Filtro de paso bajo}
-La aplicación de un filtro de medio a la imagen Landsat de la zona de estudio permite eliminar ruido y disminuir contrastes \citep{aldalur2002}. Antes de aplicar el filtro conviene realizar una copia de seguridad de la imagen debido a que se van a modificar los valores de reflectividad originales.\Sep
+La aplicación de un filtro de medio a la imagen Landsat de la zona de estudio permite eliminar ruido y disminuir contrastes \citep{aldalur2002}. Antes de aplicar el filtro conviene realizar una copia de seguridad de la imagen debido a que se van a modificar los valores de reflectividad originales. Para ello se emplea el comando \textit{r.out.gdal} que permite exportar las imágenes a formato GeoTIFF.\Sep
 
 Se aplica a la imagen la siguiente función en cada píxel:
 
@@ -441,5 +459,3 @@ La operación es realizada en GRASS mediante el comando siguiente:
 	r.neighbors input=L8GF_SRB1@TFG output=L8GF_SRFB1 size=3
 \end{boxedverbatim}
 \end{center}
-
-\section{Estudio radiométrico}
