@@ -134,7 +134,7 @@ La primera forma deriva directamente de la reflexión solar (será la empleada e
 \subsection{Espectro Electro-magnético}
 Podemos definir cualquier tipo de energía en función de su longitud de onda, de la que se establecen una serie de bandas en donde la radiación electro-magnética manifiesta un comportamiento similar. Esta organización en bandas se denomina espectro electro-magnético (figura \ref{fig:espectro}). Esta comprende desde longitudes de onda corta, como los rayos gamma ($\gamma$) con menos de $10^{-11} m$, a longitudes de onda mayores de un metro como las ondas de radio.\Sep
 
-\begin{figure}[ht]
+\begin{figure}
 	\centering	
 	\includegraphics[width=0.9\linewidth]{./Imagenes/Espectro.eps}
 	\captionsetup{font={footnotesize,it}}
@@ -144,28 +144,22 @@ Podemos definir cualquier tipo de energía en función de su longitud de onda, d
 
 En el cuadro \ref{tab:bandas} se destacan la serie bandas espectrales más empleadas en teledetección, siendo su denominación y ancho de banda el generalizado.\Sep
 
-\begin{table}[ht]
-	\centering
-	%\captionsetup{font=footnotesize,it}}
+\begin{table}\centering
 	\caption[Bandas espectrales utilizadas en teledetección]{Bandas espectrales utilizadas en teledetección.}
-	\begin{tabular}{|c|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{Banda}} & \textbf{L. de onda} \\
-		\hline	\hline
+	\begin{tabular}{@{}llc@{}}
+		\toprule[0.4mm]
+		\multicolumn{2}{c}{\textbf{Banda}} & \textbf{L. de onda} \\
+		\midrule
 		\multirow{3}{*}{Visible} & Azul & $0.4-0.5{\mu}m$ \\
-		\cline{2-3}
 		& Verde & $0.5-0.6{\mu}m$ \\
-		\cline{2-3}
 		& Rojo & $0.6-0.7{\mu}m$ \\
-		\hline
+		\midrule
 		\multirow{3}{*}{Infrarrojo} & Cercano (IRC) & $0.7-1.2{\mu}m$ \\
-		\cline{2-3}
 		& Medio (IRM) & $1.2-8.0{\mu}m$ \\
-		\cline{2-3}
 		& Térmico (IRT) & $8.0-14.0{\mu}m$ \\
-		\hline
-		\multicolumn{2}{|c|}{Microondas (M)} & $>1mm$\\
-		\hline
+		\midrule
+		\multicolumn{2}{c}{Microondas (M)} & $>1mm$\\
+		\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:bandas}
 \end{table}
@@ -246,7 +240,7 @@ Las firmas o signaturas espectrales (figuras \ref{fig:firma} y \ref{fig:bibliote
 	\item Imagen con la debida resolución espectral.
 \end{itemize}
 
-El medio más sencillo de disponer de firmas espectrales son las bibliotecas espectrales. Las bibliotecas espectrales son colecciones de firmas espectrales, tomadas en condiciones controladas por radiómetros en laboratorio, que sirven de referencia para conocer el comportamiento de una cubierta determinada \citep{andino2011}.
+El medio más sencillo de disponer de firmas espectrales son las bibliotecas espectrales. Las bibliotecas espectrales son colecciones de firmas espectrales, tomadas en condiciones controladas por radiómetros en laboratorio, que sirven de referencia para conocer el comportamiento de una cubierta determinada \citep{andinofase1}.
 
 \begin{figure}
 	\centering	
@@ -287,64 +281,58 @@ Un ejemplo de sensor remoto pasivo de barrido es el \ac{ETM+} montado sobre el s
 
 \begin{table}
 	\centering
-	\caption[Bandas en el sensor TM]{Bandas en el sensor TM del proyecto Landsat.}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		& \multicolumn{3}{|c|}{Landsat 5} \\
-		Bandas & \multicolumn{3}{|c|}{TM} \\ 
-		\cline{2-4}
-		& Nombre & L. onda ($\mu m$) & Resolución (m)\\
-		\hline \hline
-		1 & B & 0.45--0.52 & 30 \\ \hline
-		2 & G & 0.52--0.60 & 30 \\ \hline
-		3 & R & 0.63--0.69 & 30 \\ \hline
-		4 & NIR & 0.76--0.90 & 30 \\ \hline
-		5 & NIR & 1.55--1.75 & 30 \\ \hline
-		6 & TIR & 10.40--12.50 & 120 \\ \hline
-		7 & MIR & 2.08--2.35 & 30 \\ \hline
+	\caption[Bandas en el sensor TM]{Bandas en el sensor TM del proyecto Landsat. Fuente: USGS.}
+	\begin{tabular}{@{}cccc@{}}
+		\toprule[0.4mm]
+		Banda & Nombre & L. onda ($\mu$m) & Resolución (m)\\
+		\midrule
+		1 & B & 0.45--0.52 & 30 \\
+		2 & G & 0.52--0.60 & 30 \\
+		3 & R & 0.63--0.69 & 30 \\
+		4 & NIR & 0.76--0.90 & 30 \\
+		5 & NIR & 1.55--1.75 & 30 \\
+		6 & TIR & 10.40--12.50 & 120 \\
+		7 & MIR & 2.08--2.35 & 30 \\
+		\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:sensoresTM}
 \end{table}
 
 \begin{table}
 	\centering
-	\caption[Bandas en el sensor ETM+]{Bandas en el sensor ETM+ del proyecto Landsat.}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		& \multicolumn{3}{|c|}{Landsat 7} \\
-		Bandas & \multicolumn{3}{|c|}{ETM+} \\ 
-		\cline{2-4}
-		& Nombre & L. onda ($\mu m$) & Resolución (m)\\
-		\hline \hline
-		1 & B & 0.45--0.52 & 30 \\ \hline
-		2 & G & 0.52--0.60 & 30 \\ \hline
-		3 & R & 0.63--0.69 & 30 \\ \hline
-		4 & NIR & 0.77--0.90 & 30 \\ \hline
-		5 & NIR & 1.55--1.75 & 30 \\ \hline
-		6 & TIR & 10.40--12.50 & 60 \\ \hline
-		7 & MIR & 2.08--2.35 & 30 \\ \hline
+	\caption[Bandas en el sensor ETM+]{Bandas en el sensor ETM+ del proyecto Landsat. Fuente: USGS.}
+	\begin{tabular}{@{}cccc@{}}
+		\toprule[0.4mm]
+		Banda & Nombre & L. onda ($\mu$m) & Resolución (m)\\
+		\midrule
+		1 & B & 0.45--0.52 & 30 \\
+		2 & G & 0.52--0.60 & 30 \\
+		3 & R & 0.63--0.69 & 30 \\
+		4 & NIR & 0.77--0.90 & 30 \\
+		5 & NIR & 1.55--1.75 & 30 \\
+		6 & TIR & 10.40--12.50 & 60 \\
+		7 & MIR & 2.08--2.35 & 30 \\
+		\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:sensoresETM}
 \end{table}
 
 \begin{table}
 	\centering
-	\caption[Bandas en el sensor OLI]{Bandas en el sensor OLI del proyecto Landsat 8.}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		& \multicolumn{3}{|c|}{Landsat 8} \\
-		Bandas & \multicolumn{3}{|c|}{OLI} \\ 
-		\cline{2-4}
-		& Nombre & L. onda ($\mu m$) & Resolución (m)\\
-		\hline \hline
-		1 & Coastal & 0.43--0.45 & 30 \\ \hline
-		2 & B & 0.45--0.51 & 30 \\ \hline
-		3 & G & 0.53--0.59 & 30 \\ \hline
-		4 & R & 0.64--0.67 & 30 \\ \hline
-		5 & NIR & 0.85--0.88 & 30 \\ \hline
-		6 & SWIR & 1.57--1.65 & 30 \\ \hline
-		7 & SWIR & 2.11--2.29 & 30 \\ \hline
-		9 & Cirrus & 1.36--1.38 & 30 \\ \hline
+	\caption[Bandas en el sensor OLI]{Bandas en el sensor OLI del proyecto Landsat 8. Fuente: USGS.}
+	\begin{tabular}{@{}cccc@{}}
+		\toprule[0.4mm]
+		Banda & Nombre & L. onda ($\mu$m) & Resolución (m)\\
+		\midrule
+		1 & Coastal & 0.43--0.45 & 30 \\
+		2 & B & 0.45--0.51 & 30 \\
+		3 & G & 0.53--0.59 & 30 \\
+		4 & R & 0.64--0.67 & 30 \\
+		5 & NIR & 0.85--0.88 & 30 \\
+		6 & SWIR & 1.57--1.65 & 30 \\
+		7 & SWIR & 2.11--2.29 & 30 \\
+		9 & Cirrus & 1.36--1.38 & 30 \\
+		\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:sensoresOLI}
 \end{table}
@@ -405,19 +393,16 @@ En el cuadro \ref{tab:resoluciones} se comparan las diferentes resoluciones de l
 \begin{table}[ht]
 	\centering
 	\caption[Resoluciones de varios sensores]{Resoluciones de varios sensores.}
-	\begin{tabular}{|c|c|c|c|c|}
-	\hline
+	\begin{tabular}{@{}ccccc@{}}
+	\toprule[0.4mm]
 	& Landsat 8 & QuickBird & Spot 6 & IKONOS \\
 	& OLI & & HRV & \\
-	\hline
+	\midrule
 	R. Espacial MS (m) & 30--60 & 2.44--2.88 & 6 & 3.2--4 \\
-	\hline
 	R. Espectral (nm) & 450--12500 & 450--900 & 455--890 & 445--853 \\
-	\hline
 	R. Radiométrica (bits) & 8 & 11 & 12 & 11 \\
-	\hline
 	R. Temporal (días) & 16 & 1--3 & 1--3 & 3 \\
-	\hline
+	\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:resoluciones}
 \end{table}
@@ -452,11 +437,11 @@ Las correcciones radiométricas son aquellas técnicas que modifican los \ac{ND}
 \subsubsection{Correcciones geométricas}
 Este tipo de correcciones incluyen los cambios en la posición que los píxeles ocupan en la imagen digital. Son correciones basadas en funciones numéricas que se aplican sobre la geometría de la imagen y la modifican.\Sep
 
-\begin{equation}
-	f(c')=f_{1}(c,l) ; f(x,y)
-	f(l')=f_{2}(c,l) ; f(x,y)
+\begin{eqnarray}
+	f(c') & = & f_{1}(c,l) ; f(x,y) \\
+	f(l') & = & f_{2}(c,l) ; f(x,y)
 	\label{eq:correcgeom}
-\end{equation}\Sep
+\end{eqnarray}\Sep
 
 Las coordenadas columna y línea ($c'$ y $l'$) de la imagen corregida son función de las coordenadas columna y línea de la imagen de entrada ($c$ y $l$) o de las coordenadas del mapa al que se pretende superponer la imagen ($x$ e $y$). Se trata de encontrar una relación que convierta los \ac{ND} de la imagen a su posición cartográfica en la proyección requerida (en este caso a la \ac{UTM}). Esto permite, entre otras cosas, hacer un mosaico con más imágenes para ampliar la cobertura de la imagen.\Sep
 
