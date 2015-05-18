@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TFG.aux
 The style file: authordate1.bst
 Database file #1: bibliografia.bib
-You've used 39 entries,
+Warning--I didn't find a database entry for "andino2011"
+You've used 40 entries,
             2441 wiz_defined-function locations,
-            798 strings with 11561 characters,
-and the built_in function-call counts, 14605 in all, are:
-= -- 1466
-> -- 504
-< -- 132
-+ -- 147
-- -- 142
-* -- 1117
-:= -- 2438
-add.period$ -- 162
-call.type$ -- 39
-change.case$ -- 246
+            801 strings with 11693 characters,
+and the built_in function-call counts, 14919 in all, are:
+= -- 1496
+> -- 512
+< -- 135
++ -- 150
+- -- 144
+* -- 1142
+:= -- 2492
+add.period$ -- 166
+call.type$ -- 40
+change.case$ -- 252
 chr.to.int$ -- 38
-cite$ -- 39
-duplicate$ -- 583
-empty$ -- 1053
-format.name$ -- 188
-if$ -- 3011
-int.to.chr$ -- 2
+cite$ -- 40
+duplicate$ -- 598
+empty$ -- 1077
+format.name$ -- 191
+if$ -- 3073
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 37
-newline$ -- 199
-num.names$ -- 117
-pop$ -- 230
+missing$ -- 38
+newline$ -- 204
+num.names$ -- 120
+pop$ -- 234
 preamble$ -- 1
-purify$ -- 281
+purify$ -- 288
 quote$ -- 0
-skip$ -- 608
+skip$ -- 623
 stack$ -- 0
-substring$ -- 771
-swap$ -- 149
+substring$ -- 782
+swap$ -- 152
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 294
+type$ -- 302
 warning$ -- 0
-while$ -- 111
+while$ -- 113
 width$ -- 0
-write$ -- 493
+write$ -- 506
+(There was 1 warning)

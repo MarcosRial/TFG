@@ -19,20 +19,20 @@
 \BOOKMARK [2][-]{subsection.1.4.8}{Clasificaci\363n de im\341genes}{section.1.4}% 19
 \BOOKMARK [0][-]{chapter.2}{Material y m\351todos}{}% 20
 \BOOKMARK [1][-]{section.2.1}{Especies}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.2}{Datos}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.3}{Software}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.3.1}{R}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.2}{GRASS GIS}{section.2.3}% 25
-\BOOKMARK [2][-]{subsection.2.3.3}{LaTeX}{section.2.3}% 26
-\BOOKMARK [1][-]{section.2.4}{T\351cnicas de an\341lisis espectral}{chapter.2}% 27
-\BOOKMARK [2][-]{subsection.2.4.1}{\315ndice de acuerdo espectral}{section.2.4}% 28
-\BOOKMARK [2][-]{subsection.2.4.2}{Continuum removal}{section.2.4}% 29
-\BOOKMARK [2][-]{subsection.2.4.3}{Clasificaci\363n angular}{section.2.4}% 30
-\BOOKMARK [1][-]{section.2.5}{Im\341genes de sat\351lite}{chapter.2}% 31
-\BOOKMARK [2][-]{subsection.2.5.1}{Landsat 8}{section.2.5}% 32
-\BOOKMARK [2][-]{subsection.2.5.2}{Obtenci\363n de las im\341genes}{section.2.5}% 33
-\BOOKMARK [2][-]{subsection.2.5.3}{Tratamientos previos}{section.2.5}% 34
-\BOOKMARK [1][-]{section.2.6}{Estudio radiom\351trico}{chapter.2}% 35
+\BOOKMARK [1][-]{section.2.2}{Estudio radiom\351trico}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.3}{Datos}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.4}{Software}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.4.1}{R}{section.2.4}% 25
+\BOOKMARK [2][-]{subsection.2.4.2}{GRASS GIS}{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.3}{LaTeX}{section.2.4}% 27
+\BOOKMARK [1][-]{section.2.5}{T\351cnicas de an\341lisis espectral}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.5.1}{\315ndice de acuerdo espectral}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.2}{Continuum removal}{section.2.5}% 30
+\BOOKMARK [2][-]{subsection.2.5.3}{Clasificaci\363n angular}{section.2.5}% 31
+\BOOKMARK [1][-]{section.2.6}{Im\341genes de sat\351lite}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.6.1}{Landsat 8}{section.2.6}% 33
+\BOOKMARK [2][-]{subsection.2.6.2}{Obtenci\363n de las im\341genes}{section.2.6}% 34
+\BOOKMARK [2][-]{subsection.2.6.3}{Tratamientos previos}{section.2.6}% 35
 \BOOKMARK [0][-]{chapter.3}{Resultados}{}% 36
 \BOOKMARK [1][-]{section.3.1}{Comprobaci\363n}{chapter.3}% 37
 \BOOKMARK [1][-]{section.3.2}{Primeros resultados}{chapter.3}% 38
@@ -41,4 +41,4 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Continuum Removal}{section.3.3}% 41
 \BOOKMARK [2][-]{subsection.3.3.3}{Clasificaci\363n angular}{section.3.3}% 42
 \BOOKMARK [0][-]{chapter.4}{Conclusiones}{}% 43
-\BOOKMARK [0][-]{chapter*.94}{Bibliograf\355a}{}% 44
+\BOOKMARK [0][-]{chapter*.96}{Bibliograf\355a}{}% 44
