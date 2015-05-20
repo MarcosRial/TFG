@@ -9,13 +9,7 @@
 \chapter{Introducción}
 \label{cap:introduccion}
 
-%\minitoc
-
-
-%\noindent\makebox[\linewidth]{\rule{\linewidth}{0.4pt}}
-
 \section{Marco Global}
-%\markboth{INTRODUCCIÓN}{MARCO GLOBAL}
 Antes de comenzar conviene diferenciar los términos mangle y manglar. Comúnmente se conoce como mangle a la especie forestal (árbol o arbusto) que crece en el ecosistema del manglar o también llamados bosques de mangle (figura \ref{fig:mangle}). Por lo tanto, en este documento se hablará de especies de mangle y se recurrirá al manglar o bosque de mangle para determinar la zona en la que viven estas especies.\Sep
 
 \begin{figure}
@@ -42,7 +36,7 @@ Centroamérica posee muchos kilómetros de costa en relación a su área territo
 
 El manglar es un ecosistema delicado y dependiente de los procesos que ocurren fuera de sus fronteras, como pueden ser cambios en las escorrentías de los ríos que afectan a estas zonas, alteraciones en la calidad del agua, provocadas por ejemplo por contaminantes arrastrados por la deriva, o porcentaje de salinidad de las aguas. Esto convierte a mareas, ríos y corrientes litorales como principales agentes alteradores del ecosistema manglar, pero también existe una componente humana importante que afecta directamente.\Sep
 
-Los bosques de mangle de esta región están compuestos por bosque de mangle alto y bosque de mangle bajo. El bosque alto es el situado sobre la línea de costa y su altura varía entre los 5 y los 10 metros, mientras que el bosque bajo se sitúa contiguo al alto en zonas más cercanas a tierra. En el bosque de mangle alto conviven las especies \textit{Rhizophora mangle} y \textit{Laguncularia racemosa}. En el bosque de mangle bajo conviven mayormente las especies \textit{Aviccennia germinans} y \textit{Conocarpus erectus}. Estas especies, excepto la última, serán descritas más adelante en el capítulo de Materiales y Métodos (\ref{cap:materialymetodos}).\Sep
+Los bosques de mangle de esta región están compuestos por bosque de mangle alto y bosque de mangle bajo. El bosque alto es el situado sobre la línea de costa y su altura varía entre los 5 y los 10 metros, mientras que el bosque bajo se sitúa contiguo al alto en zonas más cercanas a tierra. En el bosque de mangle alto conviven las especies \textit{Rhizophora mangle} y \textit{Laguncularia racemosa}. En el bosque de mangle bajo conviven mayormente las especies \textit{Avicennia germinans} y \textit{Conocarpus erectus}. Estas especies, excepto la última, serán descritas más adelante en el capítulo de Materiales y Métodos (\ref{cap:materialymetodos}).\Sep
 
 En cambio, el manglar es un ecosistema gravemente amenazado. Como se mencionaba, el impacto ambiental, directo e indirecto, no solo procede de la creación de infraestructuras, expansión urbana y desarrollo de industria petrolera sino también de la reconversión en zonas de cría de camarón (figura \ref{fig:camaroneras}) o agricultura costera y salinas (figura \ref{fig:salinas}) que deterioran la calidad del agua. Otras causas del deterioro a escala global de los manglares serían la escasa legislación de la propiedad de recursos naturales, los cambios de actividad de las comunidades costeras, las malas decisiones políticas, la ausencia de planes de desarrollo costero, la depreciación del valor ecológico, la explotación no sostenible o el desconocimiento de las consecuencias \citep{yanez1994}.\Sep
 
@@ -67,10 +61,16 @@ El empleo de sensores remotos para proyectos relacionados con el medioambiete y 
 \end{figure}
 
 \section{Objetivos}
-%\markboth{INTRODUCCIÓN}{OBJETIVOS}
-
 \subsection{Objetivo general}
 El objetivo general del trabajo es el de evaluar la posibilidad de emplear imágenes obtenidas con sensores remotos para diferenciar las distintas especies de mangle que se encuentran en el Golfo de Fonseca.\Sep
+
+De todas las especies de mangle existentes en el Golfo de Fonseca se ha decidido tomar tres para este estudio por ser las más predominantes. Son las siguientes:
+
+\begin{itemize}
+	\item Mangle Rojo. Nombre científico \textit{Rhizophora mangle} \citep{JimenezRhizophora}.
+	\item Mangle Blanco. Nombre científico \textit{Laguncularia racemosa} \citep{JimenezLaguncularia}.
+	\item Mangle Prieto. Nombre científico \textit{Avicennia germinans} \citep{JimenezAvicennia}.
+\end{itemize}
 
 La hipótesis desde la que se parte es que la respuesta espectral de las diferentes especies de mangle sea lo suficientemente diferente para que este objetivo se cumpla. Esto conduce a la realización de unos objetivos específicos en los que se busca concretar más en el trabajo.
 
@@ -85,9 +85,7 @@ A esto se le añade el propósito de que, a lo largo de todas las fases del pres
 
 Este trabajo tiene como referencia el proyecto de \ac{ISF} en colaboración con la \ac{USC} que tiene como título: ``Investigación y sensibilización sobre la problemática de la actividad acuicola insostenible y promoción de alternativas artesanales basadas en la economía social: puentes entre Golfo de Fonseca y Galicia'' \citep{laborate2014}.
 
-\section{Zona de estudio}
-\label{sec:zonaestudio}
-%\markboth{INTRODUCCIÓN}{ZONA DE ESTUDIO}
+\section{Zona de estudio}\label{sec:zonaestudio}
 El área de estudio es el entrante natural del Golfo de Fonseca (figuras \ref{fig:localizacion} y \ref{fig:elevacion}) que abarca la costa pacífica de El Salvador, Honduras y Nicaragua situado entre las latitudes 13,595824ºN – 12,757449ºN y las longitudes 87,994615ºW – 87,115709ºW.\Sep
 
 \begin{figure}
@@ -112,10 +110,7 @@ El Golfo de Fonseca, caracterizado por tener unas aguas poco profundas, que osci
 
 Cabe destacar que en 1998 el huracán Mitch devastó una extensa superficie del ecosistema del Golfo de Fonseca causando incontables pérdidas humanas y económicas y cubriendo de lodo las zonas de manglar llegando a provocar un ligero cambio en la línea de costa debido a las crecidas de los ríos y a las amplias mareas \citep{mexico1999honduras}.
 
-\section{Bases teóricas de teledetección}
-\label{sec:bases}
-%\markboth{INTRODUCCIÓN}{BASES TEÓRICAS}
-
+\section{Bases teóricas de teledetección} \label{sec:bases}
 \subsection{Fundamentos} \label{subsec:fundamentos}
 La teledetección es la técnica que nos permite obtener información de los objetos situados en la superficie de la Tierra realizando una observación remota \citep{Curran1991Longman} \citep{chuvieco2002teledeteccion} \citep{schowengerdt2006}. Para que esta observación sea posible debe haber algún tipo de nexo entre el objeto y el sistema sensor u observador. De esta afirmación se extraen los tres elementos básicos de la teledetección: el objeto observado, el sensor y el el flujo energético que los relaciona.\Sep
 
@@ -443,7 +438,7 @@ Este tipo de correcciones incluyen los cambios en la posición que los píxeles 
 	\label{eq:correcgeom}
 \end{eqnarray}\Sep
 
-Las coordenadas columna y línea ($c'$ y $l'$) de la imagen corregida son función de las coordenadas columna y línea de la imagen de entrada ($c$ y $l$) o de las coordenadas del mapa al que se pretende superponer la imagen ($x$ e $y$). Se trata de encontrar una relación que convierta los \ac{ND} de la imagen a su posición cartográfica en la proyección requerida (en este caso a la \ac{UTM}). Esto permite, entre otras cosas, hacer un mosaico con más imágenes para ampliar la cobertura de la imagen.\Sep
+Las coordenadas columna y línea $c'$ y $l'$ de la imagen corregida son función de las coordenadas columna y línea de la imagen de entrada $c$ y $l$ o de las coordenadas del mapa al que se pretende superponer la imagen $x$ e $y$. Se trata de encontrar una relación que convierta los \ac{ND} de la imagen a su posición cartográfica en la proyección requerida (en este caso a la \ac{UTM}). Esto permite, entre otras cosas, hacer un mosaico con más imágenes para ampliar la cobertura de la imagen.\Sep
 
 Hay dos procedimientos de corrección geométrica que se pueden aplicar a una imagen que se enumeran a continuación:
 

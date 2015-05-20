@@ -9,16 +9,6 @@
 \chapter{Material y métodos}
 \label{cap:materialymetodos}
 
-%\minitoc
-\section{Especies}
-De todas las especies de mangle existentes en el Golfo de Fonseca se ha decidido tomar tres para este estudio por ser las más predominantes. Son las siguientes:
-
-\begin{itemize}
-	\item Mangle Rojo. Nombre científico \textit{Rhizophora mangle} \citep{JimenezRhizophora}.
-	\item Mangle Blanco. Nombre científico \textit{Laguncularia racemosa} \citep{JimenezLaguncularia}.
-	\item Mangle Prieto. Nombre científico \textit{Avicennia germinans} \citep{JimenezAvicennia}.
-\end{itemize}
-
 \section{Estudio radiométrico}
 En este caso, obtendremos del estudio radiométrico firmas espectrales del tipo monobanda. Estas se caracterizan porque la respuesta de los objetos analizados es contenida en un solo canal continuo de datos \citep{andinofase1}.\Sep
 
@@ -40,25 +30,14 @@ El material vegetal utilizado en el estudio fueron muestras recientes de hojas t
 	\label{fig:curva_espectral}
 \end{figure}
 
-\section{Datos}
-\label{sec:datos}
-%\markboth{MATERIAL Y MÉTODOS}{DATOS}
-Los datos obtenidos por el profesor Rafael Enrique Corrales con el espectro-radiómetro de campo se presentan en cuatro archivos de extensión .dat uno para cada especie más uno del conjunto que no se utilizará. Al abrir estos archivos en un editor de texto se puede observar como están compuestos por 
-cuatro columnas de datos:
-
-\begin{enumerate}
-	\item Nombre. Columna opcional, en este caso será ``Subset 1''.
-	\item Identificador compuesto por números enteros.
-	\item Longitud de onda.
-	\item Reflectividad.
-\end{enumerate}
+\subsection{Datos}\label{subsec:datos}
+Los datos obtenidos por el profesor Rafael Enrique Corrales con el espectro-radiómetro de campo se presentan en cuatro archivos de extensión .dat de texto simple, uno para cada especie más uno del conjunto que no se utilizará.\Sep
 
 La característica principal de estos datos es que abarcan un amplio rango espectral de forma continuada, similar a lo que ocurre en la obtención de una imagen, pero en este caso los datos serían solamente de un punto, no de una superficie extensa.\Sep
 
-%El rango espectral dado por el espectro-radiómetro comprende de 325 - 1075 nm que equivaldría a las cinco primeras bandas del \ac{OLI} de Landsat, es decir, aerosol, azúl, verde, rojo e \ac{IRC}. Teniendo en cuenta la realización de un corte de colas para que los datos sean lo más fiables posible.
+El rango espectral captado por el espectro-radiómetro comprende de 324.5 - 1075,5 nm almacenando la reflectividad media para intervalos de onda de 1nm.
 
 \section{Software} \label{sec:software}
-%\markboth{MATERIALES Y MÉTODOS}{SOFTWARE}
 El uso de software libre es un recurso importante para realizar trabajos sobre recursos medioambientales principalmente por, entre otras cosas \citep{MatellanOliveira2004}:
 
 \begin{enumerate}
@@ -68,43 +47,31 @@ El uso de software libre es un recurso importante para realizar trabajos sobre r
 	\item Se centra en proporcionar un servicio y no un producto.
 \end{enumerate}
 
-Este \ac{TFG} se ha hecho íntegramente con software libre, utilizando los programas seguidamente mencionados sobre un sistema operativo GNU/Linux, en concreto sobre la distribución Ubuntu 14.04.\Sep
+Este \ac{TFG} se ha hecho íntegramente con software libre distribuido bajo licencia GNU GPL salvo que se indique lo contrario, utilizando los programas seguidamente mencionados sobre un sistema operativo GNU/Linux, en concreto sobre la distribución Ubuntu 14.04.\Sep
 
-Adicionalmente se ha hecho un control de versiones remoto con el software Git (libre bajo licencia GNU GPL) que mediante repositorios, permite gestionar un historial de ficheros y carpetas, recordando y organizando el contenido en cada momento documentando los cambios que ha sufrido y quién y por qué los ha realizado. Permite, por tanto, recuperar el documento a versiones anteriores o revisar el proceso de desarrollo del mismo funcionando como respaldo. De esta forma se permite el acceso a los archivos por la plataforma web GitHub de forma pública. La interfaz gráfica utilizada ha sido SmartGit \citep{GmbH2015} libre y de uso gratuito para fines no comerciales y donde se pueden hacer cómodamente la mayoría de las operaciones de control de cambios.\Sep
-
-Otra opción en lo que a control de versiones se refiere sería la del software \ac{SVN} \citep{Latex2011} pero este solamente permite hacer un control local de los cambios.
+Adicionalmente se ha hecho un control de versiones remoto con el software Git\footnote{Otra opción en lo que a control de versiones se refiere sería la del software \ac{SVN} \citep{Latex2011} pero este solamente permite hacer un control local de los cambios.} que, mediante repositorios, permite gestionar un historial de ficheros y carpetas recordando y organizando el contenido en cada momento documentando los cambios que ha sufrido y quién y por qué los ha realizado. Permite, por tanto, recuperar el documento a versiones anteriores o revisar el proceso de desarrollo del mismo funcionando como respaldo. De esta forma se permite el acceso a los archivos por la plataforma web GitHub de forma pública\footnote{El código de este trabajo es accesible desde la página web \url{https://github.com/MarcosRial/TFG}}. La interfaz gráfica utilizada ha sido SmartGit \citep{GmbH2015} libre y de uso gratuito para fines no comerciales y donde se pueden hacer cómodamente la mayoría de las operaciones de control de cambios.\Sep
 
 \subsection{R}
-Para el tratamiento de los datos se ha utilizado el software estadístico de uso libre CRAN, más conocido como R \citep{R2013}. R se distribuye bajo licencia GNU GPL y puede definirse como un software de análisis estadísticos, como un generador de gráficos o como un lenguaje de programación. Si bien es un software pensado para su uso sobre interfaces de código, para la realización de este \ac{TFG} se ha utilizado la interfaz gráfica del software libre RStudio, bajo licencia AGPL, con el fin de hacer que su uso resulte más amigable.\Sep
+Para el tratamiento de los datos se ha utilizado el software estadístico de uso libre R Project for Statistical Computing, más conocido como R \citep{R2013} en su versión 3.2.0. R puede definirse como un software de análisis estadísticos, como un generador de gráficos o como un lenguaje de programación. Si bien es un software pensado para su uso sobre interfaces de código, para la realización de este \ac{TFG} se ha utilizado la interfaz gráfica del software libre RStudio, bajo licencia AGPL, con el fin de hacer que su uso resulte más amigable.\Sep
 
-R, como la mayoría de software que funciona sobre sistema operativo GNU/Linux, se compone de módulos o paquetes que se incorporan a una base del programa, llamado \textit{R core}, para extender sus posibilidades y funciones. Actualmente el número de paquetes de R existentes ronda los 4000, desarrollados por usuarios y programadores de todo el mundo. Esta cifra se incrementa ya que periódicamente se suben paquetes a \ac{CRAN}.\Sep
+R, como la mayoría de software que funciona sobre sistema operativo GNU/Linux, se compone de módulos o paquetes que se incorporan a una base del programa, llamado \textit{R core}, para extender sus posibilidades y funciones. Actualmente el número de paquetes de R existentes ronda los 4000, desarrollados por usuarios y programadores de todo el mundo. Esta cifra se incrementa ya que periódicamente se suben paquetes a la red de repositorios oficial \ac{CRAN}.\Sep
 
-R es uno de los lenguajes más utilizados en estadística. Adicionalmente abarca otros muchos campos debido a la cantidad de librerías disponibles como tratamiento de imágenes satélite o clasificación supervisada. Se utilizó la versión 3.2.0.
+R es uno de los lenguajes más utilizados en estadística. Adicionalmente abarca otros muchos campos debido a la cantidad de librerías disponibles como tratamiento de imágenes satélite o clasificación supervisada.
 
 \subsection{GRASS GIS}
-Para el tratado de imágenes Landsat y su posterior clasificación se utiliza el programa de \ac{SIG} gratuito y de código abierto \ac{GRASS}, distribuido bajo licencia GPL \citep{GRASS_GIS_software}. GRASS es un proyecto de la \ac{OSGeo}. Es un potente software en lo que a utilización de manejo y análisis de información geoespacial se refiere. Su funcionalidad es similar a otros programas \ac{SIG} como QGIS, en los cuales, mediante extensiones aplicadas a la base del programa podemos ampliar sus funciones y adaptarlas a nuestras necesidades \citep{neteler2002open}. Al igual que R, \ac{GRASS} se puede utilizar mediante una interfaz de código pero se optó por la aplicación de una interfaz gráfica de usuario que facilita y agiliza mucho el trabajo.\Sep
+Para el tratado de imágenes Landsat y su posterior clasificación se utiliza el programa de \ac{SIG} gratuito y de código abierto \ac{GRASS} \citep{GRASS_GIS_software}. GRASS es un proyecto de la \ac{OSGeo}. Es un potente software en lo que a utilización de manejo y análisis de información geoespacial se refiere. Su funcionalidad es similar a otros programas \ac{SIG} como QGIS, en los cuales, mediante extensiones aplicadas a la base del programa podemos ampliar sus funciones y adaptarlas a nuestras necesidades \citep{neteler2002open}. Al igual que R, \ac{GRASS} se puede utilizar mediante una interfaz de código pero se optó por la utilización de una interfaz gráfica de usuario (la propia del software) que facilita y agiliza mucho el trabajo.\Sep
 
 La versión utilizada es la 6.4.4 de desarrollo. No obstante durante la realización de este \ac{TFG} se liberó la versión estable 7.0.
 
 \subsection{\LaTeX}
 En la redacción de este documento de memoria se empleó \LaTeX, el intérprete de \TeX, lenguaje y motor de composición de textos de bajo nivel potente y versátil especialmente indicado para elaborar documentos de texto de alta calidad tipográfica. \LaTeX, software libre bajo licencia LPPL, es un conjunto de macros escritas en lenguaje \TeX\ para la realización de múltiples tareas en lo que a la redacción de un documento de texto se refiere \citep{Latex2011} \citep{galindo2001} \citep{lamport1994}.\Sep
 
-Como editor se utilizó TeXMaker \citep{Brachet2003}, un entorno integrado de edición libre (licencia GPL) que facilita la redacción, edición, compilación y revisión del documento.\Sep
+Como editor se utilizó TeXMaker \citep{Brachet2003}, un entorno integrado de edición libre que facilita la redacción, edición, compilación y revisión del documento.\Sep
 
-Para la gestión de la bibliografía, las referencias cruzadas y que fuera correctamente incluida en este documento se ha utilizado el software libre JabRef (licencia GPL). Este software compila la bibliografía mediante BibTeX, el formato estándar de bibliografía de \LaTeX.
+Para la gestión de la bibliografía, las referencias cruzadas y que fuera correctamente incluida en este documento se ha utilizado el software libre JabRef. Este software compila la bibliografía mediante BibTeX, el formato estándar de bibliografía de \LaTeX.
 
-\section{Técnicas de análisis espectral}
-\label{sec:tecnicas}
-%\markboth{MATERIALES Y MÉTODOS}{TÉCNICAS DE ANÁLISIS}
-
-Las técnicas de separabilidad empleadas en este \ac{TFG} serán:
-\begin{itemize}
-	\item Codificación binaria e índice de acuerdo espectral.
-	\item Clasificación angular.
-	\item Continuum removal.
-\end{itemize}
-
-Se utilizarán para ello diversas funciones creadas en el lenguaje de programación R que se aplicarán a los datos tomados en campo.
+\section{Técnicas de análisis espectral} \label{sec:tecnicas}
+Las técnicas de separabilidad empleadas en este \ac{TFG} serán: codificación binaria e índice de acuerdo espectral, clasificación angular y \textit{continuum removal}. Se utilizarán para ello diversas funciones creadas en el lenguaje de programación R que se aplicarán a los datos tomados en campo.
 
 \subsection{Índice de acuerdo espectral}
 Con el fin de cuantificar de alguna forma la similitud entre los espectros de dos cubiertas a priori diferentes, podemos aplicar lo que se llama \ac{IAE} \citep{chuvieco2002teledeteccion}, que viene dado por la siguiente expresión:
@@ -122,16 +89,16 @@ En la figura \ref{fig:IAE} se muestra el script de la función en R a la que se 
 \begin{figure}
 \centering
 \begin{lstlisting}[language = R, frame = single]
-  IAE <- function(i, j) {
+IAE <- function(i, j) {
   
-  mediai = mean(i$V5)
-  CBi = sapply(i$V5, FUN=function(x) {if(x>=mediai) {1} else {0}})
+mediai = mean(i$V5)
+CBi = sapply(i$V5, FUN=function(x) {if(x>=mediai) {1} else {0}})
   
-  mediaj = mean(j$V5)
-  CBj = sapply(j$V5, FUN=function(x) {if(x>=mediaj) {1} else {0}})
+mediaj = mean(j$V5)
+CBj = sapply(j$V5, FUN=function(x) {if(x>=mediaj) {1} else {0}})
   	
-  Indice = sum((CBi-CBj)^2)/length(CBi)
-  return(Indice)  
+Indice = sum((CBi-CBj)^2)/length(CBi)
+return(Indice)  
 }
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
@@ -159,15 +126,16 @@ Este método no aporta un valor numérico de cuantificación de la similitud ent
 
 El paquete base de R ya incluye las operaciones estadísticas básicas necesarias para la elaboración de la clasificación angular y el \ac{IAE} con la única excepción de que para poder aplicar el analizador \ac{CR} se debe descargar el paquete adicional \textit{prospectr} \citep{stevens2014introduction}.\Sep
 
-En la figura \ref{fig:CR} se muestra el script de la función en R a la que se le aplicarán los datos de campo y que devuelve la gráfica de \ac{CR}.
+En la figura \ref{fig:CR} se muestra el script original de la función en R a la que se le aplicarán los datos de campo y que devuelve la gráfica de \ac{CR}.\Sep
 
 \begin{figure}
 \centering
 \begin{lstlisting}[language = R, frame = single]
 require(prospectr)
 
-cr <- continuumRemoval(mangle1corte$V5, mangle1corte$V4, type="R",
-			interpol="linear")
+cr <- continuumRemoval(mangle1corte$V5, mangle1corte$V4,
+                       type="R",
+                       interpol="linear")
 grafica(data1)
 lines(data1$V4,cr)
 \end{lstlisting}
@@ -176,7 +144,32 @@ lines(data1$V4,cr)
 \label{fig:CR}
 \end{figure}
 
-Se puede observar como mediante el comando \textit{``require()''} se llama al paquete \textit{prospectr}, que debe estar instalado para que el script funcione correctamente. Para ello se utilizó el instalador de paquetes de RStudio, localizando el paquete requerido en el repositorio oficial de RCRAN e instalando las dependencias necesarias, que también se podría haber hecho con el comando \textit{``install.packages()''}. El comando \textit{``grafica()''} es la llamada a una función creada para presentar la gráfica a nuestro gusto, mientras que con el comando \textit{``lines()''} se nos permite superponer la gráfica de \ac{CR} a la anterior.
+Se puede observar como mediante el comando inicial \textit{require()} se llama al paquete \textit{prospectr}, gracias al cual nos aseguramos que está correctamente cargado el paquete necesario para realizar las operaciones que siguen en el script \citep{stevens2014introduction}. Para ello se utilizó el instalador de paquetes de RStudio, localizando el paquete requerido en el repositorio oficial de RCRAN e instalando las dependencias necesarias, que también se podría haber hecho con el comando \textit{``install.packages()''}. El comando \textit{grafica()} es la llamada a una función creada para presentar la gráfica a nuestro gusto, mientras que con el comando \textit{lines()} se nos permite superponer la gráfica de \ac{CR} a la anterior.\Sep
+
+Para el correcto funcionamiento del análisis se procedió a crear una matriz de 3x481 donde las filas corresponden a las tres especies analizadas y las columnas al valor de longitud de onda. El fin es el de presentar de mejor forma los datos en la función de \ac{CR} de R y aunque el resultado es el mismo, que haciéndolo una por una, nos permite obtener este de forma más rápida y con menos pasos.\Sep
+
+El script original de la funcion en R previamente presentado en la figura \ref{fig:CR} sufre cambios, quedando de la siguiente manera:\SmallSep
+
+\begin{figure}[ht]
+	\centering
+	\begin{lstlisting}[language = R, frame = single]
+require(prospectr)
+matriz <- matrix(c(RhizophoraCorte$V5,LagunculariaCorte$V5,
+                   AvicenniaCorte$V5),
+                 byrow=TRUE,
+                 nrow=3,
+                 ncol=481)
+bandas <- mangle1corte$V4
+cr <- continuumRemoval(matriz, bandas)
+matplot(bandas, t(matriz), type="l", ylim=c(0,1))
+matlines(bandas, t(cr2))
+	\end{lstlisting}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Función modificada de CR]{Script modificado de la función de CR escrita en R. Fuente: Elaboración propia.}
+	\label{fig:CRmodificado}
+\end{figure}	
+
+Donde ``manglencorte'' es el archivo de datos con el corte realizado para cada especie como se explicó anteriormente. Se crea un objeto llamado ``bandas'' tomando los valores de la fila V4 de cualquiera de los archivos de datos. Se crea la gráfica con el comandos \textit{matplot()} y con \textit{matlines()} se superpone la gráfica propia del método \ac{CR}.\Sep
 
 \subsection{Clasificación angular}
 La clasificación angular calcula la similitud entre dos espectros a partir de su distancia angular espectral. Originalmente este método compara espectros desconocidos con otros de referencia tomados, por ejemplo, de bibliotecas espectrales o de la misma imagen \citep{girouard2004validated} con el fin de asignar píxeles desconocidos a clases de referencia conocida en una clasificación temática. El algoritmo de clasificación angular es el siguiente:
@@ -240,7 +233,7 @@ Se trata de un producto de \ac{L1T} con correcciones geométricas sistemáticas 
 
 Otra forma de obtener las imágenes de Landsat 8 es mediante el gestor de descargas Libra, que aprovecha la API del servicio de \ac{AWS} que aloja estas imágenes desde septiembre de 2014. Este nos permite elegir que bandas descargar, ahorrando tiempo en la operación.\Sep
 
-En cambio, para la correcta realización de este \ac{TFG} donde tenemos datos de reflectividad a nivel del suelo, necesitamos que las imágenes Landsat también muestren valores de reflectividad a ese nivel. Esto se consigue aplicando un algoritmo de corrección radiométrica a las imágenes \ac{L1T} obteniendo un producto también proporcionado por la agencia \ac{EROS} bajo demanda llamado \ac{PL8SR} \citep{USGS2015}.\Sep
+En cambio, para la correcta realización de este \ac{TFG} donde tenemos datos de reflectividad a nivel del suelo, necesitamos que las imágenes Landsat también muestren valores de reflectividad a ese nivel. Esto se consigue aplicando un algoritmo de corrección radiométrica a las imágenes \ac{L1T} obteniendo un producto también proporcionado por la agencia \ac{EROS} bajo demanda llamado \ac{PL8SR} \citep{USGS2015} que también se puede encontrar bajo en nombre de Landsat SR.\Sep
 
 Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen las siguientes características:
 
@@ -258,16 +251,16 @@ Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen 
 	\label{tab:imagenes}
 \end{table}
 
-%Se observa en la tabla \ref{tab:imagenes} que la cobertura nubosa de la segunda imagen es elevada, pero en la zona de estudio, que ocupa un pequeño porcentaje de esta imagen, la cobertura es aceptable. Este hecho también se observa en las imágenes de calidad (figura \ref{fig:imagenescalidad}) en las que las nubes y nubes altas se marcan de color blanco y amarillo respectivamente.\Sep
+Se observa en las imágenes de calidad de la figura \ref{fig:imagenescalidad}, en las que las nubes y nubes altas se marcan de color blanco y amarillo respectivamente, que la cobertura nubosa es aceptable para trabajar en la zona de estudio.\Sep
 
 Se consideró que el desfase temporal entre ambas imágenes y la fecha de toma de datos no era determinante suponiendo un escaso cambio fenológico de las especies de mangle en ese periodo de tiempo.\Sep
 
 \begin{figure}
 	\centering
 	\subfloat[Imagen Landsat path 18 row 51 (23/11/14)]{
-	\includegraphics[width=0.4\linewidth]{./Imagenes/Landsat18.eps}}
+	\includegraphics[width=0.45\linewidth]{./Imagenes/Landsat18.eps}}
 	\subfloat[Imagen Landsat path 17 row 51 (19/12/14)]{
-	\includegraphics[width=0.4\linewidth]{./Imagenes/Landsat17.eps}}
+	\includegraphics[width=0.45\linewidth]{./Imagenes/Landsat17.eps}}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Imágenes Landsat]{Imágenes Landsat con corrección geométrica utilizadas para el trabajo. Fuente: USGS.}
 	\label{fig:imagenesLandsat}
@@ -276,9 +269,9 @@ Se consideró que el desfase temporal entre ambas imágenes y la fecha de toma d
 \begin{figure}
 	\centering
 	\subfloat[Imagen de calidad Landsat path 18 row 51 (06/10/14)]{
-	\includegraphics[width=0.4\linewidth]{./Imagenes/LandsatQ18.eps}}
+	\includegraphics[width=0.45\linewidth]{./Imagenes/LandsatQ18.eps}}
 	\subfloat[Imagen de calidad Landsat path 17 row 51 (16/11/14)]{
-	\includegraphics[width=0.4\linewidth]{./Imagenes/LandsatQ17.eps}}
+	\includegraphics[width=0.45\linewidth]{./Imagenes/LandsatQ17.eps}}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Imágenes de calidad de Landsat]{Imágenes de calidad de Landsat de 8 bits. Fuente: USGS.}
 	\label{fig:imagenescalidad}
@@ -305,18 +298,21 @@ donde:
 \end{itemize}
 
 \subsection{Tratamientos previos}
-Como se decía en el apartado anterior, la geometría de las imágenes ya está corregida. Pero es necesario realizar algunos procedimientos antes de unirlas y recortarlas finalmente para que se adapten a la zona de estudio y sea más cómodo trabajar con ellas. Estos procedimientos son el tratamiento de los valores nulos y la transformación de los \ac{ND} en reflectancias.\Sep
+Como se decía en el apartado anterior, la geometría de las imágenes ya está corregida. Pero es necesario realizar algunos procedimientos antes de unirlas y recortarlas finalmente para que se adapten a la zona de estudio y sea más cómodo trabajar con ellas. Estos procedimientos son el tratamiento de los valores nulos, la transformación de los \ac{ND} en reflectancias, el mosaico de imágenes, su posterior recorte y la aplicación de un filtro de paso bajo.\Sep
 
 Lo primero que se debe hacer en GRASS es crear la localización \textit{(location)} de nuestro proyecto y añadir las imágenes al directorio de mapas \textit{(mapset)}. Los datos de la localización se establecen gracias a la lectura por parte de GRASS de la configuración de proyección y datum de un archivo de datos georreferenciado, es decir, de cualquier imagen de Landsat del trabajo. Las imágenes se añadirán al \textit{mapset} con el comando \textit{``r.in.gdal''}.
 
 \subsubsection{Valores nulos}
-El tratamiento de los valores nulos se lleva a cabo mediante el comando \textit{``r.null''} como sigue:
+El tratamiento de los valores nulos se lleva a cabo mediante el comando \textit{r.null} como sigue:
 
-\begin{center}
+\begin{figure}[h]
+\centering
 \begin{boxedverbatim}
 	r.null map=LC80180512014279LGN00_B1@TFG setnull=0 null=-9999
 \end{boxedverbatim}
-\end{center}
+\captionsetup{font={footnotesize,it}}
+\caption[Valores nulos]{Tratamiento de valores nulos en GRASS con el comando \textit{r.null}.}
+\end{figure}
 
 donde \textit{``map''} corresponde a la banda a tratar seguido por el \textit{mapset}, \textit{``setnull''} indica el valor de los elementos nulos y \textit{``null''} indica el nuevo valor de estos elementos. Se elige un valor de -9999 para evitar posibles errores de realizarse, por ejemplo un \ac{NDVI} que trabaja con valores de píxel de [-1,1].\Sep
 
@@ -324,7 +320,9 @@ Este no es un procedimiento obligatorio aunque recomendable ya que los geoproces
 
 \subsubsection{Transformación a reflectancias}
 Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a los coeficientes radiométricos provistos en el archivo .txt que acompaña a las imágenes. Esta transformación se hará con el comando \textit{``i.landsat.toar''} como sigue:
-\begin{center}
+
+\begin{figure}[h]
+\centering
 \begin{boxedverbatim}
 	i.landsat.toar
 	input_prefix=LC80170512014320LGN00_B
@@ -336,7 +334,9 @@ Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a
 	date=2014-11-16
 	sun_elevation=52.01756824
 \end{boxedverbatim}
-\end{center}
+\captionsetup{font={footnotesize,it}}
+\caption[Transformación a reflectancias]{Transformación a reflectancias TOA en GRASS con el comando \textit{i.landsat.toar}.}
+\end{figure}
 
 donde \textit{``input\_prefix''} es el prefijo del nombre de las imágenes para cada banda, \textit{``output\_prefix''} es el prefijo que le queremos dar a las nuevas imágenes corregidas, \textit{``metfile''} es el archivo de metadatos asociado, \textit{``sensor''} el tipo de sensor, \textit{``date''} es la fechas de adquisición y \textit{``sun\_elevation''} la elevación en grados del Sol.
 
@@ -352,12 +352,15 @@ Para realizar el mosaico de las dos imágenes de las que disponemos tenemos dos 
 
 La línea de comando en cuestión es la siguiente (para las imágenes de la primera banda y en el caso de tener situadas las imágenes en la misma carpeta):
 
-\begin{center}
+\begin{figure}[h]
+\centering
 \begin{boxedverbatim}
 	gdal_merge.py -n 0 -v LC80170512014320LGN00_B1.TIF 
 	LC80180512014279LGN00_B1.TIF -o mosaico1.tif
 \end{boxedverbatim}
-\end{center}
+\captionsetup{font={footnotesize,it}}
+\caption[Mosaico de imágenes]{Mosaico de imágenes con herramientas GDAL.}
+\end{figure}
 
 En este caso se utilizan los comandos asociados u opciones siguientes: -n para que se ignoren los píxeles con valores nulos, -v para que se detallen las operaciones realizadas y -o que permite dar nombre al archivo de salida. Con este método no sería necesario realizar el tratamiento de valores nulos.\Sep
 
@@ -367,19 +370,22 @@ En la figura \ref{fig:dialogomosaico} se observa el diálogo resultante de la op
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/Dialogo_mosaico.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Diálogo del mosaicado]{Diálogo resultante del mosaicado de las imágenes. Fuente: Elaboración propia.}
+	\caption[Diálogo del mosaicado]{Diálogo resultante del mosaicado de las imágenes en la terminal de Linux. Fuente: Elaboración propia.}
 	\label{fig:dialogomosaico}
 \end{figure}
 
-De hacerlo en GRASS, el comando sería \textit{r.patch}, con la salvedad de que las dos imágenes deben estar en la misma región de cálculo, la cual se puede ver en el cuadro \ref{tab:region}), quedando la siguiente línea de orden:\SmallSep
+De hacerlo en GRASS, el comando sería \textit{r.patch}, con la salvedad de que las dos imágenes deben estar en la misma región de cálculo, la cual se puede ver en el cuadro \ref{tab:region}), quedando la siguiente línea de orden:
 
-\begin{center}
+\begin{figure}[h]
+\centering
 \begin{boxedverbatim}
 	r.patch input=LC80180512014327LGN00_sr_band1@TFG,
 	              LC80170512014352LGN00_sr_band1@TFG 
 	output=Mosaico_B1
 \end{boxedverbatim}
-\end{center}
+\captionsetup{font={footnotesize,it}}
+\caption[Mosaico de imágenes en GRASS]{Mosaico de imágenes en GRASS mediante el comando \textit{r.patch}.}
+\end{figure}
 
 \subsubsection{Recorte de la imagen}
 Para trabajar solamente con la zona de estudio es necesario recortar la imagen o reducir la región de cálculo. Para ello empleamos las opciones de visualización de GRASS con una extensión de coordenadas superior derecha de (516000 , 1501230) e inferior izquierda de (377940 , 1412100) como se muestra en el cuadro \ref{tab:region}. Una vez fijada se selecciona la opción de zoom ``set computational region from display extent'' que simplemente reduce la región de cálculo previamente establecida a la extensión de la visualización actual y nos permite realizar operaciones en esta.\Sep
@@ -387,47 +393,40 @@ Para trabajar solamente con la zona de estudio es necesario recortar la imagen o
 \begin{table}[ht]
 	\centering
 	\caption[Datos de las regiónes de trabajo]{Datos de las regiónes de trabajo establecidas en GRASS.}
-	\begin{tabular}{|r|c|c|}
-	\hline
-	& Extensión imágenes & Extensión reducida\\
-	\hline
+	\begin{tabular}{@{}rcc@{}}
+	\toprule[0.4mm]
+	& Extensión original & Extensión reducida\\
+	\midrule
 	Proyección & 1 (UTM) & 1 (UTM) \\
-	\hline
 	Zona & 16 & 16 \\
-	\hline
 	Datum & WGS84 & WGS84 \\
-	\hline
 	Elipsoide & WGS84 & WGS84 \\
-	\hline
 	Norte & 1555215 &1501230 \\
-	\hline
 	Sur & 1321485 & 1412100 \\
-	\hline
 	Oeste & 272685 & 377940 \\
-	\hline
 	Este & 667815 & 516000 \\
-	\hline
 	Res. esp. vertical (m) & 30 & 30 \\
-	\hline
 	Res. esp. horizontal (m) & 30 & 30\\
-	\hline
 	Filas & 7791 & 2971 \\
-	\hline
 	Columnas & 13171 & 4602 \\
-	\hline
 	Celdas & 102615261 & 13672542 \\
-	\hline
+	\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:region}
 \end{table}
 
 Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda (figura \ref{fig:recorte}). El comando se emplea de la siguiente forma para cada banda:
 
-\begin{center}
+\begin{figure}[h]
+\centering
 \begin{boxedverbatim}
 	r.resample input=MosaicoB1@TFG output=L8GF_SRB1
 \end{boxedverbatim}
-\end{center}
+\captionsetup{font={footnotesize,it}}
+\caption[Recorte de la imagen]{Recorte de la imagen en GRASS con el comando \textit{r.resample}.}
+\end{figure}
+
+A la hora de nombrar la imagen resultante en el \textit{output} ya se busca un código que identifique facilmente la imagen. En este caso L8GF quiere decir que se trata de una imagen Landsat 8 del Golfo de Fonseca exclusivamente, mientras que SRB1 quiere decir que se trata de una imagen con reflectividades a nivel de suelo de la banda 1.
 
 \begin{figure}
 	\centering
@@ -438,7 +437,7 @@ Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más pr
 \end{figure}
 
 \subsubsection{Filtro de paso bajo}
-La aplicación de un filtro de medio a la imagen Landsat de la zona de estudio permite eliminar ruido y disminuir contrastes \citep{aldalur2002}. Antes de aplicar el filtro conviene realizar una copia de seguridad de la imagen debido a que se van a modificar los valores de reflectividad originales. Para ello se emplea el comando \textit{r.out.gdal} que permite exportar las imágenes a formato GeoTIFF.\Sep
+La aplicación de un filtro de media a la imagen Landsat de la zona de estudio permite eliminar ruido y disminuir contrastes \citep{aldalur2002}. Antes de aplicar el filtro conviene realizar una copia de seguridad de la imagen debido a que se van a modificar los valores de reflectividad originales. Para ello se emplea el comando \textit{r.out.gdal} que permite exportar las imágenes a formato GeoTIFF.\Sep
 
 Se aplica a la imagen la siguiente función en cada píxel:
 
@@ -452,10 +451,15 @@ Se aplica a la imagen la siguiente función en cada píxel:
 \end{equation}
 donde $g(x,y)$ es el nuevo valor del píxel localizado en las coordenadas \textit{x} e \textit{y} de la imagen y la matriz refleja la dimensión 3x3 del filtro, afectando así a $g(x,y)$ solamente los valores de los píxeles vecinos.\Sep
 
-La operación es realizada en GRASS mediante el comando siguiente:
+La operación es realizada en GRASS mediante el comando \textit{r.neighbors} como sigue:
 
-\begin{center}
+\begin{figure}[h]
+\centering
 \begin{boxedverbatim}
 	r.neighbors input=L8GF_SRB1@TFG output=L8GF_SRFB1 size=3
 \end{boxedverbatim}
-\end{center}
+\captionsetup{font={footnotesize,it}}
+\caption[Filtro de paso bajo]{Filtro de paso bajo en GRASS con el comando \textit{r.neighbors}.}
+\end{figure}
+
+El comando admite varias operaciones de filtrado como entre otras: media, mediana y moda. Al no especificar ninguna opción extra en el comando más que el tamaño de matriz de filtrado que se aplica, GRASS aplica el método de media por defecto. En el código de nombre de la imagen se va a añadir una F para indicar que las imágenes están filtradas.
