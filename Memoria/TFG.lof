@@ -13,30 +13,31 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Mangle recolectado}}{28}{figure.caption.53}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Obtenci\IeC {\'o}n de firmas}}{28}{figure.caption.54}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Funci\IeC {\'o}n de \IeC {\'I}ndice de Acuerdo Espectral}}{32}{figure.caption.60}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Continuum Removal ejemplo}}{34}{figure.caption.62}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Funci\IeC {\'o}n de Continuum Removal}}{34}{figure.caption.63}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Funci\IeC {\'o}n modificada de CR}}{35}{figure.caption.64}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Funci\IeC {\'o}n clasificaci\IeC {\'o}n angular}}{36}{figure.caption.65}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Im\IeC {\'a}genes Landsat}}{40}{figure.caption.73}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Funci\IeC {\'o}n de \IeC {\'I}ndice de Acuerdo Espectral}}{33}{figure.caption.61}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Continuum Removal ejemplo}}{34}{figure.caption.63}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Funci\IeC {\'o}n de Continuum Removal}}{35}{figure.caption.64}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Funci\IeC {\'o}n modificada de CR}}{36}{figure.caption.65}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Funci\IeC {\'o}n clasificaci\IeC {\'o}n angular}}{37}{figure.caption.66}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Im\IeC {\'a}genes Landsat}}{40}{figure.caption.74}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen Landsat path 18 row 51 (23/11/14)}}}{40}{subfigure.8.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen Landsat path 17 row 51 (19/12/14)}}}{40}{subfigure.8.2}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Im\IeC {\'a}genes de calidad de Landsat}}{40}{figure.caption.74}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Im\IeC {\'a}genes de calidad de Landsat}}{40}{figure.caption.75}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen de calidad Landsat path 18 row 51 (06/10/14)}}}{40}{subfigure.9.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen de calidad Landsat path 17 row 51 (16/11/14)}}}{40}{subfigure.9.2}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Valores nulos}}{41}{figure.caption.76}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Transformaci\IeC {\'o}n a reflectancias}}{42}{figure.caption.78}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{43}{figure.caption.81}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{44}{figure.caption.82}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{44}{figure.caption.83}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Recorte de la imagen}}{44}{figure.caption.86}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Recorte de imagen Landsat}}{46}{figure.caption.87}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Filtro de paso bajo}}{46}{figure.caption.89}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Valores nulos}}{42}{figure.caption.77}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Transformaci\IeC {\'o}n a reflectancias}}{42}{figure.caption.79}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{43}{figure.caption.82}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{44}{figure.caption.83}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{44}{figure.caption.84}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Recorte de la imagen}}{45}{figure.caption.87}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Filtro de paso bajo}}{46}{figure.caption.89}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Composici\IeC {\'o}n en color real}}{47}{figure.caption.90}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Composici\IeC {\'o}n en falso color}}{47}{figure.caption.91}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales}}{48}{figure.caption.90}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales de las tres especies}}{49}{figure.caption.91}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas}}{50}{figure.caption.92}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{51}{figure.caption.93}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Gr\IeC {\'a}ficas de combinaci\IeC {\'o}n binaria}}{52}{figure.caption.97}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{53}{figure.caption.98}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales}}{50}{figure.caption.92}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales de las tres especies}}{51}{figure.caption.93}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas}}{52}{figure.caption.94}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{53}{figure.caption.95}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Gr\IeC {\'a}ficas de combinaci\IeC {\'o}n binaria}}{55}{figure.caption.99}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{56}{figure.caption.100}
 \addvspace {10\p@ }

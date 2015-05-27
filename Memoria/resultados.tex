@@ -152,28 +152,7 @@ Una vez aplicado el script de R de la función de clasificación angular (figura
 Se puede observar una mayor separabilidad entre \textit{R. mangle} y \textit{L. racemosa}, siendo menor en las otras combinaciones.
 
 \section{Comprobación}
-Lo primero y necesario es saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tenemos una serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda.\Sep
-
-\begin{table}
-	\centering
-	\caption[Puntos de control]{Serie de puntos conocidos de existencia de manglar.}
-	\begin{tabular}{@{}ccl@{}}
-	\toprule[0.4mm]
-	East & North & Nombre\\
-	\midrule
-	452379 & 1476560 & Pasadero de los Pericos\\
-	450493 & 1476503 & Punta de los Elotes\\
-	448571 & 1484829 & Corinto\\
-	448391 & 1485182 & Corinto\\
-	438047 & 1488915 & Jiote Grande\\
-	434163 & 1487386 & Los Ganchos\\
-	440251 & 1489561 & La Brea\\
-	\bottomrule[0.4mm]
-	\end{tabular}
-	\label{tab:puntos}
-\end{table}
-
-Los pasos a seguir fueron los siguientes:
+Lo primero y necesario es saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
 
 \begin{itemize}
 	\item Creación de una capa vectorial en blanco de nombre ``PuntosControl'' y añadirla al árbol de capas.

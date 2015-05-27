@@ -33,9 +33,28 @@ El material vegetal utilizado en el estudio fueron muestras recientes de hojas t
 \subsection{Datos}\label{subsec:datos}
 Los datos obtenidos por el profesor Rafael Enrique Corrales con el espectro-radiómetro de campo se presentan en cuatro archivos de extensión .dat de texto simple, uno para cada especie más uno del conjunto que no se utilizará.\Sep
 
-La característica principal de estos datos es que abarcan un amplio rango espectral de forma continuada, similar a lo que ocurre en la obtención de una imagen, pero en este caso los datos serían solamente de un punto, no de una superficie extensa.\Sep
+La característica principal de estos datos es que abarcan un amplio rango espectral de forma continuada, similar a lo que ocurre en la obtención de una imagen, pero en este caso los datos serían solamente de un punto, no de una superficie extensa. El rango espectral captado por el espectro-radiómetro comprende de 324.5 - 1075,5 nm almacenando la reflectividad media para intervalos de onda de 1nm.\Sep
 
-El rango espectral captado por el espectro-radiómetro comprende de 324.5 - 1075,5 nm almacenando la reflectividad media para intervalos de onda de 1nm.
+Simultáneamente a la toma de datos se visitaron puntos donde era conocida la existencia de mangle (cuadro \ref{tab:puntos}). Estrictamente no son puntos de control porque no se trata de puntos en los que no solo existe la cobertura de un tipo de mangle concreto sino que pueden confluir varias cubiertas en el mismo punto.
+
+\begin{table}
+	\centering
+	\caption[Puntos de control]{Serie de puntos conocidos de existencia de manglar.}
+	\begin{tabular}{@{}ccl@{}}
+	\toprule[0.4mm]
+	East & North & Nombre\\
+	\midrule
+	452379 & 1476560 & Pasadero de los Pericos\\
+	450493 & 1476503 & Punta de los Elotes\\
+	448571 & 1484829 & Corinto\\
+	448391 & 1485182 & Corinto\\
+	438047 & 1488915 & Jiote Grande\\
+	434163 & 1487386 & Los Ganchos\\
+	440251 & 1489561 & La Brea\\
+	\bottomrule[0.4mm]
+	\end{tabular}
+	\label{tab:puntos}
+\end{table}
 
 \section{Software} \label{sec:software}
 El uso de software libre es un recurso importante para realizar trabajos sobre recursos medioambientales principalmente por, entre otras cosas \citep{MatellanOliveira2004}:
@@ -415,7 +434,7 @@ Para trabajar solamente con la zona de estudio es necesario recortar la imagen o
 	\label{tab:region}
 \end{table}
 
-Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda (figura \ref{fig:recorte}). El comando se emplea de la siguiente forma para cada banda:
+Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda. El comando se emplea de la siguiente forma para cada banda:
 
 \begin{figure}[h]
 \centering
@@ -427,14 +446,6 @@ Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más pr
 \end{figure}
 
 A la hora de nombrar la imagen resultante en el \textit{output} ya se busca un código que identifique facilmente la imagen. En este caso L8GF quiere decir que se trata de una imagen Landsat 8 del Golfo de Fonseca exclusivamente, mientras que SRB1 quiere decir que se trata de una imagen con reflectividades a nivel de suelo de la banda 1.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/Recorte.eps}
-	\captionsetup{font={footnotesize,it}}
-	\caption[Recorte de imagen Landsat]{Resultado del recorte de la imagen. Imagen exportada de GRASS. Fuente: Elaboración propia.}
-	\label{fig:recorte}
-\end{figure}
 
 \subsubsection{Filtro de paso bajo}
 La aplicación de un filtro de media a la imagen Landsat de la zona de estudio permite eliminar ruido y disminuir contrastes \citep{aldalur2002}. Antes de aplicar el filtro conviene realizar una copia de seguridad de la imagen debido a que se van a modificar los valores de reflectividad originales. Para ello se emplea el comando \textit{r.out.gdal} que permite exportar las imágenes a formato GeoTIFF.\Sep
@@ -463,3 +474,20 @@ La operación es realizada en GRASS mediante el comando \textit{r.neighbors} com
 \end{figure}
 
 El comando admite varias operaciones de filtrado como entre otras: media, mediana y moda. Al no especificar ninguna opción extra en el comando más que el tamaño de matriz de filtrado que se aplica, GRASS aplica el método de media por defecto. En el código de nombre de la imagen se va a añadir una F para indicar que las imágenes están filtradas.
+
+El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y \ref{fig:gf543}.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF432.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Composición en color real]{Resultado de la imagen en una composición de color real (432). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\label{fig:gf432}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF543.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Composición en falso color]{Resultado de la imagen en una composición de falso color (543). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\label{fig:gf543}
+\end{figure}
