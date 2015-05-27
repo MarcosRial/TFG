@@ -5,8 +5,8 @@ graficaAG <- function(x) {
   plot (x$V5~x$V4,                                   ## selección de x e y 
         type = "l", col = "blue",                    ## tipo de línea y color
         #main = "Reflectividad",                      ## título
-        sub = "Avicennia Germinans",                 ## subtítulo
-        lty = 1, lwd = 1,                            ## tipo y grosor de línea
+        sub = "Avicennia germinans",                 ## subtítulo
+        lty = 3, lwd = 1,                            ## tipo y grosor de línea
         xlab = expression (paste (lambda, " (nm)")), ## etiquetado de los ejes
         ylab = expression (rho),
         xlim = c(400,950), ylim = c(0,1.05)         ## límites de los ejes

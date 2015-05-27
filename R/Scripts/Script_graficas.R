@@ -5,7 +5,7 @@ plot (x$V5~x$V4,                                   ## selección de x e y
       type = "l", col = colores3,          ## tipo de línea y color
       #main = "Reflectividad",                      ## título
       sub = NULL,                                  ## subtítulo
-      lty = 1, lwd = 1,                            ## tipo y grosor de línea
+      lty = c(1:3), lwd = 1,                            ## tipo y grosor de línea
       xlab = expression (paste (lambda, " (nm)")), ## etiquetado de los ejes
       ylab = expression (rho),
       xlim = c(400,950), ylim = c(0,1.1)            ## límites de los ejes
@@ -26,13 +26,16 @@ text(865,0.9, "IRC",
 }
 ## Para cargar más gráficas en la misma visualización.
 grafica(RhizophoraCorte)
-lines(LagunculariaCorte$V4,LagunculariaCorte$V5, type="l", col="green", lty=1,lwd=1)
-lines(AvicenniaCorte$V4,AvicenniaCorte$V5, type="l", col="blue", lty=1,lwd=1)
+lines(LagunculariaCorte$V4,LagunculariaCorte$V5, type="l", col="green", lty=2,lwd=1)
+lines(AvicenniaCorte$V4,AvicenniaCorte$V5, type="l", col="blue", lty=3,lwd=1)
 
+legend (x = 750, y = 0.5,
+        legend=c("R. mangle", "L. racemosa", "A. germinans"), lty=c(1,2,3),
+        col=c("red","green","blue"), bty="n")
 
 ## Esto creará un archivo png en la carpeta Gráficas
 png (filename = "./Graficos/gráficanueva.png",
-     width = 15, height = 10, units = "cm", res = 300,)
+     width = 15, height = 9, units = "cm", res = 300,)
 
 grafica(x)             ## donde x es el archivo de datos
 graficamas(y)          ## donde y es el archivo de datos a añadir

@@ -5,7 +5,7 @@ graficaRM <- function(x) {
   plot (x$V5~x$V4,                                   ## selección de x e y 
         type = "l", col = "red",                     ## tipo de línea y color
         main = "Reflectividad",                      ## título
-        sub = "Rhizophora Mangle",                   ## subtítulo
+        sub = "Rhizophora mangle",                   ## subtítulo
         lty = 1, lwd = 1,                            ## tipo y grosor de línea
         xlab = expression (paste (lambda, " (nm)")), ## etiquetado de los ejes
         ylab = expression (rho),
