@@ -152,34 +152,58 @@ Una vez aplicado el script de R de la función de clasificación angular (figura
 Se puede observar una mayor separabilidad entre \textit{R. mangle} y \textit{L. racemosa}, siendo menor en las otras combinaciones.
 
 \section{Comprobación}
-Lo primero y necesario es saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
+Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
 
 \begin{itemize}
-	\item Creación de una capa vectorial en blanco de nombre ``PuntosControl'' y añadirla al árbol de capas.
-	\item Crear una base de datos asociada a la capa con \textit{v.db.addtable} asignando nuevos campos: ``Nombre'' de tipo ``varchar'' en el que se especificará el topónimo de la zona; y ``X'' e ``Y'' para las coordenadas.
-	\item Inserción de los datos del cuadro \ref{tab:puntos}.
-	\item Dar coordenadas reales a los puntos con el comando \textit{v.in.db} creando una nueva capa vectorial llamada ``PuntosControl2''.
-	\item Editar la tabla de esta última capa añadiendo los campos: B1, B2, B3, B4 y B5 para alojar los datos de cada una de las bandas en cada punto.
-	\item Copiar los datos del raster en la tabla de la capa vectorial con el comando \textit{v.wath.rast}.
+	\item Creación de una capa vectorial en blanco de nombre ``puntos'' y añadirla al árbol de capas. En esta capa se digitalizarán un total de 10 puntos en los que se supone la existencia de bosque de mangle.
+	\item Crear una base de datos asociada a la capa con \textit{v.db.addtable} asignando nuevos campos: ``x'' e ``y'' de tipo ``double'' que se actualizarán con las coordenadas de los puntos. También se añadirán a la tabla columnas para alojar el valor de los datos de cada una de las bandas en cada punto nombradas como B1, B2, B3, B4 y B5 de tipo ``double''.
+	\item Actualización de los campos de coordenadas mediante el comando \textit{v.to.db} como se muestra en la figura \ref{fig:v.to.db} donde \textit{map} designa el vectorial que tiene la tabla asociada, \textit{option} indica que queremos actualizar coordenadas y \textit{columns} son los nombres de las columnas de coordenadas de nuestra tabla.
+	
+\begin{figure}[ht]
+\centering
+\begin{boxedverbatim}
+	v.to.db map=puntos@TFG option=coor columns=x,y
+\end{boxedverbatim}
+\captionsetup{font={footnotesize,it}}
+\caption[Actualización de coordenadas]{Actualización del campo coordenadas en GRASS con el comando \textit{v.to.db}.}
+\label{fig:v.to.db}
+\end{figure}	
+	
+	\item Actualización de los campos de datos del raster mediante el comando \textit{v.what.rast} como se muestra en la figura \ref{fig:v.what.rast} donde \textit{vector} indica cual es el vectorial que deseamos actualizar, \textit{raster} es el raster del que se tomarán los datos y \textit{column} el nombre del campo a actualizar.
 \end{itemize}
 
-Los gráficos de barras extraídos de la base de datos de la capa PuntosControl2 de GRASS es la mostrada en la figura ..... En ellos se muestra el valor que devuelve el raster de cada banda en cada punto. La tabla de valores \ref{tab:tabla_puntos} es la siguiente:
+\begin{figure}[ht]
+\centering
+\begin{boxedverbatim}
+	v.what.rast vector=puntos@TFG raster=L8GF_SRFB1@TFG column=B1
+\end{boxedverbatim}
+\captionsetup{font={footnotesize,it}}
+\caption[Actualización de los datos raster]{Actualización de los campos de datos raster en GRASS con el comando \textit{v.what.rast}.}
+\label{fig:v.what.rast}
+\end{figure}
+
+Los gráficos de barras extraídos de la base de datos de la capa ``puntos'' de GRASS es la mostrada en la figura ..... En ellos se muestra el valor que devuelve el raster de cada banda en cada punto. Se muestran los valores en el cuadro  \ref{tab:tabla_puntos}.
 
 \begin{table}[ht]
 	\centering
-	\caption[Base de datos de puntos de control]{Base de datos asociada a la capa PuntosControl2.}
-	\begin{tabular}{@{}cclccccc@{}}
+	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos''.}
+	\begin{tabular}{@{}rccccccc@{}}
 	\toprule[0.4mm]
-	East & North & Nombre & B1 & B2 & B3 & B4 & B5\\
+	cat & x & y & B1 & B2 & B3 & B4 & B5\\
 	\midrule
-	452379 & 1476560 & Pericos & 0.108972 & 0.087300 & 0.067607 & 0.046072 & 0.090234\\
-	450493 & 1476503 & Elotes & 0.112087 & 0.089801 & 0.076839 & 0.056714 & 0.192792\\
-	448571 & 1484829 & Corinto & 0.112906 & 0.093940 & 0.081046 & 0.065742 & 0.143560\\
-	448391 & 1485182 & Corinto 2 & 0.147221 & 0.135919 & 0.142650 & 0.170120 & 0.224765\\
-	438047 & 1488915 & Grande & 0.123525 & 0.105970 & 0.092053 & 0.086663 & 0.073201\\
-	434163 & 1487386 & Ganchos & 0.110154 & 0.089415 & 0.072701 & 0.056669 & 0.035225\\
-	440251 & 1489561 & Brea & 0.114179 & 0.094327 & 0.084890 & 0.071473 & 0.262218\\
+	1 & 415596 & 1483332 & 87 & 106 & 271 & 130 & 3309\\
+	2 & 414143 & 1481608 & 98 & 116 & 289 & 135 & 3322\\
+	3 & 417524 & 1481222 & 101 & 123 & 304 & 159 & 2977\\
+	4 & 420792 & 1477569 & 182 & 214 & 379 & 314 & 1793\\
+	5 & 426578 & 1480632 & 158 & 202 & 386 & 313 & 1957\\
+	6 & 433952 & 1483185 & 86 & 100 & 244 & 122 & 3002\\
+	7 & 440238 & 1477444 & 129 & 157 & 350 & 232 & 2320\\
+	8 & 450698 & 1475867 & 123 & 154 & 389 & 220 & 2847\\
+	9 & 447771 & 1466825 & 100 & 124 & 254 & 154 & 2368\\
+	10 & 450448 & 1464351 & 102 & 119 & 300 & 159 & 2934\\
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:tabla_puntos}
 \end{table}
+
+Puede observarse que los valores extraídos son valores enteros debido a que la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala 0.0001 \citep{USGS2015}.
