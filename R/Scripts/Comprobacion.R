@@ -1,7 +1,22 @@
 #Extracción de las gráficas de comprobación de la tabla de GRASS
 
 #carga del archivo
-puntos <- read.table("./Datos/tabla_puntos.csv", header=TRUE, sep=",")
+puntos <- read.csv("./Datos//puntos_comprob.csv")
+
+#Gráfica para un punto
+punto <- function(n){
+plot(1:5, c(puntos2[n,4:8]),
+     type = "o",
+     col = "red",
+     xlab = "Bandas Landsat",
+     ylab = expression (rho),
+     ylim = c(0,4000)
+     )
+abline (h = seq(0,4000,1000),
+        lty=1, col="grey")
+
+#legend(x = 2, y = 2000, legend = c("punto ", n), bty="n")
+}
 
 #extracción de los datos de interés
 Pericos <- c(puntos[1,]$B1, puntos[1,]$B2, puntos[1,]$B3, puntos[1,]$B4, puntos[1,]$B5)
