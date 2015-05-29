@@ -25,21 +25,32 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen de calidad Landsat path 18 row 51 (06/10/14)}}}{40}{subfigure.9.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen de calidad Landsat path 17 row 51 (16/11/14)}}}{40}{subfigure.9.2}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Valores nulos}}{42}{figure.caption.77}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Transformaci\IeC {\'o}n a reflectancias}}{42}{figure.caption.79}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{43}{figure.caption.82}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{44}{figure.caption.83}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{44}{figure.caption.84}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Recorte de la imagen}}{45}{figure.caption.87}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Filtro de paso bajo}}{46}{figure.caption.89}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Composici\IeC {\'o}n en color real}}{47}{figure.caption.90}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Composici\IeC {\'o}n en falso color}}{47}{figure.caption.91}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{43}{figure.caption.80}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{43}{figure.caption.81}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{44}{figure.caption.82}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Recorte de la imagen}}{45}{figure.caption.85}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Filtro de paso bajo}}{45}{figure.caption.87}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Composici\IeC {\'o}n en color real}}{46}{figure.caption.88}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Composici\IeC {\'o}n en falso color}}{47}{figure.caption.89}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales}}{50}{figure.caption.92}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales de las tres especies}}{51}{figure.caption.93}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas}}{52}{figure.caption.94}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{53}{figure.caption.95}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Gr\IeC {\'a}ficas de combinaci\IeC {\'o}n binaria}}{55}{figure.caption.99}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{56}{figure.caption.100}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Actualizaci\IeC {\'o}n de coordenadas}}{57}{figure.caption.102}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Actualizaci\IeC {\'o}n de los datos raster}}{57}{figure.caption.103}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales}}{50}{figure.caption.90}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales de las tres especies}}{51}{figure.caption.91}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas}}{52}{figure.caption.92}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{53}{figure.caption.93}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Gr\IeC {\'a}ficas de combinaci\IeC {\'o}n binaria}}{55}{figure.caption.97}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{56}{figure.caption.98}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Actualizaci\IeC {\'o}n de coordenadas}}{57}{figure.caption.100}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Actualizaci\IeC {\'o}n de los datos raster}}{57}{figure.caption.101}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Gr\IeC {\'a}ficas puntos de comprobaci\IeC {\'o}n}}{58}{figure.caption.103}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Datos punto 1}}}{58}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos punto 2}}}{58}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Datos punto 3}}}{58}{subfigure.9.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Datos punto 4}}}{58}{subfigure.9.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Datos punto 5}}}{58}{subfigure.9.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Datos punto 6}}}{58}{subfigure.9.6}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Datos punto 7}}}{58}{subfigure.9.7}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Datos punto 8}}}{58}{subfigure.9.8}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gr\IeC {\'a}ficas puntos de comprobaci\IeC {\'o}n}}{59}{figure.caption.104}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Datos punto 9}}}{59}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Datos punto 10}}}{59}{subfigure.10.2}
 \addvspace {10\p@ }

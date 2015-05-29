@@ -182,7 +182,7 @@ Debemos saber si los datos de reflectividad de las especies de mangle se adaptan
 \label{fig:v.what.rast}
 \end{figure}
 
-Los gráficos de barras extraídos de la base de datos de la capa ``puntos'' de GRASS es la mostrada en la figura ..... En ellos se muestra el valor que devuelve el raster de cada banda en cada punto. Se muestran los valores en el cuadro  \ref{tab:tabla_puntos}.
+Los gráficos extraídos de la base de datos de la capa ``puntos'' de GRASS son las mostradas en las figuras \ref{fig:puntos_comprob} y \ref{fig:puntos_comprob2}. En ellos se muestra el valor que devuelve el raster de cada banda en cada punto. Se muestran los valores en el cuadro \ref{tab:tabla_puntos}.\Sep
 
 \begin{table}[ht]
 	\centering
@@ -205,5 +205,39 @@ Los gráficos de barras extraídos de la base de datos de la capa ``puntos'' de 
 	\end{tabular}
 	\label{tab:tabla_puntos}
 \end{table}
+
+\begin{figure}
+\centering
+\subfloat[Datos punto 1]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto1.eps}}
+\subfloat[Datos punto 2]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto2.eps}}\\
+\subfloat[Datos punto 3]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto3.eps}}
+\subfloat[Datos punto 4]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto4.eps}}\\
+\subfloat[Datos punto 5]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto5.eps}}
+\subfloat[Datos punto 6]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto6.eps}}\\
+\subfloat[Datos punto 7]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto7.eps}}
+\subfloat[Datos punto 8]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto8.eps}}
+\captionsetup{font={footnotesize,it}}
+\caption[Gráficas puntos de comprobación]{Gráficas de los puntos de comprobación tomados. Fuente: Elaboración propia.}
+\label{fig:puntos_comprob}	
+\end{figure}
+
+\begin{figure}
+\centering
+\subfloat[Datos punto 9]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto9.eps}}
+\subfloat[Datos punto 10]{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/punto10.eps}}
+\captionsetup{font={footnotesize,it}}
+\caption[Gráficas puntos de comprobación]{Gráficas de los puntos de comprobación tomados. Fuente: Elaboración propia.}
+\label{fig:puntos_comprob2}
+\end{figure}
 
 Puede observarse que los valores extraídos son valores enteros debido a que la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala 0.0001 \citep{USGS2015}.

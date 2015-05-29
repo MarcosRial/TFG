@@ -337,30 +337,30 @@ donde \textit{``map''} corresponde a la banda a tratar seguido por el \textit{ma
 
 Este no es un procedimiento obligatorio aunque recomendable ya que los geoprocesos aplicados siguientes, como el mosaico de imágenes, ya implican un tratamiento de valores nulos.
 
-\subsubsection{Transformación a reflectancias}
-Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a los coeficientes radiométricos provistos en el archivo .txt que acompaña a las imágenes. Esta transformación se hará con el comando \textit{``i.landsat.toar''} como sigue:
+%\subsubsection{Transformación a reflectancias}
+%Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a los coeficientes radiométricos provistos en el archivo .txt que acompaña a las imágenes. Esta transformación se hará con el comando \textit{i.landsat.toar} como sigue:
 
-\begin{figure}[h]
-\centering
-\begin{boxedverbatim}
-	i.landsat.toar
-	input_prefix=LC80170512014320LGN00_B
-	output_prefix=LC80170512014320LGN00_TOAR_B
-	metfile=/home/marcos/grassdata/Imagenes/Landsat/
-	P17R51/Base/LC80170512014320LGN00_MTL.txt
-	sensor=oli8
-	method=dos4
-	date=2014-11-16
-	sun_elevation=52.01756824
-\end{boxedverbatim}
-\captionsetup{font={footnotesize,it}}
-\caption[Transformación a reflectancias]{Transformación a reflectancias TOA en GRASS con el comando \textit{i.landsat.toar}.}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\begin{boxedverbatim}
+%	i.landsat.toar
+%	input_prefix=LC80170512014320LGN00_B
+%	output_prefix=LC80170512014320LGN00_TOAR_B
+%	metfile=/home/marcos/grassdata/Imagenes/Landsat/
+%	P17R51/Base/LC80170512014320LGN00_MTL.txt
+%	sensor=oli8
+%	method=dos4
+%	date=2014-11-16
+%	sun_elevation=52.01756824
+%\end{boxedverbatim}
+%\captionsetup{font={footnotesize,it}}
+%\caption[Transformación a reflectancias]{Transformación a reflectancias TOA en GRASS con el comando \textit{i.landsat.toar}.}
+%\end{figure}
 
-donde \textit{``input\_prefix''} es el prefijo del nombre de las imágenes para cada banda, \textit{``output\_prefix''} es el prefijo que le queremos dar a las nuevas imágenes corregidas, \textit{``metfile''} es el archivo de metadatos asociado, \textit{``sensor''} el tipo de sensor, \textit{``date''} es la fechas de adquisición y \textit{``sun\_elevation''} la elevación en grados del Sol.
+%donde \textit{``input\_prefix''} es el prefijo del nombre de las imágenes para cada banda, \textit{``output\_prefix''} es el prefijo que le queremos dar a las nuevas imágenes corregidas, \textit{``metfile''} es el archivo de metadatos asociado, \textit{``sensor''} el tipo de sensor, \textit{``date''} es la fechas de adquisición y \textit{``sun\_elevation''} la elevación en grados del Sol.
 
 \subsubsection{Mosaico de imágenes}
-Para realizar el mosaico de las dos imágenes de las que disponemos tenemos dos opciones: utilizando la herramienta \textit{gdal\_merge.py} y hacerlo en GRASS. Para utilizar la herramienta de la librería \ac{GDAL} gdal\_merge.py debemos tener las siguientes consideraciones:
+Para realizar el mosaico de las dos imágenes de las que disponemos tenemos dos opciones: utilizando la herramienta \textit{gdal\_merge.py} y hacerlo en GRASS. Para utilizar la herramienta de la librería \ac{GDAL} gdal\_merge.py debemos tener las siguientes consideraciones previas:
 
 \begin{itemize}
 	\item Es un método que se ejecuta en la terminal de Linux. Para un método guiado se utilizaría, por ejemplo, la herramienta \textit{raster/combinar} en QGIS o el método de GRASS que se expondrá más adelante.
@@ -371,7 +371,7 @@ Para realizar el mosaico de las dos imágenes de las que disponemos tenemos dos 
 
 La línea de comando en cuestión es la siguiente (para las imágenes de la primera banda y en el caso de tener situadas las imágenes en la misma carpeta):
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{boxedverbatim}
 	gdal_merge.py -n 0 -v LC80170512014320LGN00_B1.TIF 
@@ -395,7 +395,7 @@ En la figura \ref{fig:dialogomosaico} se observa el diálogo resultante de la op
 
 De hacerlo en GRASS, el comando sería \textit{r.patch}, con la salvedad de que las dos imágenes deben estar en la misma región de cálculo, la cual se puede ver en el cuadro \ref{tab:region}), quedando la siguiente línea de orden:
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{boxedverbatim}
 	r.patch input=LC80180512014327LGN00_sr_band1@TFG,
@@ -464,7 +464,7 @@ donde $g(x,y)$ es el nuevo valor del píxel localizado en las coordenadas \texti
 
 La operación es realizada en GRASS mediante el comando \textit{r.neighbors} como sigue:
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{boxedverbatim}
 	r.neighbors input=L8GF_SRB1@TFG output=L8GF_SRFB1 size=3
