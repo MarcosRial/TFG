@@ -11,27 +11,27 @@
 
 \section{Análisis de separabilidad}
 \subsection{Análisis visual}
-Una vez introducidos los datos en R se obtienen las gráficas mostradas en la figura \ref{fig:firmas_espectrales} y el conjunto de ellas en la figura \ref{fig:ral}, de donde se pueden sacar las primeras conclusiones.\Sep
+Una vez introducidos los datos en R se obtienen las gráficas mostradas en la figura \ref{fig:ral}, donde se expresan con las letras C, B, G, R e IRC la nomenclatura de las bandas de Landsat 8 ya expuestas en la sección de imágenes satélite del capítulo anterior.\Sep
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{./Imagenes/RM.eps}
+%	\includegraphics[width=0.8\linewidth]{./Imagenes/LR.eps}
+%	\includegraphics[width=0.8\linewidth]{./Imagenes/AG.eps}
+%	\captionsetup{font={footnotesize,it}}
+%	\caption[Firmas espectrales]{Gráficas de las firmas espectrales de las especies de mangle estudiadas. Fuente: Elaboración propia.}
+%	\label{fig:firmas_espectrales}
+%\end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/RM.eps}
-	\includegraphics[width=0.8\linewidth]{./Imagenes/LR.eps}
-	\includegraphics[width=0.8\linewidth]{./Imagenes/AG.eps}
-	\captionsetup{font={footnotesize,it}}
-	\caption[Firmas espectrales]{Gráficas de las firmas espectrales de las especies de mangle estudiadas. Fuente: Elaboración propia.}
-	\label{fig:firmas_espectrales}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/ral.eps}
+	\includegraphics[width=0.8\linewidth]{./Imagenes/ral2.eps}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Firmas espectrales de las tres especies]{Gráfica conjunta de las tres firmas espectrales. Fuente: Elaboración propia.}
 	\label{fig:ral}
 \end{figure}
 
-Como se aprecia en las figuras los datos presentan unas alteraciones al inicio y al final que son propias del radiómetro. Se procedió a desechar estos datos haciendo un corte de colas entre los valores 420 nm y 900 nm de longitud de onda para preservar lo máximo posible la integridad de los datos y que no afectaran a los análisis de separabilidad. El número de observaciones se reduciría a 481 por las 751 originales. Las gráficas resultantes son las mostradas en las figuras \ref{fig:firmas_espectrales_corte} y \ref{fig:ral_corte}.\Sep
+Como se aprecia, los datos presentan unas alteraciones al inicio y al final que son propias del radiómetro de campo. Se procedió a desechar estos datos haciendo un corte de colas entre los valores 420 nm y 900 nm de longitud de onda para preservar lo máximo posible la integridad de los datos y que no afectaran a los análisis de separabilidad. El número de observaciones se reduciría a 481 por las 751 originales. Las gráficas resultantes son las mostradas en las figuras \ref{fig:firmas_espectrales_corte} y \ref{fig:ral_corte}.\Sep
 
 \begin{figure}
 	\centering
@@ -53,9 +53,9 @@ Como se aprecia en las figuras los datos presentan unas alteraciones al inicio y
 
 Las tres especies tienen un máximo local en la banda correspondiente al verde (G), típica de las especies vegetales, así como otro máximo de mayor valor, correspondientes al intervalo de longitud de onda ($\lambda$) en el que está incluida la banda del \ac{IRC}. Este último máximo también es característico de la vegetación e indicaría su grado de salud.\Sep
 
-Por lo tanto el primer vistazo a las gráficas es el esperado, siendo lo más preocupante el aparente parecido entre las especies R. mangle y A. germinans, que solo se diferencian en el valor del \ac{IRC}.\Sep
+Por lo tanto el primer vistazo a las gráficas es el esperado, siendo lo más preocupante el aparente parecido entre las especies R. mangle y A. germinans, que solo se diferencian en los valores del rango del \ac{IRC}.\Sep
 
-En el cuadro siguiente se pueden apreciar los valores medios de cada especie para cada banda de Landsat 8
+En el cuadro siguiente (\ref{tab:valores_medios}) se pueden apreciar los valores medios de cada especie para cada banda de Landsat 8.
 
 \begin{table}[ht]
 	\centering
@@ -69,11 +69,12 @@ En el cuadro siguiente se pueden apreciar los valores medios de cada especie par
 	\textit{A. germinans} & 0.0355 & 0.0479 & 0.1218 & 0.0604 & 0.5513 \\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\label{tab:valores_medios}
 \end{table}
 
 %\section{Aplicación de los análisis}
 \subsection{Índice de Acuerdo Espectral}
-Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref{fig:IAE}) ya se aprecia que el resultado no es muy bueno, aunque esperado, siendo las diferencias casi inapreciables como se ve en la tabla \ref{tab:Valores_IAE} y en los gráficos de la figura \ref{fig:CB}, donde se aprecia mejor la poca diferencia espectral existente.\Sep
+Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref{fig:IAE}) ya se aprecia que el resultado no es muy bueno aunque esperado, siendo las diferencias casi inapreciables como se ve en la tabla \ref{tab:Valores_IAE}.\Sep %y en los gráficos de la figura \ref{fig:CB}, donde se aprecia mejor la poca diferencia espectral existente.
 
 \begin{table}[ht]
 	\centering
@@ -89,9 +90,9 @@ Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref
 	\label{tab:Valores_IAE}
 \end{table}
 
-Las diferencias en este método son bajas debido a que se trata de tres especies que, aunque no sean de la misma familia, si son vegetales y coexisten formando asociación en el mismo ecosistema. De haber estudiado la diferencia entre especie vegetal, suelo y agua por ejemplo, las diferencias habrían sido más notables debido a la diferencia de valor medio de la respuesta espectral. En este caso, el valor medio de las tres especies sería el mostrado en la tabla siguiente:
+Las diferencias en este método son bajas debido a que se trata de tres especies que, aunque no sean de la misma familia, si son vegetales y coexisten formando asociación en el mismo ecosistema. De haber estudiado la diferencia entre especie vegetal, suelo y agua por ejemplo, las diferencias habrían sido más notables debido a la diferencia de valor medio de la respuesta espectral. En este caso, el valor medio de las tres especies sería el mostrado en el cuadro \ref{tab:mediaIAE}.\Sep
 
-\begin{table}[ht]
+\begin{table}
 	\centering
 	\caption[Valores medios de la respuesta espectral]{Valor medio de la respuesta espectral para cada especie.}
 	\begin{tabular}{@{}ccc@{}}
@@ -108,6 +109,7 @@ Las diferencias en este método son bajas debido a que se trata de tres especies
 
 El corte en $\lambda$ que se menciona en el cuadro \ref{tab:mediaIAE} se refiere al valor de longitud de onda a partir del cual la reflectancia es mayor a la media y por tanto se provoca una cambio en el valor binario de 0 a 1 donde, de tener un mayor rango de longitud de onda observada habría más de un cambio. Se observan unos valores similares de $\lambda$ para las tres especies, pero donde sí se notan diferencias son en el valor medio de la reflectancia, siendo el de la \textit{L. racemosa} notablemente superior al de las otras dos especies.
 
+\begin{comment}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/IAE_RM.eps}
@@ -117,6 +119,7 @@ El corte en $\lambda$ que se menciona en el cuadro \ref{tab:mediaIAE} se refiere
 	\caption[Gráficas de combinación binaria]{Gráficas de combinación binaria de las tres especies de mangle, por orden \textit{Rhizophora mangle}, \textit{Laguncularia racemosa} y \textit{Avicennia germinans}. Fuente: Elaboración propia.}
 	\label{fig:CB}
 \end{figure}
+\end{comment}
 
 \subsection{Continuum Removal}
 En la gráfica de la figura \ref{fig:GraficaCR} se pueden observar las diferencias entre las tres especies que nos indica este tipo de análisis. Son tres los aspectos de esta gráfica a analizar: la profundidad y anchura de las partes convexas y la posición de los puntos mínimos. En gris la gráfica de reflectividad de cada especie.\Sep
@@ -152,7 +155,7 @@ Una vez aplicado el script de R de la función de clasificación angular (figura
 Se puede observar una mayor separabilidad entre \textit{R. mangle} y \textit{L. racemosa}, siendo menor en las otras combinaciones.
 
 \section{Comprobación}
-Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
+Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}) o se sitúan cerca de ellos, como camaroneras o esteros. Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
 
 \begin{itemize}
 	\item Creación de una capa vectorial en blanco de nombre ``puntos'' y añadirla al árbol de capas. En esta capa se digitalizarán un total de 10 puntos en los que se supone la existencia de bosque de mangle.
@@ -241,3 +244,5 @@ Los gráficos extraídos de la base de datos de la capa ``puntos'' de GRASS son 
 \end{figure}
 
 Puede observarse que los valores extraídos son valores enteros debido a que la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala 0.0001 \citep{USGS2015}.
+
+\section{Clasificación de imagen}
