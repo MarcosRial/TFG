@@ -185,64 +185,60 @@ Debemos saber si los datos de reflectividad de las especies de mangle se adaptan
 \label{fig:v.what.rast}
 \end{figure}
 
-Los gráficos extraídos de la base de datos de la capa ``puntos'' de GRASS son las mostradas en las figuras \ref{fig:puntos_comprob} y \ref{fig:puntos_comprob2}. En ellos se muestra el valor que devuelve el raster de cada banda en cada punto. Se muestran los valores en el cuadro \ref{tab:tabla_puntos}.\Sep
+Debido a que en la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala de 0.0001 \citep{USGS2015} corresponde reescalar los valores a un intervalo 0-1 más común. Para ello se emplea la calculadora de mapas ráster de GRASS aplicando la expresión $L8GF\_SRFB1@TFG \cdot 0.0001$ para cada una de las capas del proyecto. La línea de comando utilizada es la siguiente:
+
+\begin{figure}[ht]
+	\centering
+	\begin{boxedverbatim}
+	r.mapcalc `L8GF_B1=L8GF_SRFB1@TFG*0.0001'
+	\end{boxedverbatim}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Reescalado de valores]{Reescalado de los valores de la imagen Landsat con r.mapcalc.}
+\end{figure}
+
+Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_puntos} y su distribución en la zona de estudio en la figura \ref{fig:dist_puntos}.\Sep
 
 \begin{table}[ht]
 	\centering
-	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos''.}
+	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos'' de la figura .}
 	\begin{tabular}{@{}rccccccc@{}}
 	\toprule[0.4mm]
 	cat & x & y & B1 & B2 & B3 & B4 & B5\\
 	\midrule
-	1 & 415596 & 1483332 & 87 & 106 & 271 & 130 & 3309\\
-	2 & 414143 & 1481608 & 98 & 116 & 289 & 135 & 3322\\
-	3 & 417524 & 1481222 & 101 & 123 & 304 & 159 & 2977\\
-	4 & 420792 & 1477569 & 182 & 214 & 379 & 314 & 1793\\
-	5 & 426578 & 1480632 & 158 & 202 & 386 & 313 & 1957\\
-	6 & 433952 & 1483185 & 86 & 100 & 244 & 122 & 3002\\
-	7 & 440238 & 1477444 & 129 & 157 & 350 & 232 & 2320\\
-	8 & 450698 & 1475867 & 123 & 154 & 389 & 220 & 2847\\
-	9 & 447771 & 1466825 & 100 & 124 & 254 & 154 & 2368\\
-	10 & 450448 & 1464351 & 102 & 119 & 300 & 159 & 2934\\
+	1 & 413076.12 & 1485451.42 & 0.0080 & 0.0102 & 0.0249 & 0.0120 & 0.3054\\
+	2 & 416539.92 & 1483130.35 & 0.0096 & 0.0113 & 0.0254 & 0.0137 & 0.2964\\
+	3 & 413619.63 & 1482194.38 & 0.0090 & 0.0108 & 0.0247 & 0.0116 & 0.3311\\
+	4 & 434978.06 & 1485551.73 & 0.0076 & 0.0099 & 0.0256 & 0.0124 & 0.3132\\
+	5 & 435666.27 & 1481906.87 & 0.0086 & 0.0109 & 0.0254 & 0.0134 & 0.2954\\
+	6 & 426223.06 & 1479693.58 & 0.0106 & 0.0131 & 0.0330 & 0.0173 & 0.2963\\
+	7 & 434938.70 & 1478948.70 & 0.0119 & 0.0146 & 0.0309 & 0.0190 & 0.2612\\
+	8 & 455289.36 & 1479452.68 & 0.0132 & 0.0163 & 0.0385 & 0.0268 & 0.2300\\
+	9 & 447490.46 & 1478621.82 & 0.0147 & 0.0187 & 0.0413 & 0.0286 & 0.2300\\
+	10 & 452584.20 & 1462969.61 & 0.0115 & 0.0143 & 0.0345 & 0.0209 & 0.2577\\
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:tabla_puntos}
 \end{table}
 
 \begin{figure}
-\centering
-\subfloat[Datos punto 1]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto1.eps}}
-\subfloat[Datos punto 2]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto2.eps}}\\
-\subfloat[Datos punto 3]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto3.eps}}
-\subfloat[Datos punto 4]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto4.eps}}\\
-\subfloat[Datos punto 5]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto5.eps}}
-\subfloat[Datos punto 6]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto6.eps}}\\
-\subfloat[Datos punto 7]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto7.eps}}
-\subfloat[Datos punto 8]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto8.eps}}
-\captionsetup{font={footnotesize,it}}
-\caption[Gráficas puntos de comprobación]{Gráficas de los puntos de comprobación tomados. Fuente: Elaboración propia.}
-\label{fig:puntos_comprob}	
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/puntos_comprob.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Distribución de puntos]{Distribución de puntos de comprobación en la zona de estudio. Fuente: Elaboración propia.}
+	\label{fig:dist_puntos}
 \end{figure}
+
+Para hacer una comprobación de los datos tomados en campo se superponen estos a una gráfica de cajas y bigotes extraída de los valores de los puntos de comprobación (figura \ref{fig:grafica_comprob}). Un gráfico de este tipo consiste en una caja rectangular donde los lados verticales (en nuestro caso) muestran el recorrido intercuartílico dividido por un segmento horizontal que es la mediana. Por lo tanto, de un solo vistazo nos aporta información sobre valor central (segunto cuartil), primer y tercer cuartil. Además nos dice cuales son los valores máximo y mínimo de la distribución, que formarían los bigotes, y detecta valores desfasados en forma de puntos fuera de la caja.\Sep
+
+Gracias a esta representación gráfica se confirma que los datos tomados por el espectro-radiómetro de campo están incrementados en algunas décimas en la lectura media de cada banda comparados con la información de las imágenes de Landsat 8. Pese a eso se puede observar como los datos tienen un aspecto similar.\Sep
 
 \begin{figure}
-\centering
-\subfloat[Datos punto 9]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto9.eps}}
-\subfloat[Datos punto 10]{
-	\includegraphics[width=0.45\linewidth]{./Imagenes/punto10.eps}}
-\captionsetup{font={footnotesize,it}}
-\caption[Gráficas puntos de comprobación]{Gráficas de los puntos de comprobación tomados. Fuente: Elaboración propia.}
-\label{fig:puntos_comprob2}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/grafica_comprob.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Gráfico de puntos de comprobación]{Gráfico de cajas y bigotes correspondiente a los datos de los puntos de comprobación. Se superponen los datos medios de reflectividad para cada especie en cada banda. Fuente: Elaboración propia.}
+	\label{fig:grafica_comprob}
 \end{figure}
 
-Puede observarse que los valores extraídos son valores enteros debido a que la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala 0.0001 \citep{USGS2015}.
-
 \section{Clasificación de imagen}
+Por las características de los datos y los resultados obtenidos de los análisis de separabilidad espectral se hace imposible obtener una clasificación lo suficientemente clara que permita diferenciar estas tres tipo de especies en una imagen de satélite Landsat. Por lo tanto se procedió a realizar una clasificación más simple de lo que es o no es bosque de mangle distinguiendo del mismo modo camaroneras, estero, arenal, vegetación y pasto convencional.
