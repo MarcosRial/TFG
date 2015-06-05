@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.15)  2 JUN 2015 13:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.15)  5 JUN 2015 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1621,29 +1621,29 @@ Package babel Info: Redefining spanish shorthand "?
 
 ]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 84.
  [13])
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 71.
@@ -1724,7 +1724,7 @@ Package epstopdf Info: Source file: <./Imagenes/Mangle2.eps>
 verted-to.pdf ./Imagenes/Mangle2.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
-<./Imagenes/Mangle2-eps-converted-to.pdf, id=407, 541.02126pt x 406.51875pt>
+<./Imagenes/Mangle2-eps-converted-to.pdf, id=409, 541.02126pt x 406.51875pt>
 File: ./Imagenes/Mangle2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Mangle2-eps-converted-to.pdf>
@@ -1779,7 +1779,7 @@ ndial_mangle-eps-converted-to.pdf ./Imagenes/distribucion_mundial_mangle.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/distribucion_mundial_mangle-eps-converted-to.pdf, id=415, 723.70375
+<./Imagenes/distribucion_mundial_mangle-eps-converted-to.pdf, id=417, 723.70375
 pt x 362.35374pt>
 File: ./Imagenes/distribucion_mundial_mangle-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -1837,7 +1837,7 @@ f>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Camaronera2-eps-converted-to.pdf, id=427, 368.37625pt x 207.77625pt
+<./Imagenes/Camaronera2-eps-converted-to.pdf, id=429, 368.37625pt x 207.77625pt
 >
 File: ./Imagenes/Camaronera2-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/Camaronera2-eps-converted-to.pdf>
@@ -1887,7 +1887,7 @@ onverted-to.pdf ./Imagenes/Salineras.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Salineras-eps-converted-to.pdf, id=450, 381.425pt x 214.8025pt>
+<./Imagenes/Salineras-eps-converted-to.pdf, id=452, 381.425pt x 214.8025pt>
 File: ./Imagenes/Salineras-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Salineras-eps-converted-to.pdf>
@@ -2000,8 +2000,17 @@ Package babel Info: Redefining spanish shorthand "?
  [5 <./Imagenes/Salineras-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:ISF' newly defined as it shall be overridden
 although it is yet undefined on input line 86.
+Package acronym Info: Label `acro:CODDEFFAGOLF' newly defined as it shall be ov
+erridden
+although it is yet undefined on input line 86.
 Package acronym Info: Label `acro:USC' newly defined as it shall be overridden
 although it is yet undefined on input line 86.
+
+Overfull \hbox (0.91585pt too wide) in paragraph at lines 86--87
+\T1/mdbch/m/n/12 mi-té pa-ra la De-fen-sa y Desa-rro-llo de la Flo-ra y Fau-na 
+del Gol-fo de Fon-se-ca ([])[]
+ []
+
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 88.
 Package babel Info: Redefining spanish shorthand >>
@@ -2016,7 +2025,6 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 88.
 LaTeX Font Info:    Try loading font information for TS1+mdbch on input line 89
 .
-
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
 File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 )
@@ -2034,7 +2042,7 @@ s-converted-to.pdf ./Imagenes/localizacion.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/localizacion-eps-converted-to.pdf, id=481, 845.1575pt x 598.235pt>
+<./Imagenes/localizacion-eps-converted-to.pdf, id=483, 845.1575pt x 598.235pt>
 File: ./Imagenes/localizacion-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/localizacion-eps-converted-to.pdf>
@@ -2053,7 +2061,7 @@ ev-eps-converted-to.pdf ./Imagenes/localizacion_elev.eps>
 (epstopdf)             \includegraphics on input line 101.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/localizacion_elev-eps-converted-to.pdf, id=486, 845.1575pt x 598.23
+<./Imagenes/localizacion_elev-eps-converted-to.pdf, id=488, 845.1575pt x 598.23
 5pt>
 File: ./Imagenes/localizacion_elev-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2158,7 +2166,7 @@ ificado.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Elementos_teledeteccion_modificado-eps-converted-to.pdf, id=528, 66
+<./Imagenes/Elementos_teledeteccion_modificado-eps-converted-to.pdf, id=531, 66
 2.475pt x 537.00626pt>
 File: ./Imagenes/Elementos_teledeteccion_modificado-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -2167,48 +2175,48 @@ c file (type pdf)
 Package pdftex.def Info: ./Imagenes/Elementos_teledeteccion_modificado-eps-conv
 erted-to.pdf used on input line 121.
 (pdftex.def)             Requested size: 182.09486pt x 147.60753pt.
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 129.
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 131.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 131.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 131.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 131.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 131.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 131.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 131.
 
-[8 <./Imagenes/Elementos_teledeteccion_modificado-eps-converted-to.pdf>]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 129.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 129.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 129.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 129.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 129.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 129.
+[8]
 Package epstopdf Info: Source file: <./Imagenes/Espectro.eps>
 (epstopdf)                    date: 2014-10-07 11:15:23
 (epstopdf)                    size: 276874 bytes
@@ -2219,8 +2227,7 @@ Package epstopdf Info: Source file: <./Imagenes/Espectro.eps>
 nverted-to.pdf ./Imagenes/Espectro.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/Espectro-eps-converted-to.pdf, id=550, 690.58pt x 322.20375pt>
+ <./Imagenes/Espectro-eps-converted-to.pdf, id=550, 690.58pt x 322.20375pt>
 File: ./Imagenes/Espectro-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Espectro-eps-converted-to.pdf>
@@ -2255,7 +2262,8 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 163.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 163.
- [9 <./Imagenes/Espectro-eps-converted-to.pdf>]
+ [9 <./Imagenes/Elementos_teledeteccion_modificado-eps-converted-to.pdf> <./Ima
+genes/Espectro-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:IRC' newly defined as it shall be overridden
 although it is yet undefined on input line 164.
 Package acronym Info: Label `acro:IRM' newly defined as it shall be overridden
@@ -2265,6 +2273,10 @@ although it is yet undefined on input line 164.
 Package acronym Info: Label `acro:SWIR' newly defined as it shall be overridden
 
 although it is yet undefined on input line 164.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand >>
@@ -2277,92 +2289,88 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 172.
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 174.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 174.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 174.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 174.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 174.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 174.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 172.
  [10]
-LaTeX Info: Redefining \. on input line 189.
-LaTeX Info: Redefining \% on input line 189.
-LaTeX Info: Redefining \. on input line 189.
-LaTeX Info: Redefining \% on input line 189.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 172.
+LaTeX Info: Redefining \. on input line 188.
+LaTeX Info: Redefining \% on input line 188.
+LaTeX Info: Redefining \. on input line 188.
+LaTeX Info: Redefining \% on input line 188.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 188.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 188.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 188.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 188.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 188.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 188.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 188.
  [11]
-LaTeX Info: Redefining \. on input line 220.
-LaTeX Info: Redefining \% on input line 220.
-LaTeX Info: Redefining \. on input line 220.
-LaTeX Info: Redefining \% on input line 220.
+LaTeX Info: Redefining \. on input line 218.
+LaTeX Info: Redefining \% on input line 218.
+LaTeX Info: Redefining \. on input line 218.
+LaTeX Info: Redefining \% on input line 218.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 218.
  [12]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 228.
@@ -2417,7 +2425,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Firma_espectral-eps-converted-to.pdf, id=593, 427.5975pt x 285.065p
+<./Imagenes/Firma_espectral-eps-converted-to.pdf, id=596, 427.5975pt x 285.065p
 t>
 File: ./Imagenes/Firma_espectral-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/Firma_espectral-eps-converted-to.pdf>
@@ -2445,7 +2453,7 @@ ctral_SIGFIRM-eps-converted-to.pdf ./Imagenes/biblioteca_espectral_SIGFIRM.eps>
 (epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/biblioteca_espectral_SIGFIRM-eps-converted-to.pdf, id=595, 615.2987
+<./Imagenes/biblioteca_espectral_SIGFIRM-eps-converted-to.pdf, id=598, 615.2987
 5pt x 322.20375pt>
 File: ./Imagenes/biblioteca_espectral_SIGFIRM-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -2945,7 +2953,7 @@ ado-eps-converted-to.pdf ./Imagenes/Mangle_recolectado.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Mangle_recolectado-eps-converted-to.pdf, id=710, 1455.4375pt x 819.
+<./Imagenes/Mangle_recolectado-eps-converted-to.pdf, id=713, 1455.4375pt x 819.
 06pt>
 File: ./Imagenes/Mangle_recolectado-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2965,7 +2973,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Curva_espectral-eps-converted-to.pdf, id=711, 371.3875pt x 208.78pt
+<./Imagenes/Curva_espectral-eps-converted-to.pdf, id=714, 371.3875pt x 208.78pt
 >
 File: ./Imagenes/Curva_espectral-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/Curva_espectral-eps-converted-to.pdf>
@@ -3297,7 +3305,7 @@ ed-to.pdf ./Imagenes/CR1.eps>
 (epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/CR1-eps-converted-to.pdf, id=806, 615.29875pt x 458.71375pt>
+<./Imagenes/CR1-eps-converted-to.pdf, id=809, 615.29875pt x 458.71375pt>
 File: ./Imagenes/CR1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/CR1-eps-converted-to.pdf>
@@ -3315,7 +3323,7 @@ ed-to.pdf ./Imagenes/CR2.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/CR2-eps-converted-to.pdf, id=807, 643.40375pt x 476.78125pt>
+<./Imagenes/CR2-eps-converted-to.pdf, id=810, 643.40375pt x 476.78125pt>
 File: ./Imagenes/CR2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/CR2-eps-converted-to.pdf>
@@ -3584,7 +3592,7 @@ onverted-to.pdf ./Imagenes/Landsat18.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Landsat18-eps-converted-to.pdf, id=921, 753.81625pt x 770.88pt>
+<./Imagenes/Landsat18-eps-converted-to.pdf, id=924, 753.81625pt x 770.88pt>
 File: ./Imagenes/Landsat18-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Landsat18-eps-converted-to.pdf>
@@ -3603,7 +3611,7 @@ onverted-to.pdf ./Imagenes/Landsat17.eps>
 (epstopdf)             \includegraphics on input line 282.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Landsat17-eps-converted-to.pdf, id=922, 285.065pt x 292.09125pt>
+<./Imagenes/Landsat17-eps-converted-to.pdf, id=925, 285.065pt x 292.09125pt>
 File: ./Imagenes/Landsat17-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Landsat17-eps-converted-to.pdf>
@@ -3622,7 +3630,7 @@ converted-to.pdf ./Imagenes/LandsatQ18.eps>
 (epstopdf)             \includegraphics on input line 291.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/LandsatQ18-eps-converted-to.pdf, id=923, 753.81625pt x 770.88pt>
+<./Imagenes/LandsatQ18-eps-converted-to.pdf, id=926, 753.81625pt x 770.88pt>
 File: ./Imagenes/LandsatQ18-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/LandsatQ18-eps-converted-to.pdf>
@@ -3641,7 +3649,7 @@ converted-to.pdf ./Imagenes/LandsatQ17.eps>
 (epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/LandsatQ17-eps-converted-to.pdf, id=924, 753.81625pt x 771.88374pt>
+<./Imagenes/LandsatQ17-eps-converted-to.pdf, id=927, 753.81625pt x 771.88374pt>
 File: ./Imagenes/LandsatQ17-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Imagenes/LandsatQ17-eps-converted-to.pdf>
 Package pdftex.def Info: ./Imagenes/LandsatQ17-eps-converted-to.pdf used on inp
@@ -3793,7 +3801,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 390.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Dialogo_mosaico-eps-converted-to.pdf, id=972, 631.35875pt x 310.158
+<./Imagenes/Dialogo_mosaico-eps-converted-to.pdf, id=975, 631.35875pt x 310.158
 75pt>
 File: ./Imagenes/Dialogo_mosaico-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/Dialogo_mosaico-eps-converted-to.pdf>
@@ -3901,7 +3909,7 @@ rted-to.pdf ./Imagenes/GF432.eps>
 (epstopdf)             \includegraphics on input line 481.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/GF432-eps-converted-to.pdf, id=999, 828.09375pt x 536.0025pt>
+<./Imagenes/GF432-eps-converted-to.pdf, id=1002, 828.09375pt x 536.0025pt>
 File: ./Imagenes/GF432-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/GF432-eps-converted-to.pdf>
@@ -3919,7 +3927,7 @@ rted-to.pdf ./Imagenes/GF543.eps>
 (epstopdf)             \includegraphics on input line 489.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/GF543-eps-converted-to.pdf, id=1000, 828.09375pt x 536.0025pt>
+<./Imagenes/GF543-eps-converted-to.pdf, id=1003, 828.09375pt x 536.0025pt>
 File: ./Imagenes/GF543-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/GF543-eps-converted-to.pdf>
@@ -4060,7 +4068,7 @@ Package epstopdf Info: Source file: <./Imagenes/ral2.eps>
 ted-to.pdf ./Imagenes/ral2.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
-<./Imagenes/ral2-eps-converted-to.pdf, id=1020, 1778.645pt x 789.95125pt>
+<./Imagenes/ral2-eps-converted-to.pdf, id=1023, 1778.645pt x 789.95125pt>
 File: ./Imagenes/ral2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ral2-eps-converted-to.pdf>
@@ -4103,7 +4111,7 @@ verted-to.pdf ./Imagenes/RMcorte.eps>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/RMcorte-eps-converted-to.pdf, id=1030, 1778.645pt x 996.72375pt>
+<./Imagenes/RMcorte-eps-converted-to.pdf, id=1033, 1778.645pt x 996.72375pt>
 File: ./Imagenes/RMcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/RMcorte-eps-converted-to.pdf>
@@ -4121,7 +4129,7 @@ verted-to.pdf ./Imagenes/LRcorte.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/LRcorte-eps-converted-to.pdf, id=1031, 1778.645pt x 854.19125pt>
+<./Imagenes/LRcorte-eps-converted-to.pdf, id=1034, 1778.645pt x 854.19125pt>
 File: ./Imagenes/LRcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/LRcorte-eps-converted-to.pdf>
@@ -4139,7 +4147,7 @@ verted-to.pdf ./Imagenes/AGcorte.eps>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/AGcorte-eps-converted-to.pdf, id=1032, 427.5975pt x 205.76875pt>
+<./Imagenes/AGcorte-eps-converted-to.pdf, id=1035, 427.5975pt x 205.76875pt>
 File: ./Imagenes/AGcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/AGcorte-eps-converted-to.pdf>
@@ -4157,7 +4165,7 @@ nverted-to.pdf ./Imagenes/ralcorte.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/ralcorte-eps-converted-to.pdf, id=1033, 427.5975pt x 256.96pt>
+<./Imagenes/ralcorte-eps-converted-to.pdf, id=1036, 427.5975pt x 256.96pt>
 File: ./Imagenes/ralcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ralcorte-eps-converted-to.pdf>
@@ -4291,7 +4299,7 @@ f>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/ContinuumR2-eps-converted-to.pdf, id=1065, 427.5975pt x 220.825pt>
+<./Imagenes/ContinuumR2-eps-converted-to.pdf, id=1068, 427.5975pt x 220.825pt>
 File: ./Imagenes/ContinuumR2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ContinuumR2-eps-converted-to.pdf>
@@ -4380,262 +4388,89 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 164.
  [54]
-Package epstopdf Info: Source file: <./Imagenes/punto1.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 209794 bytes
-(epstopdf)             Output file: <./Imagenes/punto1-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 47172 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto1-eps-conv
-erted-to.pdf ./Imagenes/punto1.eps>
-(epstopdf)             \includegraphics on input line 215.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto1-eps-converted-to.pdf, id=1085, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto1-eps-converted-to.pdf used on input l
-ine 215.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto2.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 209768 bytes
-(epstopdf)             Output file: <./Imagenes/punto2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 47202 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto2-eps-conv
-erted-to.pdf ./Imagenes/punto2.eps>
-(epstopdf)             \includegraphics on input line 217.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto2-eps-converted-to.pdf, id=1086, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto2-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto2-eps-converted-to.pdf used on input l
-ine 217.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto3.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 209320 bytes
-(epstopdf)             Output file: <./Imagenes/punto3-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 46583 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto3-eps-conv
-erted-to.pdf ./Imagenes/punto3.eps>
-(epstopdf)             \includegraphics on input line 219.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto3-eps-converted-to.pdf, id=1087, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto3-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto3-eps-converted-to.pdf used on input l
-ine 219.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto4.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 207084 bytes
-(epstopdf)             Output file: <./Imagenes/punto4-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 44357 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto4-eps-conv
-erted-to.pdf ./Imagenes/punto4.eps>
-(epstopdf)             \includegraphics on input line 221.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto4-eps-converted-to.pdf, id=1088, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto4-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto4-eps-converted-to.pdf used on input l
-ine 221.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto5.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 207838 bytes
-(epstopdf)             Output file: <./Imagenes/punto5-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 42419 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto5-eps-conv
-erted-to.pdf ./Imagenes/punto5.eps>
-(epstopdf)             \includegraphics on input line 223.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto5-eps-converted-to.pdf, id=1089, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto5-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto5-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto5-eps-converted-to.pdf used on input l
-ine 223.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto6.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 208882 bytes
-(epstopdf)             Output file: <./Imagenes/punto6-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 46183 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto6-eps-conv
-erted-to.pdf ./Imagenes/punto6.eps>
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 188.
+Package epstopdf Info: Source file: <./Imagenes/puntos_comprob.eps>
+(epstopdf)                    date: 2015-06-05 17:06:55
+(epstopdf)                    size: 1750809 bytes
+(epstopdf)             Output file: <./Imagenes/puntos_comprob-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2015-06-05 17:38:25
+(epstopdf)                    size: 270308 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Imagenes/puntos_comprob-
+eps-converted-to.pdf ./Imagenes/puntos_comprob.eps>
 (epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/punto6-eps-converted-to.pdf, id=1090, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto6-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto6-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto6-eps-converted-to.pdf used on input l
-ine 225.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto7.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 208392 bytes
-(epstopdf)             Output file: <./Imagenes/punto7-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 45368 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto7-eps-conv
-erted-to.pdf ./Imagenes/punto7.eps>
-(epstopdf)             \includegraphics on input line 227.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto7-eps-converted-to.pdf, id=1091, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto7-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto7-eps-converted-to.pdf used on input l
-ine 227.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto8.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 209632 bytes
-(epstopdf)             Output file: <./Imagenes/punto8-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 46342 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto8-eps-conv
-erted-to.pdf ./Imagenes/punto8.eps>
-(epstopdf)             \includegraphics on input line 229.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto8-eps-converted-to.pdf, id=1092, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto8-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto8-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto8-eps-converted-to.pdf used on input l
-ine 229.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto9.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 208306 bytes
-(epstopdf)             Output file: <./Imagenes/punto9-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 45462 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto9-eps-conv
-erted-to.pdf ./Imagenes/punto9.eps>
-(epstopdf)             \includegraphics on input line 238.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto9-eps-converted-to.pdf, id=1093, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto9-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto9-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto9-eps-converted-to.pdf used on input l
-ine 238.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
-Package epstopdf Info: Source file: <./Imagenes/punto10.eps>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 209007 bytes
-(epstopdf)             Output file: <./Imagenes/punto10-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-29 20:07:03
-(epstopdf)                    size: 45890 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Imagenes/punto10-eps-con
-verted-to.pdf ./Imagenes/punto10.eps>
-(epstopdf)             \includegraphics on input line 240.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Imagenes/punto10-eps-converted-to.pdf, id=1094, 427.5975pt x 256.96pt>
-File: ./Imagenes/punto10-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Imagenes/punto10-eps-converted-to.pdf>
-Package pdftex.def Info: ./Imagenes/punto10-eps-converted-to.pdf used on input 
-line 240.
-(pdftex.def)             Requested size: 204.85846pt x 123.10806pt.
+<./Imagenes/puntos_comprob-eps-converted-to.pdf, id=1089, 804.00375pt x 603.253
+75pt>
+File: ./Imagenes/puntos_comprob-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./Imagenes/puntos_comprob-eps-converted-to.pdf>
+Package pdftex.def Info: ./Imagenes/puntos_comprob-eps-converted-to.pdf used on
+ input line 225.
+(pdftex.def)             Requested size: 364.19667pt x 273.25662pt.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 248.
-) (./conclusiones.tex
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 232.
  [55]
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 9.
+Package epstopdf Info: Source file: <./Imagenes/grafica_comprob.eps>
+(epstopdf)                    date: 2015-06-05 17:42:05
+(epstopdf)                    size: 806924 bytes
+(epstopdf)             Output file: <./Imagenes/grafica_comprob-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2015-06-05 17:42:32
+(epstopdf)                    size: 191761 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Imagenes/grafica_comprob
+-eps-converted-to.pdf ./Imagenes/grafica_comprob.eps>
+(epstopdf)             \includegraphics on input line 237.
+Package epstopdf Info: Output file is already uptodate.
 
-[56 <./Imagenes/punto1-eps-converted-to.pdf> <./Imagenes/punto2-eps-converted-t
-o.pdf> <./Imagenes/punto3-eps-converted-to.pdf> <./Imagenes/punto4-eps-converte
-d-to.pdf> <./Imagenes/punto5-eps-converted-to.pdf> <./Imagenes/punto6-eps-conve
-rted-to.pdf> <./Imagenes/punto7-eps-converted-to.pdf> <./Imagenes/punto8-eps-co
-nverted-to.pdf>]
+<./Imagenes/grafica_comprob-eps-converted-to.pdf, id=1095, 2371.86125pt x 1948.
+27875pt>
+File: ./Imagenes/grafica_comprob-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./Imagenes/grafica_comprob-eps-converted-to.pdf>
+Package pdftex.def Info: ./Imagenes/grafica_comprob-eps-converted-to.pdf used o
+n input line 237.
+(pdftex.def)             Requested size: 364.19667pt x 299.1559pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 243.
+)
+(./conclusiones.tex
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 LaTeX Info: Redefining \. on input line 9.
@@ -4664,8 +4499,37 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 9.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 9.
- [57 <./Imagenes/punto9-eps-converted-to.pdf> <./Imagenes/punto10-eps-converted
--to.pdf>]
+ [56]
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 9.
+ [57 <./Imagenes/puntos_comprob-eps-converted-to.pdf> <./Imagenes/grafica_compr
+ob-eps-converted-to.pdf>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 9.
 Package babel Info: Redefining spanish shorthand >>
@@ -4706,34 +4570,34 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 9.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 16.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 16.
+[59]
 Package acronym Info: Label `acro:SCP' newly defined as it shall be overridden
-although it is yet undefined on input line 15.
+although it is yet undefined on input line 17.
 )
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 85.
- [59]
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
 Package babel Info: Redefining spanish shorthand <<
@@ -4902,15 +4766,15 @@ LaTeX Info: Redefining \% on input line 24.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `TFG.out' has not changed.
-(rerunfilecheck)             Checksum: BFD783CDD185AFEF596B9E4C45360013;2933.
+(rerunfilecheck)             Checksum: FF527983D8FD227CB9DDB551C33B8974;2933.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 14550 strings out of 494966
- 210528 string characters out of 6179558
- 321506 words of memory out of 5000000
- 17055 multiletter control sequences out of 15000+600000
- 90387 words of font info for 144 fonts, out of 8000000 for 9000
+ 14508 strings out of 494966
+ 209135 string characters out of 6179558
+ 321663 words of memory out of 5000000
+ 17029 multiletter control sequences out of 15000+600000
+ 92453 words of font info for 145 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  46i,12n,85p,1104b,1974s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/marcos/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.643pk>{/usr/sh
@@ -4927,10 +4791,10 @@ thdesign/mdbch/md-chr7y.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/m
 athdesign/mdbch/md-chr8t.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 mathdesign/mdbch/md-chri7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/mathdesign/mdbch/md-chri8t.pfb>
-Output written on TFG.pdf (80 pages, 6289375 bytes).
+Output written on TFG.pdf (80 pages, 6314204 bytes).
 PDF statistics:
- 1381 PDF objects out of 1440 (max. 8388607)
- 1114 compressed objects within 12 object streams
- 345 named destinations out of 1000 (max. 500000)
- 548 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1341 PDF objects out of 1440 (max. 8388607)
+ 1088 compressed objects within 11 object streams
+ 337 named destinations out of 1000 (max. 500000)
+ 508 words of extra memory for PDF output out of 10000 (max. 10000000)
 
