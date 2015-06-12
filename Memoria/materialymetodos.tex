@@ -12,11 +12,11 @@
 \section{Estudio radiométrico}
 En este caso, obtendremos del estudio radiométrico firmas espectrales del tipo monobanda. Estas se caracterizan porque la respuesta de los objetos analizados es contenida en un solo canal continuo de datos \citep{andinofase1}.\Sep
 
-El material vegetal utilizado en el estudio fueron muestras recientes de hojas tomadas de árboles de cada especie como se describe en la metodología de obtención de firmas espectrales de \cite{andinofase2} y como se puede apreciar en las figuras \ref{fig:mangle_recolectado} y \ref{fig:curva_espectral}.
+La meteorología y la difícil accesibilidad de la zona hicieron aconsejable hacer una toma de muestras y realizar la observación en un estudio. El material vegetal utilizado en el estudio fueron muestras recientes de hojas tomadas de árboles de cada especie como se describe en la metodología de obtención de firmas espectrales de \cite{andinofase2} y como se puede apreciar en las figuras \ref{fig:mangle_recolectado} y \ref{fig:curva_espectral}.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/Mangle_recolectado.eps}
+	\includegraphics[width=0.9\linewidth]{./Imagenes/Mangle_recolectado.eps}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Mangle recolectado]{Hojas de las especies de mangle a analizar. Fotografía de Rafael Corrales.}
 	\label{fig:mangle_recolectado}
@@ -24,7 +24,7 @@ El material vegetal utilizado en el estudio fueron muestras recientes de hojas t
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/Curva_espectral.eps}
+	\includegraphics[width=0.9\linewidth]{./Imagenes/Curva_espectral.eps}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Obtención de firmas]{Momento de la obtención de las firmas espectrales de una especie. Fotografía de Rafael Corrales.}
 	\label{fig:curva_espectral}
@@ -35,22 +35,21 @@ Los datos obtenidos por el profesor Rafael Enrique Corrales con el espectro-radi
 
 La característica principal de estos datos es que abarcan un amplio rango espectral de forma continuada, similar a lo que ocurre en la obtención de una imagen, pero en este caso los datos serían solamente de un punto, no de una superficie extensa. El rango espectral captado por el espectro-radiómetro comprende de 324.5 - 1075,5 nm almacenando la reflectividad media para intervalos de onda de 1nm.\Sep
 
-Simultáneamente a la toma de datos se visitaron puntos donde era conocida la existencia de mangle (cuadro \ref{tab:puntos}). Estrictamente no son puntos de control porque no se trata de puntos en los que no solo existe la cobertura de un tipo de mangle concreto sino que pueden confluir varias cubiertas en el mismo punto.
+Simultáneamente a la toma de datos se visitaron puntos donde era conocida la existencia de mangle (cuadro \ref{tab:puntos}). Estos estrictamente no son puntos de control porque no se trata de puntos en los que no solo existe la cobertura de un tipo de mangle concreto sino que pueden confluir varias cubiertas en el mismo punto. En ellos se observaron la certeza del cambio en la existencia de mangle y alguna de las causas que lo motivan, como la presencia de salineras y estanques de camarón. En algunos casos, como el de La Brea la presencia de R. mangle es para reducir el impacto visual de las camaroneras. En otras zonas como en Los Ganchos, la pérdida de cobertura de mangle es debida a la dinámica de la costa provocada por la desembocadura del río Nacaome.
 
-\begin{table}
+\begin{table}[ht]
 	\centering
-	\caption[Puntos de control]{Serie de puntos conocidos de existencia de manglar.}
-	\begin{tabular}{@{}ccl@{}}
+	\caption[Puntos de control]{Serie de puntos conocidos de existencia de manglar con la especie predominante.}
+	\begin{tabular}{@{}ccll@{}}
 	\toprule[0.4mm]
-	East & North & Nombre\\
+	East & North & Nombre & Epecies existentes\\
 	\midrule
-	452379 & 1476560 & Pasadero de los Pericos\\
-	450493 & 1476503 & Punta de los Elotes\\
-	448571 & 1484829 & Corinto\\
-	448391 & 1485182 & Corinto\\
-	438047 & 1488915 & Jiote Grande\\
-	434163 & 1487386 & Los Ganchos\\
-	440251 & 1489561 & La Brea\\
+	452379 & 1476560 & Pasadero de los Pericos & \textit{R. mangle}.\\
+	450493 & 1476503 & Punta de los Elotes & \textit{R. mangle} y \textit{L. racemosa}\\
+	448571 & 1484829 & Corinto & \textit{R. mangle} y \textit{L. racemosa}\\
+	438047 & 1488915 & Jiote Grande & \textit{R. mangle}, \textit{L. racemosa} y \textit{A. germinans}\\
+	434163 & 1487386 & Los Ganchos & \textit{R. mangle}\\
+	440251 & 1489561 & La Brea & R. mangle, \textit{L. racemosa} y \textit{A. germinans}\\
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\label{tab:puntos}
@@ -254,7 +253,7 @@ Otra forma de obtener las imágenes de Landsat 8 es mediante el gestor de descar
 
 En cambio, para la correcta realización de este \ac{TFG} donde tenemos datos de reflectividad a nivel del suelo, necesitamos que las imágenes Landsat también muestren valores de reflectividad a ese nivel. Esto se consigue aplicando un algoritmo de corrección radiométrica a las imágenes \ac{L1T} obteniendo un producto también proporcionado por la agencia \ac{EROS} bajo demanda llamado \ac{PL8SR} \citep{USGS2015} que también se puede encontrar bajo en nombre de Landsat SR.\Sep
 
-Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen las siguientes características:
+Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen las características mostradas en el cuadro \ref{tab:imagenes}. Se consideró que la diferencia temporal entre ambas imágenes y la fecha de toma de datos no era determinante suponiendo un escaso cambio fenológico de las especies de mangle en ese periodo de tiempo.\Sep
 
 \begin{table}[ht]
 	\centering
@@ -271,8 +270,6 @@ Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen 
 \end{table}
 
 Se observa en las imágenes de calidad de la figura \ref{fig:imagenescalidad}, en las que las nubes y nubes altas se marcan de color blanco y amarillo respectivamente, que la cobertura nubosa es aceptable para trabajar en la zona de estudio.\Sep
-
-Se consideró que el desfase temporal entre ambas imágenes y la fecha de toma de datos no era determinante suponiendo un escaso cambio fenológico de las especies de mangle en ese periodo de tiempo.\Sep
 
 \begin{figure}
 	\centering
@@ -319,7 +316,7 @@ donde:
 \subsection{Tratamientos previos}
 Como se decía en el apartado anterior, la geometría de las imágenes ya está corregida. Pero es necesario realizar algunos procedimientos antes de unirlas y recortarlas finalmente para que se adapten a la zona de estudio y sea más cómodo trabajar con ellas. Estos procedimientos son el tratamiento de los valores nulos, la transformación de los \ac{ND} en reflectancias, el mosaico de imágenes, su posterior recorte y la aplicación de un filtro de paso bajo.\Sep
 
-Lo primero que se debe hacer en GRASS es crear la localización \textit{(location)} de nuestro proyecto y añadir las imágenes al directorio de mapas \textit{(mapset)}. Los datos de la localización se establecen gracias a la lectura por parte de GRASS de la configuración de proyección y datum de un archivo de datos georreferenciado, es decir, de cualquier imagen de Landsat del trabajo. Las imágenes se añadirán al \textit{mapset} con el comando \textit{``r.in.gdal''}.
+Lo primero que se debe hacer en GRASS es crear la localización \textit{(location)} de nuestro proyecto y añadir las imágenes al directorio de mapas \textit{(mapset)}. Los datos de la localización se establecen gracias a la lectura por parte de GRASS de la configuración de proyección y datum de un archivo de datos georreferenciado, es decir, de cualquier imagen de Landsat del trabajo. Las imágenes se añadirán al \textit{mapset} con el comando \textit{r.in.gdal}.
 
 \subsubsection{Valores nulos}
 El tratamiento de los valores nulos se lleva a cabo mediante el comando \textit{r.null} como sigue:
@@ -393,7 +390,7 @@ En la figura \ref{fig:dialogomosaico} se observa el diálogo resultante de la op
 	\label{fig:dialogomosaico}
 \end{figure}
 
-De hacerlo en GRASS, el comando sería \textit{r.patch}, con la salvedad de que las dos imágenes deben estar en la misma región de cálculo, la cual se puede ver en el cuadro \ref{tab:region}), quedando la siguiente línea de orden:
+De hacerlo en GRASS, el comando sería \textit{r.patch}, con la salvedad de que las dos imágenes deben estar en la misma región de cálculo, la cual se puede ver en el cuadro \ref{tab:region}, quedando la línea de orden de la figura \ref{fig:rpatch}.
 
 \begin{figure}[ht]
 \centering
@@ -404,6 +401,7 @@ De hacerlo en GRASS, el comando sería \textit{r.patch}, con la salvedad de que 
 \end{boxedverbatim}
 \captionsetup{font={footnotesize,it}}
 \caption[Mosaico de imágenes en GRASS]{Mosaico de imágenes en GRASS mediante el comando \textit{r.patch}.}
+\label{fig:rpatch}
 \end{figure}
 
 \subsubsection{Recorte de la imagen}
@@ -478,7 +476,7 @@ El comando admite varias operaciones de filtrado como entre otras: media, median
 El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y \ref{fig:gf543}.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/GF432.eps}
+	\includegraphics[width=0.9\linewidth]{./Imagenes/GF432.eps}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Composición en color real]{Resultado de la imagen en una composición de color real (432). Imagen exportada de GRASS. Fuente: Elaboración propia.}
 	\label{fig:gf432}
@@ -486,8 +484,16 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/GF543.eps}
+	\includegraphics[width=0.9\linewidth]{./Imagenes/GF543.eps}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Composición en falso color]{Resultado de la imagen en una composición de falso color (543). Imagen exportada de GRASS. Fuente: Elaboración propia.}
 	\label{fig:gf543}
 \end{figure}
+
+\section{Clasificación de imágenes}
+
+Como se menciona en el apartado \ref{subsec:clasificacion} la clasificación es el último paso del análisis de imágenes en teledetección. 
+
+\subsection{Índices de vegetación}
+
+
