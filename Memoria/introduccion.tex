@@ -451,10 +451,10 @@ El primero de los procedimientos es especialmente indicado para aquellas imágen
 
 El método de corrección a partir de puntos de control requiere de la intervención humana, lo que resulta tedioso en comparación con el primer método. En cambio ofrece mayor precisión en la corrección dependiendo, evidentemente, de la medida en que en la imagen se puedan detectar los puntos de control establecidos.\Sep
 
-\subsection{Clasificación de imágenes}
+\subsection{Clasificación de imágenes} \label{subsec:clasificacion}
 La clasificación es el último paso en el análisis de imágenes digitales mediante teledetección (se beneficia de los procesos de correcciones, realces y fusiones de imágenes) y de ella derivan los productos cartográficos finales en forma de mapas temáticos. El \ac{ND} pasa de reflejar el nivel de reflectancia a tener un valor categórico concreto que puede etiquetarse con un tipo concreto de superficie. Se genera así cartografía temática y facilita el trato estadístico de la información.\Sep
 
-Hay numerosos métodos de clasificación que se desgranarán más adelante y que deben cumplir los siguientes requisitos:
+Hay numerosos métodos de clasificación que deben cumplir los siguientes requisitos:
 
 \begin{itemize}
 	\item Fiabilidad.
@@ -483,12 +483,12 @@ El problema más común en la definición de clases es que el tipo de clase info
 	\item Fase de asignación.
 En esta fase a cada uno de los píxeles de la imagen se le asigna una clase obteniendo así una nueva imagen con los \ac{ND} expresando una categoría temática diferente. Los criterios de asignación definen un área de dominio, en torno al centro de cada categoría. Por lo tanto, si el \ac{ND} del píxel se encuentra dentro de esa área será asignado a esa clase.
 
-Los clasificadores más habituales son:
-\begin{itemize}
-	\item Clasificador de mínima distancia: el píxel se asigna a la clase más cercana espectralmente.
-	\item Clasificador de paralelepípedos: permite al usuario señalar los umbrales de dispersión espectral asociados a cada clase.
-	\item Clasificador de máxima probabilidad (maximun likehood): el píxel se asigna a aquella clase con la que tenga mayor probabilidad de pertenencia.
-\end{itemize}
+%Los clasificadores más habituales son:
+%\begin{itemize}
+%	\item Clasificador de mínima distancia: el píxel se asigna a la clase más cercana espectralmente.
+%	\item Clasificador de paralelepípedos: permite al usuario señalar los umbrales de dispersión espectral asociados a cada clase.
+%	\item Clasificador de máxima probabilidad (maximun likehood): el píxel se asigna a aquella clase con la que tenga mayor probabilidad de pertenencia.
+%\end{itemize}
 	\item Obtención y presentación de resultados.
 	\item Verificación de resultados.
 \end{enumerate}
