@@ -44,8 +44,10 @@
 \contentsline {subsection}{\numberline {2.4.3}Tratamientos previos}{41}{subsection.2.4.3}
 \contentsline {subsubsection}{Valores nulos}{42}{section*.77}
 \contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{42}{section*.79}
-\contentsline {subsubsection}{Recorte de la imagen}{44}{section*.84}
+\contentsline {subsubsection}{Recorte de la imagen}{43}{section*.84}
 \contentsline {subsubsection}{Filtro de paso bajo}{45}{section*.87}
+\contentsline {section}{\numberline {2.5}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{46}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{46}{subsection.2.5.1}
 \contentsline {chapter}{\numberline {3}Resultados}{49}{chapter.3}
 \contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis de separabilidad}{49}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}An\IeC {\'a}lisis visual}{49}{subsection.3.1.1}
@@ -54,5 +56,6 @@
 \contentsline {subsection}{\numberline {3.1.4}Clasificaci\IeC {\'o}n angular}{54}{subsection.3.1.4}
 \contentsline {section}{\numberline {3.2}Comprobaci\IeC {\'o}n}{54}{section.3.2}
 \contentsline {section}{\numberline {3.3}Clasificaci\IeC {\'o}n de imagen}{56}{section.3.3}
+\contentsline {section}{\numberline {3.4}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{58}{section.3.4}
 \contentsline {chapter}{\numberline {4}Conclusiones}{59}{chapter.4}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{64}{chapter*.106}
