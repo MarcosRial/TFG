@@ -201,7 +201,7 @@ Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_
 \begin{table}[ht]
 	\centering
 	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos'' de la figura .}
-	\begin{tabular}{@{}rccccccc@{}}
+	\begin{tabular}{@{}cccccccc@{}}
 	\toprule[0.4mm]
 	cat & x & y & B1 & B2 & B3 & B4 & B5\\
 	\midrule
@@ -230,7 +230,7 @@ Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_
 
 Para hacer una comprobación de los datos tomados en campo se superponen estos a una gráfica de cajas y bigotes extraída de los valores de los puntos de comprobación (figura \ref{fig:grafica_comprob}). Un gráfico de este tipo consiste en una caja rectangular donde los lados verticales (en nuestro caso) muestran el recorrido intercuartílico dividido por un segmento horizontal que es la mediana. Por lo tanto, de un solo vistazo nos aporta información sobre valor central (segunto cuartil), primer y tercer cuartil. Además nos dice cuales son los valores máximo y mínimo de la distribución, que formarían los bigotes, y detecta valores desfasados en forma de puntos fuera de la caja.\Sep
 
-Gracias a esta representación gráfica se confirma que los datos tomados por el espectro-radiómetro de campo están incrementados en algunas décimas en la lectura media de cada banda comparados con la información de las imágenes de Landsat 8. Pese a eso se puede observar como los datos tienen un aspecto similar.\Sep
+Gracias a esta representación gráfica se confirma que la magnitud de los datos tomados por el espectro-radiómetro de campo están incrementados en varias décimas en la lectura media de cada banda comparados con la información de las imágenes de Landsat 8. Pese a eso se puede observar como los datos tienen un aspecto similar.
 
 \begin{figure}
 	\centering
@@ -242,3 +242,6 @@ Gracias a esta representación gráfica se confirma que los datos tomados por el
 
 \section{Clasificación de imagen}
 Por las características de los datos y los resultados obtenidos de los análisis de separabilidad espectral se hace imposible obtener una clasificación lo suficientemente clara que permita diferenciar estas tres tipo de especies en una imagen de satélite Landsat. Por lo tanto se procedió a realizar una clasificación más simple de lo que es o no es bosque de mangle distinguiendo del mismo modo camaroneras, estero, arenal, vegetación y pasto convencional.
+
+\section{Índices de vegetación}
+NDVI, SAVI, GreenNDVI, EVI
