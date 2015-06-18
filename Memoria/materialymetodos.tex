@@ -56,7 +56,7 @@ Simultáneamente a la toma de datos se visitaron puntos donde era conocida la ex
 \end{table}
 
 \section{Software} \label{sec:software}
-El uso de software libre es un recurso importante para realizar trabajos sobre recursos medioambientales principalmente por, entre otras cosas \citep{MatellanOliveira2004}:
+El uso de software libre en general es un recurso a tener en cuenta para realizar trabajos técnicos que utilizan un componente informático \citep{MatellanOliveira2004} \citep{Mas2005software}. En concreto es uso de este tipo de software en trabajos sobre recursos medioambientales cobra importancia principalmente por, entre otras cosas:
 
 \begin{enumerate}
 	\item Abarata el coste del proyecto al ser bajo o nulo el coste de una licencia de uso.
@@ -190,7 +190,7 @@ matlines(bandas, t(cr2))
 Donde ``manglencorte'' es el archivo de datos con el corte realizado para cada especie como se explicó anteriormente. Se crea un objeto llamado ``bandas'' tomando los valores de la fila V4 de cualquiera de los archivos de datos. Se crea la gráfica con el comandos \textit{matplot()} y con \textit{matlines()} se superpone la gráfica propia del método \ac{CR}.\Sep
 
 \subsection{Clasificación angular}
-La clasificación angular calcula la similitud entre dos espectros a partir de su distancia angular espectral. Originalmente este método compara espectros desconocidos con otros de referencia tomados, por ejemplo, de bibliotecas espectrales o de la misma imagen \citep{girouard2004validated} con el fin de asignar píxeles desconocidos a clases de referencia conocida en una clasificación temática. El algoritmo de clasificación angular es el siguiente:
+La clasificación angular también llamada \ac{SAM} calcula la similitud entre dos espectros a partir de su distancia angular espectral. Originalmente este método compara espectros desconocidos con otros de referencia tomados, por ejemplo, de bibliotecas espectrales o de la misma imagen \citep{girouard2004validated} con el fin de asignar píxeles desconocidos a clases de referencia conocida en una clasificación temática. El algoritmo de clasificación angular es el siguiente:
 
 \begin{equation} \label{eq:angular}
 	\theta = arcos \frac{\sum_{k=1}^{m} \rho_{i,k} \rho_{j,k}}{\sqrt{\sum_{k=1}^{m} \rho_{i,k}^{2}} \sqrt{\sum_{k=1}^{m} \rho_{j,k}^{2}}}
@@ -491,9 +491,85 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 \end{figure}
 
 \section{Clasificación de imágenes}
+Como se menciona en el apartado \ref{subsec:clasificacion} la clasificación es el último paso del análisis de imágenes en teledetección y a partir del cual se generan los mapas temáticos. Para hacer una clasificación, ya sea esta supervisada o no supervisada necesitamos conocer que tipos de algoritmos clasificadores tenemos a nuestra disposición.
 
-Como se menciona en el apartado \ref{subsec:clasificacion} la clasificación es el último paso del análisis de imágenes en teledetección. 
+\paragraph{Mínima distancia.}
+También llamado vecino más próximo, vecino más cercano o \ac{NN} es el criterio más sencillo y rápido de aplicar. Se asigna el píxel a la categoría cuyo centroide de clase sea el más cercano a este.  La distancia es espectral y el criterio más utilizado para medirla es la distancia euclidiana como se muestra en la ecuación siguiente:
+
+\begin{equation}
+d_{x,A}=\sqrt{\displaystyle\sum_{i=1}^{m}(ND_{x,i}-\overline{ND}_{A,i})^{2}}
+\end{equation}\Sep
+
+Donde $d_{x,A}$ es la medida de la distancia espectral entre el píxel \textit{x} y la categoría \textit{A}; $ND_{x,i}$ el valor del píxel en la banda \textit{i}; y $\overline{ND}_{A,i}$ el valor medio de la categoría en esa banda.\Sep
+
+Es un clasificador eficiente cuando no se presenta solape de categorías, por lo tanto cuando la zona de estudio no es de gran complejidad. No deja píxeles sin clasificar puesto que siempre hay una clase más cercana. No considera dispersión de cada categoría o correlación entre bandas.
+
+\paragraph{\ac{K-NN}.}
+Este clasificador es igual al \ac{NN} con la salvedad de que pondera el valor de cada píxel en la muestra de entrenamiento por el inverso de la distancia espectral que lo separa del píxel a clasificar. En el caso del algoritmo de vecino más proximo se toma un valor $k=1$. En la figura \ref{fig:KNN} se muestra una gráfica de ejemplo en la que se aplica el clasificador para dos bandas y tres categorías con módulo $k=5$.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\linewidth]{./Imagenes/KNN.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Clasificador \textit{K-Nearest Neighbor}]{Gráfica de ejemplo del empleo del clasificador K-NN con $k=5$.}
+	\label{fig:KNN}
+\end{figure}
+
+\paragraph{Casificador de paralelepípedos.}
+Conocido también como de cajas o \textit{multilevel-slice classifier} este clasificador permite al usuario definir un máximo y mínimo para cada clase por banda creando así cajas en el espacio \textit{n} dimensional (siendo \textit{n} el número de bandas) (figura \ref{fig:paralele}). Este método puede dejar píxeles sin clasificar (los que no estén dentro de ninguna caja) y presenta problemas con el solapamiento de cajas. Para evitar esto se necesita tener un criterio de decisión.
+
+\begin{equation}
+C_{i}=(\cup\Delta x^{t}_{i-j})
+\end{equation}
+
+Donde $C_{i}$ es el conjunto de categorías a clasificar y $\cup\Delta x^{t}_{i-j}$ el rango de valores radiométricos $i-j$ en cada banda $t$.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\linewidth]{./Imagenes/Paralelepipedos.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Clasificador de paralelepípedos]{Gráfica de ejemplo del empleo del clasificador de paralelepípedos para dos bandas y tres clases. Fuente: \cite{Olaya2010}.}
+	\label{fig:paralele}	
+\end{figure}
+
+\paragraph{Máxima verosimilitud.}
+También llamado máxima probabilidad o \ac{MLC}. Este clasificador asume una distribución normal de cada clase en cada banda, estima los parámetros de distribución a partir de una muestra de entrenamiento, calcula regiones de probabilidad teórica y asigna finalmente cada píxel a la clase de mayor probabilidad. Clasifica toda la imagen no dejando píxeles sin clasificar.\Sep
+
+En la figura \ref{fig:MLC} se puede ver un ejemplo en el que un píxel situado a una distancia igual del centro de la clase A al centro de la clase B es clasificado como A debido a que se encuentra dentro de una elipse de probabilidad mayor en la clase A.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\linewidth]{./Imagenes/MLK.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Clasificador de máxima verosimilitud]{Gráfica de ejemplo del empleo del clasificador de máxima verosimilitud. Fuente: \cite{JARS1999}.}
+	\label{fig:MLC}
+\end{figure}
 
 \subsection{Índices de vegetación}
+Los \ac{IV} buscan mejorar la discriminación entre dos cubiertas con comportamiento reflectivo muy distinto en dos bandas, principalmente en el visible y el \ac{IRC} \citep{chuvieco2002teledeteccion}. La diferencia entre la reflectividad de la banda del rojo y la del \ac{IRC} en cubiertas vegetales permite separar la vegetación sana o vigorosa de otras especies de vegetación puesto que mientras en el visible, en particular en la banda roja, los pigmentos de la hoja absorben la mayor parte de la energía que reciben, estas sustancias apenas afectan al infrarrojo cercano. Cuanto mayor sea esta diferencia de reflectividades mayor vigorosidad presentará la cubierta observada debido a que en situaciones desfavorables para la vegetación menor es la diferencia.\Sep
 
+Entre el gran número de \ac{IV} desarrollados por numerosos grupos de investigación, obviando el cociente simple entre bandas (\ref{eq:cociente}), el \ac{NDVI} (\ref{eq:NDVI}) es el más utilizado en estudios de evaluación del estado vegetal creado por \cite{rouse1974}.
 
+\begin{eqnarray}\label{eq:cociente}
+C_{i} & = & \frac{\rho_{i, IRC}}{\rho_{i, R}}\\
+NDVI_{i} & = & \frac{\rho_{i, IRC}-\rho_{i, R}}{\rho_{i, IRC}+\rho_{i, R}}
+\label{eq:NDVI}
+\end{eqnarray}
+
+Donde $\rho_{i, IRC}$ y $\rho_{i, R}$ indican la reflectividad de un píxel \textit{i} en la banda del IRC y rojo respectivamente que son las bandas 5 y 4 del sensor \ac{OLI} de Landsat 8. Los valores del \ac{NDVI} en cada píxel varían entre [-1,1].\Sep
+
+Un aspecto importante y que el \ac{NDVI} no tiene en cuenta es el efecto que provoca la proporción entre vegetación y suelo del píxel. El \ac{SAVI} (\ref{eq:SAVI}) es un \ac{IV} que lo que busca es reducir este efecto aplicando una constante L de radiancia de fondo en la ecuación.
+
+\begin{equation}
+SAVI_{i}=\frac{\rho_{i, IRC}-\rho_{i, R}}{\rho_{i, IRC}+\rho_{i, R}+L}(1+L)
+\label{eq:SAVI}
+\end{equation}\Sep
+
+Otra alternativa al \ac{NDVI} es el llamado \ac{EVI} (\ref{eq:EVI}) que corrige alteraciones de suelo y atmósfera mediante la aplicación de una serie de constantes. Este resulta más sensible que el \ac{NDVI} en rangos contrastados de vegetación \citep{chuvieco2002teledeteccion}.
+
+\begin{equation}
+EVI_{i}=G\frac{\rho_{IRC}-\rho_{R}}{\rho_{IRC}+C_{1}\rho_{R}-C_{2}\rho_{B}+L}
+\label{eq:EVI}
+\end{equation}
+
+Donde $\rho_{B}$, $\rho_{R}$ y $\rho_{IRC}$ son las reflectividades de azul, rojo e infrarrojo cercano respectivamente; L es el mismo coeficiente de radiancia de fondo del índice \ac{SAVI}; G es un factor de ganancia; y $C_{1}$ y $C_{2}$ son coeficientes de corrección de la influencia del aerosol.
