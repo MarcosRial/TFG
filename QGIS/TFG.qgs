@@ -1,0 +1,214 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.8.2-Wien">
+  <title></title>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="SAVI20150617121213030" name="SAVI">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="NDVI20150617115613081" name="NDVI">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>meters</units>
+    <extent>
+      <xmin>374488.5</xmin>
+      <ymin>1409871.75</ymin>
+      <xmax>519451.5</xmax>
+      <ymax>1503458.25</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>0</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=16 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>3100</srsid>
+        <srid>32616</srid>
+        <authid>EPSG:32616</authid>
+        <description>WGS 84 / UTM zone 16N</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <layer_coordinate_transform_info/>
+  </mapcanvas>
+  <visibility-presets/>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>NDVI20150617115613081</item>
+      <item>SAVI20150617121213030</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="SAVI" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="SAVI20150617121213030" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="NDVI" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="NDVI20150617115613081" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers layercount="2">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <id>NDVI20150617115613081</id>
+      <datasource>../../grassdata/utm16N_wgs84_GF/TFG/cellhd/NDVI</datasource>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <timestamp>2015-06-08T19:34:54</timestamp>
+      <layername>NDVI</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=16 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3100</srsid>
+          <srid>32616</srid>
+          <authid>EPSG:32616</authid>
+          <description>WGS 84 / UTM zone 16N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>grassraster</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="0.898709" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="-0.711334" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="-1" label="" color="#051852"/>
+              <item alpha="255" value="-0.3" label="" color="#051852"/>
+              <item alpha="255" value="-0.18" label="" color="#ffffff"/>
+              <item alpha="255" value="0" label="" color="#ffffff"/>
+              <item alpha="255" value="0.025" label="" color="#cec5b4"/>
+              <item alpha="255" value="0.075" label="" color="#bfa37c"/>
+              <item alpha="255" value="0.125" label="" color="#b3ae60"/>
+              <item alpha="255" value="0.15" label="" color="#a3b550"/>
+              <item alpha="255" value="0.175" label="" color="#90aa3c"/>
+              <item alpha="255" value="0.233" label="" color="#a6c31d"/>
+              <item alpha="255" value="0.266" label="" color="#87b703"/>
+              <item alpha="255" value="0.333" label="" color="#79af01"/>
+              <item alpha="255" value="0.366" label="" color="#65a300"/>
+              <item alpha="255" value="0.433" label="" color="#4e9700"/>
+              <item alpha="255" value="0.466" label="" color="#2b8404"/>
+              <item alpha="255" value="0.55" label="" color="#007200"/>
+              <item alpha="255" value="0.65" label="" color="#005a01"/>
+              <item alpha="255" value="0.75" label="" color="#004900"/>
+              <item alpha="255" value="0.85" label="" color="#003800"/>
+              <item alpha="255" value="0.95" label="" color="#001f00"/>
+              <item alpha="255" value="1" label="" color="#000000"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <id>SAVI20150617121213030</id>
+      <datasource>../../grassdata/utm16N_wgs84_GF/TFG/cellhd/SAVI</datasource>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <timestamp>2015-06-08T19:43:11</timestamp>
+      <layername>SAVI</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=16 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3100</srsid>
+          <srid>32616</srid>
+          <authid>EPSG:32616</authid>
+          <description>WGS 84 / UTM zone 16N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>grassraster</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="0.0106753" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="-0.195098" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="-0.195098" label="-0.195098" color="#f7fbff"/>
+              <item alpha="255" value="-0.172234" label="-0.172234" color="#e1edf8"/>
+              <item alpha="255" value="-0.149371" label="-0.149371" color="#ccdff1"/>
+              <item alpha="255" value="-0.126507" label="-0.126507" color="#afd1e7"/>
+              <item alpha="255" value="-0.103643" label="-0.103643" color="#88bedc"/>
+              <item alpha="255" value="-0.08078" label="-0.080780" color="#5fa6d1"/>
+              <item alpha="255" value="-0.057916" label="-0.057916" color="#3d8dc3"/>
+              <item alpha="255" value="-0.035052" label="-0.035052" color="#2171b5"/>
+              <item alpha="255" value="-0.012188" label="-0.012188" color="#0a539e"/>
+              <item alpha="255" value="0.010675" label="0.010675" color="#08306b"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=utm +zone=30 +ellps=intl +towgs84=-87,-98,-121,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:23030</ProjectCrs>
+      <ProjectCRSID type="int">1976</ProjectCRSID>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <DefaultSnapType type="QString">to vertex</DefaultSnapType>
+      <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+</qgis>
