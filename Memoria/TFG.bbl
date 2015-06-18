@@ -135,6 +135,11 @@ Huang, Zhi, Turner, Brian~J, Dury, Stephen~J, Wallis, Ian~R, \& Foley,
   continuum removal analysis.
 \newblock {\em Remote Sensing of Environment}, {\bf 93}(1), 18--29.
 
+\bibitem[\protect\citename{JARS, }1999]{JARS1999}
+JARS. 1999.
+\newblock {\em Remote Sensing Note}.
+\newblock National Space Development Agency of Japan (NASDA).
+
 \bibitem[\protect\citename{Jarvis {\em et~al.\ }\relax, }2008]{SRTM2008}
 Jarvis, A., Reuter, H.I., Nelson, A., \& Guevara, E. 2008.
 \newblock {\em Hole-filled seamless SRTM data V4}.
@@ -203,6 +208,12 @@ Lee, Tsai-Ming, \& Yeh, Hui-Chung. 2009.
   Taiwan.
 \newblock {\em Ecological engineering}, {\bf 35}(4), 487--496.
 
+\bibitem[\protect\citename{Mas~i Hern{\`a}ndez, }2005]{Mas2005software}
+Mas~i Hern{\`a}ndez, Jordi. 2005.
+\newblock {\em Software libre: t{\'e}cnicamente viable, econ{\'o}micamente
+  sostenible y socialmente justo}.
+\newblock Infonomia.
+
 \bibitem[\protect\citename{Matellán~Oliveira {\em et~al.\ }\relax,
   }2004]{MatellanOliveira2004}
 Matellán~Oliveira, Vicente, González~Barahona, Jesús~M., De~Las
@@ -229,6 +240,12 @@ Olaya, Victor. 2010.
 \bibitem[\protect\citename{Ramsar, }2014]{Ramsar2014}
 Ramsar. 2014 (September).
 \newblock {\em The List of Wetlands of International Importance}.
+
+\bibitem[\protect\citename{Rouse {\em et~al.\ }\relax, }1974]{rouse1974}
+Rouse, JW, Haas, RH, Schell, JA, Deering, DW, \& Harlan, JC. 1974.
+\newblock Monitoring the vernal advancements and retrogradation of natural
+  vegetation.
+\newblock {\em NASA/GSFC, Final Report, Greenbelt, MD, USA},  1--137.
 
 \bibitem[\protect\citename{Schowengerdt, }2006]{schowengerdt2006}
 Schowengerdt, Robert~A. 2006.

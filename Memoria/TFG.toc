@@ -2,7 +2,7 @@
 \contentsline {chapter}{Resumen}{\es@scroman {v}}{chapter*.2}
 \contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {x}}{chapter*.4}
 \contentsline {chapter}{\IeC {\'I}ndice de Tablas}{\es@scroman {xi}}{chapter*.5}
-\contentsline {chapter}{Lista de Acr\IeC {\'o}nimos}{\es@scroman {xiv}}{chapter*.6}
+\contentsline {chapter}{Lista de Acr\IeC {\'o}nimos}{\es@scroman {xv}}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Marco Global}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{4}{section.1.2}
@@ -42,20 +42,24 @@
 \contentsline {subsection}{\numberline {2.4.1}Landsat 8}{37}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Obtenci\IeC {\'o}n de las im\IeC {\'a}genes}{38}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Tratamientos previos}{41}{subsection.2.4.3}
-\contentsline {subsubsection}{Valores nulos}{42}{section*.77}
-\contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{42}{section*.79}
-\contentsline {subsubsection}{Recorte de la imagen}{43}{section*.84}
-\contentsline {subsubsection}{Filtro de paso bajo}{45}{section*.87}
+\contentsline {subsubsection}{Valores nulos}{42}{section*.78}
+\contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{42}{section*.80}
+\contentsline {subsubsection}{Recorte de la imagen}{43}{section*.85}
+\contentsline {subsubsection}{Filtro de paso bajo}{45}{section*.88}
 \contentsline {section}{\numberline {2.5}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{46}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{46}{subsection.2.5.1}
-\contentsline {chapter}{\numberline {3}Resultados}{49}{chapter.3}
-\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis de separabilidad}{49}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}An\IeC {\'a}lisis visual}{49}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}\IeC {\'I}ndice de Acuerdo Espectral}{50}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Continuum Removal}{53}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Clasificaci\IeC {\'o}n angular}{54}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Comprobaci\IeC {\'o}n}{54}{section.3.2}
-\contentsline {section}{\numberline {3.3}Clasificaci\IeC {\'o}n de imagen}{56}{section.3.3}
-\contentsline {section}{\numberline {3.4}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{58}{section.3.4}
-\contentsline {chapter}{\numberline {4}Conclusiones}{59}{chapter.4}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{64}{chapter*.106}
+\contentsline {paragraph}{M\IeC {\'\i }nima distancia.}{46}{section*.92}
+\contentsline {paragraph}{\ac {K-NN}.}{48}{section*.94}
+\contentsline {paragraph}{Casificador de paralelep\IeC {\'\i }pedos.}{48}{section*.97}
+\contentsline {paragraph}{M\IeC {\'a}xima verosimilitud.}{49}{section*.99}
+\contentsline {subsection}{\numberline {2.5.1}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{49}{subsection.2.5.1}
+\contentsline {chapter}{\numberline {3}Resultados}{53}{chapter.3}
+\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis de separabilidad}{53}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}An\IeC {\'a}lisis visual}{53}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}\IeC {\'I}ndice de Acuerdo Espectral}{54}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Continuum Removal}{57}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Clasificaci\IeC {\'o}n angular}{58}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Comprobaci\IeC {\'o}n}{58}{section.3.2}
+\contentsline {section}{\numberline {3.3}Clasificaci\IeC {\'o}n de imagen}{60}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{62}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}Conclusiones}{63}{chapter.4}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{69}{chapter*.120}
