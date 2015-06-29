@@ -17,6 +17,8 @@
 \usepackage[bitstream-charter]{mathdesign}
 \usepackage{textcomp}
 %\usepackage{times} %Fuente
+\usepackage{moreverb} %Opciones adicionales de verbatim.
+\usepackage{verbatim} %Texto sin formato
 
 \usepackage{multirow} %Para poder centrar verticalmente el contenido de las celdas de una tabla
 \usepackage{fancyhdr}
@@ -25,18 +27,50 @@
 \usepackage[colorlinks,linktocpage=true,citecolor=blue,linkcolor=blue]{hyperref} %Vínculos
 \usepackage{emptypage}
 \usepackage{acronym}
-%\usepackage{tocbibind}
+%\usepackage{tocbibind} %Índice en cada capítulo
 \usepackage{natbib} %Bibliografía
 \usepackage{caption} %Para los pies de foto
-\usepackage{verbatim} %Texto sin formato
-\usepackage{moreverb}
+
 
 \usepackage{booktabs}
+
+\usepackage{pdfpages} %Incrustar páginas en pdf
 
 %\usepackage{csvsimple} %Cargar csv en forma de tabla de latex
 
 \usepackage{listings}
 \renewcommand{\lstlistingname}{Función}
+\lstset{
+	frame=tb,
+    framerule=0pt,
+    aboveskip=3mm,
+    belowskip=3mm,
+    framextopmargin=3pt,
+    framexbottommargin=3pt,
+    %framexleftmargin=0.2cm,
+    framesep=0pt,
+    rulesep=.4pt,
+    backgroundcolor=\color{gray97},
+    rulesepcolor=\color{black},
+    stringstyle=\color{mauve},
+    showstringspaces = false,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{dkgreen},
+    keywordstyle=\color{blue},
+    numbers=left,
+    numbersep=-6.5pt,
+    numberstyle=\tiny\color{gray},
+    numberfirstline = false,
+    breaklines=true,
+    morekeywords={*,...}
+   }
+
+\usepackage{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
 
 %Define el formato de los encabezados y pies de página del índice y la lista de acrónimos
 \lhead[{\small \rightmark}]{{\small %CAPÍTULO \thechapter.
