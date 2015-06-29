@@ -200,7 +200,7 @@ Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_
 
 \begin{table}[ht]
 	\centering
-	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos'' de la figura .}
+	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos'' de la figura \ref{fig:dist_puntos}.}
 	\begin{tabular}{@{}cccccccc@{}}
 	\toprule[0.4mm]
 	cat & x & y & B1 & B2 & B3 & B4 & B5\\
@@ -241,10 +241,30 @@ Gracias a esta representación gráfica se confirma que la magnitud de los datos
 \end{figure}
 
 \section{Clasificación de imagen}
-Por las características de los datos y los resultados obtenidos de los análisis de separabilidad espectral se hace imposible obtener una clasificación lo suficientemente clara que permita diferenciar estas tres tipo de especies en una imagen de satélite Landsat. Por lo tanto se procedió a realizar una clasificación más simple de lo que es o no es bosque de mangle distinguiendo del mismo modo camaroneras, estero, arenal, vegetación y pasto convencional.\Sep
+Se muestra el resultado de las clasificaciones en el anexo primero de este documento.
 
-Con las figuras \ref{fig:gf432} y \ref{fig:gf543} del apartado anterior, composiciones en color real y falso color respectivamente, se puede observar como efectivamente el bosque de mangle se sitúa a lo largo de toda la costa del golfo adentrándose unos kilómetros al interior. Lo que se busca con la clasificación es reafirmar este hecho así como detectar de forma más clara esas zonas donde la proliferación de estanques de cría de camarón y salineras están afectando al ecosistema del manglar.\Sep
+\section{Índices de vegetación}
+Con los índices de vegetación propuestos a continuación se busca esclarecer más las clasificaciones anteriores. El \ac{NDVI} nos muestra más claramente zonas de marisma o aguas turbias poco profundas que se sitúan en la línea de costa (figura \ref{fig:detalle_aguas}), justo donde hay presencia de bosque de mangle.\Sep
 
-\subsection{Índices de vegetación}
-Con los índices de vegetación propuestos para aplicar se busca esclarecer más las clasificaciones anteriores.
-NDVI, SAVI, EVI
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Detalle_aguas.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Detalle marismas en NDVI]{Detalle de NDVI donde se ven las zonas de marisma. Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\label{fig:detalle_aguas}
+\end{figure}
+
+Gracias al índice \ac{SAVI} se pueden detectar fácilmente zonas de suelo desnudo y, sobre todo y más interesante, zonas de estanques artificiales, ya sean para cría de camarón, salineras o mixtas. En detalle se ven estas zonas en la figura \ref{fig:detalle_estanques} correspondientes a dos puntos distintos de la zona de estudio.\Sep
+
+\begin{figure}
+	\centering
+	\subfloat{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/Detalle_estanques.eps}}
+	\subfloat{
+	\includegraphics[width=0.45\linewidth]{./Imagenes/Detalle_estanques2.eps}}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Detalle de estanques en SAVI]{Detalles de SAVI donde se ven los estanques artificiales. Imagenes exportadas de GRASSS. Fuente: Elaboración propia.}
+	\label{fig:detalle_estanques}
+\end{figure}
+
+Se muestra el resultado de los índices de vegetación en el anexo segundo de este documento.

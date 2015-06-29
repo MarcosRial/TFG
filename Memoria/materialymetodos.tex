@@ -69,19 +69,19 @@ Este \ac{TFG} se ha hecho íntegramente con software libre distribuido bajo lice
 
 Adicionalmente se ha hecho un control de versiones remoto con el software Git\footnote{Otra opción en lo que a control de versiones se refiere sería la del software \ac{SVN} \citep{Latex2011} pero este solamente permite hacer un control local de los cambios.} que, mediante repositorios, permite gestionar un historial de ficheros y carpetas recordando y organizando el contenido en cada momento documentando los cambios que ha sufrido y quién y por qué los ha realizado. Permite, por tanto, recuperar el documento a versiones anteriores o revisar el proceso de desarrollo del mismo funcionando como respaldo. De esta forma se permite el acceso a los archivos por la plataforma web GitHub de forma pública\footnote{El código de este trabajo es accesible desde la página web \url{https://github.com/MarcosRial/TFG}}. La interfaz gráfica utilizada ha sido SmartGit \citep{GmbH2015} libre y de uso gratuito para fines no comerciales y donde se pueden hacer cómodamente la mayoría de las operaciones de control de cambios.\Sep
 
-\subsection{R}
+\paragraph{R}
 Para el tratamiento de los datos se ha utilizado el software estadístico de uso libre R Project for Statistical Computing, más conocido como R \citep{R2013} en su versión 3.2.0. R puede definirse como un software de análisis estadísticos, como un generador de gráficos o como un lenguaje de programación. Si bien es un software pensado para su uso sobre interfaces de código, para la realización de este \ac{TFG} se ha utilizado la interfaz gráfica del software libre RStudio, bajo licencia AGPL, con el fin de hacer que su uso resulte más amigable.\Sep
 
 R, como la mayoría de software que funciona sobre sistema operativo GNU/Linux, se compone de módulos o paquetes que se incorporan a una base del programa, llamado \textit{R core}, para extender sus posibilidades y funciones. Actualmente el número de paquetes de R existentes ronda los 4000, desarrollados por usuarios y programadores de todo el mundo. Esta cifra se incrementa ya que periódicamente se suben paquetes a la red de repositorios oficial \ac{CRAN}.\Sep
 
 R es uno de los lenguajes más utilizados en estadística. Adicionalmente abarca otros muchos campos debido a la cantidad de librerías disponibles como tratamiento de imágenes satélite o clasificación supervisada.
 
-\subsection{GRASS GIS}
+\paragraph{GRASS GIS}
 Para el tratado de imágenes Landsat y su posterior clasificación se utiliza el programa de \ac{SIG} gratuito y de código abierto \ac{GRASS} \citep{GRASS_GIS_software}. GRASS es un proyecto de la \ac{OSGeo}. Es un potente software en lo que a utilización de manejo y análisis de información geoespacial se refiere. Su funcionalidad es similar a otros programas \ac{SIG} como QGIS, en los cuales, mediante extensiones aplicadas a la base del programa podemos ampliar sus funciones y adaptarlas a nuestras necesidades \citep{neteler2002open}. Al igual que R, \ac{GRASS} se puede utilizar mediante una interfaz de código pero se optó por la utilización de una interfaz gráfica de usuario (la propia del software) que facilita y agiliza mucho el trabajo.\Sep
 
-La versión utilizada es la 6.4.3 estable. No obstante durante la realización de este \ac{TFG} se liberaron la versión de desarrollo 6.4.4 y la versión estable 7.0 que solamente fueron utilizadas para testar algún cambio puntual.
+La versión utilizada es la 6.4.3 estable. No obstante durante la realización de este \ac{TFG} se liberaron la versión de desarrollo 6.4.4 y la versión estable 7.0 que fueron utilizadas como alternativa a la versión anterior.
 
-\subsection{\LaTeX}
+\paragraph{\LaTeX}
 En la redacción de este documento de memoria se empleó \LaTeX, el intérprete de \TeX, lenguaje y motor de composición de textos de bajo nivel potente y versátil especialmente indicado para elaborar documentos de texto de alta calidad tipográfica. \LaTeX, software libre bajo licencia LPPL, es un conjunto de macros escritas en lenguaje \TeX\ para la realización de múltiples tareas en lo que a la redacción de un documento de texto se refiere \citep{Latex2011} \citep{galindo2001} \citep{lamport1994}.\Sep
 
 Como editor se utilizó TeXMaker \citep{Brachet2003}, un entorno integrado de edición libre que facilita la redacción, edición, compilación y revisión del documento.\Sep
@@ -106,18 +106,18 @@ En la figura \ref{fig:IAE} se muestra el script de la función en R a la que se 
 
 \begin{figure}
 \centering
-\begin{lstlisting}[language = R, frame = single]
-IAE <- function(i, j) {
+\begin{lstlisting}[language=R]
+  IAE <- function(i, j) {
   
-mediai = mean(i$V5)
-CBi = sapply(i$V5, FUN=function(x) {if(x>=mediai) {1} else {0}})
+  mediai = mean(i$V5)
+  CBi = sapply(i$V5, FUN=function(x) {if(x>=mediai) {1} else {0}})
   
-mediaj = mean(j$V5)
-CBj = sapply(j$V5, FUN=function(x) {if(x>=mediaj) {1} else {0}})
+  mediaj = mean(j$V5)
+  CBj = sapply(j$V5, FUN=function(x) {if(x>=mediaj) {1} else {0}})
   	
-Indice = sum((CBi-CBj)^2)/length(CBi)
-return(Indice)  
-}
+  Indice = sum((CBi-CBj)^2)/length(CBi)
+  return(Indice)  
+  }
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
 \caption[Función de Índice de Acuerdo Espectral]{Script de la función del Índice de Acuerdo Espectral en R. Fuente: Elaboración propia.}
@@ -148,17 +148,18 @@ En la figura \ref{fig:CR} se muestra el script original de la función en R a la
 
 \begin{figure}
 \centering
-\begin{lstlisting}[language = R, frame = single]
-require(prospectr)
+\begin{lstlisting}[language = R]
+  require(prospectr)
 
-cr <- continuumRemoval(mangle1corte$V5, mangle1corte$V4,
-                       type="R",
-                       interpol="linear")
-grafica(data1)
-lines(data1$V4,cr)
+  cr <- continuumRemoval(mangle1corte$V5, mangle1corte$V4,
+                         type="R",
+                         interpol="linear")
+                         
+  grafica(data1)
+  lines(data1$V4,cr)
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
-\caption[Función de Continuum Removal]{Script de la función de Continuum Removal en R. Fuente: Elaboración propia a propia a partir de \cite{stevens2014introduction}.}
+\caption[Función de \textit{Continuum Removal}]{Script de la función de \textit{Continuum Removal} en R. Fuente: Elaboración propia a partir de \cite{stevens2014introduction}.}
 \label{fig:CR}
 \end{figure}
 
@@ -170,20 +171,24 @@ El script original de la funcion en R previamente presentado en la figura \ref{f
 
 \begin{figure}[ht]
 	\centering
-	\begin{lstlisting}[language = R, frame = single]
-require(prospectr)
-matriz <- matrix(c(RhizophoraCorte$V5,LagunculariaCorte$V5,
-                   AvicenniaCorte$V5),
-                 byrow=TRUE,
-                 nrow=3,
-                 ncol=481)
-bandas <- mangle1corte$V4
-cr <- continuumRemoval(matriz, bandas)
-matplot(bandas, t(matriz), type="l", ylim=c(0,1))
-matlines(bandas, t(cr2))
+	\begin{lstlisting}[language = R]
+  require(prospectr)
+  
+  matriz <- matrix(c(RhizophoraCorte$V5,LagunculariaCorte$V5,
+                     AvicenniaCorte$V5),
+                   byrow=TRUE,
+                   nrow=3,
+                   ncol=481)
+                   
+  bandas <- mangle1corte$V4
+  cr <- continuumRemoval(matriz, bandas)
+  
+  matplot(bandas, t(matriz),
+          type="l", ylim=c(0,1))
+  matlines(bandas, t(cr2))
 	\end{lstlisting}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Función modificada de CR]{Script modificado de la función de CR escrita en R. Fuente: Elaboración propia.}
+	\caption[Función modificada de \textit{Continuum Removal}]{Script modificado de la función de \textit{Continuum Removal} escrita en R. Fuente: Elaboración propia.}
 	\label{fig:CRmodificado}
 \end{figure}	
 
@@ -204,15 +209,15 @@ En la figura \ref{fig:AE} se muestra el script de la función en R a la que se l
 
 \begin{figure}
 \centering
-\begin{lstlisting}[language = R, frame = single]
-AE <- function(i,j) {
+\begin{lstlisting}[language = R]
+  AE <- function(i,j) {
   
-  Ri = i$V5
-  Rj = j$V5
+    Ri = i$V5
+    Rj = j$V5
 
-  Angulo = acos (sum(Ri*Rj)/(sqrt(sum(Ri^2))*sqrt(sum(Rj^2))))
-  return(Angulo)
-}
+    angulo = acos (sum(Ri*Rj)/(sqrt(sum(Ri^2))*sqrt(sum(Rj^2))))
+    return(angulo)
+  }
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
 \caption[Función clasificación angular]{Función de clasificación angular en R. Fuente: Elaboración propia.}
@@ -491,85 +496,108 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 \end{figure}
 
 \section{Clasificación de imágenes}
-Como se menciona en el apartado \ref{subsec:clasificacion} la clasificación es el último paso del análisis de imágenes en teledetección y a partir del cual se generan los mapas temáticos. Para hacer una clasificación, ya sea esta supervisada o no supervisada necesitamos conocer que tipos de algoritmos clasificadores tenemos a nuestra disposición.
+Con las figuras \ref{fig:gf432} y \ref{fig:gf543} del apartado anterior, composiciones en color real y falso color respectivamente, se puede observar como efectivamente el bosque de mangle se sitúa a lo largo de toda la costa del golfo adentrándose unos kilómetros al interior. Lo que se busca con la clasificación es reafirmar este hecho así como detectar de forma más clara esas zonas donde la proliferación de estanques de cría de camarón y salineras están afectando al ecosistema del manglar.\Sep
 
-\paragraph{Mínima distancia.}
-También llamado vecino más próximo, vecino más cercano o \ac{NN} es el criterio más sencillo y rápido de aplicar. Se asigna el píxel a la categoría cuyo centroide de clase sea el más cercano a este.  La distancia es espectral y el criterio más utilizado para medirla es la distancia euclidiana como se muestra en la ecuación siguiente:
+Puesto que los datos disponibles no permiten la aplicación de un clasificador como el de paralelepípedos, ideal para utilizar valores estadísticos extraídos del análisis de datos, se procedió a emplear el \ac{MLC} para una clasificación supervisada y no supervisada y el clasificador \ac{SAM} para una segunda clasificación no supervisada. Debido a esto se incluyeron en el grupo de imágenes las correspondientes a las bandas 6 y 7 de Landsat 8 que servirán para refinar la clasificación. Un paso previo a la clasificación es la creación de un grupo y subgrupo de imágenes con el comando \textit{i.group} que en este caso reciben el mismo nombre: L8GF.\Sep
 
-\begin{equation}
-d_{x,A}=\sqrt{\displaystyle\sum_{i=1}^{m}(ND_{x,i}-\overline{ND}_{A,i})^{2}}
-\end{equation}\Sep
+Para la primera clasificación no supervisada se empleó inicialmente el comando \textit{i.cluster} (figura \ref{fig:cluster}) para crear la agrupación o \textit{cluster} de entrada con las firmas resultantes y posteriormente se aplicó el clasificador \ac{MLC} con \textit{i.maxlik} (figura \ref{fig:maxlik}). Donde una vez especificado el grupo y subgrupo de las imágenes se debe dar nombre al archivo de firmas y el número de clases. Se decidió utilizar solamente 6 clases dado que lo realmente importante para el trabajo es definir esas zonas donde existe cobertura de mangle y un mayor número daría lugar a confusión y la necesidad de realizar una reclasificación para reducir el número de clases.\Sep
 
-Donde $d_{x,A}$ es la medida de la distancia espectral entre el píxel \textit{x} y la categoría \textit{A}; $ND_{x,i}$ el valor del píxel en la banda \textit{i}; y $\overline{ND}_{A,i}$ el valor medio de la categoría en esa banda.\Sep
+\begin{figure}[ht]
+	\centering
+	\begin{boxedverbatim}
+	i.cluster group=L8GF@TFG subgroup=L8GF
+	signaturefile=firmas1 classes=6
+	\end{boxedverbatim}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Generación de firmas \textit{i.cluster}]{Generación de firmas para la clasificación no supervisada con \textit{i.cluster}.}
+	\label{fig:cluster}
+\end{figure}
 
-Es un clasificador eficiente cuando no se presenta solape de categorías, por lo tanto cuando la zona de estudio no es de gran complejidad. No deja píxeles sin clasificar puesto que siempre hay una clase más cercana. No considera dispersión de cada categoría o correlación entre bandas.
+\begin{figure}[ht]
+	\centering
+	\begin{boxedverbatim}
+	i.maxlik group=L8GF@TFG subgroup=L8GF
+	signaturefile=firmas1 output=clasnosup
+	\end{boxedverbatim}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Clasificación con \textit{i.maxlik}]{Aplicación del clasificador \ac{MLC} con \textit{i.maxlik}.}
+	\label{fig:maxlik}
+\end{figure}
 
-\paragraph{\ac{K-NN}.}
-Este clasificador es igual al \ac{NN} con la salvedad de que pondera el valor de cada píxel en la muestra de entrenamiento por el inverso de la distancia espectral que lo separa del píxel a clasificar. En el caso del algoritmo de vecino más proximo se toma un valor $k=1$. En la figura \ref{fig:KNN} se muestra una gráfica de ejemplo en la que se aplica el clasificador para dos bandas y tres categorías con módulo $k=5$.
+Para la clasificación supervisada se necesita crear una serie de áreas de entrenamiento primero como capa vectorial para posteriormente transformarla a capa ráster (detalle en figura \ref{fig:detalle_training}) con el fin de agrupar los píxeles cuyo valor servirá ara generar el archivo de firmas con el comando \textit{i.gensigset} de forma similar a \textit{i.cluster}. Previamente debemos crear en la base de datos asociada a la capa de entrenamiento dos nuevas categorías obligatorias referentes al número de categoría y nombre y una opcional referente a la tabla de color que se tomará para realizar el mapa (cuadro \ref{tab:tabla_training}). Al hacer la transformación se debe especificar cada una de estas categorías en el comando \textit{v.to.rast} como se muestra en la figura \ref{fig:conversion}.\Sep
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\linewidth]{./Imagenes/KNN.eps}
+	\includegraphics[width=0.9\linewidth]{./Imagenes/Detalle_training.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Clasificador \textit{K-Nearest Neighbor}]{Gráfica de ejemplo del empleo del clasificador K-NN con $k=5$.}
-	\label{fig:KNN}
+	\caption[Detalle de áreas de entrenamiento]{Detalle de las áreas de entrenamiento tomadas sobre imagen en falso color. Imagen exportada de GRASS.}
+	\label{fig:detalle_training}
 \end{figure}
-
-\paragraph{Casificador de paralelepípedos.}
-Conocido también como de cajas o \textit{multilevel-slice classifier} este clasificador permite al usuario definir un máximo y mínimo para cada clase por banda creando así cajas en el espacio \textit{n} dimensional (siendo \textit{n} el número de bandas) (figura \ref{fig:paralele}). Este método puede dejar píxeles sin clasificar (los que no estén dentro de ninguna caja) y presenta problemas con el solapamiento de cajas. Para evitar esto se necesita tener un criterio de decisión.
-
-\begin{equation}
-C_{i}=(\cup\Delta x^{t}_{i-j})
-\end{equation}
-
-Donde $C_{i}$ es el conjunto de categorías a clasificar y $\cup\Delta x^{t}_{i-j}$ el rango de valores radiométricos $i-j$ en cada banda $t$.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\linewidth]{./Imagenes/Paralelepipedos.eps}
+	\begin{boxedverbatim}
+	v.to.rast input=vtraining@TFG output=rtraining
+	use=attr attribute_column=cat
+	rgb_column=color label_column=class
+	\end{boxedverbatim}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Clasificador de paralelepípedos]{Gráfica de ejemplo del empleo del clasificador de paralelepípedos para dos bandas y tres clases. Fuente: \cite{Olaya2010}.}
-	\label{fig:paralele}	
+	\caption[Conversión vectorial a ráster]{Conversión de capa vectorial a ráster de las áreas de entrenamiento con el comando \textit{v.to.rast}.}
+	\label{fig:conversion}
 \end{figure}
 
-\paragraph{Máxima verosimilitud.}
-También llamado máxima probabilidad o \ac{MLC}. Este clasificador asume una distribución normal de cada clase en cada banda, estima los parámetros de distribución a partir de una muestra de entrenamiento, calcula regiones de probabilidad teórica y asigna finalmente cada píxel a la clase de mayor probabilidad. Clasifica toda la imagen no dejando píxeles sin clasificar.\Sep
+\begin{table}[ht]
+	\centering
+	\caption[Base de datos de áreas de entrenamiento]{Base de datos asociada a la capa vectorial de áreas de entrenamiento.}
+	\begin{tabular}{@{}cccc@{}}
+	\toprule[0.4mm]
+	cat & class & color & n\_cells\\
+	\midrule
+	1 & Mangle & 0:128:0 & 4139\\
+	2 & Estero & 139:105:20 & 3789\\
+	3 & Agricultura & 255:255:0 & 6784\\
+	4 & Estanque & 173:216:230 & 3139\\
+	5 & Vegetacion & 144:238:144 & 3246\\
+	\bottomrule[0.4mm]
+	\end{tabular}
+	\label{tab:tabla_training}
+\end{table}
 
-En la figura \ref{fig:MLC} se puede ver un ejemplo en el que un píxel situado a una distancia igual del centro de la clase A al centro de la clase B es clasificado como A debido a que se encuentra dentro de una elipse de probabilidad mayor en la clase A.
+Para realizar la clasificación aplicando el \ac{SAM} se recurrió a un script en R con la función del algoritmo implementada. Para el correcto funcionamiento del script se necesita tener instalado y funcionando los paquetes oficiales \textit{raster}, \textit{rgdal} y \textit{sp} con el fin de que R permita la carga de archivos raster tipo \ac{TIFF} y hacer operaciones con ellos.
 
 \begin{figure}
-	\centering
-	\includegraphics[width=0.6\linewidth]{./Imagenes/MLK.eps}
-	\captionsetup{font={footnotesize,it}}
-	\caption[Clasificador de máxima verosimilitud]{Gráfica de ejemplo del empleo del clasificador de máxima verosimilitud. Fuente: \cite{JARS1999}.}
-	\label{fig:MLC}
+\begin{lstlisting}[language = R]
+  require(rgdal)
+  require(raster)
+
+  # Carga de imagenes Landsat. Bandas 1-7
+  b1 <- raster("/home/marcos/TrabajoFinGrado//L8GF_B1.TIFF")
+  b2 <- raster("/home/marcos/TrabajoFinGrado//L8GF_B2.TIFF")
+  b3 <- raster("/home/marcos/TrabajoFinGrado//L8GF_B3.TIFF")
+  b4 <- raster("/home/marcos/TrabajoFinGrado//L8GF_B4.TIFF")
+  b5 <- raster("/home/marcos/TrabajoFinGrado//L8GF_B5.TIFF")
+  b6 <- raster("/home/marcos/TrabajoFinGrado//L8GF_B6.TIFF")
+  b7 <- raster("/home/marcos/TrabajoFinGrado//L8GF_B7.TIFF")
+
+  # Agrupamiento en un stack
+  imagen  <- stack(b1,b2,b3,b4,b5,b6,b7)
+
+  # Funcion para calcular el SAM
+  SAM <- function(imagen) {
+    ref=c(m1,m2,m3,m4,m5,m6,m7) #A sustituir por los valores medios de reflectividad por banda
+    sam=acos(sum(ref*imagen)/(sqrt(sum(ref^2))*sqrt(sum(imagen^2))))
+    return(sam)
+  }
+
+  # Aplicando la funcion
+  imagen2 <- calc(imagen, SAM)
+\end{lstlisting}
+\captionsetup{font={footnotesize,it}}
+\caption[Función de \textit{Spectral Angle Mapper}]{Script de la función de \textit{Spectral Angle Mapper} en R. Fuente: Elaboración propia.}
+\label{fig:R_SAM}
 \end{figure}
 
-\subsection{Índices de vegetación}
-Los \ac{IV} buscan mejorar la discriminación entre dos cubiertas con comportamiento reflectivo muy distinto en dos bandas, principalmente en el visible y el \ac{IRC} \citep{chuvieco2002teledeteccion}. La diferencia entre la reflectividad de la banda del rojo y la del \ac{IRC} en cubiertas vegetales permite separar la vegetación sana o vigorosa de otras especies de vegetación puesto que mientras en el visible, en particular en la banda roja, los pigmentos de la hoja absorben la mayor parte de la energía que reciben, estas sustancias apenas afectan al infrarrojo cercano. Cuanto mayor sea esta diferencia de reflectividades mayor vigorosidad presentará la cubierta observada debido a que en situaciones desfavorables para la vegetación menor es la diferencia.\Sep
+\section{Índices de vegetación}
+Se decidió aplicar los índices \ac{NDVI}, \ac{EVI} y \ac{SAVI}. Simplemente con la calculadora de mapas ráster de GRASS (\textit{r.mapcalc}) ingresando el cociente de mapas correspondiente se obtienen las tres capas referentes a los \ac{IV} solo necesitando aplicar una nueva tabla de color con \textit{r.colors}.
 
-Entre el gran número de \ac{IV} desarrollados por numerosos grupos de investigación, obviando el cociente simple entre bandas (\ref{eq:cociente}), el \ac{NDVI} (\ref{eq:NDVI}) es el más utilizado en estudios de evaluación del estado vegetal creado por \cite{rouse1974}.
-
-\begin{eqnarray}\label{eq:cociente}
-C_{i} & = & \frac{\rho_{i, IRC}}{\rho_{i, R}}\\
-NDVI_{i} & = & \frac{\rho_{i, IRC}-\rho_{i, R}}{\rho_{i, IRC}+\rho_{i, R}}
-\label{eq:NDVI}
-\end{eqnarray}
-
-Donde $\rho_{i, IRC}$ y $\rho_{i, R}$ indican la reflectividad de un píxel \textit{i} en la banda del IRC y rojo respectivamente que son las bandas 5 y 4 del sensor \ac{OLI} de Landsat 8. Los valores del \ac{NDVI} en cada píxel varían entre [-1,1].\Sep
-
-Un aspecto importante y que el \ac{NDVI} no tiene en cuenta es el efecto que provoca la proporción entre vegetación y suelo del píxel. El \ac{SAVI} (\ref{eq:SAVI}) es un \ac{IV} que lo que busca es reducir este efecto aplicando una constante L de radiancia de fondo en la ecuación.
-
-\begin{equation}
-SAVI_{i}=\frac{\rho_{i, IRC}-\rho_{i, R}}{\rho_{i, IRC}+\rho_{i, R}+L}(1+L)
-\label{eq:SAVI}
-\end{equation}\Sep
-
-Otra alternativa al \ac{NDVI} es el llamado \ac{EVI} (\ref{eq:EVI}) que corrige alteraciones de suelo y atmósfera mediante la aplicación de una serie de constantes. Este resulta más sensible que el \ac{NDVI} en rangos contrastados de vegetación \citep{chuvieco2002teledeteccion}.
-
-\begin{equation}
-EVI_{i}=G\frac{\rho_{IRC}-\rho_{R}}{\rho_{IRC}+C_{1}\rho_{R}-C_{2}\rho_{B}+L}
-\label{eq:EVI}
-\end{equation}
-
-Donde $\rho_{B}$, $\rho_{R}$ y $\rho_{IRC}$ son las reflectividades de azul, rojo e infrarrojo cercano respectivamente; L es el mismo coeficiente de radiancia de fondo del índice \ac{SAVI}; G es un factor de ganancia; y $C_{1}$ y $C_{2}$ son coeficientes de corrección de la influencia del aerosol.
+A las ecuaciones del \ac{EVI} y el \ac{SAVI}, expuestas en la sección \ref{subsec:indices_vegetacion}, se aplicaron los valores siguientes: $L=1$ en ambos casos; $Gain=2.5 $;$C_{1}=6 $ y $C_{2}=7.5$ según lo estudiado por \cite{carvachobart2010} y \cite{crespo2000}.
