@@ -35,13 +35,16 @@
 \newacro{CODDEFFAGOLF}[CODDEFFAGOLF]{Comit\IeC {\'e} para la Defensa y Desarrollo de la Flora y Fauna del Golfo de Fonseca}
 \newacro{CR}[CR]{\textit  {Continuum Removal}}
 \newacro{CRAN}[CRAN]{\textit  {Comprehensive R Archive Network}}
+\newacro{DVI}[DVI]{\textit  {Difference Vegetation Index}}
 \newacro{EPSG}[EPSG]{\textit  {European Petroleunm Survey Group}}
 \newacro{EROS}[EROS]{\textit  {Earth Resources Observation and Science Center}}
 \newacro{ETM}[ETM]{\textit  {Enhanced Thematic Mapper}}
 \newacro{ETM+}[ETM+]{\textit  {Enhanced Thematic Mapper Plus}}
 \newacro{EVI}[EVI]{\textit  {Enhanced Vegetation Index}}
 \newacro{GDAL}[GDAL]{\textit  {Geospatial Data Abstraction Library}}
+\newacro{GDVI}[GDVI]{\textit  {Green Difference Vegetation Index}}
 \newacro{GeoTIFF}[GeoTIFF]{\textit  {Geographic Tagged Image File Format}}
+\newacro{GNDVI}[GNDVI]{\textit  {Green Normalized Difference Vegetation Index}}
 \newacro{GPL}[GPL]{\textit  {General Public License}}
 \newacro{GRASS}[GRASS]{\textit  {Geographic Resources Analysis Support System}}
 \newacro{HRV}[HRV]{\textit  {High Resolution Visible}}
@@ -71,6 +74,7 @@
 \newacro{SCP}[SCP]{\textit  {Semi-automatic Classification Plugin}}
 \newacro{SIG}[SIG]{Sistema de Informaci\IeC {\'o}n Geogr\IeC {\'a}fico}
 \newacro{SIGFIRM}[SIGFIRM]{Sistema de Gesti\IeC {\'o}n de Firmas Espectrales Agr\IeC {\'\i }colas}
+\newacro{SMAP}[SMAP]{\textit  {Sequential Maximum A Posteriori}}
 \newacro{SR}[SR]{\textit  {Surface Reflectance}}
 \newacro{SVN}[SVN]{\textit  {Subversion}}
 \newacro{SWIR}[SWIR]{\textit  {Short Wave Infrared}}
@@ -272,8 +276,7 @@
 \undonewlabel{acro:UTM}
 \newlabel{acro:UTM}{{1.4.7}{23}{Correcciones geométricas}{section*.52}{}}
 \acronymused{UTM}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.8}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{24}{subsection.1.4.8}}
-\newlabel{subsec:clasificacion}{{1.4.8}{24}{Clasificación de imágenes}{subsection.1.4.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.8}Clasificaci\IeC {\'o}n}{24}{subsection.1.4.8}}
 \acronymused{ND}
 \@writefile{toc}{\contentsline {subsubsection}{Fases de la clasificaci\IeC {\'o}n}{25}{section*.53}}
 \acronymused{ND}
@@ -282,281 +285,324 @@
 \citation{chuvieco2002teledeteccion}
 \acronymused{ND}
 \acronymused{ND}
+\@writefile{toc}{\contentsline {subsubsection}{Algoritmos clasificadores}{26}{section*.54}}
+\@writefile{toc}{\contentsline {paragraph}{M\IeC {\'\i }nima distancia.}{26}{section*.55}}
+\undonewlabel{acro:NN}
+\newlabel{acro:NN}{{1.4.8}{26}{Mínima distancia}{section*.56}{}}
+\acronymused{NN}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.11}{\ignorespaces Clasificador \textit  {K-Nearest Neighbor}}}{27}{figure.caption.59}}
+\newlabel{fig:KNN}{{1.11}{27}{Clasificador \textit {K-Nearest Neighbor}}{figure.caption.59}{}}
+\undonewlabel{acro:K-NN}
+\newlabel{acro:K-NN}{{1.4.8}{27}{\ac {K-NN}}{section*.58}{}}
+\acronymused{K-NN}
+\@writefile{toc}{\contentsline {paragraph}{\ac {K-NN}.}{27}{section*.57}}
+\acronymused{NN}
+\@writefile{toc}{\contentsline {paragraph}{Casificador de paralelep\IeC {\'\i }pedos.}{27}{section*.60}}
+\citation{Olaya2010}
+\citation{Olaya2010}
+\citation{JARS1999}
+\citation{JARS1999}
+\citation{chuvieco2002teledeteccion}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.12}{\ignorespaces Clasificador de paralelep\IeC {\'\i }pedos}}{28}{figure.caption.61}}
+\newlabel{fig:paralele}{{1.12}{28}{Clasificador de paralelepípedos}{figure.caption.61}{}}
+\@writefile{toc}{\contentsline {paragraph}{M\IeC {\'a}xima verosimilitud.}{28}{section*.62}}
+\undonewlabel{acro:MLC}
+\newlabel{acro:MLC}{{1.4.8}{28}{Máxima verosimilitud}{section*.63}{}}
+\acronymused{MLC}
+\citation{rouse1974}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.13}{\ignorespaces Clasificador de m\IeC {\'a}xima verosimilitud}}{29}{figure.caption.64}}
+\newlabel{fig:MLC}{{1.13}{29}{Clasificador de máxima verosimilitud}{figure.caption.64}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.9}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{29}{subsection.1.4.9}}
+\newlabel{subsec:indices_vegetacion}{{1.4.9}{29}{Índices de vegetación}{subsection.1.4.9}{}}
+\undonewlabel{acro:IV}
+\newlabel{acro:IV}{{1.4.9}{29}{Índices de vegetación}{section*.65}{}}
+\acronymused{IV}
+\acronymused{IRC}
+\acronymused{IRC}
+\acronymused{IV}
+\undonewlabel{acro:NDVI}
+\newlabel{acro:NDVI}{{1.4.9}{29}{Índices de vegetación}{section*.66}{}}
+\acronymused{NDVI}
+\citation{chuvieco2002teledeteccion}
+\newlabel{eq:cociente}{{1.10}{30}{Índices de vegetación}{equation.1.4.10}{}}
+\newlabel{eq:NDVI}{{1.11}{30}{Índices de vegetación}{equation.1.4.10}{}}
+\acronymused{OLI}
+\acronymused{NDVI}
+\acronymused{NDVI}
+\undonewlabel{acro:SAVI}
+\newlabel{acro:SAVI}{{1.4.9}{30}{Índices de vegetación}{section*.67}{}}
+\acronymused{SAVI}
+\acronymused{IV}
+\newlabel{eq:SAVI}{{1.12}{30}{Índices de vegetación}{equation.1.4.12}{}}
+\acronymused{NDVI}
+\undonewlabel{acro:EVI}
+\newlabel{acro:EVI}{{1.4.9}{30}{Índices de vegetación}{section*.68}{}}
+\acronymused{EVI}
+\acronymused{NDVI}
+\newlabel{eq:EVI}{{1.13}{30}{Índices de vegetación}{equation.1.4.13}{}}
+\acronymused{SAVI}
+\acronymused{IV}
+\@writefile{lot}{\contentsline {table}{\numberline {1.6}{\ignorespaces Otros tipos de \IeC {\'\i }ndices de vegetaci\IeC {\'o}n}}{31}{table.caption.69}}
+\acronymused{IV}
+\newlabel{tab:otros_iv}{{1.6}{31}{Otros tipos de índices de vegetación}{table.caption.69}{}}
 \citation{andinofase1}
 \citation{andinofase2}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Material y m\IeC {\'e}todos}{27}{chapter.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Material y m\IeC {\'e}todos}{33}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cap:materialymetodos}{{2}{27}{Material y métodos}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Estudio radiom\IeC {\'e}trico}{27}{section.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Datos}{27}{subsection.2.1.1}}
-\newlabel{subsec:datos}{{2.1.1}{27}{Datos}{subsection.2.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Mangle recolectado}}{28}{figure.caption.54}}
-\newlabel{fig:mangle_recolectado}{{2.1}{28}{Mangle recolectado}{figure.caption.54}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Obtenci\IeC {\'o}n de firmas}}{28}{figure.caption.55}}
-\newlabel{fig:curva_espectral}{{2.2}{28}{Obtención de firmas}{figure.caption.55}{}}
+\newlabel{cap:materialymetodos}{{2}{33}{Material y métodos}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Estudio radiom\IeC {\'e}trico}{33}{section.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Datos}{33}{subsection.2.1.1}}
+\newlabel{subsec:datos}{{2.1.1}{33}{Datos}{subsection.2.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Mangle recolectado}}{34}{figure.caption.70}}
+\newlabel{fig:mangle_recolectado}{{2.1}{34}{Mangle recolectado}{figure.caption.70}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Obtenci\IeC {\'o}n de firmas}}{34}{figure.caption.71}}
+\newlabel{fig:curva_espectral}{{2.2}{34}{Obtención de firmas}{figure.caption.71}{}}
 \citation{MatellanOliveira2004}
 \citation{Mas2005software}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Puntos de control}}{29}{table.caption.56}}
-\newlabel{tab:puntos}{{2.1}{29}{Puntos de control}{table.caption.56}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Software}{29}{section.2.2}}
-\newlabel{sec:software}{{2.2}{29}{Software}{section.2.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Puntos de control}}{35}{table.caption.72}}
+\newlabel{tab:puntos}{{2.1}{35}{Puntos de control}{table.caption.72}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Software}{35}{section.2.2}}
+\newlabel{sec:software}{{2.2}{35}{Software}{section.2.2}{}}
 \citation{Latex2011}
 \citation{GmbH2015}
 \citation{R2013}
 \acronymused{TFG}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}R}{30}{subsection.2.2.1}}
+\@writefile{toc}{\contentsline {paragraph}{R}{36}{section*.74}}
 \acronymused{TFG}
 \undonewlabel{acro:SVN}
-\newlabel{acro:SVN}{{1}{30}{}{section*.57}{}}
+\newlabel{acro:SVN}{{1}{36}{}{section*.73}{}}
 \acronymused{SVN}
 \citation{GRASS_GIS_software}
 \citation{neteler2002open}
 \citation{Latex2011}
 \citation{galindo2001}
 \citation{lamport1994}
+\citation{Brachet2003}
 \undonewlabel{acro:CRAN}
-\newlabel{acro:CRAN}{{2.2.1}{31}{R}{section*.58}{}}
+\newlabel{acro:CRAN}{{2.2}{37}{R}{section*.75}{}}
 \acronymused{CRAN}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}GRASS GIS}{31}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {paragraph}{GRASS GIS}{37}{section*.76}}
 \acronymused{SIG}
 \undonewlabel{acro:GRASS}
-\newlabel{acro:GRASS}{{2.2.2}{31}{GRASS GIS}{section*.59}{}}
+\newlabel{acro:GRASS}{{2.2}{37}{GRASS GIS}{section*.77}{}}
 \acronymused{GRASS}
 \undonewlabel{acro:OSGeo}
-\newlabel{acro:OSGeo}{{2.2.2}{31}{GRASS GIS}{section*.60}{}}
+\newlabel{acro:OSGeo}{{2.2}{37}{GRASS GIS}{section*.78}{}}
 \acronymused{OSGeo}
 \acronymused{SIG}
 \acronymused{GRASS}
 \acronymused{TFG}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}\textlatin  {\LaTeX  }}{31}{subsection.2.2.3}}
-\citation{Brachet2003}
+\@writefile{toc}{\contentsline {paragraph}{\textlatin  {\LaTeX  }}{37}{section*.79}}
 \citation{chuvieco2002teledeteccion}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}T\IeC {\'e}cnicas de an\IeC {\'a}lisis espectral}{32}{section.2.3}}
-\newlabel{sec:tecnicas}{{2.3}{32}{Técnicas de análisis espectral}{section.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}T\IeC {\'e}cnicas de an\IeC {\'a}lisis espectral}{38}{section.2.3}}
+\newlabel{sec:tecnicas}{{2.3}{38}{Técnicas de análisis espectral}{section.2.3}{}}
 \acronymused{TFG}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}\IeC {\'I}ndice de acuerdo espectral}{32}{subsection.2.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}\IeC {\'I}ndice de acuerdo espectral}{38}{subsection.2.3.1}}
 \undonewlabel{acro:IAE}
-\newlabel{acro:IAE}{{2.3.1}{32}{Índice de acuerdo espectral}{section*.61}{}}
+\newlabel{acro:IAE}{{2.3.1}{38}{Índice de acuerdo espectral}{section*.80}{}}
 \acronymused{IAE}
-\newlabel{eq:IAE}{{2.1}{32}{Índice de acuerdo espectral}{equation.2.3.1}{}}
+\newlabel{eq:IAE}{{2.1}{38}{Índice de acuerdo espectral}{equation.2.3.1}{}}
+\acronymused{IAE}
 \citation{chuvieco2002teledeteccion}
 \citation{kokaly1999spectroscopic}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Funci\IeC {\'o}n de \IeC {\'I}ndice de Acuerdo Espectral}}{33}{figure.caption.62}}
-\newlabel{fig:IAE}{{2.3}{33}{Función de Índice de Acuerdo Espectral}{figure.caption.62}{}}
-\acronymused{IAE}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Continuum removal}{33}{subsection.2.3.2}}
-\newlabel{subsec:Continuum_removal}{{2.3.2}{33}{Continuum removal}{subsection.2.3.2}{}}
-\undonewlabel{acro:CR}
-\newlabel{acro:CR}{{2.3.2}{33}{Continuum removal}{section*.63}{}}
-\acronymused{CR}
 \citation{huang2004estimating}
 \citation{filippi2007effect}
 \citation{underwood2003mapping}
-\citation{huang2004estimating}
-\citation{huang2004estimating}
-\citation{stevens2014introduction}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Continuum Removal ejemplo}}{34}{figure.caption.64}}
-\newlabel{fig:ejemploCR}{{2.4}{34}{Continuum Removal ejemplo}{figure.caption.64}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Funci\IeC {\'o}n de \IeC {\'I}ndice de Acuerdo Espectral}}{39}{figure.caption.81}}
+\newlabel{fig:IAE}{{2.3}{39}{Función de Índice de Acuerdo Espectral}{figure.caption.81}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Continuum removal}{39}{subsection.2.3.2}}
+\newlabel{subsec:Continuum_removal}{{2.3.2}{39}{Continuum removal}{subsection.2.3.2}{}}
+\undonewlabel{acro:CR}
+\newlabel{acro:CR}{{2.3.2}{39}{Continuum removal}{section*.82}{}}
 \acronymused{CR}
+\citation{huang2004estimating}
+\citation{huang2004estimating}
 \citation{stevens2014introduction}
-\citation{stevens2014introduction}
-\citation{stevens2014introduction}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Funci\IeC {\'o}n de Continuum Removal}}{35}{figure.caption.65}}
-\newlabel{fig:CR}{{2.5}{35}{Función de Continuum Removal}{figure.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Continuum Removal ejemplo}}{40}{figure.caption.83}}
+\newlabel{fig:ejemploCR}{{2.4}{40}{Continuum Removal ejemplo}{figure.caption.83}{}}
+\acronymused{CR}
 \acronymused{IAE}
 \acronymused{CR}
+\citation{stevens2014introduction}
+\citation{stevens2014introduction}
+\citation{stevens2014introduction}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Funci\IeC {\'o}n de \textit  {Continuum Removal}}}{41}{figure.caption.84}}
+\newlabel{fig:CR}{{2.5}{41}{Función de \textit {Continuum Removal}}{figure.caption.84}{}}
 \acronymused{CR}
 \acronymused{CR}
 \acronymused{CR}
 \citation{girouard2004validated}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Funci\IeC {\'o}n modificada de CR}}{36}{figure.caption.66}}
-\newlabel{fig:CRmodificado}{{2.6}{36}{Función modificada de CR}{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Funci\IeC {\'o}n modificada de \textit  {Continuum Removal}}}{42}{figure.caption.85}}
+\newlabel{fig:CRmodificado}{{2.6}{42}{Función modificada de \textit {Continuum Removal}}{figure.caption.85}{}}
 \acronymused{CR}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Clasificaci\IeC {\'o}n angular}{36}{subsection.2.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Clasificaci\IeC {\'o}n angular}{42}{subsection.2.3.3}}
 \undonewlabel{acro:SAM}
-\newlabel{acro:SAM}{{2.3.3}{36}{Clasificación angular}{section*.67}{}}
+\newlabel{acro:SAM}{{2.3.3}{42}{Clasificación angular}{section*.86}{}}
 \acronymused{SAM}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Funci\IeC {\'o}n clasificaci\IeC {\'o}n angular}}{37}{figure.caption.68}}
-\newlabel{fig:AE}{{2.7}{37}{Función clasificación angular}{figure.caption.68}{}}
-\newlabel{eq:angular}{{2.2}{37}{Clasificación angular}{equation.2.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Im\IeC {\'a}genes de sat\IeC {\'e}lite}{37}{section.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Landsat 8}{37}{subsection.2.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Funci\IeC {\'o}n clasificaci\IeC {\'o}n angular}}{43}{figure.caption.87}}
+\newlabel{fig:AE}{{2.7}{43}{Función clasificación angular}{figure.caption.87}{}}
+\newlabel{eq:angular}{{2.2}{43}{Clasificación angular}{equation.2.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Im\IeC {\'a}genes de sat\IeC {\'e}lite}{43}{section.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Landsat 8}{43}{subsection.2.4.1}}
 \acronymused{OLI}
 \undonewlabel{acro:TIRS}
-\newlabel{acro:TIRS}{{2.4.1}{37}{Landsat 8}{section*.69}{}}
+\newlabel{acro:TIRS}{{2.4.1}{43}{Landsat 8}{section*.88}{}}
 \acronymused{TIRS}
-\undonewlabel{acro:NDVI}
-\newlabel{acro:NDVI}{{2.4.1}{38}{Landsat 8}{section*.70}{}}
 \acronymused{NDVI}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Obtenci\IeC {\'o}n de las im\IeC {\'a}genes}{38}{subsection.2.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Obtenci\IeC {\'o}n de las im\IeC {\'a}genes}{44}{subsection.2.4.2}}
 \acronymused{EROS}
 \acronymused{USGS}
 \citation{Ariza2013}
 \citation{USGS2015}
 \undonewlabel{acro:L1T}
-\newlabel{acro:L1T}{{2.4.2}{39}{Obtención de las imágenes}{section*.71}{}}
+\newlabel{acro:L1T}{{2.4.2}{45}{Obtención de las imágenes}{section*.89}{}}
 \acronymused{L1T}
 \acronymused{ND}
 \undonewlabel{acro:TOA}
-\newlabel{acro:TOA}{{2.4.2}{39}{Obtención de las imágenes}{section*.72}{}}
+\newlabel{acro:TOA}{{2.4.2}{45}{Obtención de las imágenes}{section*.90}{}}
 \acronymused{TOA}
 \undonewlabel{acro:AWS}
-\newlabel{acro:AWS}{{2.4.2}{39}{Obtención de las imágenes}{section*.73}{}}
+\newlabel{acro:AWS}{{2.4.2}{45}{Obtención de las imágenes}{section*.91}{}}
 \acronymused{AWS}
 \acronymused{TFG}
 \acronymused{L1T}
 \acronymused{EROS}
 \undonewlabel{acro:PL8SR}
-\newlabel{acro:PL8SR}{{2.4.2}{39}{Obtención de las imágenes}{section*.74}{}}
+\newlabel{acro:PL8SR}{{2.4.2}{45}{Obtención de las imágenes}{section*.92}{}}
 \acronymused{PL8SR}
 \citation{Ariza2013}
 \citation{USGS2015}
-\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Caracer\IeC {\'\i }sticas de las im\IeC {\'a}genes Landsat}}{40}{table.caption.75}}
-\newlabel{tab:imagenes}{{2.2}{40}{Caracerísticas de las imágenes Landsat}{table.caption.75}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Im\IeC {\'a}genes Landsat}}{40}{figure.caption.76}}
-\newlabel{fig:imagenesLandsat}{{2.8}{40}{Imágenes Landsat}{figure.caption.76}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Imagen Landsat path 18 row 51 (23/11/14)}}}{40}{subfigure.8.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Imagen Landsat path 17 row 51 (19/12/14)}}}{40}{subfigure.8.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Im\IeC {\'a}genes de calidad de Landsat}}{41}{figure.caption.77}}
-\newlabel{fig:imagenescalidad}{{2.9}{41}{Imágenes de calidad de Landsat}{figure.caption.77}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Imagen de calidad Landsat path 18 row 51 (06/10/14)}}}{41}{subfigure.9.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Imagen de calidad Landsat path 17 row 51 (16/11/14)}}}{41}{subfigure.9.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Tratamientos previos}{41}{subsection.2.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Im\IeC {\'a}genes Landsat}}{46}{figure.caption.94}}
+\newlabel{fig:imagenesLandsat}{{2.8}{46}{Imágenes Landsat}{figure.caption.94}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Imagen Landsat path 18 row 51 (23/11/14)}}}{46}{subfigure.8.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Imagen Landsat path 17 row 51 (19/12/14)}}}{46}{subfigure.8.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Caracer\IeC {\'\i }sticas de las im\IeC {\'a}genes Landsat}}{46}{table.caption.93}}
+\newlabel{tab:imagenes}{{2.2}{46}{Caracerísticas de las imágenes Landsat}{table.caption.93}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Im\IeC {\'a}genes de calidad de Landsat}}{47}{figure.caption.95}}
+\newlabel{fig:imagenescalidad}{{2.9}{47}{Imágenes de calidad de Landsat}{figure.caption.95}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Imagen de calidad Landsat path 18 row 51 (06/10/14)}}}{47}{subfigure.9.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Imagen de calidad Landsat path 17 row 51 (16/11/14)}}}{47}{subfigure.9.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Tratamientos previos}{47}{subsection.2.4.3}}
 \acronymused{ND}
-\@writefile{toc}{\contentsline {subsubsection}{Valores nulos}{42}{section*.78}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Valores nulos}}{42}{figure.caption.79}}
+\@writefile{toc}{\contentsline {subsubsection}{Valores nulos}{48}{section*.96}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Valores nulos}}{48}{figure.caption.97}}
 \acronymused{NDVI}
-\@writefile{toc}{\contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{42}{section*.80}}
+\@writefile{toc}{\contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{48}{section*.98}}
 \undonewlabel{acro:GDAL}
-\newlabel{acro:GDAL}{{2.4.3}{42}{Mosaico de imágenes}{section*.81}{}}
+\newlabel{acro:GDAL}{{2.4.3}{48}{Mosaico de imágenes}{section*.99}{}}
 \acronymused{GDAL}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{43}{figure.caption.82}}
-\@writefile{toc}{\contentsline {subsubsection}{Recorte de la imagen}{43}{section*.85}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{49}{figure.caption.100}}
+\@writefile{toc}{\contentsline {subsubsection}{Recorte de la imagen}{49}{section*.103}}
 \citation{aldalur2002}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{44}{figure.caption.83}}
-\newlabel{fig:dialogomosaico}{{2.12}{44}{Diálogo del mosaicado}{figure.caption.83}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{44}{figure.caption.84}}
-\newlabel{fig:rpatch}{{2.13}{44}{Mosaico de imágenes en GRASS}{figure.caption.84}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces Recorte de la imagen}}{44}{figure.caption.87}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Datos de las regi\IeC {\'o}nes de trabajo}}{45}{table.caption.86}}
-\newlabel{tab:region}{{2.3}{45}{Datos de las regiónes de trabajo}{table.caption.86}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Filtro de paso bajo}{45}{section*.88}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Filtro de paso bajo}}{46}{figure.caption.89}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{46}{section.2.5}}
-\@writefile{toc}{\contentsline {paragraph}{M\IeC {\'\i }nima distancia.}{46}{section*.92}}
-\undonewlabel{acro:NN}
-\newlabel{acro:NN}{{2.5}{46}{Mínima distancia}{section*.93}{}}
-\acronymused{NN}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Composici\IeC {\'o}n en color real}}{47}{figure.caption.90}}
-\newlabel{fig:gf432}{{2.16}{47}{Composición en color real}{figure.caption.90}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Composici\IeC {\'o}n en falso color}}{47}{figure.caption.91}}
-\newlabel{fig:gf543}{{2.17}{47}{Composición en falso color}{figure.caption.91}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces Clasificador \textit  {K-Nearest Neighbor}}}{48}{figure.caption.96}}
-\newlabel{fig:KNN}{{2.18}{48}{Clasificador \textit {K-Nearest Neighbor}}{figure.caption.96}{}}
-\undonewlabel{acro:K-NN}
-\newlabel{acro:K-NN}{{2.5}{48}{\ac {K-NN}}{section*.95}{}}
-\acronymused{K-NN}
-\@writefile{toc}{\contentsline {paragraph}{\ac {K-NN}.}{48}{section*.94}}
-\acronymused{NN}
-\@writefile{toc}{\contentsline {paragraph}{Casificador de paralelep\IeC {\'\i }pedos.}{48}{section*.97}}
-\citation{Olaya2010}
-\citation{Olaya2010}
-\citation{JARS1999}
-\citation{JARS1999}
-\citation{chuvieco2002teledeteccion}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces Clasificador de paralelep\IeC {\'\i }pedos}}{49}{figure.caption.98}}
-\newlabel{fig:paralele}{{2.19}{49}{Clasificador de paralelepípedos}{figure.caption.98}{}}
-\@writefile{toc}{\contentsline {paragraph}{M\IeC {\'a}xima verosimilitud.}{49}{section*.99}}
-\undonewlabel{acro:MLC}
-\newlabel{acro:MLC}{{2.5}{49}{Máxima verosimilitud}{section*.100}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{50}{figure.caption.101}}
+\newlabel{fig:dialogomosaico}{{2.12}{50}{Diálogo del mosaicado}{figure.caption.101}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{50}{figure.caption.102}}
+\newlabel{fig:rpatch}{{2.13}{50}{Mosaico de imágenes en GRASS}{figure.caption.102}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces Recorte de la imagen}}{50}{figure.caption.105}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Datos de las regi\IeC {\'o}nes de trabajo}}{51}{table.caption.104}}
+\newlabel{tab:region}{{2.3}{51}{Datos de las regiónes de trabajo}{table.caption.104}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Filtro de paso bajo}{51}{section*.106}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Filtro de paso bajo}}{52}{figure.caption.107}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{52}{section.2.5}}
 \acronymused{MLC}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{49}{subsection.2.5.1}}
-\undonewlabel{acro:IV}
-\newlabel{acro:IV}{{2.5.1}{49}{Índices de vegetación}{section*.102}{}}
-\acronymused{IV}
-\acronymused{IRC}
-\citation{rouse1974}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces Clasificador de m\IeC {\'a}xima verosimilitud}}{50}{figure.caption.101}}
-\newlabel{fig:MLC}{{2.20}{50}{Clasificador de máxima verosimilitud}{figure.caption.101}{}}
-\acronymused{IRC}
-\acronymused{IV}
+\acronymused{SAM}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Composici\IeC {\'o}n en color real}}{53}{figure.caption.108}}
+\newlabel{fig:gf432}{{2.16}{53}{Composición en color real}{figure.caption.108}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Composici\IeC {\'o}n en falso color}}{53}{figure.caption.109}}
+\newlabel{fig:gf543}{{2.17}{53}{Composición en falso color}{figure.caption.109}{}}
+\acronymused{MLC}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces Generaci\IeC {\'o}n de firmas \textit  {i.cluster}}}{54}{figure.caption.110}}
+\newlabel{fig:cluster}{{2.18}{54}{Generación de firmas \textit {i.cluster}}{figure.caption.110}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces Clasificaci\IeC {\'o}n con \textit  {i.maxlik}}}{54}{figure.caption.111}}
+\acronymused{MLC}
+\newlabel{fig:maxlik}{{2.19}{54}{Clasificación con \textit {i.maxlik}}{figure.caption.111}{}}
+\acronymused{SAM}
+\undonewlabel{acro:TIFF}
+\newlabel{acro:TIFF}{{2.5}{54}{Clasificación de imágenes}{section*.115}{}}
+\acronymused{TIFF}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces Detalle de \IeC {\'a}reas de entrenamiento}}{55}{figure.caption.112}}
+\newlabel{fig:detalle_training}{{2.20}{55}{Detalle de áreas de entrenamiento}{figure.caption.112}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.21}{\ignorespaces Conversi\IeC {\'o}n vectorial a r\IeC {\'a}ster}}{55}{figure.caption.113}}
+\newlabel{fig:conversion}{{2.21}{55}{Conversión vectorial a ráster}{figure.caption.113}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces Funci\IeC {\'o}n de \textit  {Spectral Angle Mapper}}}{56}{figure.caption.116}}
+\newlabel{fig:R_SAM}{{2.22}{56}{Función de \textit {Spectral Angle Mapper}}{figure.caption.116}{}}
+\citation{carvachobart2010}
+\citation{crespo2000}
+\@writefile{lot}{\contentsline {table}{\numberline {2.4}{\ignorespaces Base de datos de \IeC {\'a}reas de entrenamiento}}{57}{table.caption.114}}
+\newlabel{tab:tabla_training}{{2.4}{57}{Base de datos de áreas de entrenamiento}{table.caption.114}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{57}{section.2.6}}
 \acronymused{NDVI}
-\newlabel{eq:cociente}{{2.6}{50}{Índices de vegetación}{equation.2.5.6}{}}
-\newlabel{eq:NDVI}{{2.7}{50}{Índices de vegetación}{equation.2.5.6}{}}
-\acronymused{OLI}
-\acronymused{NDVI}
-\citation{chuvieco2002teledeteccion}
-\acronymused{NDVI}
-\undonewlabel{acro:SAVI}
-\newlabel{acro:SAVI}{{2.5.1}{51}{Índices de vegetación}{section*.103}{}}
-\acronymused{SAVI}
-\acronymused{IV}
-\newlabel{eq:SAVI}{{2.8}{51}{Índices de vegetación}{equation.2.5.8}{}}
-\acronymused{NDVI}
-\undonewlabel{acro:EVI}
-\newlabel{acro:EVI}{{2.5.1}{51}{Índices de vegetación}{section*.104}{}}
 \acronymused{EVI}
-\acronymused{NDVI}
-\newlabel{eq:EVI}{{2.9}{51}{Índices de vegetación}{equation.2.5.9}{}}
 \acronymused{SAVI}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Resultados}{53}{chapter.3}}
+\acronymused{IV}
+\acronymused{EVI}
+\acronymused{SAVI}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Resultados}{59}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cap:resultados}{{3}{53}{Resultados}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis de separabilidad}{53}{section.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}An\IeC {\'a}lisis visual}{53}{subsection.3.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales de las tres especies}}{53}{figure.caption.105}}
-\newlabel{fig:ral}{{3.1}{53}{Firmas espectrales de las tres especies}{figure.caption.105}{}}
+\newlabel{cap:resultados}{{3}{59}{Resultados}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis de separabilidad}{59}{section.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}An\IeC {\'a}lisis visual}{59}{subsection.3.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales de las tres especies}}{59}{figure.caption.117}}
+\newlabel{fig:ral}{{3.1}{59}{Firmas espectrales de las tres especies}{figure.caption.117}{}}
 \acronymused{IRC}
 \acronymused{IRC}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Valores medios en las bandas Landsat}}{54}{table.caption.108}}
-\newlabel{tab:valores_medios}{{3.1}{54}{Valores medios en las bandas Landsat}{table.caption.108}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}\IeC {\'I}ndice de Acuerdo Espectral}{54}{subsection.3.1.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Valores medios en las bandas Landsat}}{60}{table.caption.120}}
+\newlabel{tab:valores_medios}{{3.1}{60}{Valores medios en las bandas Landsat}{table.caption.120}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}\IeC {\'I}ndice de Acuerdo Espectral}{60}{subsection.3.1.2}}
 \acronymused{IAE}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales cortadas}}{55}{figure.caption.106}}
-\newlabel{fig:firmas_espectrales_corte}{{3.2}{55}{Firmas espectrales cortadas}{figure.caption.106}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{56}{figure.caption.107}}
-\newlabel{fig:ral_corte}{{3.3}{56}{Firmas espectrales cortadas de las tres especies}{figure.caption.107}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Valores de IAE}}{56}{table.caption.109}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales cortadas}}{61}{figure.caption.118}}
+\newlabel{fig:firmas_espectrales_corte}{{3.2}{61}{Firmas espectrales cortadas}{figure.caption.118}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{62}{figure.caption.119}}
+\newlabel{fig:ral_corte}{{3.3}{62}{Firmas espectrales cortadas de las tres especies}{figure.caption.119}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Valores de IAE}}{62}{table.caption.121}}
 \acronymused{IAE}
-\newlabel{tab:Valores_IAE}{{3.2}{56}{Valores de IAE}{table.caption.109}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Valores medios de la respuesta espectral}}{57}{table.caption.110}}
-\newlabel{tab:mediaIAE}{{3.3}{57}{Valores medios de la respuesta espectral}{table.caption.110}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{57}{figure.caption.111}}
-\newlabel{fig:GraficaCR}{{3.4}{57}{Gráfica de Continuum Removal}{figure.caption.111}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Continuum Removal}{57}{subsection.3.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Clasificaci\IeC {\'o}n angular}{58}{subsection.3.1.4}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Valores de \IeC {\'A}ngulo Espectral}}{58}{table.caption.112}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Comprobaci\IeC {\'o}n}{58}{section.3.2}}
+\newlabel{tab:Valores_IAE}{{3.2}{62}{Valores de IAE}{table.caption.121}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Valores medios de la respuesta espectral}}{63}{table.caption.122}}
+\newlabel{tab:mediaIAE}{{3.3}{63}{Valores medios de la respuesta espectral}{table.caption.122}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{63}{figure.caption.123}}
+\newlabel{fig:GraficaCR}{{3.4}{63}{Gráfica de Continuum Removal}{figure.caption.123}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Continuum Removal}{63}{subsection.3.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Clasificaci\IeC {\'o}n angular}{64}{subsection.3.1.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Valores de \IeC {\'A}ngulo Espectral}}{64}{table.caption.124}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Comprobaci\IeC {\'o}n}{64}{section.3.2}}
 \citation{USGS2015}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Actualizaci\IeC {\'o}n de coordenadas}}{59}{figure.caption.113}}
-\newlabel{fig:v.to.db}{{3.5}{59}{Actualización de coordenadas}{figure.caption.113}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Actualizaci\IeC {\'o}n de los datos raster}}{59}{figure.caption.114}}
-\newlabel{fig:v.what.rast}{{3.6}{59}{Actualización de los datos raster}{figure.caption.114}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Actualizaci\IeC {\'o}n de coordenadas}}{65}{figure.caption.125}}
+\newlabel{fig:v.to.db}{{3.5}{65}{Actualización de coordenadas}{figure.caption.125}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Actualizaci\IeC {\'o}n de los datos raster}}{65}{figure.caption.126}}
+\newlabel{fig:v.what.rast}{{3.6}{65}{Actualización de los datos raster}{figure.caption.126}{}}
 \acronymused{PL8SR}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Reescalado de valores}}{59}{figure.caption.115}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Base de datos de puntos de comprobaci\IeC {\'o}n}}{60}{table.caption.116}}
-\newlabel{tab:tabla_puntos}{{3.5}{60}{Base de datos de puntos de comprobación}{table.caption.116}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Clasificaci\IeC {\'o}n de imagen}{60}{section.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Distribuci\IeC {\'o}n de puntos}}{61}{figure.caption.117}}
-\newlabel{fig:dist_puntos}{{3.8}{61}{Distribución de puntos}{figure.caption.117}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Gr\IeC {\'a}fico de puntos de comprobaci\IeC {\'o}n}}{61}{figure.caption.118}}
-\newlabel{fig:grafica_comprob}{{3.9}{61}{Gráfico de puntos de comprobación}{figure.caption.118}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{62}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Conclusiones}{63}{chapter.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Reescalado de valores}}{65}{figure.caption.127}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Base de datos de puntos de comprobaci\IeC {\'o}n}}{66}{table.caption.128}}
+\newlabel{tab:tabla_puntos}{{3.5}{66}{Base de datos de puntos de comprobación}{table.caption.128}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Clasificaci\IeC {\'o}n de imagen}{66}{section.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{66}{section.3.4}}
+\acronymused{NDVI}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Distribuci\IeC {\'o}n de puntos}}{67}{figure.caption.129}}
+\newlabel{fig:dist_puntos}{{3.8}{67}{Distribución de puntos}{figure.caption.129}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Gr\IeC {\'a}fico de puntos de comprobaci\IeC {\'o}n}}{67}{figure.caption.130}}
+\newlabel{fig:grafica_comprob}{{3.9}{67}{Gráfico de puntos de comprobación}{figure.caption.130}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Detalle marismas en NDVI}}{68}{figure.caption.131}}
+\newlabel{fig:detalle_aguas}{{3.10}{68}{Detalle marismas en NDVI}{figure.caption.131}{}}
+\acronymused{SAVI}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Detalle de estanques en SAVI}}{69}{figure.caption.132}}
+\newlabel{fig:detalle_estanques}{{3.11}{69}{Detalle de estanques en SAVI}{figure.caption.132}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Conclusiones}{71}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \acronymused{TFG}
 \citation{Congedo2015}
 \acronymused{TFG}
 \undonewlabel{acro:SCP}
-\newlabel{acro:SCP}{{4}{64}{Conclusiones}{section*.119}{}}
+\newlabel{acro:SCP}{{4}{72}{Conclusiones}{section*.133}{}}
 \acronymused{SCP}
 \acronymused{SAM}
 \acronymused{MLC}
 \acronymused{NN}
 \acronymused{SCP}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \textit  {Map Swipe} de GRASS 7}}{73}{figure.caption.134}}
+\newlabel{fig:map_swipe}{{4.1}{73}{\textit {Map Swipe} de GRASS 7}{figure.caption.134}{}}
 \bibstyle{authordate1}
 \bibdata{bibliografia}
 \bibcite{aldalur2002}{{1}{2002}{{Aldalur \& Santamar\IeC {\'\i }a}}{{}}}
@@ -564,43 +610,49 @@
 \bibcite{bodart2011pre}{{3}{2011}{{Bodart {\em  et~al.\ }\relax }}{{}}}
 \bibcite{Brachet2003}{{4}{2003-2014}{{Brachet}}{{}}}
 \bibcite{cajacuri2011medicion}{{5}{2011}{{Cajacuri}}{{}}}
-\bibcite{mexico1999honduras}{{6}{1999}{{CEPAL}}{{}}}
-\bibcite{chen2013multi}{{7}{2013}{{Chen {\em  et~al.\ }\relax }}{{}}}
-\bibcite{chuvieco2002teledeteccion}{{8}{2002}{{Chuvieco~Salinero}}{{}}}
-\bibcite{anuario2013}{{9}{2014}{{CIPF}}{{}}}
-\bibcite{Congedo2015}{{10}{2015}{{Congedo}}{{}}}
-\bibcite{andinofase1}{{11}{2010a}{{Corrales~Andino}}{{}}}
-\bibcite{andinofase2}{{12}{2010b}{{Corrales~Andino}}{{}}}
-\bibcite{Curran1991Longman}{{13}{1989}{{Curran}}{{}}}
-\bibcite{filippi2007effect}{{14}{2007}{{Filippi \& Jensen}}{{}}}
-\bibcite{galindo2001}{{15}{2001}{{Galindo~Ria\IeC {\~n}o {\em  et~al.\ }\relax }}{{}}}
-\bibcite{girouard2004validated}{{16}{2004}{{Girouard {\em  et~al.\ }\relax }}{{}}}
-\bibcite{GADM2012}{{17}{2012}{{Global Administrative Areas}}{{}}}
-\bibcite{GmbH2015}{{18}{2015}{{GmbH}}{{}}}
-\bibcite{GRASS_GIS_software}{{19}{2012}{{GRASS Development Team}}{{}}}
-\bibcite{Latex2011}{{20}{2011}{{Hern\IeC {\'a}ndez}}{{}}}
-\bibcite{huang2004estimating}{{21}{2004}{{Huang {\em  et~al.\ }\relax }}{{}}}
-\bibcite{JARS1999}{{22}{1999}{{JARS}}{{}}}
-\bibcite{SRTM2008}{{23}{2008}{{Jarvis {\em  et~al.\ }\relax }}{{}}}
-\bibcite{Jimenez1994}{{24}{1994}{{Jim{\'e}nez}}{{}}}
-\bibcite{JimenezLaguncularia}{{25}{1985a}{{Jim\IeC {\'e}nez}}{{}}}
-\bibcite{JimenezRhizophora}{{26}{1985b}{{Jim\IeC {\'e}nez}}{{}}}
-\bibcite{JimenezAvicennia}{{27}{1985}{{Jim\IeC {\'e}nez \& Lugo}}{{}}}
-\bibcite{kokaly1999spectroscopic}{{28}{1999}{{Kokaly \& Clark}}{{}}}
-\bibcite{laborate2014}{{29}{2014}{{LaboraTe}}{{}}}
-\bibcite{lamport1994}{{30}{1994}{{Lamport}}{{}}}
-\bibcite{Lara1999}{{31}{1999}{{Lara-Dom{\'\i }nguez {\em  et~al.\ }\relax }}{{}}}
-\bibcite{lee2009applying}{{32}{2009}{{Lee \& Yeh}}{{}}}
-\bibcite{Mas2005software}{{33}{2005}{{Mas~i Hern{\`a}ndez}}{{}}}
-\bibcite{MatellanOliveira2004}{{34}{2004}{{Matell\IeC {\'a}n~Oliveira {\em  et~al.\ }\relax }}{{}}}
-\bibcite{neteler2002open}{{35}{2002}{{Neteler \& Mitasova}}{{}}}
-\bibcite{Olaya2010}{{36}{2010}{{Olaya}}{{}}}
-\bibcite{R2013}{{37}{2013}{{R Core Team}}{{}}}
-\bibcite{Ramsar2014}{{38}{2014}{{Ramsar}}{{}}}
-\bibcite{rouse1974}{{39}{1974}{{Rouse {\em  et~al.\ }\relax }}{{}}}
-\bibcite{schowengerdt2006}{{40}{2006}{{Schowengerdt}}{{}}}
-\bibcite{stevens2014introduction}{{41}{2014}{{Stevens \& Ramirez-Lopez}}{{}}}
-\bibcite{underwood2003mapping}{{42}{2003}{{Underwood {\em  et~al.\ }\relax }}{{}}}
-\bibcite{USGS2015}{{43}{2015}{{USGS}}{{}}}
-\bibcite{yanez1994}{{44}{1994}{{Y{\'a}nez-Arancibia \& Lara-Dom{\'\i }nguez}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{69}{chapter*.120}}
+\bibcite{carvachobart2010}{{6}{2010}{{Carvacho~Bart \& S\IeC {\'a}nchez~Mart\IeC {\'\i }nez}}{{}}}
+\bibcite{mexico1999honduras}{{7}{1999}{{CEPAL}}{{}}}
+\bibcite{chen2013multi}{{8}{2013}{{Chen {\em  et~al.\ }\relax }}{{}}}
+\bibcite{chuvieco2002teledeteccion}{{9}{2002}{{Chuvieco~Salinero}}{{}}}
+\bibcite{anuario2013}{{10}{2014}{{CIPF}}{{}}}
+\bibcite{Congedo2015}{{11}{2015}{{Congedo}}{{}}}
+\bibcite{andinofase1}{{12}{2010a}{{Corrales~Andino}}{{}}}
+\bibcite{andinofase2}{{13}{2010b}{{Corrales~Andino}}{{}}}
+\bibcite{crespo2000}{{14}{2000}{{Crespo {\em  et~al.\ }\relax }}{{}}}
+\bibcite{Curran1991Longman}{{15}{1989}{{Curran}}{{}}}
+\bibcite{filippi2007effect}{{16}{2007}{{Filippi \& Jensen}}{{}}}
+\bibcite{galindo2001}{{17}{2001}{{Galindo~Ria\IeC {\~n}o {\em  et~al.\ }\relax }}{{}}}
+\bibcite{girouard2004validated}{{18}{2004}{{Girouard {\em  et~al.\ }\relax }}{{}}}
+\bibcite{GADM2012}{{19}{2012}{{Global Administrative Areas}}{{}}}
+\bibcite{GmbH2015}{{20}{2015}{{GmbH}}{{}}}
+\bibcite{GRASS_GIS_software}{{21}{2012}{{GRASS Development Team}}{{}}}
+\bibcite{Latex2011}{{22}{2011}{{Hern\IeC {\'a}ndez}}{{}}}
+\bibcite{huang2004estimating}{{23}{2004}{{Huang {\em  et~al.\ }\relax }}{{}}}
+\bibcite{JARS1999}{{24}{1999}{{JARS}}{{}}}
+\bibcite{SRTM2008}{{25}{2008}{{Jarvis {\em  et~al.\ }\relax }}{{}}}
+\bibcite{Jimenez1994}{{26}{1994}{{Jim{\'e}nez}}{{}}}
+\bibcite{JimenezLaguncularia}{{27}{1985a}{{Jim\IeC {\'e}nez}}{{}}}
+\bibcite{JimenezRhizophora}{{28}{1985b}{{Jim\IeC {\'e}nez}}{{}}}
+\bibcite{JimenezAvicennia}{{29}{1985}{{Jim\IeC {\'e}nez \& Lugo}}{{}}}
+\bibcite{kokaly1999spectroscopic}{{30}{1999}{{Kokaly \& Clark}}{{}}}
+\bibcite{laborate2014}{{31}{2014}{{LaboraTe}}{{}}}
+\bibcite{lamport1994}{{32}{1994}{{Lamport}}{{}}}
+\bibcite{Lara1999}{{33}{1999}{{Lara-Dom{\'\i }nguez {\em  et~al.\ }\relax }}{{}}}
+\bibcite{lee2009applying}{{34}{2009}{{Lee \& Yeh}}{{}}}
+\bibcite{Mas2005software}{{35}{2005}{{Mas~i Hern{\`a}ndez}}{{}}}
+\bibcite{MatellanOliveira2004}{{36}{2004}{{Matell\IeC {\'a}n~Oliveira {\em  et~al.\ }\relax }}{{}}}
+\bibcite{neteler2002open}{{37}{2002}{{Neteler \& Mitasova}}{{}}}
+\bibcite{Olaya2010}{{38}{2010}{{Olaya}}{{}}}
+\bibcite{R2013}{{39}{2013}{{R Core Team}}{{}}}
+\bibcite{Ramsar2014}{{40}{2014}{{Ramsar}}{{}}}
+\bibcite{rouse1974}{{41}{1974}{{Rouse {\em  et~al.\ }\relax }}{{}}}
+\bibcite{schowengerdt2006}{{42}{2006}{{Schowengerdt}}{{}}}
+\bibcite{stevens2014introduction}{{43}{2014}{{Stevens \& Ramirez-Lopez}}{{}}}
+\bibcite{underwood2003mapping}{{44}{2003}{{Underwood {\em  et~al.\ }\relax }}{{}}}
+\bibcite{USGS2015}{{45}{2015}{{USGS}}{{}}}
+\bibcite{yanez1994}{{46}{1994}{{Y{\'a}nez-Arancibia \& Lara-Dom{\'\i }nguez}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{79}{chapter*.135}}
+\@writefile{toc}{\contentsline {chapter}{Anejo. Mapas}{81}{chapter*.136}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Mapa1}{81}{section.4.1}}
