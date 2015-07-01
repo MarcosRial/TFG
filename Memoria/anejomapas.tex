@@ -6,5 +6,43 @@
 %%%%%%%%%%%%%%%%%
 
 \chapter{Anejo. Mapas}
-\section{Mapa1}
-%\includepdf[pages=inicio-fin]{ruta archivo}
+
+\newpage
+$\ $
+\thispagestyle{empty}
+
+\afterpage{
+\clearpage
+\KOMAoptions{paper=A3,paper=landscape,pagesize}
+\recalctypearea
+
+\includepdf[pages=1-1,noautoscale]{./Mapas/Mapas.pdf}
+
+\newpage
+$\ $
+\thispagestyle{empty}
+
+\includepdf[pages=2-2,noautoscale]{./Mapas/Mapas.pdf}
+
+\newpage
+$\ $
+\thispagestyle{empty}
+
+\includepdf[pages=3-3,noautoscale]{./Mapas/Mapas.pdf}
+
+\newpage
+$\ $
+\thispagestyle{empty}
+
+\includepdf[pages=4-4,noautoscale]{./Mapas/Mapas.pdf}
+
+\newpage
+$\ $
+\thispagestyle{empty}
+
+\includepdf[pages=5-5,noautoscale]{./Mapas/Mapas.pdf}
+
+\clearpage
+\KOMAoptions{paper=A4,pagesize}
+\recalctypearea
+}
