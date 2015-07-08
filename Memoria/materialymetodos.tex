@@ -109,13 +109,13 @@ En la figura \ref{fig:IAE} se muestra el script de la función en R a la que se 
 \begin{lstlisting}[language=R]
   IAE <- function(i, j) {
   
-  mediai = mean(i$V5)
-  CBi = sapply(i$V5, FUN=function(x) {if(x>=mediai) {1} else {0}})
+  mediai = mean(i$V5) # media de las observaciones de reflectividad
+  CBi = sapply(i$V5, FUN=function(x) {if(x>=mediai) {1} else {0}}) # creacion de la codificacion binaria
   
   mediaj = mean(j$V5)
   CBj = sapply(j$V5, FUN=function(x) {if(x>=mediaj) {1} else {0}})
   	
-  Indice = sum((CBi-CBj)^2)/length(CBi)
+  Indice = sum((CBi-CBj)^2)/length(CBi) # aplicacion del indice
   return(Indice)  
   }
 \end{lstlisting}
@@ -149,14 +149,15 @@ En la figura \ref{fig:CR} se muestra el script original de la función en R a la
 \begin{figure}
 \centering
 \begin{lstlisting}[language = R]
-  require(prospectr)
-
+  require(prospectr) # carga del paquete necesario
+  
+  # aplicacion de la funcion implementada en prospectr 
   cr <- continuumRemoval(mangle1corte$V5, mangle1corte$V4,
                          type="R",
                          interpol="linear")
                          
-  grafica(data1)
-  lines(data1$V4,cr)
+  grafica(data1) # salida grafica a los datos iniciales
+  lines(data1$V4,cr) # superposicion de la grafica de CR
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
 \caption[Función de \textit{Continuum Removal}]{Script de la función de \textit{Continuum Removal} en R. Fuente: Elaboración propia a partir de \cite{stevens2014introduction}.}
@@ -174,15 +175,20 @@ El script original de la funcion en R previamente presentado en la figura \ref{f
 	\begin{lstlisting}[language = R]
   require(prospectr)
   
+  # generacion de la matriz de datos
   matriz <- matrix(c(RhizophoraCorte$V5,LagunculariaCorte$V5,
                      AvicenniaCorte$V5),
                    byrow=TRUE,
                    nrow=3,
                    ncol=481)
-                   
+  
+  # se especifica el numero de observaciones                 
   bandas <- mangle1corte$V4
+  
+  # se aplica la funcion
   cr <- continuumRemoval(matriz, bandas)
   
+  # salida grafica a los datos
   matplot(bandas, t(matriz),
           type="l", ylim=c(0,1))
   matlines(bandas, t(cr2))
@@ -212,9 +218,10 @@ En la figura \ref{fig:AE} se muestra el script de la función en R a la que se l
 \begin{lstlisting}[language = R]
   AE <- function(i,j) {
   
-    Ri = i$V5
+    Ri = i$V5 # valores de las observaciones
     Rj = j$V5
-
+  
+  # calculo del angulo espectral para dos cubiertas
     angulo = acos (sum(Ri*Rj)/(sqrt(sum(Ri^2))*sqrt(sum(Rj^2))))
     return(angulo)
   }
@@ -483,7 +490,7 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 	\centering
 	\includegraphics[width=0.9\linewidth]{./Imagenes/GF432.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Composición en color real]{Resultado de la imagen en una composición de color real (432). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\caption[Composición en color real]{Resultado de la imagen en una composición de color real (4-3-2). Imagen exportada de GRASS. Fuente: Elaboración propia.}
 	\label{fig:gf432}
 \end{figure}
 
@@ -491,7 +498,7 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 	\centering
 	\includegraphics[width=0.9\linewidth]{./Imagenes/GF543.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Composición en falso color]{Resultado de la imagen en una composición de falso color (543). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\caption[Composición en falso color]{Resultado de la imagen en una composición de falso color (5-4-3). Imagen exportada de GRASS. Fuente: Elaboración propia.}
 	\label{fig:gf543}
 \end{figure}
 
@@ -598,6 +605,6 @@ Para realizar la clasificación aplicando el \ac{SAM} se recurrió a un script e
 \end{figure}
 
 \section{Índices de vegetación}
-Se decidió aplicar los índices \ac{NDVI}, \ac{EVI} y \ac{SAVI}. Simplemente con la calculadora de mapas ráster de GRASS (\textit{r.mapcalc}) ingresando el cociente de mapas correspondiente se obtienen las tres capas referentes a los \ac{IV} solo necesitando aplicar una nueva tabla de color con \textit{r.colors}.
+Con los índices de vegetación propuestos a continuación se busca esclarecer más las clasificaciones anteriores. Se decidió aplicar los índices \ac{NDVI}, \ac{EVI} y \ac{SAVI}. Simplemente con la calculadora de mapas ráster de GRASS (\textit{r.mapcalc}) ingresando el cociente de mapas correspondiente se obtienen las tres capas referentes a los \ac{IV} solo necesitando aplicar una nueva tabla de color con \textit{r.colors}.
 
 A las ecuaciones del \ac{EVI} y el \ac{SAVI}, expuestas en la sección \ref{subsec:indices_vegetacion}, se aplicaron los valores siguientes: $L=1$ en ambos casos; $Gain=2.5 $;$C_{1}=6 $ y $C_{2}=7.5$ según lo estudiado por \cite{carvachobart2010} y \cite{crespo2000}.
