@@ -154,6 +154,25 @@ Una vez aplicado el script de R de la función de clasificación angular (figura
 
 Se puede observar una mayor separabilidad entre \textit{R. mangle} y \textit{L. racemosa}, siendo menor en las otras combinaciones.
 
+\section{Combinación de bandas}
+Para observar las zonas donde hay presencia de bosque de mangle basta con realizar diversas combinaciones de bandas de Landsat 8. A las figuras ya expuestas en el capítulo de materiales y métodos (figuras \ref{fig:gf432} y \ref{fig:gf543}) correspondientes al color real y a un falso color con realce del \ac{IRC} en el canal rojo. En las figuras \ref{fig:gf654} y \ref{fig:gf562} se muestran combinaciones que también buscan conseguir un realce del manglar. Por las propiedades de reflectividad de la cubierta combinando bandas del infrarrojo se obtienen buenos resultados para realizar un análisis visual.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF654.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Composición 654]{Resultado de la imagen en una composición de realce de vegetación (6-5-4). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\label{fig:gf654}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF562.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Composición 562]{Resultado de la imagen en una composición de realce de vegetación (5-6-2). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\label{fig:gf562}
+\end{figure}
+
 \section{Comprobación}
 Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}) o se sitúan cerca de ellos, como camaroneras o esteros. Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
 
@@ -240,11 +259,14 @@ Gracias a esta representación gráfica se confirma que la magnitud de los datos
 	\label{fig:grafica_comprob}
 \end{figure}
 
-\section{Clasificación de imagen}
+
+\section{Clasificación de imágenes}
+En las clasificaciones se muestra confusión de clases, mezclándose en algunos casos el mangle con otro tipo de vegetación. A excepción de la clasificación supervisada que discrimina bien la cobertura de mangle de otros tipos a pesar de que se ve un exceso de la clase denominada ``Agua 2''.\Sep
+
 Se muestra el resultado de las clasificaciones en el anexo primero de este documento.
 
 \section{Índices de vegetación}
-Con los índices de vegetación propuestos a continuación se busca esclarecer más las clasificaciones anteriores. El \ac{NDVI} nos muestra más claramente zonas de marisma o aguas turbias poco profundas que se sitúan en la línea de costa (figura \ref{fig:detalle_aguas}), justo donde hay presencia de bosque de mangle.\Sep
+El \ac{NDVI} nos muestra más claramente zonas de marisma o aguas turbias poco profundas que se sitúan en la línea de costa (figura \ref{fig:detalle_aguas}), justo donde hay presencia de bosque de mangle.\Sep
 
 \begin{figure}
 	\centering
