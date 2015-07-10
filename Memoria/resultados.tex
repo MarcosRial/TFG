@@ -174,7 +174,7 @@ Para observar las zonas donde hay presencia de bosque de mangle basta con realiz
 \end{figure}
 
 \section{Comprobación}
-Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}) o se sitúan cerca de ellos, como camaroneras o esteros. Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
+Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
 
 \begin{itemize}
 	\item Creación de una capa vectorial en blanco de nombre ``puntos'' y añadirla al árbol de capas. En esta capa se digitalizarán un total de 10 puntos en los que se supone la existencia de bosque de mangle.
@@ -261,9 +261,9 @@ Gracias a esta representación gráfica se confirma que la magnitud de los datos
 
 
 \section{Clasificación de imágenes}
-En las clasificaciones se muestra confusión de clases, mezclándose en algunos casos el mangle con otro tipo de vegetación. A excepción de la clasificación supervisada que discrimina bien la cobertura de mangle de otros tipos a pesar de que se ve un exceso de la clase denominada ``Agua 2''.\Sep
+En las clasificaciones se muestra confusión de clases, mezclándose en algunos casos el mangle con otro tipo de vegetación. A excepción de la clasificación supervisada que, a pesar de que se ve un exceso de la clase denominada ``Agua 2'' en zonas donde no hay presencia de esta, discrimina bien la cobertura de mangle de otros tipos.\Sep
 
-Se muestra el resultado de las clasificaciones en el anexo primero de este documento.
+Se muestra el resultado de las clasificaciones en el anexo de mapas de este documento.
 
 \section{Índices de vegetación}
 El \ac{NDVI} nos muestra más claramente zonas de marisma o aguas turbias poco profundas que se sitúan en la línea de costa (figura \ref{fig:detalle_aguas}), justo donde hay presencia de bosque de mangle.\Sep
@@ -289,4 +289,4 @@ Gracias al índice \ac{SAVI} se pueden detectar fácilmente zonas de suelo desnu
 	\label{fig:detalle_estanques}
 \end{figure}
 
-Se muestra el resultado de los índices de vegetación en el anexo segundo de este documento.
+Se muestra el resultado de los índices de vegetación en el anexo de mapas de este documento.
