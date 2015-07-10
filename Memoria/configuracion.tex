@@ -21,25 +21,34 @@
 \usepackage{verbatim} %Texto sin formato
 
 \usepackage{multirow} %Para poder centrar verticalmente el contenido de las celdas de una tabla
-\usepackage{fancyhdr}
+\usepackage{fancyhdr} %Encabezados y pies de página
 \usepackage{url} %Para introducir URLs
 \usepackage{latexsym} %Para introducir el símbolo de LaTeX
 \usepackage[colorlinks,linktocpage=true,citecolor=blue,linkcolor=blue]{hyperref} %Vínculos
-\usepackage{emptypage}
-\usepackage{acronym}
+\usepackage{emptypage} %Páginas en blanco
+\usepackage{acronym} %Para acrónimos
 %\usepackage{tocbibind} %Índice en cada capítulo
 \usepackage{natbib} %Bibliografía
 \usepackage{caption} %Para los pies de foto
 
-\usepackage[toc,page]{appendix}
+\usepackage[toc,page]{appendix} %apéndice para incluir los mapas
 
-\usepackage{booktabs}
+\usepackage{booktabs} %estilo de tablas
 
-\usepackage[paper=A4,pagesize]{typearea}
-\usepackage{afterpage}
 \usepackage{pdfpages} %Incrustar páginas en pdf
 
-%\usepackage{csvsimple} %Cargar csv en forma de tabla de latex
+\usepackage{filecontents} %para incluir pdf a3 en el documento. Activado para anejomapas2.tex
+\begin{filecontents}{mapas}
+\documentclass[a3paper,landscape,fullpage]{article}
+\usepackage[a3paper,landscape]{geometry}
+%\begin{document}
+%\pagestyle{empty}
+%I'm your a3paper page :-)
+%\end{document}
+\end{filecontents}
+
+%\usepackage[paper=A4,pagesize]{typearea} %otro tipo de inserción de pdf en a3 activado para anejomapas.tex
+%\usepackage{afterpage}
 
 \usepackage{listings}
 \renewcommand{\lstlistingname}{Función}
