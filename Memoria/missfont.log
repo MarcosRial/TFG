@@ -58,3 +58,5 @@ mktextfm ptmb8t
 mktextfm nullfont
 mktextfm ptmr8t
 mktextfm ptmri8t
+mktextfm ecrm1200
+mktextfm ecrm1200

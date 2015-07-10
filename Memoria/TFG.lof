@@ -7,53 +7,53 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Localizaci\IeC {\'o}n del Golfo de Fonseca}}{7}{figure.caption.18}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Modelo de elevaci\IeC {\'o}n del Golfo de Fonseca}}{7}{figure.caption.19}
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Elementos de teledetecci\IeC {\'o}n}}{9}{figure.caption.20}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Espectro electro-magn\IeC {\'e}tico}}{10}{figure.caption.21}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Firma espectral ejemplo}}{15}{figure.caption.27}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Biblioteca espectral SIGFIRM}}{16}{figure.caption.31}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Clasificador \textit {K-Nearest Neighbor}}}{29}{figure.caption.59}
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Clasificador de paralelep\IeC {\'\i }pedos}}{30}{figure.caption.61}
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Clasificador de m\IeC {\'a}xima verosimilitud}}{31}{figure.caption.64}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Espectro electro-magn\IeC {\'e}tico}}{9}{figure.caption.21}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Firma espectral ejemplo}}{14}{figure.caption.27}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Biblioteca espectral SIGFIRM}}{15}{figure.caption.31}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Clasificador \textit {K-Nearest Neighbor}}}{27}{figure.caption.59}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Clasificador de paralelep\IeC {\'\i }pedos}}{28}{figure.caption.61}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Clasificador de m\IeC {\'a}xima verosimilitud}}{29}{figure.caption.64}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Mangle recolectado}}{34}{figure.caption.70}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Obtenci\IeC {\'o}n de firmas}}{34}{figure.caption.71}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Funci\IeC {\'o}n de \IeC {\'I}ndice de Acuerdo Espectral}}{40}{figure.caption.81}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Continuum Removal ejemplo}}{41}{figure.caption.83}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Funci\IeC {\'o}n de \textit {Continuum Removal}}}{42}{figure.caption.84}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Funci\IeC {\'o}n modificada de \textit {Continuum Removal}}}{43}{figure.caption.85}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Funci\IeC {\'o}n clasificaci\IeC {\'o}n angular}}{44}{figure.caption.87}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Im\IeC {\'a}genes Landsat}}{47}{figure.caption.94}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen Landsat path 18 row 51 (23/11/14)}}}{47}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen Landsat path 17 row 51 (19/12/14)}}}{47}{subfigure.8.2}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Im\IeC {\'a}genes de calidad de Landsat}}{48}{figure.caption.95}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen de calidad Landsat path 18 row 51 (06/10/14)}}}{48}{subfigure.9.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen de calidad Landsat path 17 row 51 (16/11/14)}}}{48}{subfigure.9.2}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Valores nulos}}{49}{figure.caption.97}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{50}{figure.caption.100}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{51}{figure.caption.101}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{51}{figure.caption.102}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Recorte de la imagen}}{52}{figure.caption.105}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Filtro de paso bajo}}{53}{figure.caption.107}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Composici\IeC {\'o}n en color real}}{54}{figure.caption.108}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Composici\IeC {\'o}n en falso color}}{54}{figure.caption.109}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Generaci\IeC {\'o}n de firmas \textit {i.cluster}}}{56}{figure.caption.110}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Clasificaci\IeC {\'o}n con \textit {i.maxlik}}}{56}{figure.caption.111}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Detalle de \IeC {\'a}reas de entrenamiento}}{57}{figure.caption.112}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Conversi\IeC {\'o}n vectorial a r\IeC {\'a}ster}}{57}{figure.caption.113}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Funci\IeC {\'o}n de \textit {Spectral Angle Mapper}}}{58}{figure.caption.116}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Funci\IeC {\'o}n de \IeC {\'I}ndice de Acuerdo Espectral}}{39}{figure.caption.81}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Continuum Removal ejemplo}}{40}{figure.caption.83}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Funci\IeC {\'o}n de \textit {Continuum Removal}}}{41}{figure.caption.84}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Funci\IeC {\'o}n modificada de \textit {Continuum Removal}}}{42}{figure.caption.85}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Funci\IeC {\'o}n clasificaci\IeC {\'o}n angular}}{43}{figure.caption.87}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Im\IeC {\'a}genes Landsat}}{46}{figure.caption.94}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen Landsat path 18 row 51 (23/11/14)}}}{46}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen Landsat path 17 row 51 (19/12/14)}}}{46}{subfigure.8.2}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Im\IeC {\'a}genes de calidad de Landsat}}{47}{figure.caption.95}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen de calidad Landsat path 18 row 51 (06/10/14)}}}{47}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen de calidad Landsat path 17 row 51 (16/11/14)}}}{47}{subfigure.9.2}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Valores nulos}}{48}{figure.caption.97}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Mosaico de im\IeC {\'a}genes}}{49}{figure.caption.100}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Di\IeC {\'a}logo del mosaicado}}{50}{figure.caption.101}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Mosaico de im\IeC {\'a}genes en GRASS}}{50}{figure.caption.102}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Recorte de la imagen}}{50}{figure.caption.105}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Filtro de paso bajo}}{52}{figure.caption.107}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Composici\IeC {\'o}n en color real}}{53}{figure.caption.108}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Composici\IeC {\'o}n en falso color}}{53}{figure.caption.109}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Generaci\IeC {\'o}n de firmas \textit {i.cluster}}}{54}{figure.caption.110}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Clasificaci\IeC {\'o}n con \textit {i.maxlik}}}{54}{figure.caption.111}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Detalle de \IeC {\'a}reas de entrenamiento}}{55}{figure.caption.112}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Conversi\IeC {\'o}n vectorial a r\IeC {\'a}ster}}{55}{figure.caption.113}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Funci\IeC {\'o}n de \textit {Spectral Angle Mapper}}}{56}{figure.caption.116}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales de las tres especies}}{61}{figure.caption.117}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales cortadas}}{63}{figure.caption.118}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{64}{figure.caption.119}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{65}{figure.caption.123}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Composici\IeC {\'o}n 654}}{67}{figure.caption.125}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Composici\IeC {\'o}n 562}}{68}{figure.caption.126}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Actualizaci\IeC {\'o}n de coordenadas}}{68}{figure.caption.127}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Actualizaci\IeC {\'o}n de los datos raster}}{69}{figure.caption.128}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Reescalado de valores}}{69}{figure.caption.129}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Distribuci\IeC {\'o}n de puntos}}{70}{figure.caption.131}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Gr\IeC {\'a}fico de puntos de comprobaci\IeC {\'o}n}}{71}{figure.caption.132}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Detalle marismas en NDVI}}{73}{figure.caption.133}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Detalle de estanques en SAVI}}{73}{figure.caption.134}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Firmas espectrales de las tres especies}}{59}{figure.caption.117}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Firmas espectrales cortadas}}{61}{figure.caption.118}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Firmas espectrales cortadas de las tres especies}}{62}{figure.caption.119}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\IeC {\'a}fica de Continuum Removal}}{63}{figure.caption.123}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Composici\IeC {\'o}n 654}}{65}{figure.caption.125}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Composici\IeC {\'o}n 562}}{65}{figure.caption.126}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Actualizaci\IeC {\'o}n de coordenadas}}{66}{figure.caption.127}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Actualizaci\IeC {\'o}n de los datos raster}}{66}{figure.caption.128}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Reescalado de valores}}{67}{figure.caption.129}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Distribuci\IeC {\'o}n de puntos}}{68}{figure.caption.131}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Gr\IeC {\'a}fico de puntos de comprobaci\IeC {\'o}n}}{68}{figure.caption.132}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Detalle marismas en NDVI}}{69}{figure.caption.133}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Detalle de estanques en SAVI}}{70}{figure.caption.134}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \textit {Map Swipe} de GRASS 7}}{77}{figure.caption.136}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \textit {Map Swipe} de GRASS 7}}{73}{figure.caption.136}
 \addvspace {10\p@ }
