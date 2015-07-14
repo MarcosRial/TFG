@@ -91,7 +91,7 @@ El área de estudio es el entrante natural del Golfo de Fonseca (figuras \ref{fi
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/localizacion.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Localización del Golfo de Fonseca]{Localización del Golfo de Fonseca. Fuente: Elaboración propia. Datos: \cite{GADM2012}.}
+	\caption[Localización del Golfo de Fonseca]{Localización del Golfo de Fonseca. Elaboración propia a partir de \cite{GADM2012}.}
 	\label{fig:localizacion}
 \end{figure}
 
@@ -99,7 +99,7 @@ El área de estudio es el entrante natural del Golfo de Fonseca (figuras \ref{fi
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/localizacion_elev.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Modelo de elevación del Golfo de Fonseca]{Modelo de elevación del Golfo de Fonseca. Fuente: Elaboración propia. Datos: \cite{SRTM2008}.}
+	\caption[Modelo de elevación del Golfo de Fonseca]{Modelo de elevación del Golfo de Fonseca. Elaboración propia a partir de \cite{SRTM2008}.}
 	\label{fig:elevacion}
 \end{figure}
 
@@ -139,7 +139,6 @@ Podemos definir cualquier tipo de energía en función de su longitud de onda, d
 En el cuadro \ref{tab:bandas} se destacan la serie bandas espectrales más empleadas en teledetección, siendo su denominación y ancho de banda el generalizado.\Sep
 
 \begin{table}\centering
-	\caption[Bandas espectrales utilizadas en teledetección]{Bandas espectrales utilizadas en teledetección.}
 	\begin{tabular}{@{}llc@{}}
 		\toprule[0.4mm]
 		\multicolumn{2}{c}{\textbf{Banda}} & \textbf{L. de onda} \\
@@ -155,6 +154,8 @@ En el cuadro \ref{tab:bandas} se destacan la serie bandas espectrales más emple
 		\multicolumn{2}{c}{Microondas (M)} & $>1mm$\\
 		\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Bandas espectrales utilizadas en teledetección]{Bandas espectrales utilizadas en teledetección. Fuente: USGS}
 	\label{tab:bandas}
 \end{table}
 
@@ -240,7 +241,7 @@ El medio más sencillo de disponer de firmas espectrales son las bibliotecas esp
 	\centering	
 	\includegraphics[width=0.7\linewidth]{./Imagenes/Firma_espectral.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Firma espectral ejemplo]{Firma espectral ejemplo de una cubierta no identificada. Fuente: Elaboración propia.}
+	\caption[Firma espectral ejemplo]{Firma espectral ejemplo de una cubierta no identificada. Elaboración propia.}
 	\label{fig:firma}
 \end{figure}
 
@@ -275,7 +276,6 @@ Un ejemplo de sensor remoto pasivo de barrido es el \ac{ETM+} montado sobre el s
 
 \begin{table}
 	\centering
-	\caption[Bandas en el sensor TM]{Bandas en el sensor TM del proyecto Landsat. Fuente: USGS.}
 	\begin{tabular}{@{}cccc@{}}
 		\toprule[0.4mm]
 		Banda & Nombre & L. onda ($\mu$m) & Resolución (m)\\
@@ -289,12 +289,13 @@ Un ejemplo de sensor remoto pasivo de barrido es el \ac{ETM+} montado sobre el s
 		7 & MIR & 2.08--2.35 & 30 \\
 		\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Bandas en el sensor TM]{Bandas en el sensor TM del proyecto Landsat. Fuente: USGS.}
 	\label{tab:sensoresTM}
 \end{table}
 
 \begin{table}
 	\centering
-	\caption[Bandas en el sensor ETM+]{Bandas en el sensor ETM+ del proyecto Landsat. Fuente: USGS.}
 	\begin{tabular}{@{}cccc@{}}
 		\toprule[0.4mm]
 		Banda & Nombre & L. onda ($\mu$m) & Resolución (m)\\
@@ -308,12 +309,13 @@ Un ejemplo de sensor remoto pasivo de barrido es el \ac{ETM+} montado sobre el s
 		7 & MIR & 2.08--2.35 & 30 \\
 		\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Bandas en el sensor ETM+]{Bandas en el sensor ETM+ del proyecto Landsat. Fuente: USGS.}
 	\label{tab:sensoresETM}
 \end{table}
 
 \begin{table}
 	\centering
-	\caption[Bandas en el sensor OLI]{Bandas en el sensor OLI del proyecto Landsat 8. Fuente: USGS.}
 	\begin{tabular}{@{}cccc@{}}
 		\toprule[0.4mm]
 		Banda & Nombre & L. onda ($\mu$m) & Resolución (m)\\
@@ -328,6 +330,8 @@ Un ejemplo de sensor remoto pasivo de barrido es el \ac{ETM+} montado sobre el s
 		9 & Cirrus & 1.36--1.38 & 30 \\
 		\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Bandas en el sensor OLI]{Bandas en el sensor OLI del proyecto Landsat 8. Fuente: USGS.}
 	\label{tab:sensoresOLI}
 \end{table}
 
@@ -336,7 +340,6 @@ Otro tipo de sensor pasivo son los exploradores de empuje. En estos se elimina e
 Ejemplos de exploradores de empuje son los sensores \ac{HRV} del SPOT o los senores portados por los satélites IKONOS o Quickbird.
 
 \subsection{Resoluciones}
-
 Se define la resolución del sistema sensor en teledetección como la capacidad para discriminar información de detalle en un objeto. Otra definición utilizada es la de valor mínimo determinado para alguna de las variables que definen a una imagen digital \citep{chuvieco2002teledeteccion} .\Sep
 
 El concepto de información de detalle de la primera definición comprende tanto al detalle espacial que ofrece el sensor como a número y anchura de bandas espectrales, a su carencia temporal y a la capacidad para distinguir variaciones en la energía que detecta. Esto significa que el concepto de resolución se basa en el conjunto de:
@@ -386,7 +389,6 @@ En el cuadro \ref{tab:resoluciones} se comparan las diferentes resoluciones de l
 
 \begin{table}[ht]
 	\centering
-	\caption[Resoluciones de varios sensores]{Resoluciones de varios sensores.}
 	\begin{tabular}{@{}ccccc@{}}
 	\toprule[0.4mm]
 	& Landsat 8 & QuickBird & Spot 6 & IKONOS \\
@@ -398,6 +400,8 @@ En el cuadro \ref{tab:resoluciones} se comparan las diferentes resoluciones de l
 	R. Temporal (días) & 16 & 1--3 & 1--3 & 3 \\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Resoluciones de varios sensores]{Resoluciones de varios sensores.}
 	\label{tab:resoluciones}
 \end{table}
 
@@ -508,7 +512,7 @@ Este clasificador es igual al \ac{NN} con la salvedad de que pondera el valor de
 	\centering
 	\includegraphics[width=0.6\linewidth]{./Imagenes/KNN.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Clasificador \textit{K-Nearest Neighbor}]{Gráfica de ejemplo del empleo del clasificador K-NN con $k=5$.}
+	\caption[Clasificador \textit{K-Nearest Neighbor}]{Gráfica de ejemplo del empleo del clasificador K-NN con $k=5$. Fuente: \cite{JARS1999}.}
 	\label{fig:KNN}
 \end{figure}
 
@@ -573,9 +577,8 @@ Donde $\rho_{B}$, $\rho_{R}$ y $\rho_{IRC}$ son las reflectividades de azul, roj
 
 Otros \ac{IV} son, por ejemplo, los expuestos en el cuadro siguiente:
 
-\begin{table}
+\begin{table}[h]
 	\centering
-	\caption[Otros tipos de índices de vegetación]{Otros tipos de \ac{IV}.}
 	\begin{tabular}{@{}rlc@{}}
 	\toprule[0.4mm]
 	& Índice de vegetación & Operación\\
@@ -586,5 +589,7 @@ Otros \ac{IV} son, por ejemplo, los expuestos en el cuadro siguiente:
 	GSAVI & Green Soil Adjusted Vegetation Index & [(NIR–G)/(NIR+G+L)]*(1+L)\\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Otros tipos de índices de vegetación]{Otros tipos de \ac{IV}.}
 	\label{tab:otros_iv}
 \end{table}

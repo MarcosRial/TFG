@@ -53,9 +53,9 @@
 \input{resumen.tex}
 \addcontentsline{toc}{chapter}{Resumen}
 
-%----------%
-%- ÍNDICE -%
-%----------%
+%-----------------------%
+%- ÍNDICES Y ACRÓNIMOS -%
+%-----------------------%
 
 %\dominitoc
 \tableofcontents 
@@ -70,6 +70,10 @@
 \input{acronimos.tex}
 \addcontentsline{toc}{chapter}{Lista de Acrónimos}
 
+%--------------------%
+%- CUERPO PRINCIPAL -%
+%--------------------%
+
 \mainmatter
 %CAPÍTULO 1. INTRODUCCIÓN
 \input{introduccion.tex}
@@ -83,13 +87,17 @@
 %CAPÍTULO 4. CONCLUSIONES
 \input{conclusiones.tex}
 
+%------------------------%
+%- BIBLIOGRAFÍA Y ANEJO -%
+%------------------------%
+
 \backmatter
 
 \bibliographystyle{authordate1}
 \bibliography{bibliografia}
 \addcontentsline{toc}{chapter}{Bibliografía}
 
-%ANEXOS MAPAS
+%ANEJO MAPAS
 \appendix
 
 %\input{anejomapas.tex}

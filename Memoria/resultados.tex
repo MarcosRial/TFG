@@ -27,7 +27,7 @@ Una vez introducidos los datos en R se obtienen las gráficas mostradas en la fi
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/ral2.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Firmas espectrales de las tres especies]{Gráfica conjunta de las tres firmas espectrales. Fuente: Elaboración propia.}
+	\caption[Firmas espectrales de las tres especies]{Gráfica conjunta de las tres firmas espectrales. Elaboración propia.}
 	\label{fig:ral}
 \end{figure}
 
@@ -39,7 +39,7 @@ Como se aprecia, los datos presentan unas alteraciones al inicio y al final que 
 	\includegraphics[width=0.8\linewidth]{./Imagenes/LRcorte.eps}
 	\includegraphics[width=0.8\linewidth]{./Imagenes/AGcorte.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Firmas espectrales cortadas]{Gráficas de las firmas espectrales de las especies de mangle estudiadas una vez realizado el corte de los datos. Fuente: Elaboración propia.}
+	\caption[Firmas espectrales cortadas]{Gráficas de las firmas espectrales de las especies de mangle estudiadas una vez realizado el corte de los datos. Elaboración propia.}
 	\label{fig:firmas_espectrales_corte}
 \end{figure}
 
@@ -47,7 +47,7 @@ Como se aprecia, los datos presentan unas alteraciones al inicio y al final que 
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/ralcorte.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Firmas espectrales cortadas de las tres especies]{Gráfica conjunta de las tres firmas espectrales una vez realizado el corte de los datos. Fuente: Elaboración propia.}
+	\caption[Firmas espectrales cortadas de las tres especies]{Gráfica conjunta de las tres firmas espectrales una vez realizado el corte de los datos. Elaboración propia.}
 	\label{fig:ral_corte}
 \end{figure}
 
@@ -59,7 +59,6 @@ En el cuadro siguiente (\ref{tab:valores_medios}) se pueden apreciar los valores
 
 \begin{table}[ht]
 	\centering
-	\caption[Valores medios en las bandas Landsat]{Valores medios ara cada banda Landsat. Fuente: Elaboración propia.}
 	\begin{tabular}{@{}cccccc@{}}
 	\toprule[0.4mm]
 	Especie & Banda 1 (C) & Banda 2 (B) & Banda 3 (G) & Banda 4 (R) & Banda 5 (IRC) \\
@@ -69,16 +68,16 @@ En el cuadro siguiente (\ref{tab:valores_medios}) se pueden apreciar los valores
 	\textit{A. germinans} & 0.0355 & 0.0479 & 0.1218 & 0.0604 & 0.5513 \\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Valores medios en las bandas Landsat]{Valores medios ara cada banda Landsat. Elaboración propia.}
 	\label{tab:valores_medios}
 \end{table}
 
-%\section{Aplicación de los análisis}
 \subsection{Índice de Acuerdo Espectral}
-Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref{fig:IAE}) ya se aprecia que el resultado no es muy bueno aunque esperado, siendo las diferencias casi inapreciables como se ve en la tabla \ref{tab:Valores_IAE}.\Sep %y en los gráficos de la figura \ref{fig:CB}, donde se aprecia mejor la poca diferencia espectral existente.
+Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref{fig:IAE}) ya se aprecia que el resultado no es muy bueno aunque esperado, siendo las diferencias casi inapreciables como se ve en la tabla \ref{tab:Valores_IAE}.\Sep
 
 \begin{table}[ht]
 	\centering
-	\caption[Valores de IAE]{Valores de \ac{IAE} para cada par de especies de mangle. Fuente: Elaboración propia.}
 	\begin{tabular}{@{}cccc@{}}
 	\toprule
 	& \textit{R. mangle} & \textit{L. racemosa} & \textit{A. germinans} \\
@@ -87,6 +86,8 @@ Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref
 	\textit{A. germinans} & 0.0062 & 0.0021 & --- \\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Valores de IAE]{Valores de \ac{IAE} para cada par de especies de mangle. Elaboración propia.}
 	\label{tab:Valores_IAE}
 \end{table}
 
@@ -94,7 +95,6 @@ Las diferencias en este método son bajas debido a que se trata de tres especies
 
 \begin{table}
 	\centering
-	\caption[Valores medios de la respuesta espectral]{Valor medio de la respuesta espectral para cada especie.}
 	\begin{tabular}{@{}ccc@{}}
 	\toprule[0.4mm]
 	Especie & $\rho$ media & Corte en $\lambda$ (nm)\\
@@ -104,6 +104,8 @@ Las diferencias en este método son bajas debido a que se trata de tres especies
 	\textit{A. germinans} & 0.2530166 & 711\\
 	\bottomrule
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Valores medios de la respuesta espectral]{Valor medio de la respuesta espectral para cada especie. Elaboración propia.}
 	\label{tab:mediaIAE}
 \end{table}
 
@@ -116,19 +118,19 @@ El corte en $\lambda$ que se menciona en el cuadro \ref{tab:mediaIAE} se refiere
 	\includegraphics[width=0.8\linewidth]{./Imagenes/IAE_LR.eps}
 	\includegraphics[width=0.8\linewidth]{./Imagenes/IAE_AG.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Gráficas de combinación binaria]{Gráficas de combinación binaria de las tres especies de mangle, por orden \textit{Rhizophora mangle}, \textit{Laguncularia racemosa} y \textit{Avicennia germinans}. Fuente: Elaboración propia.}
+	\caption[Gráficas de combinación binaria]{Gráficas de combinación binaria de las tres especies de mangle, por orden \textit{Rhizophora mangle}, \textit{Laguncularia racemosa} y \textit{Avicennia germinans}. Elaboración propia.}
 	\label{fig:CB}
 \end{figure}
 \end{comment}
 
-\subsection{Continuum Removal}
+\subsection{\textit{Continuum Removal}}
 En la gráfica de la figura \ref{fig:GraficaCR} se pueden observar las diferencias entre las tres especies que nos indica este tipo de análisis. Son tres los aspectos de esta gráfica a analizar: la profundidad y anchura de las partes convexas y la posición de los puntos mínimos. En gris la gráfica de reflectividad de cada especie.\Sep
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/ContinuumR2.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Gráfica de Continuum Removal]{Gráfica de continuum removal para las tres especies de mangle. Fuente: Elaboración propia.}
+	\caption[Gráfica de \textit{Continuum Removal}]{Gráfica de \textit{Continuum Removal} para las tres especies de mangle. Elaboración propia.}
 	\label{fig:GraficaCR}
 \end{figure}
 
@@ -140,8 +142,7 @@ En cuanto a la anchura lo más llamativo es la amplitud de los valores de la \te
 Una vez aplicado el script de R de la función de clasificación angular (figura \ref{fig:AE}), los valores son los de la siguiente tabla:
 
 \begin{table}[ht]
-	\centering
-	\caption[Valores de Ángulo Espectral]{Valores del Ángulo Espectral en radianes. Ángulo centesimal entre paréntesis.}
+	\centering	
 	\begin{tabular}{@{}cccc@{}}
 	\toprule[0.4mm]
 	& \textit{R. mangle} & \textit{L. racemosa} & \textit{A. germinans} \\
@@ -150,6 +151,8 @@ Una vez aplicado el script de R de la función de clasificación angular (figura
 	\textit{A. germinans} & 0.0752 (4.7874) & 0.1062 (6.7584) & --- \\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Valores de Ángulo Espectral]{Valores del Ángulo Espectral en radianes. Ángulo centesimal entre paréntesis. Elaboración propia.}	
 \end{table}
 
 Se puede observar una mayor separabilidad entre \textit{R. mangle} y \textit{L. racemosa}, siendo menor en las otras combinaciones.
@@ -161,7 +164,7 @@ Para observar las zonas donde hay presencia de bosque de mangle basta con realiz
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/GF654.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Composición 654]{Resultado de la imagen en una composición de realce de vegetación (6-5-4). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\caption[Composición 654]{Resultado de la imagen en una composición de realce de vegetación (6-5-4). Imagen exportada de GRASS. Elaboración propia.}
 	\label{fig:gf654}
 \end{figure}
 
@@ -169,41 +172,11 @@ Para observar las zonas donde hay presencia de bosque de mangle basta con realiz
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/GF562.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Composición 562]{Resultado de la imagen en una composición de realce de vegetación (5-6-2). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\caption[Composición 562]{Resultado de la imagen en una composición de realce de vegetación (5-6-2). Imagen exportada de GRASS. Elaboración propia.}
 	\label{fig:gf562}
 \end{figure}
 
 \section{Comprobación}
-Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
-
-\begin{itemize}
-	\item Creación de una capa vectorial en blanco de nombre ``puntos'' y añadirla al árbol de capas. En esta capa se digitalizarán un total de 10 puntos en los que se supone la existencia de bosque de mangle.
-	\item Crear una base de datos asociada a la capa con \textit{v.db.addtable} asignando nuevos campos: ``x'' e ``y'' de tipo ``double'' que se actualizarán con las coordenadas de los puntos. También se añadirán a la tabla columnas para alojar el valor de los datos de cada una de las bandas en cada punto nombradas como B1, B2, B3, B4 y B5 de tipo ``double''.
-	\item Actualización de los campos de coordenadas mediante el comando \textit{v.to.db} como se muestra en la figura \ref{fig:v.to.db} donde \textit{map} designa el vectorial que tiene la tabla asociada, \textit{option} indica que queremos actualizar coordenadas y \textit{columns} son los nombres de las columnas de coordenadas de nuestra tabla.
-	
-\begin{figure}[ht]
-\centering
-\begin{boxedverbatim}
-	v.to.db map=puntos@TFG option=coor columns=x,y
-\end{boxedverbatim}
-\captionsetup{font={footnotesize,it}}
-\caption[Actualización de coordenadas]{Actualización del campo coordenadas en GRASS con el comando \textit{v.to.db}.}
-\label{fig:v.to.db}
-\end{figure}	
-	
-	\item Actualización de los campos de datos del raster mediante el comando \textit{v.what.rast} como se muestra en la figura \ref{fig:v.what.rast} donde \textit{vector} indica cual es el vectorial que deseamos actualizar, \textit{raster} es el raster del que se tomarán los datos y \textit{column} el nombre del campo a actualizar.
-\end{itemize}
-
-\begin{figure}[ht]
-\centering
-\begin{boxedverbatim}
-	v.what.rast vector=puntos@TFG raster=L8GF_SRFB1@TFG column=B1
-\end{boxedverbatim}
-\captionsetup{font={footnotesize,it}}
-\caption[Actualización de los datos raster]{Actualización de los campos de datos raster en GRASS con el comando \textit{v.what.rast}.}
-\label{fig:v.what.rast}
-\end{figure}
-
 Debido a que en la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala de 0.0001 \citep{USGS2015} corresponde reescalar los valores a un intervalo 0-1 más común. Para ello se emplea la calculadora de mapas ráster de GRASS aplicando la expresión $L8GF\_SRFB1@TFG \cdot 0.0001$ para cada una de las capas del proyecto. La línea de comando utilizada es la siguiente:
 
 \begin{figure}[ht]
@@ -219,7 +192,6 @@ Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_
 
 \begin{table}[ht]
 	\centering
-	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos'' de la figura \ref{fig:dist_puntos}.}
 	\begin{tabular}{@{}cccccccc@{}}
 	\toprule[0.4mm]
 	cat & x & y & B1 & B2 & B3 & B4 & B5\\
@@ -236,6 +208,8 @@ Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_
 	10 & 452584.20 & 1462969.61 & 0.0115 & 0.0143 & 0.0345 & 0.0209 & 0.2577\\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Base de datos de puntos de comprobación]{Base de datos asociada a la capa vectorial ``puntos'' de la figura \ref{fig:dist_puntos}. Elaboración propia.}
 	\label{tab:tabla_puntos}
 \end{table}
 
@@ -243,7 +217,7 @@ Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/puntos_comprob.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Distribución de puntos]{Distribución de puntos de comprobación en la zona de estudio. Fuente: Elaboración propia.}
+	\caption[Distribución de puntos]{Distribución de puntos de comprobación en la zona de estudio. Elaboración propia.}
 	\label{fig:dist_puntos}
 \end{figure}
 
@@ -255,15 +229,31 @@ Gracias a esta representación gráfica se confirma que la magnitud de los datos
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/grafica_comprob.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Gráfico de puntos de comprobación]{Gráfico de cajas y bigotes correspondiente a los datos de los puntos de comprobación. Se superponen los datos medios de reflectividad para cada especie en cada banda. Fuente: Elaboración propia.}
+	\caption[Gráfico de puntos de comprobación]{Gráfico de cajas y bigotes correspondiente a los datos de los puntos de comprobación. Se superponen los datos medios de reflectividad para cada especie en cada banda. Elaboración propia.}
 	\label{fig:grafica_comprob}
 \end{figure}
 
 
 \section{Clasificación de imágenes}
-En las clasificaciones se muestra confusión de clases, mezclándose en algunos casos el mangle con otro tipo de vegetación. A excepción de la clasificación supervisada que, a pesar de que se ve un exceso de la clase denominada ``Agua 2'' en zonas donde no hay presencia de esta, discrimina bien la cobertura de mangle de otros tipos.\Sep
+En las clasificaciones se muestra confusión de clases, mezclándose en algunos casos el mangle con otro tipo de vegetación en zonas donde, por las propias características del ecosistema, es imposible la existencia de manglar (detalle en \ref{fig:detalle_clasnosup}). A excepción de la clasificación supervisada que, a pesar de que se ve un exceso de la clase denominada ``Agua 2'' en zonas donde no hay presencia de esta, discrimina bien la cobertura de mangle de otros tipos (detalle en figura \ref{fig:detalle_classup}).\Sep
 
-Se muestra el resultado de las clasificaciones en el anexo de mapas de este documento.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Detalle_classup.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Detalle clasificación supervisada]{Detalle de la clasificación supervisada. Elaboración propia.}
+	\label{fig:detalle_classup}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Detalle_clasnosup.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Detalle clasificación no supervisada]{Detalle de la clasificación no supervisada. Elaboración propia.}
+	\label{fig:detalle_clasnosup}
+\end{figure}
+
+Se muestra el resultado de las clasificaciones en el anejo de mapas de este documento.
 
 \section{Índices de vegetación}
 El \ac{NDVI} nos muestra más claramente zonas de marisma o aguas turbias poco profundas que se sitúan en la línea de costa (figura \ref{fig:detalle_aguas}), justo donde hay presencia de bosque de mangle.\Sep
@@ -272,7 +262,7 @@ El \ac{NDVI} nos muestra más claramente zonas de marisma o aguas turbias poco p
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/Detalle_aguas.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Detalle marismas en NDVI]{Detalle de NDVI donde se ven las zonas de marisma. Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\caption[Detalle marismas en NDVI]{Detalle de NDVI donde se ven las zonas de marisma. Imagen exportada de GRASS. Elaboración propia.}
 	\label{fig:detalle_aguas}
 \end{figure}
 
@@ -285,8 +275,8 @@ Gracias al índice \ac{SAVI} se pueden detectar fácilmente zonas de suelo desnu
 	\subfloat{
 	\includegraphics[width=0.45\linewidth]{./Imagenes/Detalle_estanques2.eps}}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Detalle de estanques en SAVI]{Detalles de SAVI donde se ven los estanques artificiales. Imagenes exportadas de GRASSS. Fuente: Elaboración propia.}
+	\caption[Detalle de estanques en SAVI]{Detalles de SAVI donde se ven los estanques artificiales. Imagenes exportadas de GRASSS. Elaboración propia.}
 	\label{fig:detalle_estanques}
 \end{figure}
 
-Se muestra el resultado de los índices de vegetación en el anexo de mapas de este documento.
+Se muestra el resultado de los índices de vegetación en el anejo de mapas de este documento.

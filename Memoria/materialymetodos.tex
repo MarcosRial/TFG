@@ -39,7 +39,6 @@ Simultáneamente a la toma de datos se visitaron puntos donde era conocida la ex
 
 \begin{table}[ht]
 	\centering
-	\caption[Puntos de control]{Serie de puntos conocidos de existencia de manglar con la especie predominante.}
 	\begin{tabular}{@{}ccll@{}}
 	\toprule[0.4mm]
 	East & North & Nombre & Epecies existentes\\
@@ -52,6 +51,8 @@ Simultáneamente a la toma de datos se visitaron puntos donde era conocida la ex
 	440251 & 1489561 & La Brea & R. mangle, \textit{L. racemosa} y \textit{A. germinans}\\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Puntos de control]{Serie de puntos conocidos de existencia de manglar con la especie predominante.}
 	\label{tab:puntos}
 \end{table}
 
@@ -120,7 +121,7 @@ En la figura \ref{fig:IAE} se muestra el script de la función en R a la que se 
   }
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
-\caption[Función de Índice de Acuerdo Espectral]{Script de la función del Índice de Acuerdo Espectral en R. Fuente: Elaboración propia.}
+\caption[Función de Índice de Acuerdo Espectral]{Script de la función del Índice de Acuerdo Espectral en R. Elaboración propia.}
 \label{fig:IAE}
 \end{figure}
 
@@ -136,7 +137,7 @@ El método de \ac{CR} o, como lo cita \cite{chuvieco2002teledeteccion}, análisi
 	\includegraphics[width=0.5\linewidth]{./Imagenes/CR1.eps}
 	\includegraphics[width=0.5\linewidth]{./Imagenes/CR2.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Continuum Removal ejemplo]{Ejemplo de aplicación de la técnica continuum removal. Fuente: Extraído de \cite{huang2004estimating}.}
+	\caption[Continuum Removal ejemplo]{Ejemplo de aplicación de la técnica continuum removal. Fuente:\cite{huang2004estimating}.}
 	\label{fig:ejemploCR}
 \end{figure}
 
@@ -160,7 +161,7 @@ En la figura \ref{fig:CR} se muestra el script original de la función en R a la
   lines(data1$V4,cr) # superposicion de la grafica de CR
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
-\caption[Función de \textit{Continuum Removal}]{Script de la función de \textit{Continuum Removal} en R. Fuente: Elaboración propia a partir de \cite{stevens2014introduction}.}
+\caption[Función de \textit{Continuum Removal}]{Script de la función de \textit{Continuum Removal} en R. Elaboración propia a partir de \cite{stevens2014introduction}.}
 \label{fig:CR}
 \end{figure}
 
@@ -194,7 +195,7 @@ El script original de la funcion en R previamente presentado en la figura \ref{f
   matlines(bandas, t(cr2))
 	\end{lstlisting}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Función modificada de \textit{Continuum Removal}]{Script modificado de la función de \textit{Continuum Removal} escrita en R. Fuente: Elaboración propia.}
+	\caption[Función modificada de \textit{Continuum Removal}]{Script modificado de la función de \textit{Continuum Removal} escrita en R. Elaboración propia.}
 	\label{fig:CRmodificado}
 \end{figure}	
 
@@ -227,7 +228,7 @@ En la figura \ref{fig:AE} se muestra el script de la función en R a la que se l
   }
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
-\caption[Función clasificación angular]{Función de clasificación angular en R. Fuente: Elaboración propia.}
+\caption[Función clasificación angular]{Función de clasificación angular en R. Elaboración propia.}
 \label{fig:AE}
 \end{figure}
 
@@ -269,7 +270,6 @@ Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen 
 
 \begin{table}[ht]
 	\centering
-	\caption[Caracerísticas de las imágenes Landsat]{Características de las imágenes Landsat obtenidas (figura \ref{fig:imagenesLandsat}).}
 	\begin{tabular}{@{}cccccccc@{}}
 	\toprule[0.4mm]
 	Imagen & Path & Row & Fecha & West & East & North & South \\
@@ -278,6 +278,8 @@ Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen 
 	2 (b) & 17 & 51 & 19/12/2014 & -87.549399 & -85.443030 & 14.062287 & 11.952632 \\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Caracerísticas de las imágenes Landsat]{Características de las imágenes Landsat obtenidas de la figura \ref{fig:imagenesLandsat}. Elaboración propia.}
 	\label{tab:imagenes}
 \end{table}
 
@@ -305,7 +307,7 @@ Se observa en las imágenes de calidad de la figura \ref{fig:imagenescalidad}, e
 	\label{fig:imagenescalidad}
 \end{figure}
 
-Las imágenes utilizan el siguiente código de identificación en el nombre \citep{Ariza2013} \citep{USGS2015}
+Las imágenes utilizan el siguiente código de identificación en el nombre \citep{Ariza2013} \citep{USGS2015}:
 
 \begin{center}
 	\fbox{LXSPPPRRRYYYYDDDGSIVV}
@@ -398,7 +400,7 @@ En la figura \ref{fig:dialogomosaico} se observa el diálogo resultante de la op
 	\centering
 	\includegraphics[width=0.8\linewidth]{./Imagenes/Dialogo_mosaico.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Diálogo del mosaicado]{Diálogo resultante del mosaicado de las imágenes en la terminal de Linux. Fuente: Elaboración propia.}
+	\caption[Diálogo del mosaicado]{Diálogo resultante del mosaicado de las imágenes en la terminal de Linux. Elaboración propia.}
 	\label{fig:dialogomosaico}
 \end{figure}
 
@@ -421,7 +423,6 @@ Para trabajar solamente con la zona de estudio es necesario recortar la imagen o
 
 \begin{table}[ht]
 	\centering
-	\caption[Datos de las regiónes de trabajo]{Datos de las regiónes de trabajo establecidas en GRASS.}
 	\begin{tabular}{@{}rcc@{}}
 	\toprule[0.4mm]
 	& Extensión original & Extensión reducida\\
@@ -441,6 +442,8 @@ Para trabajar solamente con la zona de estudio es necesario recortar la imagen o
 	Celdas & 102615261 & 13672542 \\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Datos de las regiónes de trabajo]{Datos de las regiónes de trabajo establecidas en GRASS.}
 	\label{tab:region}
 \end{table}
 
@@ -455,7 +458,7 @@ Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más pr
 \caption[Recorte de la imagen]{Recorte de la imagen en GRASS con el comando \textit{r.resample}.}
 \end{figure}
 
-A la hora de nombrar la imagen resultante en el \textit{output} ya se busca un código que identifique facilmente la imagen. En este caso L8GF quiere decir que se trata de una imagen Landsat 8 del Golfo de Fonseca exclusivamente, mientras que SRB1 quiere decir que se trata de una imagen con reflectividades a nivel de suelo de la banda 1.
+A la hora de nombrar la imagen resultante en el \textit{output} ya se busca un código que identifique fácilmente la imagen. En este caso L8GF quiere decir que se trata de una imagen Landsat 8 del Golfo de Fonseca exclusivamente, mientras que SRB1 quiere decir que se trata de una imagen con reflectividades a nivel de suelo de la banda 1.
 
 \subsubsection{Filtro de paso bajo}
 La aplicación de un filtro de media a la imagen Landsat de la zona de estudio permite eliminar ruido y disminuir contrastes \citep{aldalur2002}. Antes de aplicar el filtro conviene realizar una copia de seguridad de la imagen debido a que se van a modificar los valores de reflectividad originales. Para ello se emplea el comando \textit{r.out.gdal} que permite exportar las imágenes a formato GeoTIFF.\Sep
@@ -490,7 +493,7 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 	\centering
 	\includegraphics[width=0.9\linewidth]{./Imagenes/GF432.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Composición en color real]{Resultado de la imagen en una composición de color real (4-3-2). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\caption[Composición en color real]{Resultado de la imagen en una composición de color real (4-3-2). Imagen exportada de GRASS. Elaboración propia.}
 	\label{fig:gf432}
 \end{figure}
 
@@ -498,8 +501,39 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 	\centering
 	\includegraphics[width=0.9\linewidth]{./Imagenes/GF543.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Composición en falso color]{Resultado de la imagen en una composición de falso color (5-4-3). Imagen exportada de GRASS. Fuente: Elaboración propia.}
+	\caption[Composición en falso color]{Resultado de la imagen en una composición de falso color (5-4-3). Imagen exportada de GRASS. Elaboración propia.}
 	\label{fig:gf543}
+\end{figure}
+
+\section{Comprobación}
+Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
+
+\begin{itemize}
+	\item Creación de una capa vectorial en blanco de nombre ``puntos'' y añadirla al árbol de capas. En esta capa se digitalizarán un total de 10 puntos en los que se supone la existencia de bosque de mangle.
+	\item Crear una base de datos asociada a la capa con \textit{v.db.addtable} asignando nuevos campos: ``x'' e ``y'' de tipo ``double'' que se actualizarán con las coordenadas de los puntos. También se añadirán a la tabla columnas para alojar el valor de los datos de cada una de las bandas en cada punto nombradas como B1, B2, B3, B4 y B5 de tipo ``double''.
+	\item Actualización de los campos de coordenadas mediante el comando \textit{v.to.db} como se muestra en la figura \ref{fig:v.to.db} donde \textit{map} designa el vectorial que tiene la tabla asociada, \textit{option} indica que queremos actualizar coordenadas y \textit{columns} son los nombres de las columnas de coordenadas de nuestra tabla.
+	
+\begin{figure}[ht]
+\centering
+\begin{boxedverbatim}
+	v.to.db map=puntos@TFG option=coor columns=x,y
+\end{boxedverbatim}
+\captionsetup{font={footnotesize,it}}
+\caption[Actualización de coordenadas]{Actualización del campo coordenadas en GRASS con el comando \textit{v.to.db}.}
+\label{fig:v.to.db}
+\end{figure}	
+	
+	\item Actualización de los campos de datos del raster mediante el comando \textit{v.what.rast} como se muestra en la figura \ref{fig:v.what.rast} donde \textit{vector} indica cual es el vectorial que deseamos actualizar, \textit{raster} es el raster del que se tomarán los datos y \textit{column} el nombre del campo a actualizar.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{boxedverbatim}
+	v.what.rast vector=puntos@TFG raster=L8GF_SRFB1@TFG column=B1
+\end{boxedverbatim}
+\captionsetup{font={footnotesize,it}}
+\caption[Actualización de los datos raster]{Actualización de los campos de datos raster en GRASS con el comando \textit{v.what.rast}.}
+\label{fig:v.what.rast}
 \end{figure}
 
 \section{Clasificación de imágenes}
@@ -555,7 +589,6 @@ Para la clasificación supervisada se necesita crear una serie de áreas de entr
 
 \begin{table}[ht]
 	\centering
-	\caption[Base de datos de áreas de entrenamiento]{Base de datos asociada a la capa vectorial de áreas de entrenamiento.}
 	\begin{tabular}{@{}cccc@{}}
 	\toprule[0.4mm]
 	cat & class & color & n\_cells\\
@@ -567,6 +600,8 @@ Para la clasificación supervisada se necesita crear una serie de áreas de entr
 	5 & Vegetacion & 144:238:144 & 3246\\
 	\bottomrule[0.4mm]
 	\end{tabular}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Base de datos de áreas de entrenamiento]{Base de datos asociada a la capa vectorial de áreas de entrenamiento. Elaboración propia.}
 	\label{tab:tabla_training}
 \end{table}
 
@@ -600,7 +635,7 @@ Para realizar la clasificación aplicando el \ac{SAM} se recurrió a un script e
   imagen2 <- calc(imagen, SAM)
 \end{lstlisting}
 \captionsetup{font={footnotesize,it}}
-\caption[Función de \textit{Spectral Angle Mapper}]{Script de la función de \textit{Spectral Angle Mapper} en R. Fuente: Elaboración propia.}
+\caption[Función de \textit{Spectral Angle Mapper}]{Script de la función de \textit{Spectral Angle Mapper} en R. Elaboración propia.}
 \label{fig:R_SAM}
 \end{figure}
 
