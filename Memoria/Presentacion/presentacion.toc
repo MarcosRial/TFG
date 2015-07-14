@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Marco Global}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Objetivos}{6}{0}{1}
+\beamer@sectionintoc {2}{Materiales y M\IeC {\'e}todos}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Materiales}{9}{0}{2}
