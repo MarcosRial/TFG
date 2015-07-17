@@ -390,11 +390,13 @@ El concepto de información de detalle de la primera definición comprende tanto
 
 \subsubsection{Resolución espacial}
 Designa el objeto más pequeño que es posible distinguir en la imagen digital. Se mide en milímetros sobre la imagen o metros sobre el terreno y depende de la longitud focal del sensor y altura sobre la superficie. En sensores óptico-electrónicos se utiliza el \ac{IFOV}, que se define como la sección angular que observa el sensor en un momento determinado.
+
 \begin{equation}
 	d=2h\tan(IFOV/2)
 	\label{eq:res_esp}
 \end{equation}
-donde $d$ es la distancia sobre el terreno que abarca con ese ángulo \ac{IFOV}, y $h$ la altura del sensor sobre el terreno. Esta mínima unidad de información en la imagen es la que se denomina píxel.%\Sep
+
+\noindent donde $d$ es la distancia sobre el terreno que abarca con ese ángulo \ac{IFOV}, y $h$ la altura del sensor sobre el terreno. Esta mínima unidad de información en la imagen es la que se denomina píxel.%\Sep
 
 La resolución espacial de un sensor, como ya se ha mencionado, depende de varios factores, como la altura orbital, la longitud focal y el número de detectores. En los sensores de antena, la resolución espacial depende del tamaño de la antena, la altura de la plataforma y el ángulo de incidencia.%\Sep
 
@@ -439,7 +441,7 @@ En el cuadro \ref{tab:resoluciones} se comparan las diferentes resoluciones de l
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Resoluciones de varios sensores]{Resoluciones de varios sensores.}
+	\caption[Resoluciones de varios sensores]{Resoluciones de varios sensores. Fuente: \cite{labrador2012satelites}}
 	\label{tab:resoluciones}
 \end{table}
 
@@ -539,7 +541,7 @@ También llamado vecino más próximo, vecino más cercano o \ac{NN} es el crite
 d_{x,A}=\sqrt{\displaystyle\sum_{i=1}^{m}(ND_{x,i}-\overline{ND}_{A,i})^{2}}
 \end{equation}%\Sep
 
-Donde $d_{x,A}$ es la medida de la distancia espectral entre el píxel \textit{x} y la categoría \textit{A}; $ND_{x,i}$ el valor del píxel en la banda \textit{i}; y $\overline{ND}_{A,i}$ el valor medio de la categoría en esa banda.%\Sep
+\noindent donde $d_{x,A}$ es la medida de la distancia espectral entre el píxel \textit{x} y la categoría \textit{A}; $ND_{x,i}$ el valor del píxel en la banda \textit{i}; y $\overline{ND}_{A,i}$ el valor medio de la categoría en esa banda.%\Sep
 
 Es un clasificador eficiente cuando no se presenta solape de categorías, por lo tanto cuando la zona de estudio no es de gran complejidad. No deja píxeles sin clasificar puesto que siempre hay una clase más cercana. No considera dispersión de cada categoría o correlación entre bandas.
 
@@ -561,7 +563,7 @@ Conocido también como de cajas o \textit{multilevel-slice classifier} este clas
 C_{i}=(\cup\Delta x^{t}_{i-j})
 \end{equation}
 
-Donde $C_{i}$ es el conjunto de categorías a clasificar y $\cup\Delta x^{t}_{i-j}$ el rango de valores radiométricos $i-j$ en cada banda $t$.
+\noindent donde $C_{i}$ es el conjunto de categorías a clasificar y $\cup\Delta x^{t}_{i-j}$ el rango de valores radiométricos $i-j$ en cada banda $t$.
 
 \begin{figure}
 	\centering
@@ -595,7 +597,7 @@ NDVI_{i} & = & \frac{\rho_{i, IRC}-\rho_{i, R}}{\rho_{i, IRC}+\rho_{i, R}}
 \label{eq:NDVI}
 \end{eqnarray}
 
-Donde $\rho_{i, IRC}$ y $\rho_{i, R}$ indican la reflectividad de un píxel \textit{i} en la banda del IRC y rojo respectivamente que son las bandas 5 y 4 del sensor \ac{OLI} de Landsat 8. Los valores del \ac{NDVI} en cada píxel varían entre [-1,1].%\Sep
+\noindent donde $\rho_{i, IRC}$ y $\rho_{i, R}$ indican la reflectividad de un píxel \textit{i} en la banda del IRC y rojo respectivamente que son las bandas 5 y 4 del sensor \ac{OLI} de Landsat 8. Los valores del \ac{NDVI} en cada píxel varían entre [-1,1].%\Sep
 
 Un aspecto importante y que el \ac{NDVI} no tiene en cuenta es el efecto que provoca la proporción entre vegetación y suelo del píxel. El \ac{SAVI} (\ref{eq:SAVI}) es un \ac{IV} que lo que busca es reducir este efecto aplicando una constante L de radiancia de fondo en la ecuación.
 
@@ -611,11 +613,11 @@ EVI_{i}=Gain\frac{\rho_{IRC}-\rho_{R}}{\rho_{IRC}+C_{1}\rho_{R}-C_{2}\rho_{B}+L}
 \label{eq:EVI}
 \end{equation}
 
-Donde $\rho_{B}$, $\rho_{R}$ y $\rho_{IRC}$ son las reflectividades de azul, rojo e infrarrojo cercano respectivamente; L es el mismo coeficiente de radiancia de fondo del índice \ac{SAVI}; \textit{Gain} es un factor de ganancia; y $C_{1}$ y $C_{2}$ son coeficientes de corrección de la influencia del aerosol.%\Sep
+\noindent donde $\rho_{B}$, $\rho_{R}$ y $\rho_{IRC}$ son las reflectividades de azul, rojo e infrarrojo cercano respectivamente; L es el mismo coeficiente de radiancia de fondo del índice \ac{SAVI}; \textit{Gain} es un factor de ganancia; y $C_{1}$ y $C_{2}$ son coeficientes de corrección de la influencia del aerosol.%\Sep
 
 Otros \ac{IV} son, por ejemplo, los expuestos en el cuadro siguiente:
 
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
 	\begin{tabular}{@{}rlc@{}}
 	\toprule[0.4mm]

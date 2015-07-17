@@ -313,7 +313,7 @@ Las imágenes utilizan el siguiente código de identificación en el nombre \cit
 	\fbox{LXSPPPRRRYYYYDDDGSIVV}
 \end{center}
 
-donde:
+\noindent donde:
 
 \begin{itemize}
 	\item L: Landsat.
@@ -344,14 +344,14 @@ El tratamiento de los valores nulos se lleva a cabo mediante el comando \textit{
 \caption[Valores nulos]{Tratamiento de valores nulos en GRASS con el comando \textit{r.null}.}
 \end{figure}
 
-donde \textit{``map''} corresponde a la banda a tratar seguido por el \textit{mapset}, \textit{``setnull''} indica el valor de los elementos nulos y \textit{``null''} indica el nuevo valor de estos elementos. Se elige un valor de -9999 para evitar posibles errores de realizarse, por ejemplo un \ac{NDVI} que trabaja con valores de píxel de [-1,1].%\Sep
+\noindent donde \textit{``map''} corresponde a la banda a tratar seguido por el \textit{mapset}, \textit{``setnull''} indica el valor de los elementos nulos y \textit{``null''} indica el nuevo valor de estos elementos. Se elige un valor de -9999 para evitar posibles errores de realizarse, por ejemplo un \ac{NDVI} que trabaja con valores de píxel de [-1,1].%\Sep
 
 Este no es un procedimiento obligatorio aunque recomendable ya que los geoprocesos aplicados siguientes, como el mosaico de imágenes, ya implican un tratamiento de valores nulos.
 
 %\subsubsection{Transformación a reflectancias}
 %Los \ac{ND} pueden ser reescalados a valores de reflectancias \ac{TOA} gracias a los coeficientes radiométricos provistos en el archivo .txt que acompaña a las imágenes. Esta transformación se hará con el comando \textit{i.landsat.toar} como sigue:
 
-%\begin{figure}[h]
+%\begin{figure}[ht]
 %\centering
 %\begin{boxedverbatim}
 %	i.landsat.toar
@@ -368,7 +368,7 @@ Este no es un procedimiento obligatorio aunque recomendable ya que los geoproces
 %\caption[Transformación a reflectancias]{Transformación a reflectancias TOA en GRASS con el comando \textit{i.landsat.toar}.}
 %\end{figure}
 
-%donde \textit{``input\_prefix''} es el prefijo del nombre de las imágenes para cada banda, \textit{``output\_prefix''} es el prefijo que le queremos dar a las nuevas imágenes corregidas, \textit{``metfile''} es el archivo de metadatos asociado, \textit{``sensor''} el tipo de sensor, \textit{``date''} es la fechas de adquisición y \textit{``sun\_elevation''} la elevación en grados del Sol.
+%\noindent donde \textit{``input\_prefix''} es el prefijo del nombre de las imágenes para cada banda, \textit{``output\_prefix''} es el prefijo que le queremos dar a las nuevas imágenes corregidas, \textit{``metfile''} es el archivo de metadatos asociado, \textit{``sensor''} el tipo de sensor, \textit{``date''} es la fechas de adquisición y \textit{``sun\_elevation''} la elevación en grados del Sol.
 
 \subsubsection{Mosaico de imágenes}
 Para realizar el mosaico de las dos imágenes de las que disponemos tenemos dos opciones: utilizando la herramienta \textit{gdal\_merge.py} y hacerlo en GRASS. Para utilizar la herramienta de la librería \ac{GDAL} gdal\_merge.py debemos tener las siguientes consideraciones previas:
@@ -449,7 +449,7 @@ Para trabajar solamente con la zona de estudio es necesario recortar la imagen o
 
 Con el comando \textit{r.resample} se hace el remuestreo mediante vecino más próximo del área del recorte permitiendo obtener la imagen final para cada banda. El comando se emplea de la siguiente forma para cada banda:
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{boxedverbatim}
 	r.resample input=MosaicoB1@TFG output=L8GF_SRB1
@@ -473,7 +473,7 @@ Se aplica a la imagen la siguiente función en cada píxel:
 								   \end{array}
 							 \right)
 \end{equation}
-donde $g(x,y)$ es el nuevo valor del píxel localizado en las coordenadas \textit{x} e \textit{y} de la imagen y la matriz refleja la dimensión 3x3 del filtro, afectando así a $g(x,y)$ solamente los valores de los píxeles vecinos.%\Sep
+\noindent donde $g(x,y)$ es el nuevo valor del píxel localizado en las coordenadas \textit{x} e \textit{y} de la imagen y la matriz refleja la dimensión 3x3 del filtro, afectando así a $g(x,y)$ solamente los valores de los píxeles vecinos.%\Sep
 
 La operación es realizada en GRASS mediante el comando \textit{r.neighbors} como sigue:
 
