@@ -23,7 +23,6 @@ Bodart, Catherine, Eva, Hugh, Beuchle, Ren{\'e}, Ra{\v{s}}i, Rastislav,
 \bibitem[\protect\citename{Brachet, }2003-2014]{Brachet2003}
 Brachet, Pascal. 2003-2014.
 \newblock {\em TeX Maker: The Universal LaTeX Editor}.
-\newblock http://www.xm1math.net/texmaker/.
 
 \bibitem[\protect\citename{Cajacuri, }2011]{cajacuri2011medicion}
 Cajacuri, Miguel {\'A}ngel~Laurente. 2011.
@@ -206,6 +205,15 @@ LaboraTe. 2014.
   economía social: puentes entre el Golfo de Fonseca (Centroamérica) y
   Galicia.
 \newblock {\em Consellería da Presidencia e Administración Pública}.
+
+\bibitem[\protect\citename{Labrador~Garc{\'\i}a {\em et~al.\ }\relax,
+  }2012]{labrador2012satelites}
+Labrador~Garc{\'\i}a, Mauricio, {\'E}vora~Brondo, Juan~Antonio, \&
+  Arbelo~P{\'e}rez, Manuel. 2012.
+\newblock {\em Sat{\'e}lites de Teledetecci{\'o}n para la gesti{\'o}n del
+  territorio}.
+\newblock Consejería de Agricultura, Ganadería, Pesca y Aguas del Gobierno de
+  Canarias.
 
 \bibitem[\protect\citename{Lamport, }1994]{lamport1994}
 Lamport, L. 1994.
