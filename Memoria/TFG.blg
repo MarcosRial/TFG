@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TFG.aux
 The style file: authordate1.bst
 Database file #1: bibliografia.bib
-You've used 47 entries,
+You've used 49 entries,
             2441 wiz_defined-function locations,
-            837 strings with 13440 characters,
-and the built_in function-call counts, 17772 in all, are:
-= -- 1775
-> -- 616
-< -- 160
-+ -- 180
-- -- 174
-* -- 1349
-:= -- 2952
-add.period$ -- 193
-call.type$ -- 47
-change.case$ -- 295
-chr.to.int$ -- 45
-cite$ -- 47
-duplicate$ -- 714
-empty$ -- 1286
-format.name$ -- 227
-if$ -- 3686
+            851 strings with 14048 characters,
+and the built_in function-call counts, 18768 in all, are:
+= -- 1879
+> -- 653
+< -- 169
++ -- 191
+- -- 185
+* -- 1431
+:= -- 3104
+add.period$ -- 202
+call.type$ -- 49
+change.case$ -- 309
+chr.to.int$ -- 47
+cite$ -- 49
+duplicate$ -- 753
+empty$ -- 1353
+format.name$ -- 243
+if$ -- 3900
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 47
-newline$ -- 238
-num.names$ -- 141
-pop$ -- 280
+missing$ -- 49
+newline$ -- 249
+num.names$ -- 147
+pop$ -- 295
 preamble$ -- 1
-purify$ -- 338
+purify$ -- 354
 quote$ -- 0
-skip$ -- 755
+skip$ -- 794
 stack$ -- 0
-substring$ -- 945
-swap$ -- 192
-text.length$ -- 10
+substring$ -- 1014
+swap$ -- 206
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 352
+type$ -- 368
 warning$ -- 0
-while$ -- 134
+while$ -- 142
 width$ -- 0
-write$ -- 590
+write$ -- 618
