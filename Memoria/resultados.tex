@@ -63,9 +63,9 @@ En el cuadro siguiente (\ref{tab:valores_medios}) se pueden apreciar los valores
 	\toprule[0.4mm]
 	Especie & Banda 1 (C) & Banda 2 (B) & Banda 3 (G) & Banda 4 (R) & Banda 5 (IRC) \\
 	\midrule
-	\textit{R. mangle}	& 0.0540 & 0.0561 & 0.0980 & 0.0595 & 0.6895 \\
-	\textit{L. racemosa} & 0.1647 & 0.1821 & 0.3345 & 0.1930 & 1.0445 \\
-	\textit{A. germinans} & 0.0355 & 0.0479 & 0.1218 & 0.0604 & 0.5513 \\
+	\textit{R. mangle}	& 0,0540 & 0,0561 & 0,0980 & 0,0595 & 0,6895 \\
+	\textit{L. racemosa} & 0,1647 & 0,1821 & 0,3345 & 0,1930 & 1,0445 \\
+	\textit{A. germinans} & 0,0355 & 0,0479 & 0,1218 & 0,0604 & 0,5513 \\
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
@@ -81,9 +81,9 @@ Una vez aplicando el script con la función de \ac{IAE} creado en R (figura \ref
 	\begin{tabular}{@{}cccc@{}}
 	\toprule
 	& \textit{R. mangle} & \textit{L. racemosa} & \textit{A. germinans} \\
-	\textit{R. mangle} & --- & 0.0083 & 0.0062 \\
-	\textit{L. racemosa} & 0.0083 & --- & 0.0021 \\
-	\textit{A. germinans} & 0.0062 & 0.0021 & --- \\
+	\textit{R. mangle} & --- & 0,0083 & 0,0062 \\
+	\textit{L. racemosa} & 0,0083 & --- & 0,0021 \\
+	\textit{A. germinans} & 0,0062 & 0,0021 & --- \\
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
@@ -99,9 +99,9 @@ Las diferencias en este método son bajas debido a que se trata de tres especies
 	\toprule[0.4mm]
 	Especie & $\rho$ media & Corte en $\lambda$ (nm)\\
 	\midrule
-	\textit{R. mangle} & 0.2897692 & 714	\\
-	\textit{L. racemosa} & 0.5424927 & 710\\
-	\textit{A. germinans} & 0.2530166 & 711\\
+	\textit{R. mangle} & 0,2897692 & 714	\\
+	\textit{L. racemosa} & 0,5424927 & 710\\
+	\textit{A. germinans} & 0,2530166 & 711\\
 	\bottomrule
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
@@ -142,13 +142,13 @@ Una vez aplicado el script de R de la función de clasificación angular (figura
 	\begin{tabular}{@{}cccc@{}}
 	\toprule[0.4mm]
 	& \textit{R. mangle} & \textit{L. racemosa} & \textit{A. germinans} \\
-	\textit{R. mangle} & --- & 0.1651 (10.5085) & 0.0752 (4.7874) \\
-	\textit{L. racemosa} & 0.1651 (10.5085) & --- & 0.1062 (6.7584) \\
-	\textit{A. germinans} & 0.0752 (4.7874) & 0.1062 (6.7584) & --- \\
+	\textit{R. mangle} & --- & 0,1651 (9,5401) & 0,0752 (4,3086) \\
+	\textit{L. racemosa} & 0,1651 (9,5401) & --- & 0,1062 (6,0826) \\
+	\textit{A. germinans} & 0,0752 (4,3086) & 0,1062 (6,0826) & --- \\
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Valores de Ángulo Espectral]{Valores del Ángulo Espectral en radianes. Ángulo centesimal entre paréntesis. Elaboración propia.}	
+	\caption[Valores de Ángulo Espectral]{Valores del Ángulo Espectral en radianes. Ángulo sexagesimal entre paréntesis. Elaboración propia.}	
 \end{table}
 
 Se puede observar una mayor separabilidad entre \textit{R. mangle} y \textit{L. racemosa}, siendo menor en las otras combinaciones.
@@ -173,7 +173,7 @@ Para observar las zonas donde hay presencia de bosque de mangle basta con realiz
 \end{figure}
 
 \section{Comprobación}
-Debido a que en la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala de 0.0001 \citep{USGS2015} corresponde reescalar los valores a un intervalo 0-1 más común. Para ello se emplea la calculadora de mapas ráster de GRASS aplicando la expresión $L8GF\_SRFB1@TFG \cdot 0.0001$ para cada una de las capas del proyecto. La línea de comando utilizada es la siguiente:
+Debido a que en la corrección utilizada en las imágenes \ac{PL8SR} los valores vienen presentados con un factor de escala de 0,0001 \citep{USGS2015} corresponde reescalar los valores a un intervalo 0-1 más común. Para ello se emplea la calculadora de mapas ráster de GRASS aplicando la expresión $L8GF\_SRFB1@TFG \cdot 0.0001$ para cada una de las capas del proyecto. La línea de comando utilizada es la siguiente:
 
 \begin{figure}[ht]
 	\centering
@@ -192,16 +192,16 @@ Se muestran los valores resultantes para cada punto en el cuadro \ref{tab:tabla_
 	\toprule[0.4mm]
 	cat & x & y & B1 & B2 & B3 & B4 & B5\\
 	\midrule
-	1 & 413076.12 & 1485451.42 & 0.0080 & 0.0102 & 0.0249 & 0.0120 & 0.3054\\
-	2 & 416539.92 & 1483130.35 & 0.0096 & 0.0113 & 0.0254 & 0.0137 & 0.2964\\
-	3 & 413619.63 & 1482194.38 & 0.0090 & 0.0108 & 0.0247 & 0.0116 & 0.3311\\
-	4 & 434978.06 & 1485551.73 & 0.0076 & 0.0099 & 0.0256 & 0.0124 & 0.3132\\
-	5 & 435666.27 & 1481906.87 & 0.0086 & 0.0109 & 0.0254 & 0.0134 & 0.2954\\
-	6 & 426223.06 & 1479693.58 & 0.0106 & 0.0131 & 0.0330 & 0.0173 & 0.2963\\
-	7 & 434938.70 & 1478948.70 & 0.0119 & 0.0146 & 0.0309 & 0.0190 & 0.2612\\
-	8 & 455289.36 & 1479452.68 & 0.0132 & 0.0163 & 0.0385 & 0.0268 & 0.2300\\
-	9 & 447490.46 & 1478621.82 & 0.0147 & 0.0187 & 0.0413 & 0.0286 & 0.2300\\
-	10 & 452584.20 & 1462969.61 & 0.0115 & 0.0143 & 0.0345 & 0.0209 & 0.2577\\
+	1 & 413076,12 & 1485451,42 & 0,0080 & 0,0102 & 0,0249 & 0,0120 & 0,3054\\
+	2 & 416539,92 & 1483130,35 & 0,0096 & 0,0113 & 0,0254 & 0,0137 & 0,2964\\
+	3 & 413619,63 & 1482194,38 & 0,0090 & 0,0108 & 0,0247 & 0,0116 & 0,3311\\
+	4 & 434978,06 & 1485551,73 & 0,0076 & 0,0099 & 0,0256 & 0,0124 & 0,3132\\
+	5 & 435666,27 & 1481906,87 & 0,0086 & 0,0109 & 0,0254 & 0,0134 & 0,2954\\
+	6 & 426223,06 & 1479693,58 & 0,0106 & 0,0131 & 0,0330 & 0,0173 & 0,2963\\
+	7 & 434938,70 & 1478948,70 & 0,0119 & 0,0146 & 0,0309 & 0,0190 & 0,2612\\
+	8 & 455289,36 & 1479452,68 & 0,0132 & 0,0163 & 0,0385 & 0,0268 & 0,2300\\
+	9 & 447490,46 & 1478621,82 & 0,0147 & 0,0187 & 0,0413 & 0,0286 & 0,2300\\
+	10 & 452584,20 & 1462969,61 & 0,0115 & 0,0143 & 0,0345 & 0,0209 & 0,2577\\
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
@@ -249,7 +249,17 @@ En las clasificaciones se muestra confusión de clases, mezclándose en algunos 
 	\label{fig:detalle_clasnosup}
 \end{figure}
 
-Se muestra el resultado de las clasificaciones en el anejo de mapas de este documento.
+En cuanto a la clasificación utilizando el \ac{SAM} los resultados son buenos como se aprecia en el detalle de la figura \ref{fig:detalle_SAM}. Situándose el bosque de mangle en un intervalo de entre 0,35 y 0,67 rad (20,05º y 38,39º) se diferencia notablemente de otras cubiertas.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Detalle_SAM.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Detalle clasificación con \textit{Spectral Angle Mapper}]{Detalle de la clasificación con \ac{SAM}. Elaboración propia.}
+	\label{fig:detalle_SAM}
+\end{figure}
+
+Se muestra el resultado de las clasificaciones en el anejo de mapas de este documento\footnote{Para generar los mapas se recurrió al uso del plugin de GRASS para QGIS}.
 
 \section{Índices de vegetación}
 El \ac{NDVI} nos muestra más claramente zonas de marisma o aguas turbias poco profundas que se sitúan en la línea de costa (figura \ref{fig:detalle_aguas}), justo donde hay presencia de bosque de mangle.%\Sep
