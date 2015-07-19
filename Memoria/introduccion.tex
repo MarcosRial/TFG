@@ -49,7 +49,7 @@ En cambio, el manglar es un ecosistema gravemente amenazado. Como se mencionaba,
 
 Una de las posibles soluciones que mitiguen estas causas es la de conocer mejor este ecosistema y su funcionamiento. Precisamente esta es una de las finalidades de este \ac{TFG}.%\Sep
 
-El empleo de sensores remotos para proyectos relacionados con el medioambiete y el entorno forestal es una realidad y se han utilizado mucho estas últimas décadas con unos buenos resultados. Como por ejemplo, \cite{bodart2011pre} y \cite{cajacuri2011medicion} realizan un estudio multitemporal de los cambios sufridos por las coverturas forestales, mientras que el estudio de \cite{chen2013multi} se centra precisamente en analizar los cambios en el bosque de mangle hondureño apoyándose en imágenes Landsat. \cite{lee2009applying} destacan la utilización de sensores remotos por la velocidad y precisión a la hora de recabar datos y comparan la utilización de diferentes sensores.%\Sep
+El empleo de sensores remotos para proyectos relacionados con el medioambiete y el entorno forestal es una realidad y se han utilizado mucho estas últimas décadas con unos buenos resultados. Como por ejemplo, \cite{bodart2011pre} y \cite{cajacuri2011medicion} realizan un estudio multitemporal de los cambios sufridos por las coverturas forestales, mientras que el estudio de \cite{chen2013multi} se centra precisamente en analizar los cambios en el bosque de mangle hondureño apoyándose en imágenes Landsat. \cite{lee2009applying} destacan la utilización de sensores remotos por la velocidad y precisión a la hora de recabar datos y comparan la utilización de diferentes sensores. \cite{Berlanga-Robles2007} y \cite{CorbelleRico2013} estudian la tendencia de cambio de bosque de mangle apoyándose en análisis de imágenes multitemporales Landsat.%\Sep
 
 \begin{figure}
 	\centering
@@ -61,7 +61,7 @@ El empleo de sensores remotos para proyectos relacionados con el medioambiete y 
 
 \section{Objetivos}
 \subsection{Objetivo general}
-El objetivo general del trabajo es el de evaluar la posibilidad de emplear imágenes obtenidas con sensores remotos para diferenciar las distintas especies de mangle que se encuentran en el Golfo de Fonseca.%\Sep
+El objetivo general de este trabajo es el de evaluar la posibilidad de emplear imágenes obtenidas con sensores remotos para diferenciar las distintas especies de mangle que se encuentran en el Golfo de Fonseca\footnote{Este \ac{TFG} tiene como referencia el proyecto de \ac{ISF} y el \ac{CODDEFFAGOLF} en colaboración con la \ac{USC} que tiene como título: ``Investigación y sensibilización sobre la problemática de la actividad acuícola insostenible y promoción de alternativas artesanales basadas en la economía social: puentes entre Golfo de Fonseca y Galicia'' \citep{laborate2014}.}.%\Sep
 
 De todas las especies de mangle existentes en el Golfo de Fonseca se ha decidido tomar tres para este estudio por ser las más predominantes. Son las siguientes:
 
@@ -81,8 +81,6 @@ Una vez realizado el análisis de especies se aplicarán los datos extraídos pa
 Se parte de la hipótesis de que, dependiendo de los resultados del primer objetivo, sea posible aplicar la experiencia adquirida en el análisis de separabilidad para realizar una clasificación fiable de la zona.%\Sep
 
 A esto se le añade el propósito de que, a lo largo de todas las fases del presente trabajo, se estudiará el uso de software libre y las posibilidades que este presenta de cara a futuros proyectos. Estas fases son: redacción del documento, tratamiento, análisis y presentación de los datos así como el tratamiento y procesado de las imágenes. Se presentarán las virtudes y defectos de este tipo de software y se analizarán los problemas presentados.%\Sep
-
-Este trabajo tiene como referencia el proyecto de \ac{ISF} y el \ac{CODDEFFAGOLF} en colaboración con la \ac{USC} que tiene como título: ``Investigación y sensibilización sobre la problemática de la actividad acuícola insostenible y promoción de alternativas artesanales basadas en la economía social: puentes entre Golfo de Fonseca y Galicia'' \citep{laborate2014}.
 
 \section{Zona de estudio}\label{sec:zonaestudio}
 La zona de estudio es el entrante natural del Golfo de Fonseca (figuras \ref{fig:localizacion} y \ref{fig:elevacion}) que abarca la costa pacífica de El Salvador, Honduras y Nicaragua situado entre las latitudes 13,595824ºN – 12,757449ºN y las longitudes 87,994615ºW – 87,115709ºW.%\Sep
@@ -105,9 +103,9 @@ La zona de estudio es el entrante natural del Golfo de Fonseca (figuras \ref{fig
 
 El Golfo de Fonseca, caracterizado por tener unas aguas poco profundas, que oscilan entre los 30m y 10m de máxima y 0,5m de mínima, está formado por una serie de ecosistemas interrelacionados formados por estuarios interiores, manglares, costas continentales e insulares. Las cuencas del Río Goascorán y el Río Negro son transfronterizas; la primera es compartida por El Salvador y Honduras y la segunda por Honduras y Nicaragua. Es pues un espacio internacional con humedales compartidos, lo que le otorga una importancia mayor a la hora de ser gestionado.%\Sep
 
-De toda el área forestal de Honduras, que se sitúa en torno a las 5.400.000 ha, los manglares ocupan alrededor de un 1,0\%, es decir, 51.578,18 ha \citep{anuario2013}. La mayor parte de este porcentaje de manglar se localiza en la costa pacífica del país, en el Golfo de Fonseca, que posee gran riqueza y diversidad de recursos naturales que están amenazados por su sobreexplotación \citep{Jimenez1994}. Esto hace que figure en la lista \cite{Ramsar2014} de humedales protegidos a escala mundial. En total cuenta con 409 km de costa abarcando una extensión de $547 km^{2}$.%\Sep
+De toda el área forestal de Honduras, que se sitúa en torno a las 5.400.000 ha, los manglares ocupan alrededor de un 1,0\%, es decir, 51.578,18 ha \citep{anuario2013}. La mayor parte de este porcentaje de manglar se localiza en la costa pacífica del país, en el Golfo de Fonseca, que posee gran riqueza y diversidad de recursos naturales que están amenazados por su sobreexplotación \citep{Jimenez1994}. Esto hace que figure en la lista \cite{Ramsar2014} de la ONU de humedales protegidos a escala mundial desde 1999 con una extensión de 67.711 ha.%\Sep
 
-La proliferación a lo largo de los años del establecimiento de estanques de cría de camarón en el Golfo de Fonseca es notable. El avance de esta industria en detrimento de la cobertura de manglar se ve patente en el cuadro \ref{tab:evolucion} y la figura ........ donde se muestran los resultados del estudio multitemporal de ..........%\Sep
+La proliferación a lo largo de los años del establecimiento de estanques de cría de camarón en el Golfo de Fonseca es notable. El avance de esta industria en detrimento de la cobertura de manglar se ve patente en el cuadro \ref{tab:evolucion} y la figura \ref{fig:grafico_mangle} donde se muestran los resultados del estudio multitemporal de \cite{laborate2014}.%\Sep
 
 \begin{table}
 \centering
@@ -141,9 +139,17 @@ La proliferación a lo largo de los años del establecimiento de estanques de cr
 	\bottomrule[0.4mm]
 \end{tabular}
 \captionsetup{font={footnotesize,it}}
-\caption[Evolución anual del manglar]{Evolución anual de la cubierta de manglar, camaroneras y lagunas de invierno. Fuente:..........}
+\caption[Evolución anual del manglar]{Evolución anual de la cubierta de manglar, camaroneras y lagunas de invierno. Fuente: \cite{laborate2014}}
 \label{tab:evolucion}
 \end{table}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{./Imagenes/grafico_mangle.eps}
+	\captionsetup{font={footnotesize,it}}
+	\caption[Gráfico de evolución anual del manglar]{Gráfica de la evolución de la superficie de manglar y camaroneras. Se muestra un ajuste de regresión local en línea continua con intervalo de confianza del 95\% y un ajuste lineal por mínimos cuadrados a trazos. Fuente: \cite{laborate2014}.}
+	\label{fig:grafico_mangle}
+\end{figure}
 
 Cabe destacar que en 1998 el huracán Mitch devastó una extensa superficie del ecosistema del Golfo de Fonseca causando incontables pérdidas humanas y económicas y cubriendo de lodo las zonas de manglar llegando a provocar un ligero cambio en la línea de costa debido a las crecidas de los ríos y a las amplias mareas \citep{mexico1999honduras}.
 
