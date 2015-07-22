@@ -13,23 +13,22 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{1}{2}{5/5}{Marco Global}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Objetivos}}\headcommand {\beamer@subsectionpages {4}{5}}
-\headcommand {\slideentry {1}{2}{1}{6/6}{Objetivos}{0}}
+\headcommand {\slideentry {1}{1}{3}{6/6}{Marco Global}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {1}{2}{2}{7/7}{Objetivos}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{7}{Objetivos}}\headcommand {\beamer@subsectionpages {4}{6}}
+\headcommand {\slideentry {1}{2}{1}{7/7}{Objetivos}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\sectionentry {2}{Materiales y M\IeC {\'e}todos}{8}{Materiales y M\IeC {\'e}todos}{0}}
-\headcommand {\beamer@sectionpages {3}{7}}
-\headcommand {\beamer@subsectionpages {6}{7}}
-\headcommand {\slideentry {2}{0}{3}{8/8}{}{0}}
+\headcommand {\slideentry {1}{2}{2}{8/8}{Objetivos}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{Materiales}}\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {2}{1}{1}{9/9}{Materiales}{0}}
+\headcommand {\slideentry {1}{2}{3}{9/9}{Objetivos}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{1}{2}{10/10}{Materiales}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{10}{Zona de estudio}}\headcommand {\beamer@subsectionpages {7}{9}}
+\headcommand {\slideentry {1}{3}{1}{10/10}{Zona de estudio}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@partpages {1}{10}}
-\headcommand {\beamer@subsectionpages {9}{10}}
-\headcommand {\beamer@sectionpages {8}{10}}
-\headcommand {\beamer@documentpages {10}}
-\headcommand {\def \inserttotalframenumber {10}}
+\headcommand {\slideentry {1}{3}{2}{11/11}{Zona de estudio}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@partpages {1}{11}}
+\headcommand {\beamer@subsectionpages {10}{11}}
+\headcommand {\beamer@sectionpages {3}{11}}
+\headcommand {\beamer@documentpages {11}}
+\headcommand {\def \inserttotalframenumber {11}}
