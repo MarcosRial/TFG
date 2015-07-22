@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.10)  19 JUL 2015 17:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.10)  20 JUL 2015 11:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4630,7 +4630,7 @@ Package epstopdf Info: Source file: <./Imagenes/ral2.eps>
 ted-to.pdf ./Imagenes/ral2.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
-<./Imagenes/ral2-eps-converted-to.pdf, id=1324, 1778.645pt x 789.95125pt>
+<./Imagenes/ral2-eps-converted-to.pdf, id=1325, 1778.645pt x 789.95125pt>
 File: ./Imagenes/ral2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ral2-eps-converted-to.pdf>
@@ -4673,7 +4673,7 @@ nverted-to.pdf ./Imagenes/ralcorte.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/ralcorte-eps-converted-to.pdf, id=1333, 427.5975pt x 256.96pt>
+<./Imagenes/ralcorte-eps-converted-to.pdf, id=1334, 427.5975pt x 256.96pt>
 File: ./Imagenes/ralcorte-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ralcorte-eps-converted-to.pdf>
@@ -4779,7 +4779,7 @@ f>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/ContinuumR2-eps-converted-to.pdf, id=1351, 427.5975pt x 220.825pt>
+<./Imagenes/ContinuumR2-eps-converted-to.pdf, id=1352, 427.5975pt x 220.825pt>
 File: ./Imagenes/ContinuumR2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/ContinuumR2-eps-converted-to.pdf>
@@ -4853,7 +4853,7 @@ rted-to.pdf ./Imagenes/GF654.eps>
 (epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/GF654-eps-converted-to.pdf, id=1364, 804.00375pt x 603.25375pt>
+<./Imagenes/GF654-eps-converted-to.pdf, id=1365, 804.00375pt x 603.25375pt>
 File: ./Imagenes/GF654-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/GF654-eps-converted-to.pdf>
@@ -4871,7 +4871,7 @@ rted-to.pdf ./Imagenes/GF562.eps>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/GF562-eps-converted-to.pdf, id=1365, 804.00375pt x 603.25375pt>
+<./Imagenes/GF562-eps-converted-to.pdf, id=1366, 804.00375pt x 603.25375pt>
 File: ./Imagenes/GF562-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/GF562-eps-converted-to.pdf>
@@ -4934,7 +4934,7 @@ eps-converted-to.pdf ./Imagenes/puntos_comprob.eps>
 (epstopdf)             \includegraphics on input line 214.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/puntos_comprob-eps-converted-to.pdf, id=1379, 804.00375pt x 603.253
+<./Imagenes/puntos_comprob-eps-converted-to.pdf, id=1380, 804.00375pt x 603.253
 75pt>
 File: ./Imagenes/puntos_comprob-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/puntos_comprob-eps-converted-to.pdf>
@@ -4982,7 +4982,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 226.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/grafica_comprob-eps-converted-to.pdf, id=1388, 2371.86125pt x 1948.
+<./Imagenes/grafica_comprob-eps-converted-to.pdf, id=1389, 2371.86125pt x 1948.
 27875pt>
 File: ./Imagenes/grafica_comprob-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/grafica_comprob-eps-converted-to.pdf>
@@ -5013,7 +5013,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Detalle_classup-eps-converted-to.pdf, id=1391, 1053.9375pt x 888.31
+<./Imagenes/Detalle_classup-eps-converted-to.pdf, id=1392, 1053.9375pt x 888.31
 876pt>
 File: ./Imagenes/Detalle_classup-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/Detalle_classup-eps-converted-to.pdf>
@@ -5091,7 +5091,7 @@ up-eps-converted-to.pdf ./Imagenes/Detalle_clasnosup.eps>
 (epstopdf)             \includegraphics on input line 246.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Detalle_clasnosup-eps-converted-to.pdf, id=1406, 1053.9375pt x 890.
+<./Imagenes/Detalle_clasnosup-eps-converted-to.pdf, id=1407, 1053.9375pt x 890.
 32625pt>
 File: ./Imagenes/Detalle_clasnosup-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -5111,7 +5111,7 @@ f>
 (epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Detalle_SAM-eps-converted-to.pdf, id=1408, 752.8125pt x 497.86pt>
+<./Imagenes/Detalle_SAM-eps-converted-to.pdf, id=1409, 752.8125pt x 497.86pt>
 File: ./Imagenes/Detalle_SAM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Detalle_SAM-eps-converted-to.pdf>
@@ -5142,7 +5142,7 @@ ps-converted-to.pdf ./Imagenes/Detalle_aguas.eps>
 (epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Detalle_aguas-eps-converted-to.pdf, id=1411, 804.00375pt x 603.2537
+<./Imagenes/Detalle_aguas-eps-converted-to.pdf, id=1412, 804.00375pt x 603.2537
 5pt>
 File: ./Imagenes/Detalle_aguas-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Imagenes/Detalle_aguas-eps-converted-to.pdf>
@@ -5220,7 +5220,7 @@ es-eps-converted-to.pdf ./Imagenes/Detalle_estanques.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Detalle_estanques-eps-converted-to.pdf, id=1433, 804.00375pt x 603.
+<./Imagenes/Detalle_estanques-eps-converted-to.pdf, id=1434, 804.00375pt x 603.
 25375pt>
 File: ./Imagenes/Detalle_estanques-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -5240,7 +5240,7 @@ es2-eps-converted-to.pdf ./Imagenes/Detalle_estanques2.eps>
 (epstopdf)             \includegraphics on input line 282.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Detalle_estanques2-eps-converted-to.pdf, id=1434, 804.00375pt x 603
+<./Imagenes/Detalle_estanques2-eps-converted-to.pdf, id=1435, 804.00375pt x 603
 .25375pt>
 File: ./Imagenes/Detalle_estanques2-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -5366,7 +5366,7 @@ onverted-to.pdf ./Imagenes/Map_swipe.eps>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Imagenes/Map_swipe-eps-converted-to.pdf, id=1461, 801.99625pt x 503.8825pt>
+<./Imagenes/Map_swipe-eps-converted-to.pdf, id=1462, 801.99625pt x 503.8825pt>
 File: ./Imagenes/Map_swipe-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Imagenes/Map_swipe-eps-converted-to.pdf>
@@ -5733,7 +5733,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 10.
  [82]
-<./Mapas/Mapas.pdf, id=1515, 1195.46625pt x 845.1575pt>
+<./Mapas/Mapas.pdf, id=1516, 1195.46625pt x 845.1575pt>
 File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 
 <use ./Mapas/Mapas.pdf>
@@ -5744,7 +5744,7 @@ File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Mapas/Mapas.pdf used on input line 17.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
 
-<./Mapas/Mapas.pdf, id=1518, page=1, 1195.46625pt x 845.1575pt>
+<./Mapas/Mapas.pdf, id=1519, page=1, 1195.46625pt x 845.1575pt>
 File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 
 <use ./Mapas/Mapas.pdf, page 1>
@@ -5831,7 +5831,7 @@ File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Mapas/Mapas.pdf used on input line 39.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
 
-<./Mapas/Mapas.pdf, id=1536, page=2, 1195.46625pt x 845.1575pt>
+<./Mapas/Mapas.pdf, id=1537, page=2, 1195.46625pt x 845.1575pt>
 File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 
 <use ./Mapas/Mapas.pdf, page 2>
@@ -5919,7 +5919,7 @@ File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Mapas/Mapas.pdf used on input line 61.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
 
-<./Mapas/Mapas.pdf, id=1552, page=3, 1195.46625pt x 845.1575pt>
+<./Mapas/Mapas.pdf, id=1553, page=3, 1195.46625pt x 845.1575pt>
 File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 
 <use ./Mapas/Mapas.pdf, page 3>
@@ -6007,7 +6007,7 @@ File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Mapas/Mapas.pdf used on input line 83.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
 
-<./Mapas/Mapas.pdf, id=1567, page=4, 1195.46625pt x 845.1575pt>
+<./Mapas/Mapas.pdf, id=1568, page=4, 1195.46625pt x 845.1575pt>
 File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 
 <use ./Mapas/Mapas.pdf, page 4>
@@ -6095,7 +6095,7 @@ File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Mapas/Mapas.pdf used on input line 105.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
 
-<./Mapas/Mapas.pdf, id=1582, page=5, 1195.46625pt x 845.1575pt>
+<./Mapas/Mapas.pdf, id=1583, page=5, 1195.46625pt x 845.1575pt>
 File: ./Mapas/Mapas.pdf Graphic file (type pdf)
 
 <use ./Mapas/Mapas.pdf, page 5>
@@ -6162,10 +6162,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
 ### simple group (level 1) entered at line 22 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16069 strings out of 494925
- 232559 string characters out of 6178544
- 426132 words of memory out of 5000000
- 18409 multiletter control sequences out of 15000+600000
+ 16071 strings out of 494925
+ 232593 string characters out of 6178544
+ 426176 words of memory out of 5000000
+ 18411 multiletter control sequences out of 15000+600000
  99071 words of font info for 153 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  46i,19n,85p,1154b,2033s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6184,10 +6184,10 @@ blic/mathdesign/mdbch/md-chr7y.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/mathdesign/mdbch/md-chr8t.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/mathdesign/mdbch/md-chri7m.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/mathdesign/mdbch/md-chri8t.pfb>
-Output written on TFG.pdf (109 pages, 43880241 bytes).
+Output written on TFG.pdf (109 pages, 43880355 bytes).
 PDF statistics:
- 1867 PDF objects out of 2073 (max. 8388607)
- 1471 compressed objects within 15 object streams
+ 1868 PDF objects out of 2073 (max. 8388607)
+ 1472 compressed objects within 15 object streams
  473 named destinations out of 1000 (max. 500000)
  675 words of extra memory for PDF output out of 10000 (max. 10000000)
 
