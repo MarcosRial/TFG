@@ -5,16 +5,16 @@ The style file: authordate1.bst
 Database file #1: bibliografia.bib
 You've used 49 entries,
             2441 wiz_defined-function locations,
-            851 strings with 14048 characters,
-and the built_in function-call counts, 18768 in all, are:
-= -- 1879
+            850 strings with 14016 characters,
+and the built_in function-call counts, 18756 in all, are:
+= -- 1876
 > -- 653
 < -- 169
 + -- 191
 - -- 185
-* -- 1431
-:= -- 3104
-add.period$ -- 202
+* -- 1430
+:= -- 3101
+add.period$ -- 201
 call.type$ -- 49
 change.case$ -- 309
 chr.to.int$ -- 47
@@ -22,17 +22,17 @@ cite$ -- 49
 duplicate$ -- 753
 empty$ -- 1353
 format.name$ -- 243
-if$ -- 3900
+if$ -- 3897
 int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 49
-newline$ -- 249
+newline$ -- 248
 num.names$ -- 147
-pop$ -- 295
+pop$ -- 296
 preamble$ -- 1
 purify$ -- 354
 quote$ -- 0
-skip$ -- 794
+skip$ -- 795
 stack$ -- 0
 substring$ -- 1014
 swap$ -- 206
@@ -43,4 +43,4 @@ type$ -- 368
 warning$ -- 0
 while$ -- 142
 width$ -- 0
-write$ -- 618
+write$ -- 616
