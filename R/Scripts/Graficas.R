@@ -40,7 +40,3 @@ png (filename = "./Graficos/gráficanueva.png",
 grafica(x)             ## donde x es el archivo de datos
 graficamas(y)          ## donde y es el archivo de datos a añadir
 dev.off()
-
-##Gráfica IAE para cada especie
-
-IAEgrafica <- function(x)
