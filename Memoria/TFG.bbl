@@ -20,7 +20,7 @@ Berlanga-Robles, C.~A., \& Ruiz-Luna, A. 2007.
 \newblock {\em Universidad y Ciencia Tr{\'o}pico H{\'u}medo}, {\bf 23}(1),
   29--46.
 
-\bibitem[\protect\citename{Bodart {\em et~al.\ }\relax, }2011]{bodart2011pre}
+\bibitem[\protect\citename{Bodart {\em et~al.}, }2011]{bodart2011pre}
 Bodart, Catherine, Eva, Hugh, Beuchle, Ren{\'e}, Ra{\v{s}}i, Rastislav,
   Simonetti, Dario, Stibig, Hans-J{\"u}rgen, Brink, Andreas, Lindquist, Erik,
   \& Achard, Fr{\'e}d{\'e}ric. 2011.
@@ -56,7 +56,7 @@ CEPAL, Naciones~Unidas. 1999.
   social y el medio ambiente}.
 \newblock Tech. rept. LC/MEX/L. 367), 26 de enero de.
 
-\bibitem[\protect\citename{Chen {\em et~al.\ }\relax, }2013]{chen2013multi}
+\bibitem[\protect\citename{Chen {\em et~al.}, }2013]{chen2013multi}
 Chen, Chi-Farn, Son, Nguyen-Thanh, Chang, Ni-Bin, Chen, Cheng-Ru, Chang, Li-Yu,
   Valdez, Miguel, Centeno, Gustavo, Thompson, Carlos~Alberto, \& Aceituno,
   Jorge~Luis. 2013.
@@ -82,14 +82,6 @@ Congedo, Luca. 2015 (April).
 \newblock {\em Semi-Automatic Classification Plugin Documentation (Release
   4.3.0)}.
 
-\bibitem[\protect\citename{Corbelle~Rico {\em et~al.\ }\relax,
-  }2013]{CorbelleRico2013}
-Corbelle~Rico, Eduardo, Cordero~Souto, Miguel, \& Juela~Sivisaca, Óscar. 2013.
-\newblock Estudio multitemporal de la superficie ocupada para la cría de
-  camarón en el Golfo de Fonseca, Honduras.
-\newblock {\em Territorios a examen II: interpretando los procesos de cambio},
-  149--162.
-
 \bibitem[\protect\citename{Corrales~Andino, }2010a]{andinofase1}
 Corrales~Andino, Rafael~Enrique. 2010a.
 \newblock Catálogo de firmas espectrales de especies florales, en la Ciudad
@@ -102,7 +94,7 @@ Corrales~Andino, Rafael~Enrique. 2010b.
   Universitaria, Tegucigalpa, Fase 2.
 \newblock {\em Revista Ciencias Espaciales}, {\bf 2}(1).
 
-\bibitem[\protect\citename{Crespo {\em et~al.\ }\relax, }2000]{crespo2000}
+\bibitem[\protect\citename{Crespo {\em et~al.}, }2000]{crespo2000}
 Crespo, Mart{\'\i}n Angel~Torres, Serrato, Isabel~Pino, Ruiz, Laura~Granado,
   Carmona, Arturo Fern{\'a}ndez-Palacios, Alba, M{\'o}nica~Aguilar, \&
   Rodr{\'\i}guez, Esperanza~S{\'a}nchez. 2000.
@@ -127,16 +119,14 @@ Filippi, Anthony~M, \& Jensen, John~R. 2007.
 \newblock {\em Geoscience and Remote Sensing, IEEE Transactions on}, {\bf
   45}(6), 1857--1869.
 
-\bibitem[\protect\citename{Galindo~Riaño {\em et~al.\ }\relax,
-  }2001]{galindo2001}
+\bibitem[\protect\citename{Galindo~Riaño {\em et~al.}, }2001]{galindo2001}
 Galindo~Riaño, Pedro, López~Mesa, Miguel~Ángel, Lagares~Barreiro, Paula,
   Espina~Aragón, Francisco~José, Enriquez~de Salamanca, José~Manuel, \&
   González~Barroso, María~Ángeles. 2001.
 \newblock {\em Manual de latex}.
 \newblock Servicio de Publicaciones, Universidad.
 
-\bibitem[\protect\citename{Girouard {\em et~al.\ }\relax,
-  }2004]{girouard2004validated}
+\bibitem[\protect\citename{Girouard {\em et~al.}, }2004]{girouard2004validated}
 Girouard, G, Bannari, A, El~Harti, A, \& Desrochers, A. 2004.
 \newblock Validated spectral angle mapper algorithm for geological mapping:
   comparative study between QuickBird and Landsat-TM.
@@ -165,8 +155,7 @@ Hernández, Luis Alberto~Padrón. 2011.
   de Software Libre}. 1 edn.
 \newblock Universidad de Las Palmas de Gran Canaria.
 
-\bibitem[\protect\citename{Huang {\em et~al.\ }\relax,
-  }2004]{huang2004estimating}
+\bibitem[\protect\citename{Huang {\em et~al.}, }2004]{huang2004estimating}
 Huang, Zhi, Turner, Brian~J, Dury, Stephen~J, Wallis, Ian~R, \& Foley,
   William~J. 2004.
 \newblock Estimating foliage nitrogen concentration from HYMAP data using
@@ -178,7 +167,7 @@ JARS. 1999.
 \newblock {\em Remote Sensing Note}.
 \newblock National Space Development Agency of Japan (NASDA).
 
-\bibitem[\protect\citename{Jarvis {\em et~al.\ }\relax, }2008]{SRTM2008}
+\bibitem[\protect\citename{Jarvis {\em et~al.}, }2008]{SRTM2008}
 Jarvis, A., Reuter, H.I., Nelson, A., \& Guevara, E. 2008.
 \newblock {\em Hole-filled seamless SRTM data V4}.
 \newblock International Centre for Tropical Agriculture (CIAT).
@@ -209,6 +198,14 @@ Jiménez, Jorge~A., \& Lugo, Ariel~E. 1985.
 \newblock {\em U.S. Department of Agriculture, Forest Service, Southern Forest
   Experiment Station},  6 p.
 
+\bibitem[\protect\citename{Juela~Sivisaca {\em et~al.},
+  }2013]{JuelaSivisaca2013}
+Juela~Sivisaca, Óscar, Corbelle~Rico, Eduardo, \& Cordero~Souto, Miguel. 2013.
+\newblock Estudio multitemporal de la superficie ocupada para la cría de
+  camarón en el Golfo de Fonseca, Honduras.
+\newblock {\em Territorios a examen II: interpretando los procesos de cambio},
+  149--162.
+
 \bibitem[\protect\citename{Kokaly \& Clark, }1999]{kokaly1999spectroscopic}
 Kokaly, Raymond~F, \& Clark, Roger~N. 1999.
 \newblock Spectroscopic determination of leaf biochemistry using band-depth
@@ -223,7 +220,7 @@ LaboraTe, \& ISF. 2014.
   Galicia.
 \newblock {\em Consellería da Presidencia e Administración Pública}.
 
-\bibitem[\protect\citename{Labrador~Garc{\'\i}a {\em et~al.\ }\relax,
+\bibitem[\protect\citename{Labrador~Garc{\'\i}a {\em et~al.},
   }2012]{labrador2012satelites}
 Labrador~Garc{\'\i}a, Mauricio, {\'E}vora~Brondo, Juan~Antonio, \&
   Arbelo~P{\'e}rez, Manuel. 2012.
@@ -238,8 +235,7 @@ Lamport, L. 1994.
   edici{\'o}n). Addison Welsley.
 \newblock {\em Reading, Mass}.
 
-\bibitem[\protect\citename{Lara-Dom{\'\i}nguez {\em et~al.\ }\relax,
-  }1999]{Lara1999}
+\bibitem[\protect\citename{Lara-Dom{\'\i}nguez {\em et~al.}, }1999]{Lara1999}
 Lara-Dom{\'\i}nguez, Ana~Laura, Y{\'a}{\~n}ez-Arancibia, Alejandro,
   Y{\'a}{\~n}ez-Arancibia, A, \& Lara-Dom{\'\i}nguez, AL. 1999.
 \newblock Productividad secundaria, utilizaci{\'o}n del h{\'a}bitat y
@@ -261,7 +257,7 @@ Mas~i Hern{\`a}ndez, Jordi. 2005.
   sostenible y socialmente justo}.
 \newblock Infonomia.
 
-\bibitem[\protect\citename{Matellán~Oliveira {\em et~al.\ }\relax,
+\bibitem[\protect\citename{Matellán~Oliveira {\em et~al.},
   }2004]{MatellanOliveira2004}
 Matellán~Oliveira, Vicente, González~Barahona, Jesús~M., De~Las
   Heras~Quirós, Pedro, \& Robles~Martínez, Gregorio. 2004.
@@ -288,7 +284,7 @@ Olaya, Victor. 2010.
 Ramsar. 2014 (September).
 \newblock {\em The List of Wetlands of International Importance}.
 
-\bibitem[\protect\citename{Rouse {\em et~al.\ }\relax, }1974]{rouse1974}
+\bibitem[\protect\citename{Rouse {\em et~al.}, }1974]{rouse1974}
 Rouse, JW, Haas, RH, Schell, JA, Deering, DW, \& Harlan, JC. 1974.
 \newblock Monitoring the vernal advancements and retrogradation of natural
   vegetation.
@@ -304,8 +300,7 @@ Schowengerdt, Robert~A. 2006.
 Stevens, Antoine, \& Ramirez-Lopez, Leonardo. 2014.
 \newblock {\em An introduction to the prospectr package}.
 
-\bibitem[\protect\citename{Underwood {\em et~al.\ }\relax,
-  }2003]{underwood2003mapping}
+\bibitem[\protect\citename{Underwood {\em et~al.}, }2003]{underwood2003mapping}
 Underwood, Emma, Ustin, Susan, \& DiPietro, Deanne. 2003.
 \newblock Mapping nonnative plants using hyperspectral imagery.
 \newblock {\em Remote Sensing of Environment}, {\bf 86}(2), 150--161.

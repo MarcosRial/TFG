@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {2.2}Software}{35}{section.2.2}
 \contentsline {paragraph}{R.}{36}{section*.79}
 \contentsline {paragraph}{GRASS GIS.}{37}{section*.81}
-\contentsline {paragraph}{\textlatin {\LaTeX }.}{37}{section*.84}
+\contentsline {paragraph}{\LaTeX .}{37}{section*.84}
 \contentsline {section}{\numberline {2.3}T\IeC {\'e}cnicas de an\IeC {\'a}lisis espectral}{38}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}\IeC {\'I}ndice de acuerdo espectral}{38}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Continuum removal}{39}{subsection.2.3.2}
@@ -66,5 +66,5 @@
 \contentsline {section}{\numberline {3.4}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{65}{section.3.4}
 \contentsline {section}{\numberline {3.5}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{67}{section.3.5}
 \contentsline {chapter}{\numberline {4}Conclusiones y discusi\IeC {\'o}n}{71}{chapter.4}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{79}{chapter*.145}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{80}{chapter*.145}
 \contentsline {chapter}{Anejo. Mapas}{81}{appendix*.146}
