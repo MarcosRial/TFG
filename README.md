@@ -12,12 +12,20 @@ Tutorizado por: Eduardo Corbelle Rico y Rafael Enrique Corrales Andino.
 Repositorio que contiene los archivos de LaTeX y funciones de R correspondientes al TFG.
 
 Para la correcta compilación del documento con PDFLaTeX deberán estar instalados, a parte de las dependencias del editor de TeX, los siguientes paquetes:
+
 texlive-lang-spanish,
+
 texlive-fonts-recommended,
+
 texlive-fonts-extra,
+
 texlive-math-extra,
+
 texlive-bibtex-extra,
-texlive-formats-extra
+
+texlive-formats-extra.
+
+Para su compilación en Windows se recomienda instalar previamente MikTeX.
 
 En la generación de mapas se empleó el tipo de letra "open source" Carlito:
 fonts-crosextra-carlito
