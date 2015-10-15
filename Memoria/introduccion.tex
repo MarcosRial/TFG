@@ -64,7 +64,7 @@ El empleo de sensores remotos para proyectos relacionados con el medioambiente y
 \subsection{Objetivo general}
 El objetivo general de este trabajo es el de evaluar la posibilidad de emplear imágenes obtenidas con sensores remotos para diferenciar las distintas especies de mangle que se encuentran en el Golfo de Fonseca\footnote{Este \ac{TFG} tiene como referencia el proyecto de \ac{ISF} y el \ac{CODDEFFAGOLF} en colaboración con la \ac{USC} que tiene como título: ``Investigación y sensibilización sobre la problemática de la actividad acuícola insostenible y promoción de alternativas artesanales basadas en la economía social: puentes entre Golfo de Fonseca y Galicia'' \citep{laborate2014}.}.%\Sep
 
-De todas las especies de mangle existentes en el Golfo de Fonseca se ha decidido tomar tres para este estudio por ser las más predominantes. Son las siguientes:
+De todas las especies de mangle existentes en el Golfo de Fonseca se ha decidido tomar tres para este estudio por ser las predominantes. Son las siguientes:
 
 \begin{itemize}
 	\item Mangle Rojo. Nombre científico \textit{Rhizophora mangle} \citep{JimenezRhizophora}.
@@ -75,7 +75,7 @@ De todas las especies de mangle existentes en el Golfo de Fonseca se ha decidido
 La hipótesis desde la que se parte es que la respuesta espectral de las diferentes especies de mangle sea lo suficientemente diferente para que este objetivo se cumpla. Esto conduce a la realización de unos objetivos específicos en los que se busca concretar más en el trabajo.
 
 \subsection{Objetivos específicos}
-Los objetivos específicos serán el análisis de separabilidad espectral de las especies de mangle del Golfo de Fonseca y determinar la utilidad potencial del empleo de imágenes Landsat para diferenciar las especies analizadas.%\Sep
+Los objetivos específicos serán analizar la separabilidad espectral de las especies de mangle del Golfo de Fonseca y determinar la utilidad potencial del empleo de imágenes Landsat para diferenciar las especies analizadas.%\Sep
 
 Una vez realizado el análisis de especies se aplicarán los datos extraídos para realizar una clasificación supervisada de una imagen de la zona de estudio captada por el sensor \ac{OLI} y obtenida del servicio de descargas de \ac{USGS}, la denominada \ac{EROS}, gracias a su herramienta Earth Explorer. De esta clasificación se sacarán distintas conclusiones y se analizará la superficie de cada especie de manglar.%\Sep
 
@@ -84,27 +84,28 @@ Se parte de la hipótesis de que, dependiendo de los resultados del primer objet
 A esto se le añade el propósito de que, a lo largo de todas las fases del presente trabajo, se estudiará el uso de software libre y las posibilidades que este presenta de cara a futuros proyectos. Estas fases son: redacción del documento, tratamiento, análisis y presentación de los datos así como el tratamiento y procesado de las imágenes. Se presentarán las virtudes y defectos de este tipo de software y se analizarán los problemas presentados.%\Sep
 
 \section{Zona de estudio}\label{sec:zonaestudio}
-La zona de estudio es el entrante natural del Golfo de Fonseca (figuras \ref{fig:localizacion} y \ref{fig:elevacion}) que abarca la costa pacífica de El Salvador, Honduras y Nicaragua situado entre las latitudes 13,595824ºN – 12,757449ºN y las longitudes 87,994615ºW – 87,115709ºW.%\Sep
+La zona de estudio es el entrante natural del Golfo de Fonseca (figura \ref{fig:localizacion}) que abarca la costa pacífica de El Salvador, Honduras y Nicaragua situado entre las latitudes 13º N – 12º N y las longitudes 87º W – 87º W.%\Sep
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/localizacion.eps}
+	\includegraphics[width=0.9\linewidth]{./Imagenes/localizacion.eps}
+	\includegraphics[width=0.9\linewidth]{./Imagenes/localizacion_elev.eps}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Localización del Golfo de Fonseca]{Localización del Golfo de Fonseca. Elaboración propia a partir de \cite{GADM2012}.}
+	\caption[Localización y MDE del Golfo de Fonseca]{Localización y modelo de elevaciones del Golfo de Fonseca. Elaboración propia a partir de \cite{GADM2012} y \cite{SRTM2008}.}
 	\label{fig:localizacion}
 \end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{./Imagenes/localizacion_elev.eps}
-	\captionsetup{font={footnotesize,it}}
-	\caption[Modelo de elevación del Golfo de Fonseca]{Modelo de elevación del Golfo de Fonseca. Elaboración propia a partir de \cite{SRTM2008}.}
-	\label{fig:elevacion}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{./Imagenes/localizacion_elev.eps}
+%	\captionsetup{font={footnotesize,it}}
+%	\caption[Modelo de elevación del Golfo de Fonseca]{Modelo de elevación del Golfo de Fonseca. Elaboración propia a partir de \cite{SRTM2008}.}
+%	\label{fig:elevacion}
+%\end{figure}
 
 El Golfo de Fonseca, caracterizado por tener unas aguas poco profundas, que oscilan entre los 30m y 10m de máxima y 0,5m de mínima, está formado por una serie de ecosistemas interrelacionados formados por estuarios interiores, manglares, costas continentales e insulares. Las cuencas del Río Goascorán y el Río Negro son transfronterizas; la primera es compartida por El Salvador y Honduras y la segunda por Honduras y Nicaragua. Es pues un espacio internacional con humedales compartidos, lo que le otorga una importancia mayor a la hora de ser gestionado.%\Sep
 
-De toda el área forestal de Honduras, que se sitúa en torno a las 5.400.000 ha, los manglares ocupan alrededor de un 1,0\%, es decir, 51.578,18 ha \citep{anuario2013}. La mayor parte de este porcentaje de manglar se localiza en la costa pacífica del país, en el Golfo de Fonseca, que posee gran riqueza y diversidad de recursos naturales que están amenazados por su sobreexplotación \citep{Jimenez1994}. Esto hace que figure en la lista \cite{Ramsar2014} de la ONU de humedales protegidos a escala mundial desde 1999 con una extensión de 67.711 ha.%\Sep
+De toda el área forestal de Honduras, que se sitúa en torno a las 5.400.000 ha, los manglares ocupan alrededor de un 1,0\%, es decir, 51.578 ha \citep{anuario2013}. La mayor parte de este porcentaje de manglar se localiza en la costa pacífica del país, en el Golfo de Fonseca, que posee gran riqueza y diversidad de recursos naturales que están amenazados por su sobreexplotación \citep{Jimenez1994}. Esto hace que figure en la lista \cite{Ramsar2014} de la ONU de humedales protegidos a escala mundial desde 1999 con una extensión de 67.711 ha.%\Sep
 
 La proliferación a lo largo de los años del establecimiento de estanques de cría de camarón en el Golfo de Fonseca es notable. El avance de esta industria en detrimento de la cobertura de manglar se ve patente en el cuadro \ref{tab:evolucion} y la figura \ref{fig:grafico_mangle} donde se muestran los resultados del estudio multitemporal de \cite{laborate2014}.%\Sep
 
@@ -156,7 +157,7 @@ Cabe destacar que en 1998 el huracán Mitch devastó una extensa superficie del 
 
 \section{Bases teóricas de teledetección} \label{sec:bases}
 \subsection{Fundamentos} \label{subsec:fundamentos}
-La teledetección es la técnica que nos permite obtener información de los objetos situados en la superficie de la Tierra realizando una observación remota \citep{Curran1991Longman} \citep{chuvieco2002teledeteccion} \citep{schowengerdt2006}. Para que esta observación sea posible debe haber algún tipo de nexo entre el objeto y el sistema sensor u observador. De esta afirmación se extraen los tres elementos básicos de la teledetección: el objeto observado, el sensor y el el flujo energético que los relaciona.%\Sep
+La teledetección es la técnica que nos permite obtener información de los objetos situados en la superficie de la Tierra realizando una observación remota \citep{Curran1991Longman,chuvieco2002teledeteccion,schowengerdt2006}. Para que esta observación sea posible debe haber algún tipo de nexo entre el objeto y el sistema sensor u observador. De esta afirmación se extraen los tres elementos básicos de la teledetección: el objeto observado, el sensor y el el flujo energético que los relaciona.%\Sep
 
 Hay tres formas de que un sensor pueda adquirir la información del objeto. Estas son: por reflexión, por emisión y por emisión-reflexión.%\Sep
 
@@ -208,7 +209,7 @@ El espectro visible es la única radiación electromagnética perceptible por la
 
 En el caso de la banda infrarroja esta también se divide en tres bandas elementales: \ac{IRC}, \ac{IRM} e \ac{IRT}. El \ac{IRC}, también denominado próximo, es de especial importancia puesto que es utilizado para detectar masas vegetales y concentraciones de humedad. En el \ac{IRM} tenemos que diferenciar el \ac{SWIR} o infrarrojo de onda corta (situado entre 1.2 y 2.5$\mu$m resultando una banda indicada para estimar el contenido en humedad de la vegetación y los suelos) y el \ac{IRM} propiamente dicho (situado entre 2.5 y 8$\mu$m siendo determinante para la detección de focos de alta temperatura como incendios).%\Sep
 
-El \ac{IRT} es el indicado para dimensionar las emisiones de temperatura de las cubiertas sobre la superficie terrestre. Es poco utilizado para otros fines.%\Sep
+El \ac{IRT} es el indicado para dimensionar las emisiones de temperatura de las cubiertas sobre la superficie terrestre. Es poco utilizado para otros fines \citep{chuvieco2002teledeteccion}.%\Sep
 
 Las microondas tienen interés por ser un tipo de energía capaz de penetrar la cubierta nubosa pero no se tendrá en cuenta en este tipo de trabajos.%\Sep
 
@@ -290,7 +291,7 @@ El medio más sencillo de disponer de firmas espectrales son las bibliotecas esp
 	\label{fig:firma}
 \end{figure}
 
-Hay numerosos ejemplos de bibliotecas espectrales en Internet, como las del \ac{SIGFIRM} venezolano que recoge el comportamiento espectral de los cultivos en regiones agrícolas de Venezuela \ref{fig:biblioteca_esp}; o la ASTER spectral library de la NASA, que recoge datos de otras tres bibliotecas espectrales: las del \ac{JHU}, \ac{JPL} y \ac{USGS} registrando más de 2400 firmas de materiales como minerales, rocas, suelos y algunas cubiertas artificiales como lo son cemento, aluminio o papel.%\Sep
+Hay numerosos ejemplos de bibliotecas espectrales disponibles en Internet, como las del \ac{SIGFIRM} venezolano que recoge el comportamiento espectral de los cultivos en regiones agrícolas de Venezuela (figura \ref{fig:biblioteca_esp}); o la ASTER spectral library de la NASA, que recoge datos de otras tres bibliotecas espectrales: las del \ac{JHU}, \ac{JPL} y \ac{USGS} registrando más de 2400 firmas de materiales como minerales, rocas, suelos y algunas cubiertas artificiales como lo son cemento, aluminio o papel.%\Sep
 
 \begin{figure}
 	\centering
@@ -307,7 +308,7 @@ En el apartado de fundamentos (\ref{subsec:fundamentos}) de este mismo capítulo
 La clasificación más común de los sensores es según la forma de recibir la energía de las cubiertas, dando lugar a:
 \begin{itemize}
 	\item Pasivos, donde el sensor recibe la energía emitida por un agente exterior (e.g. el Sol).
-	\item Activos, donde el sensor recibe un haz de energía emitido por él mismo (e.g. radares).
+	\item Activos, donde el sensor recibe un haz de energía emitido por él mismo.
 \end{itemize}
 
 \subsubsection{Sensores pasivos} \label{subsubsec:sensorespasivos}
@@ -317,7 +318,7 @@ Lo que concierne a este \ac{TFG} serán los sensores pasivos óptico-electrónic
 
 Los sensores óptico-electrónicos combinan una óptica similar a las cámaras analógicas con un sistema de detección electrónica permitiendo prescindir de un soporte sólido de grabación de imágenes. El sensor convierte la señal de radiancia proveniente del objeto en un valor digital. Los sensores exploradores de barrido, que son los más habituales, utilizan un espejo que oscila perpendicularmente a la dirección de la trayectoria.%\Sep
 
-Un ejemplo de sensor remoto pasivo de barrido es el \ac{ETM+} montado sobre el satélite Landsat 7. Otro ejemplo de explorador de barrido son los sensores \ac{TM} del Landsat 5, el \ac{OLI} del Landsat 8 (de cuyas imágenes se hará uso en este \ac{TFG} y se le dedicará un parágrafo) o el \ac{AVHRR} del NOAA. De los tres primeros se extraen los cuadros \ref{tab:sensoresTM}, \ref{tab:sensoresETM} y \ref{tab:sensoresOLI}.%\Sep
+Un ejemplo de sensor remoto pasivo de barrido es el \ac{ETM+} montado sobre el satélite Landsat 7. Otro ejemplo de explorador de barrido son los sensores \ac{TM} del Landsat 5, el \ac{OLI} del Landsat 8 (de cuyas imágenes se hará uso en este \ac{TFG} y se le dedicará un apartado) o el \ac{AVHRR} del NOAA. De los tres primeros se extraen los cuadros \ref{tab:sensoresTM}, \ref{tab:sensoresETM} y \ref{tab:sensoresOLI}.%\Sep
 
 \begin{table}
 	\centering
@@ -407,15 +408,15 @@ Designa el objeto más pequeño que es posible distinguir en la imagen digital. 
 
 La resolución espacial de un sensor, como ya se ha mencionado, depende de varios factores, como la altura orbital, la longitud focal y el número de detectores. En los sensores de antena, la resolución espacial depende del tamaño de la antena, la altura de la plataforma y el ángulo de incidencia.%\Sep
 
-Dependiendo de la resolución espacial tenemos cuatro tipos de sensores:
+Dependiendo de la resolución espacial tenemos los siguientes tipos de sensores:
 \begin{enumerate}
 	\item De alta resolución. Con resoluciones próximas al metro de ancho.
-	\item De recursos naturales. Con resoluciones entre los 25 x 25m y 1000 x 1000m.
-	\item De baja resolución. Por lo general montados sobre satélites geoestacionarios y dedicados a ámbitos metorológicos, cuentan con una resolución espacial que puede llegar a los 5 x 5km.
+	\item De recursos naturales. Con resoluciones entre los 25 x 25 m y 1000 x 1000 m.
+	\item De baja resolución. Por lo general montados sobre satélites geoestacionarios y dedicados a ámbitos meteorológicos, cuentan con una resolución espacial que puede llegar a los 5 x 5 km.
 \end{enumerate}
 
 \subsubsection{Resolución espectral}
-Designa el número y anchura de bandas espectrales que puede discriminar el sensor. Es muy importante la capacidad del sensor para registrar simultaneamente el comportamiento de un mismo objeto en varias bandas del espectro. En definitiva, un sensor tendrá mayor resolución cuanto mayor número de bandas detecte, facilitando así la caracterización espectral de las cubiertas.%\Sep
+Designa el número y anchura de bandas espectrales que puede discriminar el sensor. Es muy importante la capacidad del sensor para registrar simultáneamente el comportamiento de un mismo objeto en varias bandas del espectro. En definitiva, un sensor tendrá mayor resolución cuanto mayor número de bandas detecte, facilitando así la caracterización espectral de las cubiertas.%\Sep
 
 Es evidente la importancia que tiene la elección del sensor en cuanto al número de bandas, ancho y longitud de las mismas dependiendo del objetivo del trabajo a realizar. Por ejemplo, para la detección de vegetación se hace más importante disponer de bandas del \ac{IRC} e \ac{IRM} más que del \ac{IRT}, en cambio para detectar incendios sí es importante disponer de la banda del \ac{IRT}.
 
@@ -441,11 +442,12 @@ En el cuadro \ref{tab:resoluciones} se comparan las diferentes resoluciones de l
 	& Landsat 8 & QuickBird & Spot 6 & IKONOS \\
 	& OLI & & HRV & \\
 	\midrule
-	R. Espacial MS (m) & 30--60 & 2.44--2.88 & 6 & 3.2--4 \\
+	R. Espacial MS* (m) & 30--60 & 2.44--2.88 & 6 & 3.2--4 \\
 	R. Espectral (nm) & 450--12500 & 450--900 & 455--890 & 445--853 \\
 	R. Radiométrica (bits) & 8 & 11 & 12 & 11 \\
 	R. Temporal (días) & 16 & 1--3 & 1--3 & 3 \\
 	\bottomrule[0.4mm]
+	\multicolumn{3}{l}{\footnotesize{*En modo multiespectral.}}
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
 	\caption[Resoluciones de varios sensores]{Resoluciones de varios sensores. Fuente: \cite{labrador2012satelites}}
@@ -455,9 +457,9 @@ En el cuadro \ref{tab:resoluciones} se comparan las diferentes resoluciones de l
 \subsection{Correcciones}
 Como se exponía anteriormente la imagen digital tomada por el sistema sensor se compone de una malla de píxeles que toman un valor numérico concreto obtenido a partir de la radiancia observada. Ese valor numérico que codifica cada píxel es el llamado \ac{ND}. La propiedad más ventajosa de esos \ac{ND} es que pueden traducirse a color o niveles de gris, por ejemplo mediante el uso de un monitor, dependiendo, la intensidad, del \ac{ND}. A partir del \ac{ND} visualizado se pueden hacer operaciones de realce que no modificarán su valor pero sí harán que se vea con diferente intensidad. A este nuevo valor se le llamará \ac{NV}. El \ac{ND}, en cambio, es utilizado para operaciones de interpretación digital, especialmente cuando estas se relacionan con parámetros como la reflectividad o la temperatura.%\Sep
 
-La mejor forma de ver una imagen es como si fuera un sistema de tres dimensiones, donde las dos primeras dimensiones corresponden a la posición geográfica de la imagen y la tercera corresponde al \ac{ND}.%\Sep
+%La mejor forma de ver una imagen es como si fuera un sistema de tres dimensiones, donde las dos primeras dimensiones corresponden a la posición geográfica de la imagen y la tercera corresponde al \ac{ND}.%\Sep
 
-Las correcciones propiamente dichas son aquellos procesos con los que se eliminan anomalías detectadas en la imagen, tanto de localización como en la radiometría de los píxeles. La finalidad de estos procesos es la de disponer los datos de la forma más cercana a lo que sería una adquisición idónea (e.g. posición geográfica correcta). Es posible que la corrección más importante sea la geográfica, pues aporta validez cartográfica a los resultados y permite la conexión con otros datos geográficos en un \ac{SIG}.%\Sep
+Las correcciones propiamente dichas son aquellos procesos con los que se eliminan anomalías detectadas en la imagen, tanto de localización como en la radiometría de los píxeles. La finalidad de estos procesos es la de disponer los datos de la forma más cercana a lo que sería una adquisición idónea (e.g. posición geográfica correcta). Es posible que la corrección más importante sea la geométrica, pues aporta validez cartográfica a los resultados y permite la conexión con otros datos geográficos en un \ac{SIG}.%\Sep
 
 Las principales fuentes de error que provocan la necesidad de realizar correcciones son:
 \begin{itemize}
@@ -502,7 +504,7 @@ El primero de los procedimientos es especialmente indicado para aquellas imágen
 El método de corrección a partir de puntos de control requiere de la intervención humana, lo que resulta tedioso en comparación con el primer método. En cambio ofrece mayor precisión en la corrección dependiendo, evidentemente, de la medida en que en la imagen se puedan detectar los puntos de control establecidos.%\Sep
 
 \subsection{Clasificación}
-La clasificación es el último paso en el análisis de imágenes digitales mediante teledetección (se beneficia de los procesos de correcciones, realces y fusiones de imágenes) y de ella derivan los productos cartográficos finales en forma de mapas temáticos. El \ac{ND} pasa de reflejar el nivel de reflectancia a tener un valor categórico concreto que puede etiquetarse con un tipo concreto de superficie. Se genera así cartografía temática y facilita el trato estadístico de la información.%\Sep
+La clasificación es el último paso en el análisis de imágenes digitales mediante teledetección (se beneficia de los procesos de correcciones, realces y fusiones de imágenes) y de ella derivan los productos cartográficos finales en forma de mapas temáticos. El \ac{ND} pasa de reflejar el nivel de reflectancia a tener un valor categórico concreto que puede etiquetarse con un tipo concreto de superficie. Se genera así cartografía temática y facilita el tratamiento estadístico de la información.%\Sep
 
 Hay numerosos métodos de clasificación que deben cumplir los siguientes requisitos:
 
@@ -553,7 +555,7 @@ d_{x,A}=\sqrt{\displaystyle\sum_{i=1}^{m}(ND_{x,i}-\overline{ND}_{A,i})^{2}}
 Es un clasificador eficiente cuando no se presenta solape de categorías, por lo tanto cuando la zona de estudio no es de gran complejidad. No deja píxeles sin clasificar puesto que siempre hay una clase más cercana. No considera dispersión de cada categoría o correlación entre bandas.
 
 \paragraph{\ac{K-NN}.}
-Este clasificador es igual al \ac{NN} con la salvedad de que pondera el valor de cada píxel en la muestra de entrenamiento por el inverso de la distancia espectral que lo separa del píxel a clasificar. En el caso del algoritmo de vecino más proximo se toma un valor $k=1$. En la figura \ref{fig:KNN} se muestra una gráfica de ejemplo en la que se aplica el clasificador para dos bandas y tres categorías con módulo $k=5$.
+Este clasificador es igual al \ac{NN} con la salvedad de asigna el píxel a la clase mayoritaria por k vecinos más próximos. En el caso del algoritmo de vecino más proximo se toma un valor $k=1$. En la figura \ref{fig:KNN} se muestra una gráfica de ejemplo en la que se aplica el clasificador para dos bandas y tres categorías con módulo $k=5$.
 
 \begin{figure}
 	\centering
@@ -594,7 +596,7 @@ En la figura \ref{fig:MLC} se puede ver un ejemplo en el que un píxel situado a
 \end{figure}
 
 \subsection{Índices de vegetación} \label{subsec:indices_vegetacion}
-Los \ac{IV} buscan mejorar la discriminación entre dos cubiertas con comportamiento reflectivo muy distinto en dos bandas, principalmente en el visible y el \ac{IRC} \citep{chuvieco2002teledeteccion}. La diferencia entre la reflectividad de la banda del rojo y la del \ac{IRC} en cubiertas vegetales permite separar la vegetación sana o vigorosa de otras especies de vegetación puesto que mientras en el visible, en particular en la banda roja, los pigmentos de la hoja absorben la mayor parte de la energía que reciben, estas sustancias apenas afectan al infrarrojo cercano. Cuanto mayor sea esta diferencia de reflectividades mayor vigorosidad presentará la cubierta observada debido a que en situaciones desfavorables para la vegetación menor es la diferencia.%\Sep
+Los \ac{IV} buscan mejorar la discriminación entre dos cubiertas con comportamiento reflectivo muy distinto en dos bandas, principalmente en el visible y el \ac{IRC} \citep{chuvieco2002teledeteccion}. La diferencia entre la reflectividad de la banda del rojo y la del \ac{IRC} en cubiertas vegetales permite separar la vegetación sana o vigorosa de otros tipos de vegetación puesto que mientras en el visible, en particular en la banda roja, los pigmentos de la hoja absorben la mayor parte de la energía que reciben, estas sustancias apenas afectan al infrarrojo cercano. Cuanto mayor sea esta diferencia de reflectividades mayor vigorosidad presentará la cubierta observada debido a que en situaciones desfavorables para la vegetación menor es la diferencia.%\Sep
 
 Entre el gran número de \ac{IV} desarrollados por numerosos grupos de investigación, obviando el cociente simple entre bandas (\ref{eq:cociente}), el \ac{NDVI} (\ref{eq:NDVI}) es el más utilizado en estudios de evaluación del estado vegetal creado por \cite{rouse1974}.
 
