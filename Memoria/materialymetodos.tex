@@ -167,7 +167,7 @@ En la figura \ref{fig:CR} se muestra el script original de la función en R a la
 
 Se puede observar como mediante el comando inicial \textit{require()} se llama al paquete \textit{prospectr}, gracias al cual nos aseguramos que está correctamente cargado el paquete necesario para realizar las operaciones que siguen en el script \citep{stevens2014introduction}. Para ello se utilizó el instalador de paquetes de RStudio, localizando el paquete requerido en el repositorio oficial de RCRAN e instalando las dependencias necesarias, que también se podría haber hecho con el comando \textit{``install.packages()''}. El comando \textit{grafica()} es la llamada a una función creada para presentar la gráfica a nuestro gusto, mientras que con el comando \textit{lines()} se nos permite superponer la gráfica de \ac{CR} a la anterior.%\Sep
 
-Para el correcto funcionamiento del análisis se procedió a crear una matriz de 3x481 donde las filas corresponden a las tres especies analizadas y las columnas al valor de longitud de onda. El fin es el de presentar de mejor forma los datos en la función de \ac{CR} de R y aunque el resultado es el mismo, que haciéndolo una por una, nos permite obtener este de forma más rápida y con menos pasos.%\Sep
+Para el correcto funcionamiento del análisis se procedió a crear una matriz de 3x481 donde las filas corresponden a las tres especies analizadas y las columnas al valor de longitud de onda una vez desechado los datos extremos inservibles para el análisis como se verá en el capítulo siguiente (\ref{cap:resultados}). El fin es el de presentar de mejor forma los datos en la función de \ac{CR} de R y aunque el resultado es el mismo que haciéndolo una por una, nos permite obtener este de forma más rápida y con menos pasos.%\Sep
 
 El script original de la funcion en R previamente presentado en la figura \ref{fig:CR} sufre cambios, quedando de la siguiente manera:%\SmallSep
 
@@ -199,7 +199,7 @@ El script original de la funcion en R previamente presentado en la figura \ref{f
 	\label{fig:CRmodificado}
 \end{figure}	
 
-Donde ``manglencorte'' es el archivo de datos con el corte realizado para cada especie como se explicó anteriormente. Se crea un objeto llamado ``bandas'' tomando los valores de la fila V4 de cualquiera de los archivos de datos. Se crea la gráfica con el comandos \textit{matplot()} y con \textit{matlines()} se superpone la gráfica propia del método \ac{CR}.%\Sep
+Donde ``manglencorte'' es el archivo de datos con el corte realizado para cada especie. Se crea un objeto llamado ``bandas'' tomando los valores de la fila V4 de cualquiera de los archivos de datos. Se crea la gráfica con el comandos \textit{matplot()} y con \textit{matlines()} se superpone la gráfica propia del método \ac{CR}.%\Sep
 
 \subsection{Clasificación angular}
 La clasificación angular también llamada \ac{SAM} calcula la similitud entre dos espectros a partir de su distancia angular espectral. Originalmente este método compara espectros desconocidos con otros de referencia tomados, por ejemplo, de bibliotecas espectrales o de la misma imagen \citep{girouard2004validated} con el fin de asignar píxeles desconocidos a clases de referencia conocida en una clasificación temática. El algoritmo de clasificación angular es el siguiente:
@@ -248,7 +248,7 @@ Como los datos del radiómetro de campo solo abarcan las longitudes de onda comp
 
 
 \subsection{Obtención de las imágenes}
-Las imágenes se obtuvieron del servicio Earth Explorer, de la \ac{EROS} de la \ac{USGS}. Estas imágenes ya vienen con una corrección geométrica previa hecha, por lo que no será necesario aplicar más correcciones de este tipo. En un archivo .txt asociado a las imágenes .tiff para cada banda se especifica que el método de corrección geométrica utilizado ha sido el de convolución cúbica.%\Sep
+Las imágenes se obtuvieron del servicio Earth Explorer, de la \ac{EROS} de la \ac{USGS}. Estas imágenes ya vienen con una corrección geométrica previa hecha, por lo que no será necesario aplicar más correcciones de este tipo. En un archivo .txt asociado a las imágenes .tiff para cada banda se especifica que el método de reproyección utilizado ha sido el de convolución cúbica.%\Sep
 
 En concreto, los archivos que nos ofrece el servicio de descargas son:
 
@@ -264,7 +264,7 @@ Se trata de un producto de \ac{L1T} con correcciones geométricas sistemáticas 
 
 Otra forma de obtener las imágenes de Landsat 8 es mediante el gestor de descargas Libra, que aprovecha la API del servicio de \ac{AWS} que aloja estas imágenes desde septiembre de 2014. Este nos permite elegir que bandas descargar, ahorrando tiempo en la operación.%\Sep
 
-En cambio, para la correcta realización de este \ac{TFG} donde tenemos datos de reflectividad a nivel del suelo, necesitamos que las imágenes Landsat también muestren valores de reflectividad a ese nivel. Esto se consigue aplicando un algoritmo de corrección radiométrica a las imágenes \ac{L1T} obteniendo un producto también proporcionado por la agencia \ac{EROS} bajo demanda llamado \ac{PL8SR} \citep{USGS2015} que también se puede encontrar bajo en nombre de Landsat SR.%\Sep
+En cambio, para la correcta realización de este \ac{TFG} donde tenemos datos de reflectividad a nivel del suelo, necesitamos que las imágenes Landsat también muestren valores de reflectividad a ese nivel. Esto se consigue aplicando un algoritmo de corrección radiométrica a las imágenes \ac{L1T} obteniendo un producto también proporcionado por la agencia \ac{EROS} bajo demanda llamado \ac{PL8SR} \citep{USGS2015} que también se puede encontrar bajo el nombre de Landsat SR.%\Sep
 
 Para abarcar la zona de estudio se necesitaron obtener dos imágenes que tienen las características mostradas en el cuadro \ref{tab:imagenes}. Se consideró que la diferencia temporal entre ambas imágenes y la fecha de toma de datos no era determinante suponiendo un escaso cambio fenológico de las especies de mangle en ese periodo de tiempo.%\Sep
 
@@ -509,7 +509,7 @@ El resultado de estos tratamientos se puede ver en las figuras \ref{fig:gf432} y
 Debemos saber si los datos de reflectividad de las especies de mangle se adaptan a los datos de las imágenes raster de Landsat 8 que se han corregido. Para ello tomamos la serie de puntos en los que se conoce la existencia de bosque de mangle (cuadro \ref{tab:puntos}). Se creará en GRASS una capa vectorial con estos puntos a las que se le añadirán los valores raster de reflectividad de cada banda. Los pasos a seguir fueron los siguientes:
 
 \begin{itemize}
-	\item Creación de una capa vectorial en blanco de nombre ``puntos'' y añadirla al árbol de capas. En esta capa se digitalizarán un total de 10 puntos en los que se supone la existencia de bosque de mangle.
+	\item Creación de una capa vectorial en blanco de nombre ``puntos'' y añadirla al árbol de capas. En esta capa se digitalizarán un total de 10 puntos en los que se conoce la existencia de bosque de mangle.
 	\item Crear una base de datos asociada a la capa con \textit{v.db.addtable} asignando nuevos campos: ``x'' e ``y'' de tipo ``double'' que se actualizarán con las coordenadas de los puntos. También se añadirán a la tabla columnas para alojar el valor de los datos de cada una de las bandas en cada punto nombradas como B1, B2, B3, B4 y B5 de tipo ``double''.
 	\item Actualización de los campos de coordenadas mediante el comando \textit{v.to.db} como se muestra en la figura \ref{fig:v.to.db} donde \textit{map} designa el vectorial que tiene la tabla asociada, \textit{option} indica que queremos actualizar coordenadas y \textit{columns} son los nombres de las columnas de coordenadas de nuestra tabla.
 	

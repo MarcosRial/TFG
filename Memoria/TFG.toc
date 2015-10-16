@@ -1,8 +1,8 @@
 \select@language {spanish}
 \contentsline {chapter}{Resumen}{\es@scroman {vi}}{section*.5}
-\contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {x}}{chapter*.7}
-\contentsline {chapter}{\IeC {\'I}ndice de Tablas}{\es@scroman {xi}}{chapter*.8}
-\contentsline {chapter}{Lista de Acr\IeC {\'o}nimos}{\es@scroman {xv}}{chapter*.9}
+\contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {xii}}{chapter*.7}
+\contentsline {chapter}{\IeC {\'I}ndice de Tablas}{\es@scroman {xiii}}{chapter*.8}
+\contentsline {chapter}{Lista de Acr\IeC {\'o}nimos}{\es@scroman {xvii}}{chapter*.9}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Marco Global}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{5}{section.1.2}
@@ -50,8 +50,8 @@
 \contentsline {subsection}{\numberline {2.4.3}Tratamientos previos}{47}{subsection.2.4.3}
 \contentsline {subsubsection}{Valores nulos}{48}{section*.100}
 \contentsline {subsubsection}{Mosaico de im\IeC {\'a}genes}{48}{section*.102}
-\contentsline {subsubsection}{Recorte de la imagen}{50}{section*.107}
-\contentsline {subsubsection}{Filtro de paso bajo}{51}{section*.110}
+\contentsline {subsubsection}{Recorte de la imagen}{49}{section*.107}
+\contentsline {subsubsection}{Filtro de paso bajo}{50}{section*.110}
 \contentsline {section}{\numberline {2.5}Comprobaci\IeC {\'o}n}{53}{section.2.5}
 \contentsline {section}{\numberline {2.6}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{54}{section.2.6}
 \contentsline {section}{\numberline {2.7}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{56}{section.2.7}
@@ -65,6 +65,7 @@
 \contentsline {section}{\numberline {3.3}Comprobaci\IeC {\'o}n}{64}{section.3.3}
 \contentsline {section}{\numberline {3.4}Clasificaci\IeC {\'o}n de im\IeC {\'a}genes}{65}{section.3.4}
 \contentsline {section}{\numberline {3.5}\IeC {\'I}ndices de vegetaci\IeC {\'o}n}{67}{section.3.5}
-\contentsline {chapter}{\numberline {4}Conclusiones y discusi\IeC {\'o}n}{71}{chapter.4}
+\contentsline {section}{\numberline {3.6}Discusi\IeC {\'o}n}{69}{section.3.6}
+\contentsline {chapter}{\numberline {4}Conclusiones}{73}{chapter.4}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{80}{chapter*.144}
 \contentsline {chapter}{Anejo. Mapas}{81}{appendix*.145}
