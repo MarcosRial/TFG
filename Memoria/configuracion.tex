@@ -26,12 +26,24 @@
 \usepackage{fancyhdr} %Encabezados y pies de página
 \usepackage{url} %Para introducir URLs
 \usepackage{latexsym} %Para introducir el símbolo de LaTeX
-\usepackage[colorlinks,linktocpage=true,citecolor=blue,linkcolor=blue]{hyperref} %Vínculos
 \usepackage{emptypage} %Páginas en blanco
 \usepackage{acronym} %Para acrónimos
 %\usepackage{tocbibind} %Índice en cada capítulo
 \usepackage{natbib} %Bibliografía
 \usepackage{caption} %Para los pies de foto
+
+\usepackage[colorlinks,linktocpage=true,citecolor=blue,linkcolor=blue,backref=page]{hyperref} %Vínculos
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 (No citado)
+		\or (Citado en página~#2.)
+		\else (Citado en páginas #2.)
+	\fi%
+}
+\renewcommand*{\backrefsep}{, }
+\renewcommand*{\backreftwosep}{y~}
+\renewcommand*{\backreflastsep}{y~}
+
 
 \usepackage[toc,page]{appendix} %apéndice para incluir los mapas
 
