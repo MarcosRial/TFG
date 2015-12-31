@@ -11,7 +11,7 @@
 
 \section{Análisis de separabilidad}
 \subsection{Análisis visual}
-Una vez introducidos los datos en R se obtienen las gráficas mostradas en la figura \ref{fig:ral}, donde se expresan con las letras C, B, G, R e IRC la nomenclatura de las bandas de Landsat 8 ya expuestas en la sección de imágenes satélite del capítulo anterior (\ref{subsec:Landsat8}).%\Sep
+Una vez introducidos los datos en R se obtienen las gráficas de respuesta espectral mostradas en la figura \ref{fig:ral}, donde se expresan con las letras C, B, G, R e IRC la nomenclatura de las bandas de Landsat 8 ya expuestas en la sección de imágenes satélite del capítulo anterior (\ref{subsec:Landsat8}).%\Sep
 
 %\begin{figure}
 %	\centering
@@ -31,7 +31,7 @@ Una vez introducidos los datos en R se obtienen las gráficas mostradas en la fi
 	\label{fig:ral}
 \end{figure}
 
-Como se aprecia, los datos presentan unas alteraciones al inicio y al final que son propias del radiómetro de campo. Se procedió a desechar estos datos haciendo un corte de colas entre los valores 420 nm y 900 nm de longitud de onda para preservar lo máximo posible la integridad de los datos y que no afectaran a los análisis de separabilidad. El número de observaciones se reduciría a 481 por las 751 originales. Las gráfica combinada resultante es la mostrada en la figura \ref{fig:ral_corte}.%\Sep
+Como se aprecia, los datos presentan unas alteraciones al inicio y al final que son propias del radiómetro de campo. Se procedió a desechar estos datos haciendo un corte de colas entre los valores 420 nm y 900 nm de longitud de onda para preservar lo máximo posible la integridad de los datos y que no afectaran a los análisis de separabilidad. El número de observaciones se reduciría a 481 por las 751 originales. La gráfica combinada resultante es la mostrada en la figura \ref{fig:ral_corte}.%\Sep
 
 %\begin{figure}
 %	\centering
@@ -135,7 +135,7 @@ En cuanto a la profundidad se observa una clara absorción en torno a los 490 nm
 En cuanto a la anchura lo más llamativo es la amplitud de los valores de la \textit{R. mangle} en torno a los valores centrales de la observación.
 
 \subsection{Clasificación angular}
-Una vez aplicado el script de R de la función de clasificación angular (figura \ref{fig:AE}), los valores son los de la siguiente tabla:
+Una vez aplicado el script de R de la función de clasificación angular (figura \ref{fig:AE}), los valores son los del cuadro \ref{tab:valoresAE}.
 
 \begin{table}[ht]
 	\centering	
@@ -148,7 +148,8 @@ Una vez aplicado el script de R de la función de clasificación angular (figura
 	\bottomrule[0.4mm]
 	\end{tabular}
 	\captionsetup{font={footnotesize,it}}
-	\caption[Valores de Ángulo Espectral]{Valores del Ángulo Espectral en radianes. Ángulo sexagesimal entre paréntesis. Elaboración propia.}	
+	\caption[Valores de Ángulo Espectral]{Valores del Ángulo Espectral en radianes. Ángulo sexagesimal entre paréntesis. Elaboración propia.}
+	\label{tab:valoresAE}
 \end{table}
 
 Se puede observar una mayor separabilidad entre \textit{R. mangle} y \textit{L. racemosa}, siendo menor en las otras combinaciones.
