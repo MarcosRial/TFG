@@ -32,7 +32,9 @@
 \usepackage{natbib} %Bibliografía
 \usepackage{caption} %Para los pies de foto
 
-\usepackage[colorlinks,linktocpage=true,citecolor=blue,linkcolor=blue,backref=page]{hyperref} %Vínculos
+%\usepackage[colorlinks,linktocpage=true,citecolor=blue,linkcolor=blue,backref=page]{hyperref} %Vínculos para impresión digital
+\usepackage[colorlinks,linktocpage=true,citecolor=black,linkcolor=black,backref=page]{hyperref} %Vínculos para impresión papel
+
 \renewcommand*{\backref}[1]{}
 \renewcommand*{\backrefalt}[4]{
 	\ifcase #1 (No citado)
@@ -51,15 +53,15 @@
 
 \usepackage{pdfpages} %Incrustar páginas en pdf
 
-\usepackage{filecontents} %para incluir pdf a3 en el documento. Activado para anejomapas2.tex
-\begin{filecontents}{mapas}
-\documentclass[a3paper,landscape,fullpage]{article}
-\usepackage[a3paper,landscape]{geometry}
+%\usepackage{filecontents} %para incluir pdf a3 en el documento. Activado para anejomapas2.tex
+%\begin{filecontents}{mapas}
+%\documentclass[a3paper,landscape,fullpage]{article}
+%\usepackage[a3paper,landscape]{geometry}
 %\begin{document}
 %\pagestyle{empty}
 %I'm your a3paper page :-)
 %\end{document}
-\end{filecontents}
+%\end{filecontents}
 
 %\usepackage[paper=A4,pagesize]{typearea} %otro tipo de inserción de pdf en a3 activado para anejomapas.tex
 %\usepackage{afterpage}
