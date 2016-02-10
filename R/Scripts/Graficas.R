@@ -30,12 +30,18 @@ lines(LagunculariaCorte$V4,LagunculariaCorte$V5, type="l", col="green", lty=2,lw
 lines(AvicenniaCorte$V4,AvicenniaCorte$V5, type="l", col="blue", lty=3,lwd=1)
 
 legend (x = 750, y = 0.5,
-        legend=c("R. mangle", "L. racemosa", "A. germinans"), lty=c(1,2,3),
-        col=c("red","green","blue"), bty="n")
+        legend=c("R. mangle", 
+                 "L. racemosa", 
+                 "A. germinans"), 
+        lty=c(1,2,3),
+        col=c("red",
+              "green",
+              "blue"), 
+        bty="n")
 
 ## Esto creará un archivo png en la carpeta Gráficas
 png (filename = "./Graficos/gráficanueva.png",
-     width = 15, height = 9, units = "cm", res = 300,)
+     width = 15, height = 9, units = "cm", res = 300)
 
 grafica(x)             ## donde x es el archivo de datos
 graficamas(y)          ## donde y es el archivo de datos a añadir
