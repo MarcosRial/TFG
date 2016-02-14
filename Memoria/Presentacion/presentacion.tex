@@ -21,6 +21,7 @@
 \usepackage{url}
 \usepackage{epstopdf}
 %\usepackage{natbib}
+\usepackage{booktabs}
 
 \author[Marcos Rial Docampo]{Marcos Rial Docampo\\
 	\footnotesize{Tutores:\\Eduardo Corbelle Rico y Rafael Enrique Corrales Andino}}
@@ -51,18 +52,21 @@
 
 \begin{document}
 
-\begin{frame}
+\begin{frame}[plain]
+\begin{center}
+	\includegraphics[scale=0.3]{./Imagenes/logo_ux.eps}
+\end{center}
 \maketitle
 \end{frame}
 
 \section{Introducción}
 \subsection{Marco Global}
 \begin{frame}
-\only<1>{\includegraphics[width=\linewidth]{./Imagenes/Mangle.eps}}
-\only<2>{\begin{block}{}
-		\textbf{Manglar}: Ecosistema medioambiental propio de zonas costeras tropicales\\
-		\textbf{Mangle}: Especie forestal que crece en los manglares o bosques de mangle
-	\end{block}}
+\only<1>{\includegraphics[width=\linewidth]{./Imagenes/Mangle2.jpg}}
+%\only<2>{\begin{block}{}
+%		\textbf{Manglar}: Ecosistema medioambiental propio de zonas costeras tropicales\\
+%		\textbf{Mangle}: Especie forestal que crece en los manglares o bosques de mangle
+%	\end{block}}
 \end{frame}
 
 \begin{frame}
@@ -133,7 +137,34 @@
 			\end{block}
 		\end{column}
 	\end{columns}
-	
+\end{frame}
+
+\subsection{Imágenes Landsat}
+\begin{frame}
+	\includegraphics[width=0.5\linewidth]{./Imagenes/Landsat18.eps}
+	\includegraphics[width=0.5\linewidth]{./Imagenes/Landsat17.eps}\\
+	{\tiny \begin{table}
+		\centering
+		\begin{tabular}{@{}cccccccc@{}}
+			\toprule[0.4mm]
+			Imagen & Path & Row & Fecha & West & East & North & South \\
+			\midrule
+			1 & 18 & 51 & 23/11/2014 & -89.105062 & -86.987819 & 14.067713 & 11.946409 \\
+			2 & 17 & 51 & 19/12/2014 & -87.549399 & -85.443030 & 14.062287 & 11.952632 \\
+			\bottomrule[0.4mm]
+		\end{tabular}
+	\end{table}}
+\end{frame}
+
+\begin{frame}
+	\begin{block}{Tratamientos a las imágenes}
+		\begin{itemize}[<+->]
+			\item Tratamiento de valores nulos de las imágenes
+			\item Creación del mosaico
+			\item Recorte de la imagen
+			\item Paso de filtro de paso bajo
+		\end{itemize}
+	\end{block}
 \end{frame}
 
 \section{Resultados}
@@ -168,16 +199,15 @@
 	\end{columns}
 \end{frame}
 
-\subsection{Imágenes Landsat}
+\section{Discusión y conclusiones}
+\subsection{Discusión}
 \begin{frame}
-	\begin{block}{}
-		contenidos...
-	\end{block}
+	discusión
 \end{frame}
 
-\section{Conclusiones}
-\begin{frame}{Conclusiones}
-	contenidos...
+\subsection{Conclusiones}
+\begin{frame}
+	conclusiones
 \end{frame}
 
 \section{Bibliografía}
