@@ -20,11 +20,11 @@ graficaCR <- function(x) {
 
 graficaCR(Rhizophora)
 
-lines(mangle1corte$V4[1:134],crRM1, col = "red")
-lines(mangle1corte$V4[135:481],crRM2, col = "red")
+lines(RhizophoraCorte$V4[1:134],crRM1, col = "red")
+lines(RhizophoraCorte$V4[135:481],crRM2, col = "red")
 
-lines(mangle2corte$V4[1:131],crLR1, col = "green")
-lines(mangle2corte$V4[132:481],crLR2, col = "green")
+lines(LagunculariaCorte$V4[1:131],crLR1, col = "green")
+lines(LagunculariaCorte$V4[132:481],crLR2, col = "green")
 
-lines(mangle3corte$V4[1:131],crAG1, col = "blue")
-lines(mangle3corte$V4[132:481],crAG2, col = "blue")
+lines(AvicenniaCorte$V4[1:131],crAG1, col = "blue")
+lines(AvicenniaCorte$V4[132:481],crAG2, col = "blue")
