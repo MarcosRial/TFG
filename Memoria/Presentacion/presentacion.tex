@@ -22,6 +22,7 @@
 \usepackage{epstopdf}
 %\usepackage{natbib}
 \usepackage{booktabs}
+\usepackage{caption}
 
 \author[Marcos Rial Docampo]{Marcos Rial Docampo\\
 	\footnotesize{Tutores:\\Eduardo Corbelle Rico y Rafael Enrique Corrales Andino}}
@@ -139,6 +140,27 @@
 	\end{columns}
 \end{frame}
 
+\subsection{Técnicas de análisis espectral}
+\begin{frame}
+	\begin{columns}
+		\begin{column}{5cm} \vspace*{0.5cm}
+			\begin{block}{}
+				\begin{enumerate}[<+- | alert@+>]
+					\item Índice de Acuerdo Espectral
+					\item Ángulo espectral
+					\item Continuum Removal
+				\end{enumerate}
+			\end{block}
+		\end{column}
+		\begin{column}{5.5cm}
+			\only<1>{$ IAE = \frac{\displaystyle\sum_{k=1}^m(CB_{i,k} - CB_{j,k})^{2}}{m} $}
+			\only<2>{$\theta = arcos \frac{\displaystyle\sum_{k=1}^{m} \rho_{i,k} \rho_{j,k}}{\sqrt{\displaystyle\sum_{k=1}^{m} \rho_{i,k}^{2}} \sqrt{\displaystyle\sum_{k=1}^{m} \rho_{j,k}^{2}}}$}
+			\only<3>{\includegraphics[width=0.9\linewidth]{./Imagenes/CR1.eps}}\\
+			\only<3>{\includegraphics[width=0.9\linewidth]{./Imagenes/CR2.eps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
 \subsection{Imágenes Landsat}
 \begin{frame}
 	\includegraphics[width=0.5\linewidth]{./Imagenes/Landsat18.eps}
@@ -178,25 +200,56 @@
 	\only<6>{\includegraphics[width=\linewidth]{./Graficos/6.png}}
 \end{frame}
 
-\subsection{Técnicas de análisis espectral}
+\subsection{Índice de Acuerdo Espectral}
 \begin{frame}
-	\begin{columns}
-		\begin{column}{5cm} \vspace*{0.5cm}
-			\begin{block}{}
-				\begin{enumerate}[<+- | alert@+>]
-					\item Índice de Acuerdo Espectral
-					\item Ángulo espectral
-					\item Continuum Removal
-				\end{enumerate}
-			\end{block}
-		\end{column}
-		\begin{column}{5.5cm}
-		\only<1>{$ IAE = \frac{\displaystyle\sum_{k=1}^m(CB_{i,k} - CB_{j,k})^{2}}{m} $}
-		\only<2>{$\theta = arcos \frac{\displaystyle\sum_{k=1}^{m} \rho_{i,k} \rho_{j,k}}{\sqrt{\displaystyle\sum_{k=1}^{m} \rho_{i,k}^{2}} \sqrt{\displaystyle\sum_{k=1}^{m} \rho_{j,k}^{2}}}$}
-		\only<3>{\includegraphics[width=0.9\linewidth]{./Imagenes/CR1.eps}}\\
-		\only<3>{\includegraphics[width=0.9\linewidth]{./Imagenes/CR2.eps}}
-		\end{column}
-	\end{columns}
+	\begin{table}
+		\centering
+\textit{{\footnotesize Valores de IAE para cada combinación de especies de mangle.}}\\
+		\begin{tabular}{@{}cccc@{}}
+			\toprule[0.4mm]
+			& \textit{R. mangle} & \textit{L. racemosa} & \textit{A. germinans} \\
+			\textit{R. mangle} & --- & 0,0083 & 0,0062 \\
+			\textit{L. racemosa} & 0,0083 & --- & 0,0021 \\
+			\textit{A. germinans} & 0,0062 & 0,0021 & --- \\
+			\bottomrule[0.4mm]
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\subsection{Continuum Removal}
+\begin{frame}
+	\includegraphics[width=\linewidth]{./Graficos/ContinuumR2.eps}
+\end{frame}
+
+\subsection{Clasificación Angular}
+\begin{frame}
+	\begin{table}
+		\centering
+\textit{{\footnotesize Valores del Ángulo Espectral en radianes. Ángulo sexagesimal entre paréntesis.}}
+		{\small \begin{tabular}{@{}cccc@{}}
+			\toprule[0.4mm]
+			& \textit{R. mangle} & \textit{L. racemosa} & \textit{A. germinans} \\
+			\textit{R. mangle} & --- & 0,1651 (9,5401) & 0,0752 (4,3086) \\
+			\textit{L. racemosa} & 0,1651 (9,5401) & --- & 0,1062 (6,0826) \\
+			\textit{A. germinans} & 0,0752 (4,3086) & 0,1062 (6,0826) & --- \\
+			\bottomrule[0.4mm]
+		\end{tabular}}
+	\end{table}
+\end{frame}
+
+\subsection{Combinaciones}
+\begin{frame}
+	contenidos...
+\end{frame}
+
+\subsection{Clasificación}
+\begin{frame}
+	contenidos...
+\end{frame}
+
+\subsection{Índices de Vegetación}
+\begin{frame}
+	contenidos...
 \end{frame}
 
 \section{Discusión y conclusiones}
