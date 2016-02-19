@@ -29,7 +29,7 @@
 \title[Análisis de Separabilidad Espectral]{\large{Análisis de separabilidad espectral de especies\\de mangle en el Golfo de Fonseca}}
 \subtitle{Aplicación a la clasificación de imágenes Landsat}
 
-\institute[USC-EPS]{Trabajo Fin de Grado \\Universidad de Santiago de Compostela\\Escuela Politécnica Superior de Lugo} 
+\institute[USC-EPS]{Trabajo Fin de Grado \\Grado en Ingeniería en Geomática y Topografía\\Escuela Politécnica Superior de Lugo} 
 %\date{\today}
 %\subject{}
 
@@ -55,7 +55,7 @@
 
 \begin{frame}[plain]
 \begin{center}
-	\includegraphics[scale=0.3]{./Imagenes/logo_ux.eps}
+	\includegraphics[scale=0.5]{./Imagenes/logo_ux.eps}
 \end{center}
 \maketitle
 \end{frame}
@@ -181,10 +181,10 @@
 \begin{frame}
 	\begin{block}{Tratamientos a las imágenes}
 		\begin{itemize}[<+->]
-			\item Tratamiento de valores nulos de las imágenes
+			\item Valores nulos de las imágenes
 			\item Creación del mosaico
 			\item Recorte de la imagen
-			\item Paso de filtro de paso bajo
+			\item Filtro de paso bajo
 		\end{itemize}
 	\end{block}
 \end{frame}
@@ -239,37 +239,95 @@
 
 \subsection{Combinaciones}
 \begin{frame}
-	contenidos...
+	\begin{columns}
+		\begin{column}{5cm}
+			{\footnotesize 4-3-2}
+			\only<1->{\includegraphics[width=\linewidth]{./Imagenes/GF432.png}}\\
+			\vspace*{0.5cm}
+			\only<2->{{\footnotesize 5-4-3}}
+			\only<2->{\includegraphics[width=\linewidth]{./Imagenes/GF543.png}}
+		\end{column}
+		\begin{column}{5cm}
+			\only<3->{{\footnotesize 5-6-2}}
+			\only<3->{\includegraphics[width=\linewidth]{./Imagenes/GF562.png}}\\
+			\only<4->{{\footnotesize 6-5-4}}
+			\only<4->{\includegraphics[width=\linewidth]{./Imagenes/GF654.png}}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \subsection{Clasificación}
 \begin{frame}
-	contenidos...
+	\begin{columns}
+		\begin{column}{5cm}
+			{\footnotesize Clasificación no supervisada}
+			\only<1->{\includegraphics[width=0.7\linewidth]{./Imagenes/Detalle_clasnosup.png}}\\
+			\vspace*{0.1cm}
+			\only<2->{{\footnotesize Clasificación supervisada}}
+			\only<2->{\includegraphics[width=0.7\linewidth]{./Imagenes/Detalle_classup.png}}
+		\end{column}
+		\begin{column}{5cm}
+			\only<3->{{\footnotesize Spectral Anlge Mapper}}
+			\only<3->{\includegraphics[width=\linewidth]{./Imagenes/Detalle_SAM.png}}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \subsection{Índices de Vegetación}
 \begin{frame}
-	contenidos...
+	\begin{columns}
+		\begin{column}{5cm}
+			{\footnotesize NDVI}\\
+			\only<1->{\includegraphics[width=\linewidth]{./Imagenes/Detalle_aguas.png}}
+		\end{column}
+		\begin{column}{5cm}
+			\only<2>{\footnotesize SAVI}\\
+			\only<2>{\includegraphics[width=\linewidth]{./Imagenes/Detalle_estanques.png}}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \section{Discusión y conclusiones}
 \subsection{Discusión}
 \begin{frame}
-	discusión
+	\begin{block}{Aspectos a tener en cuenta}
+		\begin{itemize}[<+->]
+			\item Tomar más de una observación por especie
+			\item Imágenes satélite con mayor resolución espacial
+			\item Utilización del plugin SCP de QGIS
+			\item Crear máscara o hacer un análisis de CP
+			\item Mejorar la toma de áreas de entrenamiento
+		\end{itemize}
+	\end{block}
 \end{frame}
 
 \subsection{Conclusiones}
 \begin{frame}
-	conclusiones
+	\begin{block}{Consideraciones finales}
+		\begin{itemize}[<+->]
+			\item Poca separabilidad entre \textit{R. mangle} y \textit{A. germinans}
+			\item Mayor separabilidad de \textit{L. racemosa}, sobre todo con \textit{R. mangle}
+			\item Resolución espacial de las imágenes Landsat 8 insuficiente (30 metros)
+			\item Fácil detección del bosque de mangle, las salineras y los estanques
+			\item Software libre útil y práctico en todas las fases del trabajo
+		\end{itemize}
+	\end{block}
 \end{frame}
 
-\section{Bibliografía}
-\begin{frame}[allowframebreaks]
-	\frametitle{Bibliografía}
+\appendix
+\section{Recordatorio}
+%\begin{frame}[allowframebreaks]
+%	\frametitle{Bibliografía}
 	
-	Para ampliar conocimientos: \nocite{chuvieco2002teledeteccion,schowengerdt2006}
-	\bibliographystyle{plain}
-	\bibliography{../bibliografia}
+%	\nocite{chuvieco2002teledeteccion,schowengerdt2006}
+%	\bibliographystyle{plain}
+%	\bibliography{../bibliografia}
+%\end{frame}
+
+\begin{frame}
+	\centering
+	{\large \textbf{{\color{blue} \url{https://github.com/MarcosRial/TFG}}}}\\ \vspace*{2cm}
+	Gracias por la atención
 \end{frame}
 
 \end{document}
