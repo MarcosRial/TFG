@@ -33,24 +33,6 @@
 %\date{\today}
 %\subject{}
 
-
-% Directamente na páxina de título: \includegraphics antes de \maketitle
-% \logo{\includegraphics[keyvals]{imagefile}}
-
-%\AtBeginSection{
-%\begin{frame}
- % \frametitle{Índice}
- % \tableofcontents[currentsection]
-%\end{frame}
-%}
-
-%\AtBeginSubsection{ 
-%\begin{frame}
-%  \frametitle{Índice}
-%  \tableofcontents[currentsection,currentsubsection]
-%\end{frame}
-%}
-
 \begin{document}
 
 \begin{frame}[plain]
@@ -64,10 +46,6 @@
 \subsection{Marco Global}
 \begin{frame}
 \only<1>{\includegraphics[width=\linewidth]{./Imagenes/Mangle2.jpg}}
-%\only<2>{\begin{block}{}
-%		\textbf{Manglar}: Ecosistema medioambiental propio de zonas costeras tropicales\\
-%		\textbf{Mangle}: Especie forestal que crece en los manglares o bosques de mangle
-%	\end{block}}
 \end{frame}
 
 \begin{frame}
@@ -114,11 +92,6 @@
 \end{frame}
 
 \section{Material y Métodos}
-\subsection{Estudio Radiométrico}
-\begin{frame}
-\includegraphics[width=\linewidth]{./Imagenes/Curva_espectral.jpg}
-\end{frame}
-
 \subsection{Software}
 \begin{frame}
 	\begin{columns}
@@ -165,6 +138,7 @@
 \begin{frame}
 	\includegraphics[width=0.5\linewidth]{./Imagenes/Landsat18.eps}
 	\includegraphics[width=0.5\linewidth]{./Imagenes/Landsat17.eps}\\
+	{\color{red}{\scriptsize Landsat SR}}
 	{\tiny \begin{table}
 		\centering
 		\begin{tabular}{@{}cccccccc@{}}
@@ -187,6 +161,11 @@
 			\item Filtro de paso bajo
 		\end{itemize}
 	\end{block}
+\end{frame}
+
+\subsection{Estudio Radiométrico}
+\begin{frame}
+	\includegraphics[width=\linewidth]{./Imagenes/Curva_espectral.jpg}
 \end{frame}
 
 \section{Resultados}
@@ -238,53 +217,52 @@
 \end{frame}
 
 \subsection{Combinaciones}
-\begin{frame}
-	\begin{columns}
-		\begin{column}{5cm}
-			{\footnotesize 4-3-2}
-			\only<1->{\includegraphics[width=\linewidth]{./Imagenes/GF432.png}}\\
-			\vspace*{0.5cm}
-			\only<2->{{\footnotesize 5-4-3}}
-			\only<2->{\includegraphics[width=\linewidth]{./Imagenes/GF543.png}}
-		\end{column}
-		\begin{column}{5cm}
-			\only<3->{{\footnotesize 5-6-2}}
-			\only<3->{\includegraphics[width=\linewidth]{./Imagenes/GF562.png}}\\
-			\only<4->{{\footnotesize 6-5-4}}
-			\only<4->{\includegraphics[width=\linewidth]{./Imagenes/GF654.png}}
-		\end{column}
-	\end{columns}
+\begin{frame}{{\footnotesize 4-3-2}}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF432.png}
+\end{frame}
+
+\begin{frame}{{\footnotesize 5-4-3}}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF543.png}
+\end{frame}
+
+\begin{frame}{{\footnotesize 5-6-2}}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF562.png}
+\end{frame}
+
+\begin{frame}{{\footnotesize 6-5-4}}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/GF654.png}
 \end{frame}
 
 \subsection{Clasificación}
-\begin{frame}
-	\begin{columns}
-		\begin{column}{5cm}
-			{\footnotesize Clasificación no supervisada}
-			\only<1->{\includegraphics[width=0.7\linewidth]{./Imagenes/Detalle_clasnosup.png}}\\
-			\vspace*{0.1cm}
-			\only<2->{{\footnotesize Clasificación supervisada}}
-			\only<2->{\includegraphics[width=0.7\linewidth]{./Imagenes/Detalle_classup.png}}
-		\end{column}
-		\begin{column}{5cm}
-			\only<3->{{\footnotesize Spectral Anlge Mapper}}
-			\only<3->{\includegraphics[width=\linewidth]{./Imagenes/Detalle_SAM.png}}
-		\end{column}
-	\end{columns}
+\begin{frame}{\footnotesize Clasificación no supervisada}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/Classnosup.png}
+\end{frame}
+
+\begin{frame}{{\footnotesize Clasificación supervisada}}
+	\centering
+	\only<1>{\includegraphics[width=0.6\linewidth]{./Imagenes/Detalle_training.png}}
+	\only<2>{\includegraphics[width=0.8\linewidth]{./Imagenes/Classup.png}}
+\end{frame}
+
+\begin{frame}{{\footnotesize Spectral Anlge Mapper}}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/SAM.png}
 \end{frame}
 
 \subsection{Índices de Vegetación}
-\begin{frame}
-	\begin{columns}
-		\begin{column}{5cm}
-			{\footnotesize NDVI}\\
-			\only<1->{\includegraphics[width=\linewidth]{./Imagenes/Detalle_aguas.png}}
-		\end{column}
-		\begin{column}{5cm}
-			\only<2>{\footnotesize SAVI}\\
-			\only<2>{\includegraphics[width=\linewidth]{./Imagenes/Detalle_estanques.png}}
-		\end{column}
-	\end{columns}
+\begin{frame}{\footnotesize NDVI}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/NDVI.png}
+\end{frame}
+
+\begin{frame}{\footnotesize SAVI}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Imagenes/SAVI.png}
 \end{frame}
 
 \section{Discusión y conclusiones}
@@ -293,9 +271,9 @@
 	\begin{block}{Aspectos a tener en cuenta}
 		\begin{itemize}[<+->]
 			\item Tomar más de una observación por especie
-			\item Imágenes satélite con mayor resolución espacial
+			\item Imágenes satélite con mayor resolución espacial y espectral
 			\item Utilización del plugin SCP de QGIS
-			\item Crear máscara o hacer un análisis de CP
+			\item Crear máscara o hacer un análisis de Componentes Principales
 			\item Mejorar la toma de áreas de entrenamiento
 		\end{itemize}
 	\end{block}
@@ -307,7 +285,7 @@
 		\begin{itemize}[<+->]
 			\item Poca separabilidad entre \textit{R. mangle} y \textit{A. germinans}
 			\item Mayor separabilidad de \textit{L. racemosa}, sobre todo con \textit{R. mangle}
-			\item Resolución espacial de las imágenes Landsat 8 insuficiente (30 metros)
+			\item Resolución espacial de las imágenes Landsat 8 insuficiente
 			\item Fácil detección del bosque de mangle, las salineras y los estanques
 			\item Software libre útil y práctico en todas las fases del trabajo
 		\end{itemize}
@@ -316,14 +294,6 @@
 
 \appendix
 \section{Recordatorio}
-%\begin{frame}[allowframebreaks]
-%	\frametitle{Bibliografía}
-	
-%	\nocite{chuvieco2002teledeteccion,schowengerdt2006}
-%	\bibliographystyle{plain}
-%	\bibliography{../bibliografia}
-%\end{frame}
-
 \begin{frame}
 	\centering
 	{\large \textbf{{\color{blue} \url{https://github.com/MarcosRial/TFG}}}}\\ \vspace*{2cm}
